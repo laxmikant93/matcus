@@ -1,0 +1,41 @@
+@import "../assets/Style/base";
+
+
+
+.main-wrap {
+  background-color: #f5f5f5;
+  height: 100vh;
+  padding: 24px;
+  position: relative;
+
+  .Maintheme-wrap {
+    height: 82vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .group_button {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    button {
+      border-radius: 10px;
+    }
+  }
+}
+
+.icon-6dot  {
+  -webkit-mask: url("../assets/Icons/icon6dot.svg") no-repeat center;
+  mask-image: url("../assets/Icons/icon6dot.svg") no-repeat center;
+  display: block;
+  width: 9px;
+  height: 12px;
+  background-color: rgba($base, 0.6);
+}

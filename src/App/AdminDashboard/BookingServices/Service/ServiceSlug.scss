@@ -1,0 +1,206 @@
+@import "../../../../assets/Style/base";
+@import "../../../../assets/Style/button";
+@import "../../../../assets/Style/table";
+
+.book-wrapper {
+  background: $white;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.Seo-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba($base, 0.2);
+  padding: 16px 24px;
+  background-color: $white;
+
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $base;
+  }
+
+  .seo-btn {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.Seo-body {
+  // padding-bottom: 16px;
+  // border-bottom: 1px solid rgba($base, 0.2);
+  // margin-bottom: 24px;
+  padding: 0 24px 16px;
+  background-color: $white;
+
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $base;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: $primary;
+  }
+
+  .LinkUrl {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $secondary;
+  }
+}
+
+.drop-body {
+  border-top: 1px solid rgba(32, 32, 32, 0.2);
+  border-bottom: 1px solid rgba($base, 0.2);
+  padding: 16px 24px;
+  background-color: $white;
+}
+
+.drop-foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 23px;
+  padding: 16px 24px;
+}
+
+.drop-description {
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  padding: 16px 24px;
+  background-color: rgba(1, 132, 255, 0.1);
+
+  .tilte,
+  .subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-weight: 400;
+    margin-bottom: 0;
+    .contact-us-link{
+      text-decoration: underline;
+    }
+  }
+}
+
+.label-heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+// SEO Meta Keywords
+.meta-keywords-wrapper {
+  border: 1px solid rgba(32, 32, 32, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 96px;
+  overflow-y: auto;
+  cursor: text;
+  padding: 12px;
+
+  &:focus-within {
+    border: 1px solid $base;
+  }
+
+  .meta-keywords-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    .chips-container {
+      width: auto;
+
+      .chip-button {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 66px;
+        background-color: #EAEAEA;
+        padding: 5px 9px;
+
+        .chip-name {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          color: $base
+        }
+
+      }
+    }
+
+    .input-container {
+
+      .meta-keyword-input {
+        border: none;
+        height: 20px;
+        padding: 0;
+      }
+    }
+  }
+
+  // .placeholder {
+  //   color:#D2D2D2;
+  //   font-size: 14px;
+  // }
+
+}
+
+
+
+.transparent {
+  background-color: transparent;
+  border-bottom: 1px solid $lgray;
+
+  h2 {
+    color: $base;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+}
+
+.seoPop-btn-wrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+
+  .btn-edit {
+    border: 1px solid $base;
+    background-color: transparent;
+  }
+
+  .btn-save {
+
+    border: none;
+    background-color: #4A9E42;
+    color: $white;
+    // margin-right: 30%;
+  }
+}
+
+.modal-width {
+
+  width: 520px;
+}

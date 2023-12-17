@@ -1,0 +1,766 @@
+@import "../../assets/Style/base";
+
+.HeadLoginSignUp {
+  text-align: right;
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.signUpSecWrap {
+  position: relative;
+  display: inline-flex;
+
+  a {
+    border-width: 1px;
+    border-style: solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 6px 12px;
+    margin-left: 3px;
+    border-color: $base;
+    transition: all 0.25s ease;
+    color: $base;
+    font-weight: 500;
+
+    &:hover {
+      background: $dgray;
+      color: $white;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      background: $base;
+      color: $white;
+
+      &:hover {
+        background-color: $dgray;
+      }
+    }
+  }
+}
+
+.edLogin {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.SignLoginRole {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px 0;
+  margin-bottom: 15px;
+
+  .RoleItem {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 4px solid transparent;
+    min-height: 110px;
+
+    &.active {
+      border-bottom: 4px solid $base;
+    }
+
+    img {
+      height: 44px;
+      width: auto;
+    }
+
+    p {
+      @extend .w-500;
+      // padding-top: 5px;
+    }
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: $white;
+}
+
+.edHeaderCustom {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+
+  &.edHeadMob {
+    grid-template-columns: auto 1fr auto;
+
+    .NavSearchBtn {
+      display: none;
+    }
+  }
+
+  .NavSearchBtn {
+    &:hover {
+      i {
+        &.base {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  .edHeaderHamburger {
+    position: relative;
+    cursor: pointer;
+
+    .hamLine {
+      width: 37px;
+      height: 2px;
+      background-color: $base;
+      margin-top: 5px;
+      position: relative;
+      display: block;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+
+    .hamLineName {
+      @extend .text-xxs;
+      letter-spacing: 0.05em;
+      @extend .w-500;
+      margin-top: -1px;
+    }
+  }
+
+  .HeadLogoCst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      line-height: 0;
+    }
+
+    img {
+      max-width: 150px;
+      // max-height: 40px;
+    }
+  }
+}
+
+// navProfile
+.rgtTopHeader {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.profileNav {
+  position: relative;
+  cursor: pointer;
+
+  // padding-left: 15px;
+  .profileNavCst {
+    position: relative;
+    background-color: $mgray;
+    // border: 1px solid rgba($lgray, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend .w-500;
+    @extend .text-xs;
+    color: $white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0.125rem 0.25rem rgba($base, 0.125) !important;
+    }
+
+    &::after {
+      content: "";
+      padding: 1px;
+      border-radius: 50%;
+      background: linear-gradient(72deg, $primary 0%, $secondary 100%);
+      position: absolute;
+      bottom: -3px;
+      right: -3px;
+      left: auto;
+      width: 14px;
+      height: 14px;
+      line-height: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+    }
+
+    &::before {
+      border: solid $white;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 2px;
+      position: absolute;
+      bottom: 2px;
+      cursor: pointer;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(45deg);
+      left: auto;
+      right: 2px;
+      z-index: 1;
+
+      &.right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+
+      &.left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    }
+  }
+
+  &:hover {
+    .profileNavDropdownWrapper {
+      display: block;
+    }
+  }
+}
+
+/*** Profile Nav Dropdown ***/
+.profileNavDropdownWrapper {
+  padding-top: 20px;
+  position: absolute;
+  right: -10px;
+  top: 30px;
+  z-index: 9999;
+  display: none;
+
+  .profileNavDropdownCustom {
+    width: 500px;
+    height: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: $white;
+    border-top: 4px solid $primary;
+    position: relative;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    grid-template-rows: 50px auto;
+    z-index: 1200;
+
+    &:before {
+      position: absolute;
+      left: auto;
+      top: -20px;
+      right: 15px;
+      border: 8px solid transparent;
+      border-bottom: 8px solid $primary;
+    }
+  }
+
+  .ManageAccountListCst {
+    overflow: hidden;
+    overflow-y: auto;
+    border-right: 1px solid rgba($gray, 0.3);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    min-width: 180px;
+    max-width: 180px;
+    width: 100%;
+
+    li {
+      padding: 0.3rem 0;
+      @extend .text-xs;
+    }
+  }
+
+  .ManageAccountRoleListCst {
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+
+    li {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      border: 1px solid rgba($gray, 0.125);
+      border-radius: 3px;
+      margin-bottom: 3px;
+
+      &:hover {
+        background-color: rgba($gray, 0.125);
+      }
+
+      &.active {
+        background-color: $primary;
+        border-radius: 5px;
+        color: $white;
+
+        .RoleNameCst {
+          color: $white;
+        }
+
+        .RoleCustomizationCst {
+          button {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .RoleNameCst {
+      color: $gray;
+    }
+
+    .RoleCustomizationCst {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button:last-child {
+        color: $primary;
+      }
+    }
+
+    .m-roleHead {
+      display: none;
+    }
+  }
+
+  .profileNavDropdownHead {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    border-bottom: 1px solid rgba($gray, 0.3);
+
+    .profileNameCst {
+      border-right: 1px solid rgba($gray, 0.3);
+    }
+
+    .roleHead,
+    .profileNameCst {
+      padding: 1rem 1rem 0.3rem 1rem;
+    }
+  }
+
+  p,
+  a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .profileNavDropdownCustom {
+    &.insAdmin {
+
+      .profileUserName,
+      .navLogoutCustom {
+        color: $primary;
+      }
+    }
+
+    &.teacher {
+      border-color: $secondary;
+
+      &::before {
+        border-bottom: 8px solid $secondary;
+      }
+
+      .profileUserName,
+      .navLogoutCustom {
+        color: $secondary;
+      }
+
+      .ManageAccountRoleListCst {
+        li {
+          border-radius: 3px;
+          margin-bottom: 3px;
+
+          &:hover {
+            background-color: rgba($gray, 0.125);
+          }
+
+          &.active {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+
+    &.student {
+      border-color: $purple;
+
+      &::before {
+        border-bottom: 8px solid $purple;
+      }
+
+      .profileUserName,
+      .navLogoutCustom {
+        color: $purple;
+      }
+
+      .ManageAccountRoleListCst {
+        li {
+          border: 1px solid rgba($gray, 0.5);
+          border-radius: 3px;
+          margin-bottom: 2px;
+
+          &:hover {
+            background-color: rgba($gray, 0.125);
+          }
+
+          &.active {
+            background-color: $purple;
+          }
+        }
+      }
+    }
+
+    &.otherRole {
+      border-color: $mgray;
+      width: auto;
+
+      // grid-template-columns: 1fr;
+      .profileNavDropdownHead {
+        grid-template-columns: 1fr;
+      }
+
+      &::before {
+        border-bottom: 8px solid $mgray;
+      }
+
+      .profileUserName,
+      .navLogoutCustom {
+        color: $mgray;
+      }
+
+      .ManageAccountRoleListCst {
+        li {
+          border: 1px solid rgba($gray, 0.125);
+          border-radius: 3px;
+          margin-bottom: 3px;
+          padding: 3px 0.5rem;
+
+          &:hover {
+            background-color: rgba($gray, 0.125);
+          }
+
+          &.active {
+            background-color: $mgray;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** close Profile Nav Dropdown ***/
+
+.nav-user-name {
+  margin-right: 10px;
+  text-align: right;
+  padding-top: 4px;
+
+  p {
+    font-weight: 500;
+    @extend .text-xxs;
+    line-height: 18px;
+  }
+
+  .current-user-role {
+    .roleName {
+      color: rgba($base, 0.6);
+      font-weight: 400;
+      @extend .text-2xs;
+      line-height: 15px;
+    }
+  }
+}
+
+// close navProfile
+
+//// SUB DOMAIN ////
+.subdomain-logo {
+  img {
+    max-width: 110px;
+    max-height: 50px;
+  }
+}
+
+//// CLOSE SUB DOMAIN ////
+
+///search panel //
+.SearchPanelWrapper {
+  box-shadow: 0 8px 6px -6px rgba($base, 0.1);
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  background-color: $white;
+  padding-top: 3.5rem;
+}
+
+.SearchPanelCustom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 3rem 0;
+
+  &.active {
+    .form-control {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .SearchPanelInputSuugestion {
+      display: block;
+    }
+  }
+
+  .SearchPanelCustomClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.SearchPanelInput {
+  width: 60%;
+  position: relative;
+
+  .form-control {
+    height: 50px;
+    border-color: $base;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $base;
+    @extend .text-xs;
+  }
+
+  i {
+    position: absolute;
+    right: 17px;
+    top: 13px;
+  }
+}
+
+.SearchPanelInputSuugestion {
+  position: absolute;
+  top: 50px;
+  width: 60%;
+  background-color: $white;
+  border: 1px solid $base;
+  border-top: none;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: none;
+}
+
+.InputSuggestionItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid $silver;
+}
+
+.InputSuugestionResult {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: $base;
+  color: $white;
+  width: 100%;
+
+  a {
+    color: $white;
+  }
+}
+
+.CustomSearchSuggestion {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+///close search panel //
+.header-notification-bar {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  .hnb-wrapper {
+    border: 1px solid rgba($secondary, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    background-color: rgba($secondary, 0.025);
+    @extend .text-2xs;
+    @extend .w-500;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    align-items: center;
+  }
+}
+
+.loader-spinner-circle {
+  border: 4px solid rgba($gray, 0.25);
+  border-top: 4px solid $secondary;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spinnerCircle 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spinnerCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .HeadLoginSignUp {
+    .button.btn-sm {
+      padding: 0 10px;
+    }
+  }
+
+  .profileNavDropdownWrapper {
+    .profileNavDropdownCustom {
+      width: 90vw;
+      height: auto;
+      grid-template-columns: 1fr;
+    }
+
+    .ManageAccountListCst {
+      border-right: none;
+    }
+
+    .ManageAccountRoleListCst {
+      height: 220px;
+
+      .roleHead {
+        height: auto;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+    }
+
+    .profileNavDropdownHead {
+      grid-template-columns: 1fr;
+      grid-column: 1;
+    }
+  }
+
+  .roleHead {
+    display: none;
+  }
+
+  .profileNavDropdownWrapper {
+    .ManageAccountRoleListCst {
+      .m-roleHead {
+        display: block;
+      }
+    }
+  }
+
+  .NavSearchBtn {
+    display: none;
+  }
+
+  // Sidenav
+  .sidebarMenuListCustom {
+    margin-top: 35px;
+  }
+
+  .edSidenav {
+    padding-top: 15px;
+    top: 50px;
+  }
+
+  .edSidenav a {
+    font-size: 18px;
+  }
+
+  // close sidenav
+  /*** Header ***/
+  .edHeaderCustom {
+    .HeadLogoCst {
+      img {
+        max-width: 100px;
+      }
+    }
+
+    .HeadLogoCst {
+      justify-content: flex-start;
+    }
+  }
+
+  /*** Close Header ***/
+
+  .header-notification-bar {
+    width: 90%;
+    padding-top: 60px;
+
+    .hnb-wrapper {
+      flex-direction: column;
+      gap: 0.25rem;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .edHeaderCustom {
+    .HeadLogoCst {
+      img {
+        max-width: 80px;
+      }
+    }
+  }
+
+  .signUpSecWrap {
+    a {
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+  }
+}

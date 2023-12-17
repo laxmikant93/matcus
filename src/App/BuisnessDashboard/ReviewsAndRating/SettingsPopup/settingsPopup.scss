@@ -1,0 +1,23 @@
+@import '../../../../assets/Style/base';
+
+.settingpopUp-container {
+
+  .setting-toggle-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  
+  }
+
+  .settingpopUp-SelectWrapper {
+    margin-top: 20px;
+  }
+
+  .settingpopup-btn-wrapper {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+  }
+
+}

@@ -1,0 +1,1279 @@
+@import "../../assets/Style/base";
+
+.edneedDashbaordFrame_300522 {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+
+  /***header***/
+
+  header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: $white;
+    max-height: 80px;
+
+
+    .header-item-inner {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+
+      .headerItem-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 280px;
+
+        @media (max-width: 992px) {
+          min-width: auto;
+          width: 100%;
+        }
+
+        .mobile-logo {
+          width: 35px;
+
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+
+        .sidebar-header {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+
+          // min-height: 80px;
+          @media (max-width: 992px) {
+            gap: 16px;
+          }
+
+          .sidebarLogoCustom {
+            // min-height: 80px;
+
+            .edneedLogo {
+              max-width: 110px;
+              display: block;
+            }
+
+            .edneedLogoHero {
+              width: auto;
+              height: 40px;
+              display: block;
+            }
+          }
+
+
+        }
+
+        .headerHelpMenu {
+          display: flex;
+          align-items: center;
+
+          li {
+            button {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 21px;
+              color: $mgray;
+              cursor: pointer;
+              background-color: transparent;
+              outline: none;
+              border: none;
+
+              &:hover {
+                color: $primary;
+              }
+
+              &.active {
+                color: $primary;
+              }
+            }
+          }
+
+          .divider {
+            height: 16px;
+            width: 1px;
+            background-color: $lgray;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .headerItem-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-left: auto;
+
+        .headerSearchBar {
+          .SearchControlbar {
+            border-radius: 24px;
+            border: none;
+
+            .search-icon {
+              right: auto;
+              left: 15px;
+              top: 6px;
+              background-color: $primary;
+            }
+
+            .form-control-search {
+              height: 40px;
+              padding: auto;
+              background: rgba($primary, 0.05);
+              padding: 5px 15px 5px 45px;
+            }
+          }
+        }
+      }
+
+      .MySitesDropdownMenuCustom {
+        position: relative;
+
+        .MySitesDropdownMenuListWrapper {
+          position: absolute;
+          left: -40px;
+          top: 42px;
+          z-index: 1200;
+          // padding-top: 60px;
+          width: 500px;
+          background: $white;
+          // padding: 20px;
+          text-align: left;
+          border-radius: 15px;
+          box-shadow: 0 0.125rem 1rem 1px rgba($base, 0.1);
+
+          &::before {
+            // content: "";
+            // position: absolute;
+            // left: 120px;
+            // top: -18px;
+            // // right: 70px;
+            // border: 8px solid transparent;
+            // border-bottom: 10px solid $white;
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0;
+            left: 75px;
+            box-sizing: border-box;
+            border: 8px solid black;
+            border-color: transparent transparent $white $white;
+            transform-origin: 0 0;
+            transform: rotate(135deg);
+            box-shadow: -3px 2px 8px 0 rgba($base, 0.1);
+          }
+
+          .MySitesDropdownMenuListItemHead {
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h4 {
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 22px;
+              color: $base;
+            }
+
+            a {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18px;
+              color: $primary;
+            }
+          }
+
+          .MySitesDropdownMenuListItemBody {
+            min-height: 300px;
+            max-height: 300px;
+            cursor: pointer;
+            overflow: hidden;
+            overflow-y: auto;
+
+            ul {
+              li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 1.5rem;
+                position: relative;
+
+                .MySitesImage {
+                  width: 100px;
+                  height: 60px;
+                  border-radius: 5px;
+                  background-color: $silver;
+                }
+
+                .MySitesCopyIcon {
+                  position: relative;
+                  width: 25px;
+                  height: 30px;
+
+                  &::before {
+                    width: 12px;
+                    height: 15px;
+                    border: 3px;
+                    border-style: solid;
+                    border-color: $primary;
+                    top: 8px;
+                    left: 10px;
+                  }
+
+                  &::after {
+                    width: 12px;
+                    height: 15px;
+                    border: 3px;
+                    border-style: solid;
+                    border-color: $primary;
+                    top: 2px;
+                    left: 2px;
+                  }
+                }
+
+                &.active {
+                  background-color: rgba($primary, 0.05);
+                }
+              }
+            }
+          }
+
+          .MySitesDropdownMenuListItemFooter {
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18px;
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+
+
+    .auth-hamburger {
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .hamLine {
+        width: 30px;
+        height: 1px;
+        background-color: $primary;
+        margin-top: 5px;
+        position: relative;
+        display: block;
+
+        &:last-child {
+          margin-top: 0;
+        }
+      }
+
+      .hamLineCross {
+        font-size: 32px;
+        line-height: 32px;
+      }
+
+      .hamLineName {
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        @extend .w-400;
+        color: $base;
+        line-height: 16px;
+      }
+    }
+  }
+
+  /***close header***/
+
+  /***Sidebar***/
+  .edneedSidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: $white;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+    @media screen and (max-width: 992px) {
+      width: 0;
+    }
+
+    &.active {
+      width: 60px;
+
+      @media screen and (max-width: 992px) {
+        width: 300px;
+      }
+
+      .caret {
+        &::after {
+          display: none;
+
+          @media screen and (max-width: 992px) {
+            display: block;
+          }
+        }
+      }
+
+      .subMenuList {
+        display: none;
+      }
+
+      &:hover {
+        width: 300px;
+
+        .caret {
+          // &::after {
+          //   display: none;
+          // }
+        }
+
+        .subMenuList {
+          display: block;
+        }
+      }
+
+    }
+
+    // .footerMenu {
+    //   padding: 10px 24px;
+
+    //   .foot_item {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 6px;
+    //     margin-bottom: 13px;
+
+    //     .iconCustom {
+
+    //       .icon-community,
+    //       .icon-Review {
+    //         height: 13px;
+    //         width: 13px;
+    //         background-color: $primary;
+    //         cursor: pointer;
+    //         display: block;
+    //         -webkit-mask: url("./assets//icons/icon-Ed-community.svg") no-repeat center;
+    //         mask-image: url("./assets//icons/icon-Ed-community.svg") no-repeat center;
+    //       }
+
+    //       .icon-Review {
+    //         -webkit-mask: url("./assets/icons/icon-review.svg") no-repeat center;
+    //         mask-image: url("./assets/icons/icon-review.svg") no-repeat center;
+    //       }
+    //     }
+
+    //     .title {
+    //       font-weight: 500;
+    //       font-size: 12px;
+    //       line-height: 18px;
+    //       white-space: nowrap;
+    //     }
+    //   }
+    // }
+
+
+    .sidebar-footer {
+      .menuList {
+        .menuListItem {
+
+          a {
+            padding: 5px 0;
+
+            &:hover {
+              &::before {
+                background-color: transparent;
+              }
+            }
+
+            .iconCustom {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .menuList {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .menuListItem {
+      list-style: none;
+      width: 100%;
+      position: relative;
+
+      a,
+      button {
+        position: relative;
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $base;
+        transition: 0.2s;
+        background: transparent;
+        outline: none;
+        border: none;
+        // padding: 15px 20px;
+
+        &.active {
+          // border-left: 5px solid $primary;
+          background-color: rgba($primary, 0.05);
+
+          &::before {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background-color: $primary;
+          }
+
+          .iconCustom {
+
+            .menuIcon {
+
+              &.home,
+              &.Templates,
+              &.ManageWebsite,
+              &.LMS,
+              &.ERP,
+              &.AccessControl {
+                background-color: $primary;
+              }
+            }
+          }
+
+          .title {
+            color: $primary;
+          }
+        }
+
+        .iconCustom {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 60px;
+          height: 50px;
+          // line-height: 60px;
+
+          text-align: center;
+
+          .menuIcon {
+            width: 25px;
+            height: 25px;
+            display: block;
+
+            &.settings {
+              -webkit-mask: url("./assets/icons/icon-settings.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-settings.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.home {
+              -webkit-mask: url("./assets/icons/icon-home.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-home.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.business {
+              -webkit-mask: url("./assets/icons/icon-business.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-business.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.product {
+              -webkit-mask: url("./assets/icons/icon-product.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-product.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.order {
+              -webkit-mask: url("./assets/icons/icon-order.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-order.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.customer {
+              -webkit-mask: url("./assets/icons/icon-customer.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-customer.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.payment {
+              -webkit-mask: url("./assets/icons/icon-payment.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-payment.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.booking {
+              -webkit-mask: url("./assets/icons/icon-booking.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-booking.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.terms {
+              -webkit-mask: url("./assets/icons/icon-terms.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-terms.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.business {
+              -webkit-mask: url("./assets/icons/icon-business.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-business.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.ERP {
+              -webkit-mask: url("./assets/icons/icon-ERP.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-ERP.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.LMS {
+              -webkit-mask: url("./assets/icons/icon-LMS.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-LMS.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.ManageWebsite {
+              -webkit-mask: url("./assets/icons/icon-ManageWebsite.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-ManageWebsite.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.Templates {
+              -webkit-mask: url("./assets/icons/icon-Templates.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-Templates.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.AccessControl {
+              -webkit-mask: url("./assets/icons/icon-accessControl.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-accessControl.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.icon-community {
+              -webkit-mask: url("./assets//icons/icon-community.svg") no-repeat center;
+              mask-image: url("./assets//icons/icon-community.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.icon-Review {
+              -webkit-mask: url("./assets/icons/icon-review.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-review.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.shipping {
+              -webkit-mask: url("./assets/icons/icon-shipping.svg") no-repeat center;
+              mask-image: url("./assets/icons/icon-shipping.svg") no-repeat center;
+              background-color: $mgray;
+            }
+
+            &.review {
+              -webkit-mask: url("./assets/icons/reviewIcon.svg") no-repeat center;
+              mask-image: url("./assets/icons/reviewIcon.svg") no-repeat center;
+              background-color: $mgray;
+            }
+          }
+        }
+
+        &:hover {
+          width: 300px;
+
+          .sidebar-header {
+            justify-content: space-between;
+
+            &.home,
+            &.Templates,
+            &.ManageWebsite,
+            &.LMS,
+            &.ERP,
+            &.AccessControl,
+            &.icon-community,
+            &.icon-Review {
+              background-color: $primary;
+            }
+          }
+        }
+
+        // .title {
+        //   color: $primary;
+        // }
+
+        // &.caret {
+        //   &::after {
+        //     border-color: $primary;
+        //   }
+        // }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transition: 0.2s;
+      }
+
+      .icon * {
+        font-size: 1.1em;
+      }
+
+      .title {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: rgba($base, 0.6);
+        white-space: nowrap;
+      }
+    }
+
+    .caret {
+      &::after {
+        height: 6px;
+        width: 6px;
+        border-right: 2px solid $base;
+        border-bottom: 2px solid $base;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        position: absolute;
+        right: 20px;
+        left: auto;
+        top: 20px;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &.active {
+        &::after {
+          transform: rotate(-135deg);
+          -webkit-transform: rotate(-135deg);
+          -ms-transform: rotate(-135deg);
+          border-color: $primary;
+          top: 25px;
+          transition: all 1s ease-in-out;
+        }
+      }
+    }
+
+    .subMenuList {
+      .subMenuListItem {
+        &.active {
+          &::before {
+            background: $primary;
+          }
+        }
+      }
+    }
+
+    // .subMenuList {
+    //   .subMenuListItem {
+    //     &.active {
+    //       &::before {
+    //         background: $primary;
+    //       }
+    //     }
+    //   }
+    // }
+
+    .subMenuList {
+      position: relative;
+
+      &.fade {
+        animation: fade-in 1s 1 linear;
+        animation-fill-mode: forwards;
+        opacity: 0;
+
+        transition: 0.2s;
+      }
+
+      @keyframes fade-in {
+        0% {
+          animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .subMenuListItem {
+
+        a,
+        button {
+          padding: 10px 15px 10px 68px;
+
+          &:hover {
+            border-left: none;
+          }
+
+          &.active {
+            color: $primary;
+            background-color: transparent;
+
+            &::before {
+              background-color: $primary;
+            }
+          }
+
+          &::before {
+            background: rgba($base, 0.6);
+            bottom: auto;
+            content: "";
+            height: 6px;
+            left: 46px;
+            top: 18px;
+            position: absolute;
+            right: auto;
+            width: 6px;
+            z-index: 1;
+            border-radius: 50%;
+          }
+
+          &:hover {
+            background-color: rgba($primary, 0.1);
+            width: 100%;
+            transition: 0.2s;
+
+            // &::before {
+            //   background-color: transparent;
+            //   width: auto;
+            // }
+          }
+
+          &.caret {
+            &::after {
+              top: 15px;
+            }
+
+            &.active {
+              &::after {
+                top: 20px;
+              }
+            }
+          }
+        }
+
+        .subMenuList {
+          .subMenuListItem {
+
+            a,
+            button {
+              padding: 10px 15px 10px 79px;
+
+              &::before {
+                left: 63px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/***close Sidebar***/
+
+/***hamburger toggle***/
+.toggle {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid $silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: $primary;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  // position: absolute;
+  // left: -20px;
+  // top: 25px;
+  position: relative;
+
+  &::before {
+    content: "\251B";
+    left: 20px;
+    transform: rotate(135deg);
+    top: -5px;
+    // transition: 0.5s;
+  }
+
+  &.active {
+    border: none;
+    // position: relative;
+    // left: 10px;
+    // top: auto;
+    background: rgba($primary, 0.05);
+
+    &::before {
+      transform: rotate(-45deg);
+      top: 8px;
+      left: 14px;
+      right: auto;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover {
+    background: rgba($primary, 0.05);
+  }
+}
+
+/***close hamburger toggle***/
+
+
+/***Dashboard Header***/
+.edneedDashbaordInner {
+  // width: calc(100vw - 300px);
+
+  transition: 0.5s;
+  min-height: calc(100vh - 80px);
+
+  .edneedDashbaordInner-children {
+    background: rgba($primary, 0.05);
+    min-height: inherit;
+  }
+
+
+
+
+  .menu-list-item-mobile {
+    display: none;
+
+    .closeHambuger {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.6;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        left: 15px;
+        content: " ";
+        height: 33px;
+        width: 2px;
+        background-color: $primary;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &.active {
+      display: block;
+      transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+      background: $white;
+      background: linear-gradient(90deg, rgba($silver, 1) 0%, rgba($silver, 1) 35%, rgba($silver, 1) 100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100vh;
+      padding: 50px 0;
+      flex-direction: column;
+      z-index: 999;
+      transition: all 0.25s ease;
+      transition-timing-function: ease-in-out;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+
+
+  .edneedDashbaordInner-children {
+    padding-left: 300px;
+    transition: 0.5s;
+
+    // padding-top: 80px;
+    @media screen and (max-width: 992px) {
+      padding-left: 0;
+    }
+
+    .edneedDashbaordInner-children-inner {
+      padding: 1.5rem;
+      width: 100%;
+      max-width: 1440px;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+  }
+
+  &.active {
+    .edneedDashbaordInner-children {
+      padding-left: 60px;
+      padding-top: 0;
+      transition: 0.5s;
+    }
+  }
+
+  .rgtTopHeader {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .profileNav {
+    position: relative;
+    cursor: pointer;
+
+    // padding-left: 15px;
+    .profileNavCst {
+      position: relative;
+      background-color: $mgray;
+      // border: 1px solid rgba($lgray, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @extend .w-500;
+      @extend .text-xs;
+      color: $white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 0.125rem 0.25rem rgba($base, 0.125) !important;
+      }
+
+      &::after {
+        content: "";
+        padding: 1px;
+        border-radius: 50%;
+        background: linear-gradient(72deg, $primary 0%, $secondary 100%);
+        position: absolute;
+        bottom: -3px;
+        right: -3px;
+        left: auto;
+        width: 14px;
+        height: 14px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+      }
+
+      &::before {
+        border: solid $white;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 2px;
+        position: absolute;
+        bottom: 2px;
+        cursor: pointer;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(45deg);
+        left: auto;
+        right: 2px;
+        z-index: 1;
+
+        &.right {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+        }
+
+        &.left {
+          transform: rotate(135deg);
+          -webkit-transform: rotate(135deg);
+        }
+      }
+    }
+
+    &:hover {
+      .profileNavDropdownWrapper {
+        display: block;
+      }
+    }
+  }
+
+  /*** Profile Nav Dropdown ***/
+  // .profileNavDropdownWrapper {
+  //   padding-top: 20px;
+  //   position: absolute;
+  //   right: -10px;
+  //   top: 30px;
+  //   z-index: 9999;
+  //   display: none;
+
+  //   .profileNavDropdownCustom {
+  //     width: 500px;
+  //     height: 300px;
+  //     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  //     border-bottom-left-radius: 5px;
+  //     border-bottom-right-radius: 5px;
+  //     background-color: $white;
+  //     border-top: 4px solid $primary;
+  //     position: relative;
+  //     text-align: left;
+  //     display: grid;
+  //     grid-template-columns: 175px 1fr;
+  //     grid-template-rows: 50px auto;
+  //     z-index: 1200;
+
+  //     &:before {
+  //       position: absolute;
+  //       left: auto;
+  //       top: -20px;
+  //       right: 15px;
+  //       border: 8px solid transparent;
+  //       border-bottom: 8px solid $primary;
+  //     }
+  //   }
+
+  //   .ManageAccountListCst {
+  //     overflow: hidden;
+  //     overflow-y: auto;
+  //     border-right: 1px solid rgba($gray, 0.3);
+  //     padding: 0.5rem 1rem 0.5rem 1rem;
+
+  //     li {
+  //       padding: 0.3rem 0;
+  //       @extend .text-xxs;
+  //     }
+  //   }
+
+  //   .ManageAccountRoleListCst {
+  //     overflow: hidden;
+  //     overflow-y: auto;
+  //     padding: 0.5rem 1rem 0.5rem 1rem;
+  //     margin-bottom: 1rem;
+
+  //     li {
+  //       padding: 0.5rem;
+  //       margin-right: 0.5rem;
+  //       border: 1px solid rgba($gray, 0.125);
+  //       border-radius: 3px;
+  //       margin-bottom: 3px;
+
+  //       &:hover {
+  //         background-color: rgba($gray, 0.125);
+  //       }
+
+  //       &.active {
+  //         background-color: $primary;
+  //         border-radius: 5px;
+  //         color: $white;
+
+  //         .RoleNameCst {
+  //           color: $white;
+  //         }
+
+  //         .RoleCustomizationCst {
+  //           button {
+  //             color: $white;
+  //           }
+  //         }
+  //       }
+  //     }
+
+  //     .RoleNameCst {
+  //       color: $gray;
+  //     }
+
+  //     .RoleCustomizationCst {
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: space-between;
+
+  //       button:last-child {
+  //         color: $primary;
+  //       }
+  //     }
+
+  //     .m-roleHead {
+  //       display: none;
+  //     }
+  //   }
+
+  //   .profileNavDropdownHead {
+  //     grid-column: 1 / 3;
+  //     display: grid;
+  //     grid-template-columns: 175px 1fr;
+  //     border-bottom: 1px solid rgba($gray, 0.3);
+
+  //     .profileNameCst {
+  //       border-right: 1px solid rgba($gray, 0.3);
+  //     }
+
+  //     .roleHead,
+  //     .profileNameCst {
+  //       padding: 1rem 1rem 0.3rem 1rem;
+  //     }
+  //   }
+
+  //   p,
+  //   a {
+  //     white-space: nowrap;
+  //     overflow: hidden;
+  //     text-overflow: ellipsis;
+  //   }
+
+  //   .profileNavDropdownCustom {
+  //     &.insAdmin {
+
+  //       .profileUserName,
+  //       .navLogoutCustom {
+  //         color: $primary;
+  //       }
+  //     }
+
+  //     &.teacher {
+  //       border-color: $secondary;
+
+  //       &::before {
+  //         border-bottom: 8px solid $secondary;
+  //       }
+
+  //       .profileUserName,
+  //       .navLogoutCustom {
+  //         color: $secondary;
+  //       }
+
+  //       .ManageAccountRoleListCst {
+  //         li {
+  //           border-radius: 3px;
+  //           margin-bottom: 3px;
+
+  //           &:hover {
+  //             background-color: rgba($gray, 0.125);
+  //           }
+
+  //           &.active {
+  //             background-color: $secondary;
+  //           }
+  //         }
+  //       }
+  //     }
+
+  //     &.student {
+  //       border-color: $purple;
+
+  //       &::before {
+  //         border-bottom: 8px solid $purple;
+  //       }
+
+  //       .profileUserName,
+  //       .navLogoutCustom {
+  //         color: $purple;
+  //       }
+
+  //       .ManageAccountRoleListCst {
+  //         li {
+  //           border: 1px solid rgba($gray, 0.5);
+  //           border-radius: 3px;
+  //           margin-bottom: 2px;
+
+  //           &:hover {
+  //             background-color: rgba($gray, 0.125);
+  //           }
+
+  //           &.active {
+  //             background-color: $purple;
+  //           }
+  //         }
+  //       }
+  //     }
+
+  //     &.otherRole {
+  //       border-color: $mgray;
+  //       width: auto;
+
+  //       // grid-template-columns: 1fr;
+  //       .profileNavDropdownHead {
+  //         grid-template-columns: 1fr;
+  //       }
+
+  //       &::before {
+  //         border-bottom: 8px solid $mgray;
+  //       }
+
+  //       .profileUserName,
+  //       .navLogoutCustom {
+  //         color: $mgray;
+  //       }
+
+  //       .ManageAccountRoleListCst {
+  //         li {
+  //           border: 1px solid rgba($gray, 0.125);
+  //           border-radius: 3px;
+  //           margin-bottom: 3px;
+  //           padding: 3px 0.5rem;
+
+  //           &:hover {
+  //             background-color: rgba($gray, 0.125);
+  //           }
+
+  //           &.active {
+  //             background-color: $mgray;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  /***Close Dashboard Header***/
+}

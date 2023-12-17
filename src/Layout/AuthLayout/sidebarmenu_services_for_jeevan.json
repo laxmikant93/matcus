@@ -1,0 +1,145 @@
+[
+  {
+    "menuName": "Home",
+    "menuLink": "/dashboard",
+    "menuTag": "button",
+    "Icon": "home"
+  },
+  {
+    "menuName": "Templates",
+    "menuLink": "/templates",
+    "Icon": "Templates"
+  },
+  {
+    "menuName": "Manage Website",
+    "menuLink": "/",
+    "Icon": "ManageWebsite",
+    "subMenuItem": [
+      {
+        "menuName": "Edit Website",
+        "menuLink": "/skin-theme"
+      },
+      {
+        "menuName": "My Templates",
+        "menuLink": "/user-templates"
+      },
+      {
+        "menuName": "Pages",
+        "menuLink": "/",
+        "subMenuItem": [
+          {
+            "menuName": "Edit Overview",
+            "menuLink": "/bookingservices/business-info-manage"
+          },
+          {
+            "menuName": "Faculties",
+            "menuLink": "/faculty-route"
+          },
+          {
+            "menuName": "Services",
+            "menuLink": "/services-list"
+          },
+          {
+            "menuName": "Gallery",
+            "menuLink": "/gallery-list"
+          },
+          {
+            "menuName": "Announcements",
+            "menuLink": "/announcement-list"
+          },
+          {
+            "menuName": "Testimonials",
+            "menuLink": "/testimonial-list"
+          },
+          {
+            "menuName": "FAQs",
+            "menuLink": "/manage-faqs"
+          },
+          {
+            "menuName": "Vacancies",
+            "menuLink": "/vacancy-list"
+          },
+          {
+            "menuName": "Social Links",
+            "menuLink": "/add-social-links"
+          },
+          {
+            "menuName": "Miscellaneous",
+            "menuLink": "/miscellaneous-list"
+          },
+          {
+            "menuName": "Inquiries Recieved",
+            "menuLink": "/contact-list"
+          },
+          {
+            "menuName": "Support Center",
+            "menuLink": "/admin-support-center"
+          },
+          {
+            "menuName": "Center Of Excellence",
+            "menuLink": "/coe"
+          }
+        ]
+      },
+      {
+        "menuName": "SEO Meta",
+        "menuLink": "/seo-metatag"
+      }
+    ]
+  },
+  {
+    "menuName": "Business Details",
+    "menuLink": "/bookingservices/businessInfo",
+    "menuTag": "button",
+    "Icon": "business"
+  },
+  {
+    "menuName": "Booking Services",
+    "menuLink": "/",
+    "menuTag": "button",
+    "Icon": "booking",
+    "subMenuItem": [
+      {
+        "menuName": "Services",
+        "menuLink": "/bookingservices/book-appointment-list"
+      },
+      {
+        "menuName": "Bookings",
+        "menuLink": "/bookingservices/booking-list"
+      }
+    ]
+  },
+  {
+    "menuName": "Marketing",
+    "menuLink": "/marketing",
+    "Icon": "ERP",
+    "subMenuItem": [
+      {
+        "menuName": "SEO",
+        "menuLink": "/google-marketing"
+      },
+      {
+        "menuName": "Email Marketing",
+        "menuLink": "/email-marketing"
+      },
+      {
+        "menuName": "Digital Marketing",
+        "menuLink": "/digital-marketing"
+      },
+      {
+        "menuName": "Logos ",
+        "menuLink": "/logo-marketing"
+      },
+      {
+        "menuName": "Business Cards ",
+        "menuLink": "/business-card-marketing"
+      }
+    ]
+  },
+  {
+    "menuName": "Settings",
+    "menuLink": "/ecommerce/settings",
+    "menuTag": "button",
+    "Icon": "settings"
+  }
+]

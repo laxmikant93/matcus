@@ -1,0 +1,43 @@
+@import '../../commonCss/base.scss';
+.ecom-layout {
+.trueTheme-form-container {
+  width: 100%;
+  border: 1px solid rgba($black, 0.1);
+  border-radius: 4px;
+  padding: 36px;
+  height: 100%;
+
+
+  .mb-3 {
+    padding-bottom: 0px !important;
+  }
+
+  @media (max-width:500px) {
+    padding: 12px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin-bottom: 24px;
+    color: $black;
+  }
+
+  .privary-p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4em;
+    padding-bottom: 36px;
+    color: $primary;
+
+    a {
+      text-decoration: underline;
+      font-size: 12px;
+      font-weight: 600;
+      color: $black;
+      padding-left: 5px;
+    }
+  }
+}
+}

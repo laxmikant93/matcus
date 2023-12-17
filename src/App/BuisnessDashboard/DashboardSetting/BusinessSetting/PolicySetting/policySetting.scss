@@ -1,0 +1,296 @@
+.Policyheader {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 16px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  .headgrid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @media (max-width: 425px) {
+      flex-wrap: nowrap;
+
+      div {
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .icon-back {
+      background-color: rgba(1, 132, 255, 0.1);
+      color: #0184ff;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1px;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: 5rem;
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    color: #202020;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #202020;
+  }
+
+  .btn-group {
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    gap: 16px;
+
+    .bg-lightblue {
+      background-color: #f2f9ff;
+      color: #0184ff;
+
+      &:hover {
+        background-color: #0184ff;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.policysetting-wrapper {
+  padding: 24px 24px 12px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
+  .open_icon {
+    transform: rotate(90deg);
+    color: #797979;
+    transition: all 0.3s ease;
+  }
+
+  .close_icon {
+    transform: rotate(270deg);
+    color: #797979;
+    transition: all 0.3s ease;
+  }
+
+  article {
+    // &:not(:last-child) {
+    //   margin-bottom: 22px;
+    //   border-bottom: 1px solid #0000001a;
+    // }
+    &.active {
+      border-bottom: none;
+    }
+
+    .foot_checkbox {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      cursor: pointer;
+    }
+
+    ul {
+      li {
+        &:last-child {
+          .headlist {
+            border-bottom: none;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .headlist {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 12px;
+      cursor: pointer;
+      border-bottom: 1px solid #0000001a;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 20px;
+      &.border-active {
+        border-bottom: 1px solid #0000001a;
+      }
+
+      &.border-none {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      .heading {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        // .icon-terms,
+        // .icon-Privacy,
+        // .icon-Returns,
+        // .icon-Shipping,
+        // .icon-Cancellation {
+        //   background-color: #202020;
+        //   display: block;
+        //   cursor: pointer;
+        //   width: 16px;
+        //   height: 16px;
+        //   -webkit-mask: url(../../asserts/icons/icon-term.svg) no-repeat center;
+        //   mask-image: url(../../asserts/icons/icon-term.svg) no-repeat center;
+        // }
+        // .icon-Privacy {
+        //   -webkit-mask: url(../../asserts/icons/icon-privacy.svg) no-repeat center;
+        //   mask-image: url(../../asserts/icons/icon-privacy.svg) no-repeat center;
+        // }
+        // .icon-Returns {
+        //   -webkit-mask: url(../../asserts/icons/icon-return.svg) no-repeat center;
+        //   mask-image: url(../../asserts/icons/icon-return.svg) no-repeat center;
+        // }
+        // .icon-Shipping {
+        //   -webkit-mask: url(../../asserts/icons/icon-Shipping.svg) no-repeat center;
+        //   mask-image: url(../../asserts/icons/icon-Shipping.svg) no-repeat center;
+        // }
+        // .icon-Cancellation {
+        //   -webkit-mask: url(../../asserts/icons/icon-cancellation.svg) no-repeat center;
+        //   mask-image: url(../../asserts/icons/icon-cancellation.svg) no-repeat center;
+        // }
+
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #202020;
+          display: flex;
+          align-items: center;
+          gap: 9px;
+        }
+      }
+    }
+
+    .setting-card {
+      padding: 4px 26px 20px;
+      transition: all 0.3s ease-in;
+      height: auto;
+
+      .formFieldwrap {
+        padding-bottom: 0;
+
+        .form-group {
+          padding-bottom: 0;
+        }
+      }
+
+      .form-control {
+        border: 1px solid #202020;
+
+        :focus {
+          border: 1px solid #202020;
+        }
+      }
+
+      .group-foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        button {
+          font-weight: 500;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          background-color: transparent;
+          border: none;
+          gap: 8px;
+          color: rgba(32, 32, 32, 0.6);
+
+          &:hover {
+            color: #0184ff;
+
+            .icon-trash {
+              background-color: #0184ff;
+            }
+          }
+
+          .icon-trash {
+            height: 16px;
+            width: 16px;
+            background-color: rgba(32, 32, 32, 0.6);
+            cursor: pointer;
+            display: block;
+            -webkit-mask: url(../../asserts/icons/icon-trash.svg) no-repeat center;
+            mask-image: url(../../asserts/icons/icon-trash.svg) no-repeat center;
+          }
+        }
+      }
+
+      .animLabelTop {
+        line-height: 24px;
+      }
+
+      @media (max-width: 600px) {
+        padding: 10px;
+      }
+
+      h5 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #202020;
+        margin-bottom: 8px;
+      }
+
+      .card {
+        padding: 10px 14px;
+        border: 0.8px solid #000000;
+        height: 132px;
+        min-height: 132px;
+        overflow: hidden;
+        overflow-y: auto;
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: "Poppins";
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}
+
+.addcustompolicy_buttons {
+  .bg-lightblue {
+    background-color: #f2f9ff;
+    color: #0184ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:hover {
+      background-color: #0184ff;
+      color: #fff;
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+  }
+}

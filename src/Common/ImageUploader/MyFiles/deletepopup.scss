@@ -1,0 +1,111 @@
+@import "../../../assets/Style/base";
+
+.deletePop-container-admin {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba($black, 0.5);
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    z-index: 99999;
+    border-radius: 7px;
+
+
+
+    .trueThemepop-wrap-admin {
+        background-color: $white;
+        width: 453px;
+        max-width: 90%;
+        // padding: 24px;
+        padding-bottom: 0;
+        border-radius: 4px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-in;
+
+        @media(max-width:992px) {
+            top: 50%;
+            left: 50%;
+        }
+
+        .deleteContent {
+            position: relative;
+            padding: 16px 30px 20px;
+
+
+            .cancel-btn {
+                background: $white;
+                border: none;
+                position: absolute;
+                right: 20px;
+                top: 22px;
+
+                .icon-cross {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    -webkit-mask: url("./cross.svg") no-repeat center;
+                    mask-image: url("./cross.svg") no-repeat center;
+                    background-color: #797979;
+                }
+            }
+
+
+
+            .deletepop-p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: $base;
+                margin-bottom: 20px;
+            }
+
+            .delete-para {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                color: #747779;
+            }
+        }
+
+        .deletePop-btn-wrapper {
+            width: 100%;
+            position: relative;
+
+            .line {
+                background-color: $black;
+                opacity: 0.1;
+
+            }
+
+            button {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                width: 50%;
+                padding: 12px 0px;
+                text-align: center;
+            }
+
+            .btn-delete {
+                border-left: 1px solid rgba($black, 0.1);
+                color: $red;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import "../../assets/Style/base";
+
+.terms-custom {
+  position: relative;
+  z-index: 3;
+  padding: 30px 0;
+}
+
+
+.terms-custom {
+  p {
+    margin: 0 0 25px 0;
+  }
+
+  h3 {
+    border-bottom: 0.15rem solid $base;
+    display: inline-block;
+    line-height: 1.1;
+    // margin: 15px 0 5px 0;
+  }
+
+  li {
+    &::before {
+      color: $base;
+    }
+  }
+
+  .olCounter {
+    ol {
+      li {
+        padding-left: 1.8rem;
+
+        &:before {
+          @extend .w-600;
+          top: 0;
+        }
+
+        .nest-1 {
+          li {
+            padding-left: 2.3rem;
+          }
+        }
+
+        .nest-2 {
+          li {
+            padding-left: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,250 @@
+@import "../../assets/Style/base";
+
+@import "../../assets/Style/theme.scss";
+
+.ed_Footer {
+    border-top: 2px solid rgba(32, 32, 32, 0.1);
+    padding: 100px 0;
+    z-index: 0;
+}
+
+.ed_footer_logo {
+    a {
+        display: block;
+        max-width: 128px;
+
+        @media screen and (max-width: 992px) {
+            max-width: 120px;
+        }
+    }
+}
+
+.ed_footer_content_grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 24px;
+
+    @media screen and (max-width: 992px) {
+        grid-template-columns: 1fr;
+    }
+
+    .conatct-us-edneed {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #202020;
+        margin-bottom: 6px;
+    }
+
+    .conatct-edneedWrapper {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        justify-content: flex-start;
+
+        .number-text {
+            font-size: 14px;
+           line-height: 18px;
+           font-weight: 500;
+          color: rgba(32, 32, 32, 0.5);
+           padding: 3px 0;
+    cursor: pointer;
+        }
+    }
+
+    .icon-call-edneed {
+        -webkit-mask: url("./call.svg") no-repeat center;
+        mask-image: url("./call.svg") no-repeat center;
+        width: 14px;
+        height: 14px;
+        background-color: rgba(32, 32, 32, 0.5);
+      }
+      
+}
+
+.ed_footer_about {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ed_footer_grid_list {
+    .ed_footer_grid_list_item {
+        .f_list_head {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: $base;
+            margin-bottom: 6px;
+            padding: 0;
+        }
+
+        a,
+        .howEdWorksBtn,
+        .f_scroll_menu {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 500;
+            color: rgba(32, 32, 32, 0.5);
+            padding: 5px 0;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        .howEdWorksBtn {
+            border: none;
+            background-color: inherit;
+            padding: inherit;
+            cursor: pointer;
+            display: inline-block;
+            width: fit-content;
+            margin: 0;
+            background: linear-gradient(to right, rgba(32, 32, 32, 0.5) 0, white 5%, rgba(32, 32, 32, 0.5) 20%);
+            background-position: 0;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 1.5s infinite linear;
+            animation-fill-mode: forwards;
+            -webkit-text-size-adjust: none;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+    }
+}
+
+.ed_platform_express {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(32, 32, 32, 0.1);
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px 0;
+    }
+}
+
+.ed_social_express {
+    .ed_social_express_head {
+        font-weight: normal;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 24px;
+        color: rgba(32, 32, 32, 0.5);
+    }
+
+    .ed_social_express_list {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+
+        .ed_social_express_list_item {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                width: 32px;
+            }
+        }
+    }
+}
+
+.ed_apps_express {
+    a {
+        display: flex;
+        align-items: center;
+
+        .ed_apps_express_icon {
+            width: 130px;
+            margin-right: 20px;
+        }
+    }
+
+    span {
+        padding: 12px 0;
+        width: fit-content;
+        margin: 0;
+        color: #fff;
+        background: linear-gradient(to right, $primary 0, white 10%, $primary 20%);
+        background-position: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 1.5s infinite linear;
+        animation-fill-mode: forwards;
+        -webkit-text-size-adjust: none;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    @keyframes shine {
+        0% {
+            background-position: 0;
+        }
+
+        100% {
+            background-position: 169px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.ed_footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px 0;
+    }
+
+    @media screen and (max-width: 992px) {
+        grid-template-columns: 1fr;
+    }
+
+    .ed_terms_list {
+        display: flex;
+        align-items: center;
+
+        .ed_terms_List_item {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: $base;
+            }
+        }
+    }
+}
+
+.ed_copyright_bottom {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $base;
+}

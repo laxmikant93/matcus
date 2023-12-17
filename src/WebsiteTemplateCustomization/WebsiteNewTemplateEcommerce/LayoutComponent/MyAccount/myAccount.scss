@@ -1,0 +1,93 @@
+@import '../../CommonComponent/commonCss/base.scss';
+.ecom-layout {
+.myprofile-container {
+  .myAccount-para {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2em;
+    color: $primary;
+  }
+
+  .myProfile-list-wrap {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+
+    @media(max-width:600px) {
+      flex-direction: column;
+    }
+
+    .myprofile-list {
+      border-right: 1px solid rgba($black, 0.4);
+      padding-right: 20px;
+      cursor: pointer;
+
+      @media(max-width:600px) {
+        border: 1px solid rgba($black, 0.1);
+        padding: 19px 16px;
+        border-radius: 4px;
+      }
+
+      .myprofile-list-order {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2em;
+        color: $black;
+        position: relative;
+        padding-bottom: 4px;
+
+        @media(max-width:600px) {
+          padding-bottom: 8px;
+        }
+
+
+        &::after {
+          content: "\203A";
+          display: inline-block;
+          position: absolute;
+          color: $black;
+          font-size: 24px;
+          font-weight: 600;
+          left: 95%;
+        }
+      }
+
+      .myprofile-list-p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2em;
+        color: rgba($black, 0.6);
+
+
+      }
+
+      @media(min-width:600px) {
+        &:last-child {
+          border: none;
+        }
+      }
+
+    }
+
+  }
+
+  .myProfile-details-wrap {
+    margin-top: 80px;
+
+    @media(max-width:600px) {
+      margin-top: 40px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.2em;
+      color: $black;
+      padding-bottom: 20px;
+    }
+  }
+}
+}

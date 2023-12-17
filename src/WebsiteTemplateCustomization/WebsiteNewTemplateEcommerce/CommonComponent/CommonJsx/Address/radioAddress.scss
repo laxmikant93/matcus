@@ -1,0 +1,52 @@
+@import '../../commonCss/base.scss';
+
+.ecom-layout {
+.radioAddress-container {
+
+  .radioAddress-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 13px;
+    width: 100%;
+
+    .change-address-radio {
+      width: 20px;
+      height: 24px;
+    }
+
+    .cart-user-name {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4em;
+      color: $black;
+      text-transform: capitalize;
+    }
+
+    .cart-user-address {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.2em;
+      color: $black;
+      padding-top: 3px;
+      text-transform: capitalize;
+    }
+
+    .cart-user-pin {
+      @media (max-width:992px) {
+        display: none;
+      }
+    }
+
+    .cart-mobile-p {
+      padding-top: 5px;
+
+      // @media (max-width:600px) {
+      //   display: none;
+      // }
+    }
+
+  }
+
+}
+}

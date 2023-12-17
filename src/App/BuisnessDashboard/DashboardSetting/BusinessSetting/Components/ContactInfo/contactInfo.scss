@@ -1,0 +1,97 @@
+@import '../../../../../../assets/Style/base';
+
+.contactInfo-container {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 2fr auto auto;
+  justify-content: space-between;
+  gap: 24px;
+
+  @media (max-width:768px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contactInfo-left {
+    @media(max-width:768) {
+      margin-top: 40px;
+    }
+
+    .contactInfo-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      margin-top: 24px;
+      width: fit-content;
+
+      @media (max-width:768px) {
+        display: block;
+
+      }
+    }
+  }
+
+  .contactInfo-right {
+    width: 100%;
+
+    .contactInfo-workingHours-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+
+      @media (max-width:1200px) {
+        grid-template-columns: 1fr;
+      }
+
+      .workingHours-left {
+        .timeInput-wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-top: 24px;
+          gap: 22px;
+
+          @media (max-width:1258px) {
+            grid-template-columns: 1fr;
+          }
+
+          .timeInput-left {}
+        }
+      }
+
+      .workingHours-right {
+        .checkbox-wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 24px;
+          margin-top: 8px
+        }
+      }
+    }
+  }
+
+  .contactInfo-wrapper-right {
+    .react-tel-input {
+      padding-bottom: 0;
+    }
+    .formFieldwrap {
+      .form-group {
+        &.react-tel-input {
+          .flag-dropdown {
+            .country-list {
+              .search {
+                z-index: 10;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

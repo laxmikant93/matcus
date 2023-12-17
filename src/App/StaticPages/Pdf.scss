@@ -1,0 +1,16 @@
+@import "../../assets/Style/base";
+
+.frame-wrapper {
+  margin: 100px 0;
+  .frame-wrap {
+    height: 100%;
+    max-width: 100%;
+    iframe {
+      display: block;
+      height: 80vh;
+      width: 100%;
+      border: none;
+      background-color: #fff;
+    }
+  }
+}

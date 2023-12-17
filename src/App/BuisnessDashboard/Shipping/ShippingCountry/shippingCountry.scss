@@ -1,0 +1,120 @@
+@import '../../../../assets/Style/base';
+
+.shippingCountries-section {
+  .shippingContries-container-or-dilevery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    .contiries-lefside {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 22px;
+      flex-wrap: wrap;
+
+      .contiriesLeftside-text {
+        .para-shippingCountry {
+          color: rgba($base, 0.6);
+          padding-top: 2px;
+        }
+
+      }
+    }
+
+  }
+
+  .shippingContries-expend-container {
+    padding-top: 24px;
+  }
+
+  .selectedCountry-wrapper {
+    .gridListTable {
+      padding-top: 0;
+
+      .col {
+        padding: 8px;
+      }
+
+      .gridHeader {
+        background-color: rgba($primary, 0.15);
+        padding: 0 24px;
+      }
+
+      .gridBody {
+        background-color: $white;
+        min-height: fit-content;
+
+        .gridRow {
+          background-color: transparent;
+          border: none;
+
+          border-radius: 8px;
+
+          .topInfo {
+            display: flex;
+            align-items: center;
+            padding: 6px 24px;
+            margin-bottom: 3px;
+            border-radius: 8px;
+
+            @media (max-width :992px) {
+              align-items: flex-start;
+              gap: 8px;
+            }
+
+            .country-wrap {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 22px;
+
+              .country-flag {
+                max-width: 36px;
+                max-height: 36px;
+                // border-radius: 50%;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 50%;
+                }
+              }
+            }
+
+            .icon-wrap {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 8px;
+
+              i {
+                cursor: pointer;
+              }
+
+              p {
+                cursor: pointer;
+              }
+
+
+              @media (max-width:992px) {
+                justify-content: flex-start;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .icon-pencial2 {
+    -webkit-mask: url(../../../Dashboard/EcommerceDashboard/assets/icons/pencial.svg) no-repeat center;
+    mask: url(../../../Dashboard/EcommerceDashboard/assets/icons/pencial.svg) no-repeat center;
+    background-color: #797979;
+
+  }
+}

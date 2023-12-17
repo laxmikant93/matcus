@@ -1,0 +1,122 @@
+@import '../../../assets/Style/base';
+
+.shipping-container {
+
+  .heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    .heading-leftSide {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      .text-heading-div {
+        .text-heading {
+          @media (max-width:500px) {
+            font-size: 20px;
+          }
+        }
+      }
+
+
+
+      .backcircle {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: rgba($primary, 0.1);
+        opacity: 1;
+
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(90deg);
+          opacity: 1;
+
+          &:hover {
+            .backcircle {
+              opacity: 1;
+            }
+
+          }
+        }
+      }
+    }
+
+    .heading-rightSide {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+    }
+
+  }
+
+  .delivery-text {}
+
+  .para-shippingCountry {
+    color: rgba($base, 0.6);
+    padding-top: 2px;
+  }
+
+  .text-shippingCountry {
+    font-size: 16px;
+  }
+
+  .text-shippingCountry {
+    font-size: 18px;
+  }
+
+  .hr-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .shipping-lower-wrap {
+    margin-top: 36px;
+
+    .shippingContries-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+
+      .contiries-lefside {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 22px;
+
+        @media (max-width:500px) {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+        }
+
+        .contiriesLeftside-text {}
+      }
+    }
+
+  }
+
+  .icon-arrow {
+    -webkit-mask: url("../DashboardSetting/asserts/icons/arrow-down.svg") no-repeat center;
+    mask-image: url("../DashboardSetting/asserts/icons/arrow-down.svg") no-repeat center;
+    transform: rotate(90deg);
+  }
+
+  .icon-shipping {
+    -webkit-mask: url("./shippingCountry.svg") no-repeat center;
+    mask-image: url("./shippingCountry.svg") no-repeat center;
+    width: 32px;
+    height: 32px;
+  }
+}

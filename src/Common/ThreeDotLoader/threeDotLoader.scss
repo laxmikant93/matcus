@@ -1,0 +1,74 @@
+@import '../../assets/Style/base';
+
+.threedotContainer {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+
+  .loader {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba($base, 0.3);
+      opacity: 0.4;
+      animation: loader 1.5s linear infinite;
+
+      &:nth-child(1) {
+        animation-delay: 0.10s;
+      }
+
+      &:nth-child(2) {
+        animation-delay: 0.50s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: 1s;
+      }
+
+
+      @keyframes loader {
+
+        0%,
+        100% {
+          opacity: 0.4;
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.1);
+          background-color: rgba($base, 1);
+        }
+      }
+    }
+
+
+  }
+}
+
+.centerAlign {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

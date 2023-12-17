@@ -1,0 +1,18 @@
+@import "../../../../assets/Style/base";
+
+.discartpopup-body-container {
+  padding-bottom: 0px !important;
+}
+
+.discart-container {
+  .discard-btn-wrapper {
+    margin-top: 42px;
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+}

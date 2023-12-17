@@ -1,0 +1,108 @@
+// @import '../../../../../assets/Style/base';
+
+// // .active  {
+// //   .trueThemepop-wrap-admin {
+// //     position: absolute !important;
+// //     top: 50% !important;
+// //     left: 50% !important;
+// //     transform: translate(-50%,-50%) !important;
+// //     transition: all 0.5s ease-in;
+// //   }
+// // }
+// .deletePop-container-admin {
+//   width: 100vw !important;
+//   height: 100vh !important;
+//   background-color: rgba($black, 0.5);
+//   z-index: 9999;
+//   position: fixed;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   bottom: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transition: all 0.5s ease-in;
+
+
+
+//   .trueThemepop-wrap-admin {
+//     background-color: $white;
+//     width: 400px;
+//     max-width: 90%;
+//     padding: 24px;
+//     padding-bottom: 0;
+//     border-radius: 4px;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     transition: all 0.5s ease-in;
+
+//     @media(max-width:992px) {
+//       top: 50%;
+//       left: 50%;
+//     }
+
+//     .cancel-btn-wrapper {
+//       display: flex;
+//       justify-content: end;
+
+//       .cancel-btn {
+//         background: $white;
+//         border: none;
+
+//         .icon-cross {
+//           display: block;
+//           width: 10px;
+//           height: 10px;
+//           -webkit-mask: url("../../../../../App/Dashboard/EcommerceDashboard/assets/icons/cross.svg") no-repeat center;
+//           mask-image: url("../../../../../App/Dashboard/EcommerceDashboard/assets/icons/cross.svg") no-repeat center;
+//           background-color: #797979;
+//         }
+//       }
+//     }
+
+//     .deletepop-p {
+//       font-size: 18px;
+//       font-weight: 700;
+//       line-height: 1.2em;
+//       color: $black;
+//     }
+
+//     .deletepop-para {
+//       font-size: 16px;
+//       font-weight: 500;
+//       line-height: 1.4em;
+//       color: $black;
+//       padding-top: 2px;
+//     }
+
+//     .deletePop-btn-wrapper {
+//       padding-top: 24px;
+//       width: 100%;
+//       position: relative;
+
+//       .line {
+//         background-color: $black;
+//         opacity: 0.1;
+
+//       }
+
+//       button {
+//         border: none;
+//         outline: none;
+//         background-color: transparent;
+//         width: 50%;
+//         padding: 12px 0px;
+//         text-align: center;
+//       }
+
+//       .btn-delete {
+//         border-left: 1px solid rgba($black, 0.1);
+//         color: $red;
+//       }
+
+//     }
+//   }
+// }

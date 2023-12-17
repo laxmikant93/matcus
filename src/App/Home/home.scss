@@ -1,0 +1,2375 @@
+@import "../../assets/Style/base";
+@import "../../assets/Style/theme.scss";
+
+// .prideHashtag {
+//   text-align: center;
+//   padding: 1rem 0 0 0;
+//   position: relative;
+//   span {
+//     position: absolute;
+//     left: 0;
+//     top: 2rem;
+//     font-size: 1.7rem;
+//     letter-spacing: 1px;
+//     font-weight: 700;
+//     background-image: linear-gradient(to right, #ff0018, #ffa52c, #ffff41, #008018, #0000f9, #86007d);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     @media screen and (max-width: 768px) {
+//       position: relative;
+//       top: 1rem;
+//     }
+//   }
+// }
+.videoPopBody {
+  overflow: hidden;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.home_hero_sec {
+  display: grid;
+  grid-template-columns: 425px 1fr 225px;
+  gap: 20px;
+  align-items: center;
+  // padding: 135px 0;
+  margin-top: 150px;
+  margin-bottom: 75px;
+
+  // height: 88vh;
+  @media screen and (max-width: 1440px) {
+    margin-bottom: 125px;
+  }
+
+  @media screen and (max-width: 1240px) {
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+    gap: 40px 0;
+    height: 100%;
+  }
+}
+
+.home_hero_details {
+  .home_hero_h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: $base;
+
+    span {
+      color: $primary;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+
+  .home_hero_h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.55);
+    margin-top: 15px;
+
+    span {
+      color: $primary;
+      font-weight: 600;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 5px;
+    }
+  }
+}
+
+/***Hero Subscribe Input***/
+.home_hero_subscribe {
+  margin-top: 15px;
+
+  @media screen and (max-width: 1240px) {
+    width: 60%;
+    margin: 25px auto auto auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 25px auto auto auto;
+  }
+}
+
+.custom_subscribe_input_wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+  }
+
+  .custom_subscribe_input {
+    position: relative;
+
+    .custom_subscribe_icons {
+      padding: 12px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+
+      img {
+        min-width: 20px;
+      }
+    }
+
+    .custom_subscribe_input_field {
+      border-radius: 4px;
+      border: none;
+      height: 47px;
+      padding: 10px 20px 10px 50px;
+      width: 100%;
+      color: $base;
+      font-weight: 600;
+      font-size: 18px;
+      outline: 0;
+      outline: none;
+      box-shadow: none;
+    }
+
+    :-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.45);
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: none !important;
+    }
+
+    ::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.45);
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: none !important;
+    }
+  }
+
+  .button {
+    &.custom_subscribe_button {
+      background: rgba(32, 32, 32, 0.9);
+      border-radius: 0px 6px 6px 0px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: #ffffff;
+      // width: 138px;
+      display: flex;
+      align-items: center;
+      height: 47px;
+      justify-content: center;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+/***Close Hero Subscribe Input***/
+
+.home_hero_ed_support {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1240px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  .home_hero_expert_support {
+    margin-right: 40px;
+
+    .expert_support_btn {
+      padding: 8px 18px;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+  .home_hero_howwework_support {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+
+    a {
+      color: rgba(32, 32, 32, 0.7);
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .anim_Half_circle_hwwb {
+    position: relative;
+
+    .anim_Half_circle {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border-top: 4px solid $silver;
+      border-right: 4px solid $silver;
+      border-left: 4px solid $primary;
+      border-bottom: 4px solid $primary;
+      padding: 10px;
+      animation: spin 10s infinite linear;
+    }
+
+    .caret {
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      width: 0;
+      height: 0;
+      display: inline-block;
+      border: 8px solid transparent;
+      border-left-color: $primary;
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+.videoPop {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+
+  // padding: 100px;
+  .crossIcon {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: $white;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.home_hero_art {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1240px) {
+    grid-row: 1/2;
+    margin: auto;
+    width: auto;
+  }
+}
+
+.home_hero_role {
+  .home_hero_role_list {
+    @media screen and (max-width: 1240px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 10px;
+    }
+
+    li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      // margin-top: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      align-items: flex-start;
+
+      @media screen and (max-width: 600px) {
+        margin-bottom: 10px;
+      }
+
+      .home_hero_role_list_detail {
+        @media screen and (max-width: 600px) {
+          padding-top: 5px;
+        }
+      }
+
+      // .home_hero_role_Icon {
+      //   width: 40px;
+      //   height: 40px;
+      //   background-color: $white;
+      //   border-radius: 50%;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   padding: 8px;
+      //   box-shadow: 0px -2.20659px 4.41318px 2.20659px rgba(198, 198, 198, 0.15),
+      //     0px 2.20659px 4.41318px 2.20659px rgba(198, 198, 198, 0.15);
+      // }
+      .home_hero_role_list_detail_h {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 23px;
+        color: $primary;
+      }
+
+      .home_hero_role_list_detail_d {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+/***How we work button ***/
+
+// .anim_Half_circle_hwwb {
+//   position: absolute;
+//   width: 50px;
+//   height: 50px;
+//   animation: colors 4s infinite;
+//   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+//   border-radius: 50%;
+//   left: 0;
+//   transform: rotate(180deg);
+//   &::after {
+//     width: 10px;
+//     height: 0px;
+//     border-right: solid 8px $primary;
+//     border-bottom: solid 8px transparent;
+//     border-top: solid 8px transparent;
+//     margin-top: 17px;
+//     margin-left: 10px;
+//   }
+// }
+// .halfclip {
+//   width: 50%;
+//   height: 100%;
+//   right: 0px;
+//   position: absolute;
+//   overflow: hidden;
+//   transform-origin: left center;
+//   animation: cliprotate 16s steps(2) infinite;
+//   -webkit-animation: cliprotate 16s steps(2) infinite;
+// }
+
+// .halfcircle {
+//   box-sizing: border-box;
+//   height: 100%;
+//   right: 0px;
+//   position: absolute;
+//   border: solid 5px transparent;
+//   border-top-color: $primary;
+//   border-left-color: $primary;
+//   border-radius: 50%;
+// }
+// .clipped {
+//   width: 200%;
+//   animation: rotate 8s linear infinite;
+//   -webkit-animation: rotate 8s linear infinite;
+// }
+// .fixed {
+//   width: 100%;
+//   transform: rotate(135deg);
+//   animation: showfixed 16s steps(2) infinite;
+//   -webkit-animation: showfixed 16s linear infinite;
+// }
+
+// @-webkit-keyframes cliprotate {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(180deg);
+//   }
+// }
+
+// @keyframes cliprotate {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(180deg);
+//   }
+// }
+
+// @-webkit-keyframes rotate {
+//   0% {
+//     transform: rotate(-45deg);
+//   }
+//   100% {
+//     transform: rotate(135deg);
+//   }
+// }
+
+// @keyframes rotate {
+//   0% {
+//     transform: rotate(-45deg);
+//   }
+//   100% {
+//     transform: rotate(135deg);
+//   }
+// }
+
+// @-webkit-keyframes showfixed {
+//   0% {
+//     opacity: 0;
+//   }
+//   49.9% {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+/***close How we work button ***/
+
+/***Edneed Products***/
+.edneed_products_wrap {
+  // padding: 100px 0 0 0;
+}
+
+.edneed_products_head {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1240px) {
+    width: 100%;
+  }
+
+  h4 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+    margin-top: 15px;
+
+    @media screen and (max-width: 1240px) {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    @media screen and (max-width: 768px) {
+      // font-size: 18px;
+      // line-height: 26px;
+    }
+  }
+}
+
+.ed_products_list_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 100px;
+
+  @media screen and (max-width: 1240px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ed_products_list_grid_item {
+    background: $white;
+    box-shadow: 0px 21.25px 42.5px 10.625px rgba(0, 0, 0, 0.05);
+    padding: 0 20px 30px 20px;
+
+    .ed_products_list_grid_item_banner {
+      margin-top: -50px;
+
+      img {
+        border-radius: 16px;
+      }
+    }
+
+    .ed_products_list_grid_item_head {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      padding: 25px 0 15px 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: 600px) {
+        min-height: 100px;
+      }
+    }
+
+    .ed_products_list_grid_item_list {
+      li {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+        padding: 10px 0 10px 40px;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+
+        &::before {
+          width: 28px;
+          height: 28px;
+          border-radius: 8px;
+          top: 7px;
+        }
+
+        &::after {
+          display: inline-block;
+          transform: rotate(45deg);
+          height: 10px;
+          width: 4px;
+          border-bottom: 2px solid $white;
+          border-right: 2px solid $white;
+          left: 10px;
+          top: 14px;
+        }
+      }
+    }
+
+    &:first-child {
+      border-left: 8px solid #508df1;
+
+      .ed_products_list_grid_item_list {
+        li {
+          &::before {
+            background-color: #508df1;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      border-left: 8px solid #8468bc;
+
+      .ed_products_list_grid_item_list {
+        li {
+          &::before {
+            background-color: #8468bc;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      border-left: 8px solid #5abc6f;
+
+      .ed_products_list_grid_item_list {
+        li {
+          &::before {
+            background-color: #5abc6f;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .edneed_products_footer {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   padding-top: 60px;
+//   a {
+//     font-weight: 500;
+//     color: $white;
+//     height: 52px;
+//     padding: 0 50px;
+//     display: flex;
+//     gap: 10px;
+//     align-items: center;
+//          -webkit-animation: f 53s linear infinite;
+//     animation: f 53s linear infinite;
+//     background: linear-gradient(121.19deg,rgba(133,239,49,0) 25.73%,hsla(0,0%,100%,.3) 45.27%,rgba(133,239,49,0) 62.27%),#055deb;
+//   }
+// }
+/***Close Edneed Products***/
+
+/***Edneed Website Builder***/
+.edneed_wb_wrap {
+  background: rgba(20, 110, 250, 0.04);
+  padding: 100px 0;
+
+  .edneed_wb_head {
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
+      margin-top: 15px;
+
+      @media screen and (max-width: 1240px) {
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.ed_wb_list_grid {
+  // display: grid;
+  // grid-template-columns: repeat(12, 1fr);
+  // @media screen and (max-width: 600px) {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+  // gap: 60px 20px;
+  // padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  // grid-template-rows: 50% 50%;
+  margin-top: 40px;
+  grid-gap: 50px 0;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ed_wb_list_grid_item {
+    padding: 5px;
+    text-align: center;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    @media screen and (max-width: 992px) {
+      grid-column: span 1;
+    }
+
+    &:nth-child(5) {
+      grid-column: 2 / span 2;
+
+      @media screen and (max-width: 992px) {
+        grid-column: 1 / span 1;
+      }
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      padding: 10px 0 5px 0;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 13px;
+      width: 215px;
+      line-height: 20px;
+      color: rgba(32, 32, 32, 0.5);
+    }
+  }
+}
+
+/***Close Website Builder***/
+
+/***EDneed LMS***/
+.edneed_lms_wrap {
+  padding: 100px 0;
+
+  .edneed_lms_wrap_head {
+    text-align: center;
+
+    h5 {
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
+
+      @media screen and (max-width: 992px) {
+        font-size: 28px;
+        line-height: 34px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  .ed_lms_admin,
+  .ed_lms_tutor,
+  .ed_lms_student {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 100px 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 50px 0 50px 0;
+    }
+
+    .edContainer {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 60px;
+      position: relative;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+      }
+
+      .ed_lms_cnt {
+        @media screen and (max-width: 768px) {
+          order: 2;
+        }
+      }
+
+      .ed_lms_cnt_wrap {
+        padding-top: 50px;
+
+        .ed_lms_cnt_video {
+          background-image: url("../../App/Home/HomeIcons/bgPattern.png");
+          background-repeat: repeat;
+          // background-attachment: fixed;
+          background-size: contain;
+          padding: 30px;
+
+          @media screen and (max-width: 768px) {
+            padding: 0;
+          }
+
+          video {
+            border-radius: 10px;
+            box-shadow: 16px 0px 32px 8px rgba(32, 32, 32, 0.22);
+            width: 692.52px;
+            height: auto;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          order: 1;
+          padding-top: 20px;
+        }
+      }
+
+      .ed_lms_cnt_head {
+        padding-bottom: 10px;
+
+        // h5 {
+        //   font-weight: 600;
+        //   font-size: 14px;
+        //   line-height: 24px;
+        //   letter-spacing: 0.12em;
+        // }
+        h6 {
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 38px;
+          color: $base;
+          margin-top: 15px;
+
+          @media screen and (max-width: 1240px) {
+            font-size: 24px;
+            line-height: 36px;
+          }
+
+          @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+            position: relative;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .ed_lms_cnt_divider {
+        width: 120px;
+        height: 4px;
+        border-radius: 3px;
+        position: absolute;
+
+        &.a {
+          background-color: $primary;
+        }
+
+        &.t {
+          background-color: $secondary;
+        }
+
+        &.s {
+          background-color: $purple;
+        }
+      }
+
+      .ed_lms_cnt_list {
+        padding: 30px 0;
+
+        .ed_lms_cnt_list_item {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          align-items: flex-start;
+          gap: 20px;
+          padding-bottom: 20px;
+
+          .ed_lms_cnt_list_item_icon {
+            width: 40px;
+            height: 40px;
+            background-color: $white;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+          }
+
+          .ed_lms_cnt_list_item_content {
+            h6 {
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 26px;
+              color: #000000;
+            }
+
+            p {
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 18px;
+              color: rgba(32, 32, 32, 0.4);
+            }
+          }
+        }
+      }
+    }
+
+    .lms_admin_artwork,
+    .lms_tutor_artwork,
+    .lms_student_artwork {
+      width: 500px;
+      height: 500px;
+      border-radius: 100px;
+      background-color: #146efa;
+      position: absolute;
+      right: -75px;
+      top: 135px;
+      z-index: -1;
+      transform: rotate(45deg);
+      box-shadow: 0px -10px 50px rgba(20, 110, 250, 0.2), 0px 20px 50px 10px rgba(20, 110, 250, 0.3);
+
+      @media screen and (max-width: 1440px) {
+        right: -55px;
+        width: 400px;
+        height: 400px;
+        margin-top: 25px;
+      }
+
+      @media screen and (max-width: 768px) {
+        top: 85px;
+        left: -110px;
+        width: 400px;
+        height: 400px;
+        border-radius: 45px;
+      }
+
+      @media screen and (max-width: 600px) {
+        top: 50px;
+        width: 300px;
+        height: 300px;
+      }
+
+      @media screen and (max-width: 480px) {
+        top: 50px;
+        width: 230px;
+        height: 230px;
+      }
+    }
+
+    .lms_tutor_artwork {
+      left: -75px;
+      right: auto;
+      background-color: $secondary;
+      box-shadow: 0px -10px 50px rgba(20, 160, 50, 0.2), 0px 20px 50px 10px rgba(20, 160, 50, 0.3);
+
+      @media screen and (max-width: 1440px) {
+        left: -55px;
+      }
+
+      @media screen and (max-width: 768px) {
+        left: -110px;
+      }
+    }
+
+    .lms_student_artwork {
+      background-color: $purple;
+      box-shadow: 0px -10px 50px rgba(80, 40, 160, 0.2), 0px 20px 50px 10px rgba(80, 40, 160, 0.3);
+    }
+  }
+
+  .ed_lms_tutor {
+    .edContainer {
+      grid-template-columns: 3fr 2fr;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .ed_lms_cnt_wrap {
+      @media screen and (max-width: 600px) {
+        order: 0;
+      }
+    }
+  }
+}
+
+/***Close EDneed LMS***/
+
+/***EDneed Community***/
+.edneed_community_wrap {
+  background: rgba(32, 32, 32, 0.04);
+  padding: 100px 0;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  .edContainerRelative {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .edneed_community_content {
+    .edneed_community_content_head {
+      padding-bottom: 40px;
+
+      h6 {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 38px;
+        color: $base;
+        margin-top: 15px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 22px;
+          line-height: 30px;
+          margin-top: 5px;
+        }
+      }
+
+      p {
+        padding-top: 20px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: rgba(32, 32, 32, 0.5);
+      }
+    }
+  }
+
+  .edneed_community_background {
+    // position: absolute;
+    // top: -10px;
+    // right: 0;
+    // z-index: -1;
+    // width: 600px;
+    transform: scale(1);
+
+    @media screen and (max-width: 1240px) {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      transform: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      width: 100%;
+      top: auto;
+      margin-top: 40px;
+      grid-row: 1/4;
+    }
+  }
+}
+
+/***Close EDneed Community***/
+
+/*** EDneed Package***/
+.edneed_package_wrap {
+  padding: 75px 0;
+
+  .edneed_package_head {
+    text-align: center;
+
+    h5 {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+
+    h6 {
+      margin-top: 15px;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
+
+      @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .edneed_package_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 70px;
+    align-items: center;
+
+    @media screen and (max-width: 1240px) {
+      gap: 50px;
+      padding-top: 50px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 100px;
+    }
+
+    .edneed_package_grid_item {
+      background: #ffffff;
+      border: 2px solid rgba(73, 162, 90, 0.4);
+      box-sizing: border-box;
+      box-shadow: 0px 4px 20px 8px rgba(73, 162, 90, 0.05);
+      border-radius: 16px;
+      padding: 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:first-child,
+      &:last-child {
+        min-height: 550px;
+        max-height: 550px;
+      }
+
+      &:nth-child(2) {
+        min-height: 600px;
+        max-height: 600px;
+        padding-top: 54px;
+
+        @media screen and (max-width: 1240px) {
+          min-height: 550px;
+          max-height: 550px;
+          padding-top: 20px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        &:first-child,
+        &:last-child {
+          min-height: 100%;
+          max-height: 100%;
+        }
+
+        &:nth-child(2) {
+          min-height: 100%;
+          max-height: 100%;
+        }
+      }
+
+      .package_item_icon {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+      }
+
+      .package_item_head {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 37px;
+        color: $base;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+          line-height: 32px;
+        }
+      }
+
+      // .edneed_package_grid_item_btn{
+      // // padding: 30px;
+      // // position: absolute;
+      //  button{
+      //    position: absolute;
+      //   left: 50%;
+      //   // top: 50%;
+      //   transform: translate(-50%, -30%);
+      //   width: 90%;
+      //   // margin: auto;
+      //  }
+      // }
+    }
+  }
+
+  .package_icon {
+    width: 30px;
+  }
+
+  .package_item_cnt_list {
+    padding: 40px 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px 0;
+    }
+
+    li {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(32, 32, 32, 0.5);
+      padding: 10px 0 10px 25px;
+      position: relative;
+
+      &::before {
+        display: inline-block;
+        transform: rotate(45deg);
+        height: 8px;
+        width: 4px;
+        border-bottom: 1px solid $secondary;
+        border-right: 1px solid $secondary;
+        left: 7px;
+        top: 10px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .package_item_discount_btn {
+    background: $primary;
+    border: 1px solid rgba(32, 32, 32, 0.1);
+    border-radius: 28px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $white;
+    padding: 10px 30px;
+    position: absolute;
+    top: -20px;
+    right: 30px;
+  }
+}
+
+/***Close EDneed Package***/
+
+/***EDneed Subscribe***/
+.edneed_subscribe_custom {
+  position: relative;
+  margin-bottom: -55px;
+
+  @media screen and (max-width: 1240px) {
+    width: 80%;
+    margin: auto auto -60px auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: auto auto 65px auto;
+  }
+
+  .edneed_subscribe_wrap {
+    background-color: $white;
+    box-shadow: 10px 20px 40px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 50px;
+    align-items: center;
+    padding: 30px 30px;
+
+    @media screen and (max-width: 1240px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .edneed_subscribe_head {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 40px;
+      color: $base;
+
+      @media screen and (max-width: 1240px) {
+        font-size: 18px;
+        text-align: center;
+        line-height: 20px;
+      }
+    }
+
+    background: linear-gradient(90deg, #ffffff 21px, transparent 2%) center,
+      linear-gradient(#ffffff 21px, transparent 2%) center, #c0c0c0;
+    background-size: 22px 22px;
+  }
+}
+
+/***Close EDneed subscribe***/
+
+/***edneed home rewiew Slider***/
+.ed_review_slider_wrap {
+  background-color: rgba(239, 242, 241, 0.5);
+  padding: 75px 0 125px 0;
+  position: relative;
+
+  .slick-slider {
+    @media screen and (max-width: 1240px) {
+      z-index: 0 !important;
+    }
+
+    .slick-next,
+    .slick-prev {
+      z-index: 2 !important;
+      margin-top: 60px;
+
+      @media screen and (max-width: 1240px) {
+        margin-top: 0;
+      }
+    }
+
+    .slick-next {
+      left: auto;
+      right: 140px;
+      top: 100%;
+      background-color: $white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $secondary;
+
+      @media screen and (max-width: 1240px) {
+        top: 30%;
+        right: 10px;
+        border: 1px solid $lgray;
+      }
+
+      &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-right: 2px solid $secondary;
+        border-bottom: 2px solid $secondary;
+        top: 12px;
+        left: 10px;
+        transform: rotate(-45deg);
+
+        @media screen and (max-width: 1240px) {
+          top: 5px;
+          right: 6px;
+        }
+      }
+    }
+
+    .slick-prev {
+      left: auto;
+      right: 190px;
+      top: 100%;
+      // margin-top: 40px!important;
+      background-color: $white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $secondary;
+
+      @media screen and (max-width: 1240px) {
+        top: 30%;
+        left: 10px;
+        border: 1px solid $lgray;
+      }
+
+      &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-left: 2px solid $secondary;
+        border-bottom: 2px solid $secondary;
+        top: 12px;
+        left: 14px;
+        transform: rotate(45deg);
+      }
+    }
+
+    .slick-dots {
+      bottom: -75px !important;
+
+      li {
+        &:first-child {
+          &::before {
+            width: 18rem;
+            height: 2px;
+            background-color: rgba(32, 32, 32, 0.1);
+            left: auto;
+            right: 25px;
+            top: 8px;
+
+            @media screen and (max-width: 1240px) {
+              width: 0;
+            }
+          }
+        }
+
+        &:last-child {
+          &::before {
+            width: 24rem;
+            height: 2px;
+            background-color: rgba(32, 32, 32, 0.1);
+            left: 25px;
+            right: auto;
+            top: 8px;
+
+            @media screen and (max-width: 1240px) {
+              width: 0;
+            }
+          }
+        }
+
+        button {
+          &:before {
+            font-size: 10px;
+
+            &:hover {
+              &:before {
+                color: $secondary;
+              }
+            }
+          }
+        }
+
+        &.slick-active {
+          button {
+            &:before {
+              font-size: 14px;
+              color: $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 75px 0 200px 0;
+  }
+
+  .edneed_instute_slider_wrap_head {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    h4 {
+      margin-top: 15px;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
+
+      @media screen and (max-width: 1240px) {
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .ed_institute_slider_panel {
+    padding-top: 40px;
+
+    .reviewcard_slider_wrap {
+      .reviewcard_slider_cst {
+        background-color: $white;
+        // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 32px;
+        margin: 0 16px;
+        padding: 15px;
+
+        @media screen and (max-width: 768) {
+          margin: 0 80px;
+          padding: 35px;
+        }
+
+        @media screen and (max-width: 600px) {
+          margin: 0 20px;
+          padding: 15px;
+        }
+      }
+    }
+
+    .reviewcard_slider_cover {
+      width: auto;
+      height: 288px;
+      background-color: $silver;
+      border-radius: 32px;
+      object-fit: cover;
+      overflow: hidden;
+
+      img {
+        border-radius: 32px;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+    }
+
+    .reviewcard_slider_body {
+      margin-top: 18px;
+
+      .reviewcard_slider_detail {
+        h5 {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .review_des {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(32, 32, 32, 0.5);
+          padding: 0 0 20px 0;
+          display: -webkit-box;
+          max-width: 560px;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          min-height: 100px;
+        }
+
+        .seemore_btn {
+          font-size: 14px;
+          line-height: 16px;
+          text-decoration: underline;
+          text-decoration-color: rgba($primary, 0.4);
+          margin-left: 10px;
+          font-weight: 500;
+          color: $primary;
+
+          &:hover {
+            text-decoration-color: $primary;
+          }
+        }
+
+        .start_rating {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+
+          span {
+            color: rgba(32, 32, 32, 0.1);
+            font-size: 20px;
+
+            &.active {
+              color: #fdcc0d;
+            }
+          }
+        }
+      }
+    }
+
+    .reviewcard_slider_footer {
+      display: flex;
+      align-items: center;
+
+      .user_profile_image,
+      .dummy_user_profile_image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #f3f3f3;
+        color: $primary;
+        overflow: hidden;
+        margin-right: 10px;
+      }
+
+      .dummy_user_profile_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2c2c2c;
+      }
+
+      .user_profile_detail {
+        h5 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        h6 {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px;
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
+  .ed_see_more_review_btn {
+    position: absolute;
+    width: 191px;
+    bottom: 40px;
+    left: 140px;
+    background: #14a032;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 992px) {
+      left: auto;
+      position: relative;
+      margin: auto;
+      bottom: -125px;
+    }
+
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+      padding: 12px 20px;
+    }
+  }
+}
+
+.ed_try_it_free {
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+
+  @media screen and (max-width: 600px) {
+    padding: 70px 0;
+  }
+
+  .ed_try_it_free_button {
+    // background: #055deb;
+    -webkit-animation: f 53s linear infinite;
+    animation: f 53s linear infinite;
+    background: linear-gradient(
+        121.19deg,
+        rgba(133, 239, 49, 0) 25.73%,
+        hsla(0, 0%, 100%, 0.3) 45.27%,
+        rgba(133, 239, 49, 0) 62.27%
+      ),
+      #055deb;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    @keyframes f {
+      0% {
+        background-position: -5000px 0;
+      }
+
+      to {
+        background-position: 5000px 0;
+      }
+    }
+
+    a {
+      color: $white;
+      display: flex;
+      align-items: center;
+
+      padding: 12px 56px;
+
+      img {
+        width: 18px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/***Close edneed home rewiew Slider***/
+
+/***edneed scroll to top***/
+.scrolltotop_wrapper {
+  position: fixed;
+  // width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  right: 16px;
+  bottom: 16px;
+  font-size: 3rem;
+  z-index: 99;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+  .custom_scrolltotop_button {
+    width: 32px;
+    height: 32px;
+    background: #055deb;
+    box-shadow: 0px 4px 20px 2px rgba(32, 32, 32, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    outline: transparent;
+    border: transparent;
+  }
+
+  .scrolltotop_cst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    @media (max-width: 500px) {
+      margin-bottom: 75px;
+    }
+
+    .whatsapp-chat {
+      position: revert;
+    }
+  }
+}
+
+/***edneed scroll to top***/
+
+/***edneed typewrite***/
+.TypewriterWrap {
+  display: inline-table;
+  // width: 150px;
+}
+
+/***close edneed typewriter***/
+
+/***edneed product page static***/
+.ed_products_page_wrap {
+  padding: 150px 0;
+
+  .edneed_products_head {
+    width: 60%;
+    margin: auto;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      text-align: start;
+    }
+  }
+
+  .ed_product_Wb,
+  .ed_product_LMS,
+  .ed_product_DM {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    padding-top: 100px;
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      gap: 50px;
+      padding-top: 50px;
+    }
+
+    .ed_product_Cnt {
+      h6 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+        display: flex;
+        align-items: center;
+        color: $base;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 600px) {
+          font-size: 30px;
+          line-height: 42px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        grid-row: 1/4;
+      }
+    }
+
+    .ed_product_Img {
+      img {
+        width: 100%;
+      }
+    }
+
+    .ed_lms_cnt_divider {
+      width: 120px;
+      height: 4px;
+      border-radius: 3px;
+      position: absolute;
+
+      &.a {
+        background-color: $primary;
+      }
+
+      &.t {
+        background-color: $secondary;
+      }
+
+      &.s {
+        background-color: $purple;
+      }
+    }
+
+    .ed_products_list_grid_item_list {
+      margin-top: 40px;
+
+      &.a {
+        li {
+          &::before {
+            background-color: $primary;
+          }
+        }
+      }
+
+      &.t {
+        li {
+          &::before {
+            background-color: $secondary;
+          }
+        }
+      }
+
+      &.s {
+        li {
+          &::before {
+            background-color: $purple;
+          }
+        }
+      }
+
+      li {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20px 0 20px 40px;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+
+        &::before {
+          width: 28px;
+          height: 28px;
+          border-radius: 8px;
+          top: 18px;
+        }
+
+        &::after {
+          display: inline-block;
+          transform: rotate(45deg);
+          height: 10px;
+          width: 4px;
+          border-bottom: 2px solid $white;
+          border-right: 2px solid $white;
+          left: 10px;
+          top: 25px;
+        }
+      }
+    }
+  }
+}
+
+/***close edneed product page static***/
+
+/***edneed partner page static***/
+.partnerHero {
+  padding-top: 80px;
+
+  .col-xs-12,
+  .col-sm-6,
+  .col-md-6,
+  .col-lg-6 {
+    padding: 0;
+  }
+
+  .partnerHeroCover {
+    background-image: url("./partnerBg-hero.jpg");
+    /* The image used */
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 100%;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+
+    /* Resize the background image to cover the entire container */
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .partnerHeroContent {
+    padding: 75px 65px 75px 65px;
+    background: #111 url(./partner-bg-hero-description.jpg) repeat scroll 0% 0% !important;
+
+    h1 {
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 52px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .sub {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.partnerRegisterWrap {
+  padding: 30px 0;
+  background: #393b44;
+
+  .edContainer {
+    padding: 50px 0;
+
+    @media screen and (max-width: 992px) {
+      padding: 50px 20px;
+    }
+  }
+
+  .partnerRegisterDescription {
+    padding-right: 1rem;
+
+    .section-title {
+      margin: 1em 0 0.5em 0;
+      letter-spacing: 0.05em;
+      font-size: 40px;
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    .section-subtitle {
+      margin-bottom: 0;
+      font-weight: 300;
+      color: #fff;
+      letter-spacing: 3px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .cnt {
+      padding-right: 50px;
+      color: #dcdcdc;
+      margin: 20px 0 20px 0;
+      line-height: 26px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  .partnerHeroFormCnt {
+    padding: 50px 30px 35px 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .partner-reg-form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 20px;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .formFieldwrap {
+        &:nth-child(5),
+        &:nth-child(6) {
+          grid-column: 1/3;
+
+          @media screen and (max-width: 768px) {
+            grid-column: 1;
+          }
+        }
+      }
+
+      .partner-reg-form-btn {
+        grid-column: 1/3;
+
+        @media screen and (max-width: 768px) {
+          grid-column: 1;
+        }
+
+        button {
+          height: 50px;
+          font-size: 14px;
+          letter-spacing: 0.05rem;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.howToChannelPartnerWrapper {
+  background: #f2f9ff;
+  padding: 96px 0;
+
+  h3 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    align-items: center;
+    margin-top: 64px;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .item-circle {
+        width: 164px;
+        height: 164px;
+        border-radius: 50%;
+        border-width: 4px;
+        border-style: solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+        background-color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+
+        .nextArrow {
+          position: absolute;
+          right: -30px;
+          left: auto;
+
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        &.first {
+          border-color: #88a7ae;
+        }
+
+        &.second {
+          border-color: #0184ff;
+        }
+
+        &.third {
+          border-color: #01bdb2;
+        }
+
+        &.fourth {
+          border-color: #e87613;
+        }
+
+        &.fifth {
+          border-color: #88a7ae;
+        }
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: #0184ff;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.whoBecomePartnerWrapper {
+  background: #ffffff;
+  padding: 96px 0;
+
+  h3 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin-top: 40px;
+    grid-gap: 50px 0;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    li {
+      padding: 5px;
+      grid-column: span 3;
+
+      &:nth-child(1) {
+        .icon {
+          background-color: #accaf9;
+        }
+      }
+
+      &:nth-child(2) {
+        .icon {
+          background-color: #f4dcec;
+        }
+      }
+
+      &:nth-child(3) {
+        .icon {
+          background-color: #f5eaca;
+        }
+      }
+
+      &:nth-child(4) {
+        .icon {
+          background-color: #c3bae2;
+        }
+      }
+
+      &:nth-child(5) {
+        .icon {
+          background-color: #accaf9;
+        }
+      }
+
+      &:nth-child(6) {
+        .icon {
+          background-color: #f5eaca;
+        }
+      }
+
+      &:nth-child(7) {
+        .icon {
+          background-color: #c3bae2;
+        }
+      }
+
+      .whoBecomePartner {
+        // display: grid;
+        // grid-template-columns: auto 1fr;
+        // align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      @media screen and (max-width: 992px) {
+        grid-column: span 1;
+      }
+
+      &:nth-child(7) {
+        grid-column: 3 / span 5;
+
+        @media screen and (max-width: 992px) {
+          grid-column: 1 / span 1;
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+
+        img {
+          width: 36px;
+        }
+      }
+
+      .caption {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        text-align: center;
+      }
+    }
+  }
+
+  // ul {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   gap: 30px;
+  //   margin-top: 64px;
+  //   @media screen and (max-width: 992px) {
+  //     grid-template-columns: repeat(2, 1fr);
+  //   }
+  //   @media screen and (max-width: 768px) {
+  //     grid-template-columns: repeat(1, 1fr);
+  //   }
+  //   li {
+  //     display: grid;
+  //     grid-template-columns: auto 1fr;
+  //     align-items: center;
+  //     gap: 20px;
+  //     .icon {
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: center;
+  //       background: #eff2fc;
+  //       width: 54px;
+  //       height: 54px;
+  //       border-radius: 50%;
+  //       img {
+  //         width: 28px;
+  //       }
+  //     }
+  //     .caption {
+  //       font-weight: 500;
+  //       font-size: 16px;
+  //       line-height: 24px;
+  //       color: #000000;
+  //     }
+  //   }
+  // }
+}
+
+.benifitsPartner {
+  padding: 96px 0;
+  background-color: #f2f9ff;
+
+  h3 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 64px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      color: #202020;
+    }
+  }
+
+  .checkIconWrap {
+    width: 36px;
+    height: 36px;
+    background: #0184ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkIcon {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 13px;
+    width: 7px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    margin-top: -5px;
+  }
+}
+
+/***close edneed partner page static***/

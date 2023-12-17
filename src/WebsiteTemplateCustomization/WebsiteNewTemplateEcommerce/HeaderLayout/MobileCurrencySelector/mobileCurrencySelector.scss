@@ -1,0 +1,15 @@
+@import '../../CommonComponent/commonCss/base.scss';
+
+.mobile-Selector-container {
+  padding-top: 45px;
+
+  .showDropdown-container {
+    .lanuage-wrap {
+      padding-top: 12px;
+    }
+
+    .btn-wrap {
+      padding-top: 24px;
+    }
+  }
+}

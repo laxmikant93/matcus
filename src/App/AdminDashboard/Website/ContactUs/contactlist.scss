@@ -1,0 +1,44 @@
+@import "../../../../assets/Style/base";
+
+.gridListTable {
+  .gridHeader {
+    background-color: rgba(32, 32, 32, 0.03);
+
+    .heading-name-item {
+      color: rgba($base, 0.4);
+    }
+  }
+
+  .gridBody {
+    .gridRow {
+      background-color: $white;
+
+      .topInfo {
+        align-items: flex-start;
+        .status-pill {
+          padding: 4px 8px;
+          border-radius: 10rem;
+          font-weight: 500;
+          font-size: 8px;
+          line-height: 13px;
+          color: $white;
+          background-color: $primary;
+          width: max-content;
+          margin-top: 10px;
+          &.BookingPill {
+            background-color: #ffc737;
+            color: $base;
+          }
+        }
+
+        .name-item {
+          color: rgba($base, 0.6);
+        }
+
+        .time-item {
+          color: rgba($base, 0.6);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+@import "../../../assets/Style/base";
+/***Dashboard Icon***/
+.admin-visitorManagementIcon,
+.admin-guardManagementIcon,
+.admin-accessControlIcon,
+.admin-bookAppoinmentIcon,
+.admin-websiteIcon,
+.admin-classroomIcon,
+.admin-teacherIcon,
+.admin-studentIcon,
+.admin-studymaterialIcon,
+.admin-CalenderIcon,
+.admin-feemanagementIcon {
+  width: 62px;
+  height: 62px;
+  display: block;
+  cursor: pointer;
+  background-color: $primary;
+  -webkit-mask: url("./icon-visitormanagement.svg") no-repeat center;
+  mask-image: url("./icon-visitormanagement.svg") no-repeat center;
+}
+.admin-guardManagementIcon {
+  -webkit-mask: url("./icon-guardmanagement.svg") no-repeat center;
+  mask-image: url("./icon-guardmanagement.svg") no-repeat center;
+}
+.admin-classroomIcon {
+  -webkit-mask: url("./icon-classroom.svg") no-repeat center;
+  mask-image: url("./icon-classroom.svg") no-repeat center;
+}
+.admin-accessControlIcon {
+  -webkit-mask: url("./icon-accesscontrol.svg") no-repeat center;
+  mask-image: url("./icon-accesscontrol.svg") no-repeat center;
+}
+.admin-bookAppoinmentIcon {
+  -webkit-mask: url("./icon-bookappointment.svg") no-repeat center;
+  mask-image: url("./icon-bookappointment.svg") no-repeat center;
+}
+.admin-websiteIcon {
+  -webkit-mask: url("./icon-website.svg") no-repeat center;
+  mask-image: url("./icon-website.svg") no-repeat center;
+}
+.admin-studentIcon {
+  -webkit-mask: url("./icon-student.svg") no-repeat center;
+  mask-image: url("./icon-student.svg") no-repeat center;
+}
+.admin-teacherIcon {
+  -webkit-mask: url("./icon-teacher.svg") no-repeat center;
+  mask-image: url("./icon-teacher.svg") no-repeat center;
+}
+.admin-studymaterialIcon {
+  -webkit-mask: url("./icon-course.svg") no-repeat center;
+  mask-image: url("./icon-course.svg") no-repeat center;
+}
+.admin-CalenderIcon {
+  -webkit-mask: url("./icon-calender.svg") no-repeat center;
+  mask-image: url("./icon-calender.svg") no-repeat center;
+}
+.admin-feemanagementIcon {
+  -webkit-mask: url("./icon-fee-management.svg") no-repeat center;
+  mask-image: url("./icon-fee-management.svg") no-repeat center;
+}
+/***Close Dashboard Icon***/
+.user-db-wrapper {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user-db-head {
+  text-align: center;
+  width: 60%;
+}
+.db-navigation-button {
+  display: flex;
+  flex-direction: column;
+}
+.db-items {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 30px 0;
+  li {
+    transform: all 0.25s ease;
+    background-color: $white;
+    position: relative;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.25s ease;
+    padding: 20px;
+    min-width: 160px;
+    color: $base;
+    border-radius: 10px;
+    justify-content: center;
+    margin-right: 10px;
+    text-transform: capitalize;
+
+    span {
+      @extend .w-600;
+      @extend .text-xxs;
+      margin-top: 10px;
+      color: $base;
+    }
+    &:hover {
+      box-shadow: 0 0 15px rgba($base, 0.1);
+    }
+  }
+  &.sadmin {
+    li {
+      &:hover {
+        span {
+          color: $primary;
+        }
+        .rtBadge {
+          color: $white;
+        }
+      }
+    }
+  }
+  &.teacher {
+    li {
+      &:hover {
+        span {
+          color: $secondary;
+        }
+        .rtBadge {
+          color: $white;
+        }
+      }
+    }
+  }
+  &.student {
+    li {
+      &:hover {
+        span {
+          color: $purple;
+        }
+        .rtBadge {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.db-notification-bar {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 500px;
+  .notification-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0.25rem 0;
+    }
+    &.alert {
+      border: 1px solid rgba($red, 0.1);
+      background-color: rgba($red, 0.05);
+    }
+    &.orangeAlert {
+      border: 1px solid rgba($bsPink, 0.25);
+      background-color: rgba($bsPink, 0.125);
+    }
+    &.greenPending {
+      border: 1px solid rgba($secondary, 0.1);
+      background-color: rgba($secondary, 0.05);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .db-notification-bar {
+    width: 100%;
+    background-color: $white;
+  }
+  .user-db-head {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .db-items {
+    a {
+      min-width: 140px;
+    }
+  }
+}

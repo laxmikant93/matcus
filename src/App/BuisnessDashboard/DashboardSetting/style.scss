@@ -1,0 +1,39 @@
+@import '../../../assets/Style/base';
+
+.dashboardSetting-container {
+
+
+  .dashboard-heading-div{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    .circleButton-container{
+      margin-top: 10px;
+    }
+  }
+
+  .icon-website {
+    -webkit-mask: url("./asserts/icons/websiteSettingIcon.svg") no-repeat center;
+    mask-image: url("./asserts/icons/websiteSettingIcon.svg") no-repeat center;
+  }
+
+  .icon-currency {
+    -webkit-mask: url("./asserts/icons/money.svg") no-repeat center;
+    mask-image: url("./asserts/icons/money.svg") no-repeat center;
+  }
+
+  .icon-bussiness {
+    -webkit-mask: url("./asserts/icons/team.svg") no-repeat center;
+    mask-image: url("./asserts/icons/team.svg") no-repeat center;
+  }
+
+  .icon-accept {
+    -webkit-mask: url("./asserts/icons/money.svg") no-repeat center;
+    mask-image: url("./asserts/icons/money.svg") no-repeat center;
+  }
+
+  .icon-policy {
+    -webkit-mask: url("./asserts/icons/policy.svg") no-repeat center;
+    mask-image: url("./asserts/icons/policy.svg") no-repeat center;
+  }
+}

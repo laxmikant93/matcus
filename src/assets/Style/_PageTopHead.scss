@@ -1,0 +1,207 @@
+@import "./theme";
+@import "./typo";
+
+.PageTopHead {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  &.V-Align-Top {
+    align-items: flex-start;
+  }
+  &.V-Align-End {
+    align-items: flex-end;
+  }
+  .P-Right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .PTH-Item {
+    p {
+      line-height: 1.4;
+    }
+  }
+  // &.PTH-Faqs,
+  &.PTH-MIW-Head,
+  &.PTH-ViewFeeStructure,
+  &.PTH-AdminManageGallery,
+  &.PTH-StudentAssignViewResult,
+  // &.PTH-StudentJoinClass,
+  &.PTH-StudentJoinAssignment,
+  &.PTH-ManageProfile,
+  &.PTH-EditFaculty,
+  &.PTH-TeacherJoineeList,
+  &.PTH-EdneedVideoSchoolAdmin,
+  &.PTH-TeacherOnlineClass1,
+  // &.PTH-ProfileReviewList,
+  &.PTH-TeacherAssignments1,
+  // &.PTH-TeacherOnlineExamList-1,
+  &.PTH-InstituteListing,
+  &.PTH-SubmissionList-1,
+
+  &.PTH-EditCourse {
+    grid-template-columns: 1fr auto;
+  }
+  &.PTH-ProfileReviewList1 {
+    grid-template-columns: auto;
+  }
+  &.PTH-AnnouncementList,
+  &.PTH-AdminManageFaculty,
+  &.PTH-EditGalleryHead,
+  // &.PTH-CourseListing,
+  // &.PTH-ViewClassroomTeacher,
+  &.PTH-TeacherOnlineExamList-2,
+  &.PTH-OnlineExamList {
+    grid-template-columns: auto 2fr auto;
+    align-items: center;
+  }
+
+  &.PTH-OnlineExamList,
+  &.PTH-SubmissionList-2 {
+    grid-template-columns: auto auto 1fr;
+  }
+  // &.PTH-Vacancy,
+  // &.PTH-ManageFaqs,
+  // &.PTH-TestimonialList,
+  // &.PTH-AdminAdmission,
+
+  // &.PTH-InviteStudentHistory,
+  // &.PTH-InviteStudentList,
+  // &.PTH-InviteFacultyHistory,
+  // &.PTH-ViewClassroomAssignment,
+  // &.PTH-ReviewList {
+  //   grid-template-columns: auto auto auto 1fr auto;
+  // }
+
+  &.PTH-TeacherAssignmentView,
+  // &.PTH-StudentJoinClass,
+  // &.PTH-StudentAssignment,
+  &.PTH-TeacherOnlineClass2 {
+    grid-template-columns: auto auto 1fr auto;
+  }
+}
+.InlinePTHItem {
+  display: flex;
+  align-items: center;
+}
+// @media only screen and (max-width: 992px) {
+//   .PageTopHead {
+//     &.PTH-InviteFacultyHistory {
+//       grid-template-columns: 1fr 1fr;
+//       .PTH-Item {
+//         &:first-child {
+//           grid-column: 1/3;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media only screen and (max-width: 600px) {
+//   .PageTopHead {
+//     &.PTH-InviteFacultyHistory {
+//       grid-template-columns: 1fr;
+//       .PTH-Item {
+//         &:first-child {
+//           grid-column: 1;
+//         }
+//       }
+//     }
+//   }
+// }
+@media only screen and (max-width: 480px) {
+  .PageTopHead {
+    align-items: flex-end;
+    &.PTH-InviteStudentHistory,
+    &.PTH-TeacherOnlineClass2,
+    &.PTH-TeacherAssignmentView {
+      grid-template-columns: repeat(2, 1fr);
+      .PTH-Item {
+        &:nth-child(1) {
+          grid-column: 1/3;
+        }
+        &:nth-child(2) {
+          grid-column: 1/2;
+        }
+        &:nth-child(3) {
+          grid-column: 2/3;
+        }
+        &:nth-child(4) {
+          grid-column: 1/3;
+        }
+        &:nth-child(5) {
+          grid-column: 1/3;
+        }
+      }
+    }
+    // &.PTH-Faqs,
+    &.PTH-MIW-Head,
+    &.PTH-ViewFeeStructure,
+    &.PTH-AdminManageGallery,
+    &.PTH-StudentAssignViewResult,
+    // &.PTH-InviteFacultyHistory,
+    // &.PTH-StudentAssignment,
+    // &.PTH-StudentJoinClass,
+    // &.PTH-StudentJoinAssignment,
+    &.PTH-ManageProfile,
+    &.PTH-EditFaculty,
+    &.PTH-TeacherJoineeList,
+    &.PTH-TeacherOnlineClass1,
+    // &.PTH-Vacancy,
+    // &.PTH-ManageFaqs,
+    // &.PTH-TestimonialList,
+    // &.PTH-AdminAdmission,
+    &.PTH-AnnouncementList,
+    &.PTH-AdminManageFaculty,
+    // &.PTH-CourseListing,
+    &.PTH-EditGalleryHead,
+    // &.PTH-InviteFacultyList,
+    // &.PTH-InviteStudentList,
+    // &.PTH-ViewClassroomAssignment,
+    // &.PTH-ReviewList,
+    // &.PTH-ViewClassroomOnlineClass,
+    // &.PTH-ViewClassroomTeacher,
+    &.PTH-InstituteListing,
+    // &.PTH-ProfileReviewList,
+    &.PTH-PersonalProfileList,
+    // &.PTH-StudentAssignment,
+    // &.PTH-StudentJoinClass,
+    &.PTH-StudentJoinAssignment,
+    &.PTH-TeacherAssignments1,
+    // &.PTH-TeacherAssignments2,
+    // &.PTH-TeacherOnlineExamList-1,
+    &.PTH-TeacherOnlineExamList-2,
+    &.PTH-OnlineExamList,
+    &.PTH-SubmissionList-2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &.PTH-MIW-Head,
+    &.PTH-StudentAssignViewResult {
+      .P-Right {
+        align-items: flex-start;
+      }
+    }
+
+    &.PTH-EditCourse {
+      grid-template-columns: repeat(2, 1fr);
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1/3;
+        }
+        &:last-child {
+          grid-column: 1/3;
+        }
+      }
+    }
+    // &.PTH-ViewClassroom {
+    //   grid-template-columns: repeat(2, 1fr);
+    //   .PTH-Item {
+    //     &:last-child {
+    //       grid-column: 1/3;
+    //     }
+    //   }
+    // }
+  }
+}

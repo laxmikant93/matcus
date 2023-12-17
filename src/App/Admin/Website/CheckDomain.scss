@@ -1,0 +1,94 @@
+@import "../../../assets/Style/base";
+
+/**** check domain ***/
+.CheckDomainWrapper {
+  // height: calc(100vh - 5rem);
+  height: 100vh;
+  background-color: $silver;
+  // margin-top: 4rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .CheckDomainCustom {
+    .checkDomainAvailability {
+      position: relative;
+    }
+  }
+
+  .CheckDomainCustomHead {
+    font-size: 48px;
+    @extend .w-700;
+  }
+
+  .CheckDomainCustomSubHead {
+    @extend .text-sm;
+    @extend .w-600;
+    margin-top: 10px;
+  }
+}
+.suggestDomainNameList {
+  margin-top: 5px;
+  width: 100%;
+
+  .input-custom-type {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px 30px;
+    margin: 10px 0;
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .CheckDomainWrapper {
+    height: 100%;
+    padding: 1rem;
+    min-height: 100vh;
+    .CheckDomainCustomHead {
+      font-size: 42px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .CheckDomainWrapper {
+    .CheckDomainCustomHead {
+      font-size: 30px;
+    }
+    .CheckDomainCustomSubHead {
+      font-size: 19px;
+    }
+    .CheckDomainCustom {
+      margin-top: 30px;
+    }
+  }
+}
+/**** close check domain ***/
+@media screen and (max-width: 480px) {
+  .CheckDomainWrapper {
+    padding: 0 25px;
+    .CheckDomainCustomHead {
+      font-size: 40px;
+      text-align: center;
+    }
+    .CheckDomainCustomSubHead {
+      text-align: center;
+      font-size: 15px;
+    }
+    .CheckDomainCustom {
+      width: 100%;
+    }
+    .checkDomainAvailability {
+      width: 100%;
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+}

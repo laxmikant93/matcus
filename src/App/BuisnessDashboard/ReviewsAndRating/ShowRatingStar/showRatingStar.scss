@@ -1,0 +1,26 @@
+@import '../../../../assets/Style/base';
+
+.showRatingstar-container {
+
+  .star-wrap {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .star-icon {
+    display: block;
+    -webkit-mask: url("../RatingStar/star.svg") no-repeat center;
+    mask-image: url("../RatingStar/star.svg") no-repeat center;
+    width: 9px;
+    height: 9px;
+  }
+
+  .starIcon-filled {
+    background: #DCAE09;
+  }
+
+  .starIcon-empty {
+    background: rgba($base, 0.2)
+  }
+}

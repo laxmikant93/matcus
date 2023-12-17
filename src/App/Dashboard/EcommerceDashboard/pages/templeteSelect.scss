@@ -1,0 +1,65 @@
+@import '../commonEcommerce.scss';
+
+
+.templete-select-container {
+
+
+  .dashboard-type-text {
+    text-decoration: underline;
+  }
+
+  .templete-top-menu-header-wrap {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 30px;
+  }
+
+  .templete-area-container {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    .templete-image-wrap {
+      width: 100%;
+      position: relative;
+
+
+      .templete-overlay-wrap {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 97%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+        border-radius: 12px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+      }
+
+      &:hover .templete-overlay-wrap {
+        opacity: 1;
+      }
+    }
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 90px;
+
+    .pagination_list {
+      background-color: #F5F7F7;
+      padding: 4px 20px;
+    }
+  }
+}

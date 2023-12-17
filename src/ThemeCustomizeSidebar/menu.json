@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "listname": "Site Settings",
+    "icon": "icon-setting",
+    "component": "SettingMenus"
+  },
+  {
+    "id": 4,
+    "listname": "Pages",
+    "icon": "icon-Pages",
+    "component": "Pages"
+  },
+  {
+    "id": 2,
+    "listname": "Themes",
+    "icon": "icon-Themes",
+    "component": "ThemeContent"
+  }
+]

@@ -1,0 +1,59 @@
+@import "../../assets/Style/base";
+
+.center-popup-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($base, 0.3);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .inner-center-popup-wrapper {
+    position: relative;
+    max-height: 90vh;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: $white;
+    width: 50%;
+    margin: auto;
+    .closeModal {
+      box-sizing: border-box;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      display: block;
+      transform: scale(var(--ggs, 1));
+      width: 24px;
+      height: 24px;
+      border: 2px solid transparent;
+      border-radius: 40px;
+      cursor: pointer;
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: $base;
+        transform: rotate(45deg);
+        border-radius: 5px;
+        top: 8px;
+        left: 0;
+        &:hover {
+          background-color: $primary;
+        }
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

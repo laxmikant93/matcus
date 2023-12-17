@@ -1,0 +1,129 @@
+@import "../../../../assets/Style/base";
+
+.shippingRate-section {
+  padding-top: 24px;
+
+  .shippingLable {
+    line-height: 32px;
+  }
+
+  .shippingRate-icon-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .shippingRate-calulateSectiion {
+    .calulateSection-dropdownSection {
+      position: relative;
+
+      .shipping-btn-wrapper {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media (max-width: 500px) {
+          position: relative;
+          top: 10px;
+        }
+        // @media (max-width: 480px) {
+        //   top: 105px;
+        // }
+
+        // @media (max-width: 375px) {
+        //   top: 105px;
+        // }
+
+        [aria-disabled="true"] {
+          opacity: 0.5;
+          pointer-events: none;
+          color: gray;
+
+          i {
+            background-color: gray;
+          }
+        }
+
+        .delete-btn {
+          cursor: pointer;
+          background: transparent;
+          border: none;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          color: $gray;
+          gap: 5px;
+
+          @media (max-width: 500px) {
+            font-size: 12px;
+          }
+
+          .delete-icon-trash {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: $red;
+            -webkit-mask: url("../ShippingRates/Delete-Icon.svg") no-repeat center;
+            mask-image: url("../ShippingRates/Delete-Icon.svg") no-repeat center;
+
+            @media (max-width: 500px) {
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .shippingRate-optionsWrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 36px;
+
+      @media (max-width: 640px) {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .rate-div-wrap {
+        position: relative;
+
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+
+        .ruppe-symbol {
+          position: absolute;
+          top: 41px;
+          left: 10px;
+        }
+      }
+
+      .formFieldwrap {
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .addMore-section {
+    .addMore-section-btn {
+      border: none;
+      background-color: transparent;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .icon-rupeeCircle {
+    width: 35px;
+    height: 35px;
+    -webkit-mask: url("./rupeeCircle.svg") no-repeat center;
+    mask-image: url("./rupeeCircle.svg") no-repeat center;
+  }
+}

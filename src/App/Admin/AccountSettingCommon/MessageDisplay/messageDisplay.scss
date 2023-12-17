@@ -1,0 +1,43 @@
+@import '../../../../assets/Style/base';
+.message-wrap {
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  position: fixed;
+  right: 30px;
+  top: 23%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+.message-container {
+
+  .message {
+    min-width: 100px;
+    max-width: 250px;
+    background-color: $white;
+    height: 100%;
+    padding: 12px 21px;
+    p {
+      line-height: 21px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .message-success {
+    border-left: 8px solid $secondary;
+    p {
+      color: $secondary;
+    } 
+  }
+
+  .message-error {
+    border-left: 8px solid $red ;
+    p {
+      color: $red;
+    } 
+  }
+}
+}

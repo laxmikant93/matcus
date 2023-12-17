@@ -1,0 +1,1 @@
+export const accountSettingTab = "__acc_set_tab__";

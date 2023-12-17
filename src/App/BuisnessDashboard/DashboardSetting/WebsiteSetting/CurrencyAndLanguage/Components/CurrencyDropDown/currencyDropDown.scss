@@ -1,0 +1,185 @@
+// @import '../../commonEcommerce';
+@import '../../../../../../../assets/Style/base';
+
+.currencyDropnDownContainer{
+  width: 100%;
+  position: relative;
+  // overflow: hidden;
+
+  .category-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    .categoryDropDpwn-btn {
+      width: 100%;
+      border: 1px solid rgba($base, 0.2);
+      padding: 10px 20px;
+      display: inline-flex;
+      align-items: center;
+      height: 40px;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: transparent;
+      color: $base;
+      font-weight: 400;
+      text-transform: capitalize;
+      z-index: 1;
+      // overflow: hidden;
+      // position: relative;
+      text-align: left;
+      font-size: 16px;
+
+
+
+      &:focus {
+        border: 1px solid $primary;
+      }
+
+      // &:focus-within {
+      //   border: 2px solid $primary;
+      // }
+      // &::before {
+      //   height: 6px;
+      //   width: 6px;
+      //   border-width: 2px 0 0 2px;
+      //   border-style: solid;
+      //   border-color: #393939;
+      //   transform: rotate(-135deg);
+      //   right: 0;
+      //   transition: all 0.25s ease;
+      //   position: absolute;
+      //   top: 50%;
+      //   // transform: translateY(-50%);
+      //   color: #202020;
+      //   pointer-events: none;
+      // }
+
+    }
+
+    .dropdown-content {
+      border: 1px solid rgba($base, 0.2);
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      background-color: $white;
+      margin-top: 1px;
+      min-height: 30px;
+      height: auto;
+      max-height: 200px;
+      overflow-y: auto;
+      display: block;
+      transition: all 0.7s ease-in-out;
+      box-shadow: 1px 1px 10px 0px #0000001A;
+
+
+      ul {
+        list-style-type: none;
+
+
+
+        li {
+          padding: 3px 15px;
+
+          font-weight: 400;
+          word-break: keep-all;
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          gap: 2px;
+          align-items: center;
+          overflow: hiddens;
+
+          &:hover {
+            background-color: rgba($primary, 0.05);
+            font-weight: 500;
+
+
+          }
+
+          p {
+            position: relative;
+            margin-right: 2px;
+            padding: 2px 0;
+            font-size: 15px;
+
+
+            .select_wrap .select_ul .option label {
+              &:word {
+                color: red;
+              }
+            }
+
+            // &:not(:last-child)::after {
+            //   content: ' \2014';
+            //   font-size: 16px;
+            //   color: $base;
+            //   font-weight: 400;
+            //   position: absolute;
+            //   // top: 50%;
+            //   // transform: translateY(-50%);
+            //   left: 100%;
+            //   padding-left: 2px;
+            //   padding-right: 5px;
+
+
+            // }
+
+
+          }
+        }
+
+
+
+
+      }
+    }
+
+    .top {
+      bottom: 100% !important;
+    }
+
+    .bottom {
+      top: 100% !important;
+    }
+
+    .displayShow {
+      display: none;
+      transition: all 0.7s ease-in-out;
+    }
+
+  }
+
+  .icons {
+    display: inline-block;
+    background-color: #000;
+    font-weight: 500;
+  }
+
+  .icon-openIcon {
+    -webkit-mask: url("../../../../asserts/icons/arrow-down.svg") no-repeat center;
+    mask-image: url("../../../../asserts/icons/arrow-down.svg") no-repeat center;
+  }
+
+  .icons-s {
+    height: 12px;
+    width: 12px;
+    font-weight: 500;
+  }
+
+
+  .icon-dropdown {
+    position: absolute;
+    top: 55%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: all 0.7s ease-in-out;
+  }
+
+
+  .rotate-icon {
+    transform: rotate(180deg) !important;
+    top: 40% !important;
+  }
+
+}

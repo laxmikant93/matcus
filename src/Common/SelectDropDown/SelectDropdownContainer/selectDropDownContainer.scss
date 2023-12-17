@@ -1,0 +1,28 @@
+@import '../../../assets/Style/base';
+
+.selectdropDowncontainer-container {
+  position: absolute;
+  top: 120%;
+  // border: 1px solid rgba($base, 0.4);
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+
+  ul {
+    list-style-type: none;
+    li {
+       cursor: pointer;
+       font-size: 14px;
+       font-weight: 400;
+       color: $base;
+       padding: 8px 16px;
+      &:hover {
+        background-color: rgba($primary,0.2);
+      }
+    }
+  }
+}

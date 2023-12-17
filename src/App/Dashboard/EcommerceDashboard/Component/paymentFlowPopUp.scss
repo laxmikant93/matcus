@@ -1,0 +1,33 @@
+@import '../../../../assets/Style/base';
+
+.paymenntDetails-container {
+
+  .paymentdetails-div {
+    background-color: rgba($primary, 0.05);
+    padding: 18px 21px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+    margin-top: 16px;
+
+    @media(max-width:600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width:500px) {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+  }
+
+  .payment-btn-wrapper {
+
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+  }
+
+}

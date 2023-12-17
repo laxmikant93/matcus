@@ -1,0 +1,82 @@
+.ed-icon {
+  width: 54px;
+  height: 54px;
+  display: block;
+  cursor: pointer;
+
+  &.i-md {
+    width: 30px;
+    height: 30px;
+  }
+  &.i-s {
+    width: 22px;
+    height: 22px;
+  }
+  &.i-xs {
+    width: 18px;
+    height: 18px;
+  }
+  &.i-xxs {
+    width: 14px;
+    height: 14px;
+  }
+  &.i-xxxs {
+    width: 12px;
+    height: 12px;
+  }
+  &.i-65 {
+    width: 65px;
+    height: 65px;
+  }
+  &.i-75 {
+    width: 75px;
+    height: 75px;
+  }
+  &.i-85 {
+    width: 85px;
+    height: 85px;
+  }
+  &.i-95 {
+    width: 95px;
+    height: 95px;
+  }
+  &.primary {
+    background-color: $primary;
+  }
+  &.secondary {
+    background-color: $secondary;
+  }
+  &.mgray {
+    background-color: $mgray;
+  }
+  &.gray {
+    background-color: $gray;
+  }
+  &.base {
+    background-color: $base;
+  }
+  &.white {
+    background-color: $white;
+  }
+  &.bsPink {
+    background-color: $bsPink;
+  }
+  &.red {
+    background-color: $red;
+  }
+  &.purple {
+    background-color: $purple;
+  }
+}
+.icon-pdf {
+  -webkit-mask: url("./icon-pdf.svg") no-repeat center;
+  mask-image: url("./icon-pdf.svg") no-repeat center;
+}
+.icon-video {
+  -webkit-mask: url("./icon-video-circle.svg") no-repeat center;
+  mask-image: url("./icon-video-circle.svg") no-repeat center;
+}
+.icon-mp3 {
+  -webkit-mask: url("./icon-mp3.svg") no-repeat center;
+  mask-image: url("./icon-mp3.svg") no-repeat center;
+}

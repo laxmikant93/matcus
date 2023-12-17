@@ -1,0 +1,25 @@
+@import "../../../assets/Style/base";
+
+* {
+  --size: 100px;
+  --bord: 10px;
+}
+
+.donut-chart {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  z-index: 2;
+  background: conic-gradient($secondary var(--value), $lgray var(--value));
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--bord)),
+    $white calc(100% - var(--bord) + 1px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--bord)),
+    $white calc(100% - var(--bord) + 1px)
+  );
+}

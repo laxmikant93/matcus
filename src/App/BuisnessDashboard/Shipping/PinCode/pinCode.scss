@@ -1,0 +1,85 @@
+@import '../../../../assets/Style/base';
+
+.pinCode-section {
+  padding-top: 24px;
+
+  .pincode-section-div {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .pincode-createZone-wrapper {
+    .address-pincode-wrapper {
+      gap: 72px;
+
+      @media (max-width:640px) {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+
+    .showPincodedetails-container {
+      .gridListTable {
+        padding-top: 0;
+
+        .col {
+          padding: 8px;
+        }
+
+        .gridHeader {
+          background-color: $white;
+          padding: 0 24px;
+        }
+
+        .gridBody {
+          background-color: $white;
+          min-height: fit-content;
+
+          .gridRow {
+            background-color: transparent;
+            border: none;
+
+            border-radius: 8px;
+
+            .topInfo {
+              display: flex;
+              align-items: center;
+              padding: 3px 24px;
+              margin-bottom: 3px;
+              border-radius: 8px;
+
+              &:nth-child(odd) {
+                background-color: rgba($primary, 0.05);
+              }
+
+              .zone-wrap {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 36px;
+              }
+
+              .icon-wrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .icon-delete {
+    -webkit-mask: url(../../DashboardSetting/asserts/icons/icon-trash.svg) no-repeat center;
+    mask: url(../../DashboardSetting/asserts/icons/icon-trash.svg) no-repeat center;
+  }
+
+  .icon-pencial {
+    -webkit-mask: url(../../../Dashboard/EcommerceDashboard/assets/icons/pencial.svg) no-repeat center;
+    mask: url(../../../Dashboard/EcommerceDashboard/assets/icons/pencial.svg) no-repeat center;
+  }
+}

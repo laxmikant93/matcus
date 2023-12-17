@@ -1,0 +1,29 @@
+.category-modal-header-heading {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 48px !important;
+}
+
+.form-heading {
+  color: black;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.categoty-upload-image-button {
+  background: white;
+  border: 1px solid rgba(32, 32, 32, 0.3);
+
+}
+
+.category-footer-wrapper {
+  padding: 0 !important;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 20px;
+
+
+
+}

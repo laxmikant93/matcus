@@ -1,0 +1,26 @@
+@import '../../../../assets/Style/base';
+
+.account-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .accont-text-wrap {
+      .accont-text {
+        font-size: 18px;
+      } 
+
+    }
+    
+    .btn-wrap {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .btn-account {
+        padding: 6px 42px;
+      }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../commonCss/base.scss';
+
+
+
+.free-shipping-wrapper {
+
+  input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+  }
+
+
+
+  .free-shipping-container-wrap {
+    border: 1px solid rgba($black, 0.2);
+    padding: 10px 16px 10px 16px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $secondary;
+    }
+
+    .prize-item {
+      color: #093351;
+    }
+
+    .free-shipping-container {
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+      align-items: center;
+
+      .free-shipping-item {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        .free-shipping-heading {
+          font-size: 16px;
+          font-weight: 500;
+          color: $black;
+        }
+
+        .shipping-time-item {
+          color: rgba($black, 0.5);
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .border-color {
+    border-color: $secondary;
+  }
+}

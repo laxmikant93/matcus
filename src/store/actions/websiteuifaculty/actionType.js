@@ -1,0 +1,5 @@
+export const WEBSITE_FACULTY = {
+    
+  WEBSITE_FACULTY_LIST:"WEBSITE_FACULTY_LIST",
+ 
+}

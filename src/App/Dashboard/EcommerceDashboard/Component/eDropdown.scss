@@ -1,0 +1,127 @@
+@import '../../../../assets/Style/base';
+@import '../commonEcommerce';
+
+
+
+.dropdown {
+  position: relative;
+
+  // &::after {
+  //   width: 6px;
+  //   height: 6px;
+  //   border-right: 2px solid #000;
+  //   border-bottom: 2px solid #000;
+  //   transform: rotate(45deg);
+  //   right: 12px;
+  //   left: auto;
+  //   top: 14px;
+
+  // }
+
+  // &.up {
+  //   &::after {
+  //     transform: rotate(-135deg);
+  //     top: 18px;
+  //   }
+  // }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
+  .dropbtn {
+    border: none;
+    background: transparent;
+    font-size: $font-size;
+    color: $primary;
+  }
+
+  // icons import through mask
+
+  .icons {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    cursor: pointer;
+    position: center;
+    z-index: 10000;
+    margin-left: 3px;
+    background-color: #000;
+  }
+
+  .arrowLine {
+    mask: url('../assets/icons/arrowThin.svg');
+    mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
+  .arrowThick {
+    mask: url('../assets/icons/arrow-down.svg');
+    mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
+  .icons-bg-color {
+    background-color: $primary;
+  }
+
+  .icons-bg-blue {
+    background-color: $primary;
+  }
+
+  .rotate-arrow {
+    transform: rotate(180deg);
+  }
+
+
+
+  .dropdown-content {
+    width: 140px;
+    min-height: 50px;
+    border: 1px solid rgba(32, 32, 32, 0.2);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    scroll-behavior: smooth;
+    background-color: $white;
+    max-height: 300px;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+    z-index: 100;
+    font-size: 15px;
+    border-radius: 4px;
+
+
+    li {
+
+      padding: 10px;
+
+      cursor: pointer;
+      // font-
+      size: $font-size;
+      font-weight: 400;
+      word-break: break-all;
+      line-height: 1.4;
+
+      &:hover {
+        background-color: rgba($primary, 0.2)
+      }
+    }
+
+    .dropDown-no-list {
+      padding: 15px;
+    }
+  }
+
+  .show-option {
+    visibility: visible;
+    opacity: 1;
+    z-index: 500;
+  }
+
+}

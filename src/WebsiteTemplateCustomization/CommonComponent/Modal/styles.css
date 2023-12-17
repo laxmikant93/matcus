@@ -1,0 +1,83 @@
+/* .modal-wtc {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  overflow-y: auto;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 999999;
+  box-sizing: border-box;
+}
+
+.modal-wtc.modal-fade-wtc {
+  animation: fade-in 1s 1 linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.modal-wtc>.modal-overlay-wtc {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-wtc>.modal-close-wtc {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #5e5e5e;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 0px 10px;
+  background: rgba(255, 255, 255, 0.749);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+}
+
+.modal-wtc>.modal-close-wtc:hover {
+  color: red;
+}
+
+.modal-wtc>.modalwrapper-wtc {
+  z-index: 2;
+  position: relative;
+  border-radius: 36px 0 0 36px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100%;
+  padding: 35px;
+  color: #c3c0c0;
+  z-index: 1080;
+  width: 60%;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.125);
+  min-height: 100vh;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+
+@keyframes fade-in {
+  0% {
+    animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */

@@ -1,0 +1,185 @@
+@import "../../../assets/Style/base";
+
+.EditSiteBuilderBody {
+  padding: 30px 0 30px 0;
+
+  .cardPadding {
+    padding: 30px 40px;
+  }
+
+  .card {
+    background-color: $silver;
+  }
+}
+
+.file-upload-input {
+  .labelcst {
+    padding-bottom: 0;
+  }
+}
+
+.gallery-thumnail {
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.MIW-UploadLogoSectonWrap {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.MIW-UploadLogoSecton {
+  margin-top: 30px;
+
+  .question-circle-icon {
+    top: 1px;
+  }
+}
+
+.MIW-IntroVideoPreview {
+  video {
+    min-width: 250px;
+    height: 150px;
+    background-color: $mgray;
+    object-fit: cover;
+    background-color: $white;
+    box-shadow: 2px 2px 20px rgba($base, 0.125);
+    background-color: $white;
+    padding: 5px;
+  }
+}
+
+.logoPreview,
+.MIW-AboutImagePreview,
+.MIW-ProfileImagePreview,
+.MIW-BannerImagePreview,
+.MIW-IntroVideoPreview {
+  margin-bottom: 20px;
+
+  h6 {
+    padding-bottom: 5px;
+  }
+
+  .logoPreviewImg,
+  .MIW-AboutImgPreview,
+  .MIW-ProfileImgPreview,
+  .MIW-BannerImgPreview,
+  .MIW-IntroVideoPreviewImg {
+    width: 210px;
+    height: 70px;
+    background-color: $mgray;
+    // object-fit: cover;
+    background-color: $white;
+    box-shadow: 2px 2px 20px rgba($base, 0.125);
+    background-color: $white;
+    padding: 5px;
+  }
+
+  .logoPreviewImg {
+    width: 150px;
+    height: auto;
+  }
+
+  .MIW-AboutImgPreview {
+    width: 200px;
+    height: auto;
+  }
+
+  .MIW-IntroVideoPreviewImg {
+    width: 200px;
+    height: auto;
+  }
+
+  .MIW-ProfileImgPreview,
+  .MIW-IntroVideoPreviewImg {
+    width: 200px;
+    height: auto;
+  }
+
+  .MIW-ProfileImgPreview {
+    width: 200px;
+    height: auto;
+  }
+
+  .MIW-BannerImgPreview {
+    width: 250px;
+    height: auto;
+  }
+}
+
+.MIW-FeaturedBannerMainWrap {
+  border-bottom: 1px solid rgba($mgray, 0.5);
+  padding-bottom: 20px;
+
+  &:first-child {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.MIW-InstituteAuthoritymain,
+.MIW-FeaturedBannerMain,
+.MIW-IntroVideomain {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.MIW-IntroVideomain {
+  .MIW-IntroVideoRadio {
+    .input-custom-type {
+      &.inline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .MIW-FeaturedBannerMain,
+  .MIW-InstituteAuthoritymain,
+  .MIW-IntroVideomain {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .MIW-UploadLogoSectonWrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .EditSiteBuilderBody {
+    .cardPadding {
+      padding: 20px 15px;
+    }
+  }
+
+  .SBBodyHeadWrap {
+    grid-template-columns: 1fr;
+    background: $white;
+
+    .SBBodyHeadItem {
+      &:last-child {
+        text-align: left;
+      }
+    }
+  }
+}
+
+
+.MIW-MapAddress {
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 5px solid $white;
+    border-radius: 8px;
+
+    @media screen and (max-width: 576px) {
+      height: 200px;
+    }
+  }
+}

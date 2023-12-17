@@ -1,0 +1,37 @@
+@import '../commonEcommerce';
+@import '../../../../assets/Style/base';
+
+.invoice-container {
+  .invoice-wrapper {
+    background-color: $white;
+    border-radius: 12px;
+    padding: 10px 30px;
+    width: 80%;
+
+    .invoice-top-logo-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .invoice-addressDetails-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      column-gap: 20%;
+      position: relative;
+
+      .invoice-address-sold-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.order-invoice-custom {
+  width: 600px;
+  margin: auto;
+}

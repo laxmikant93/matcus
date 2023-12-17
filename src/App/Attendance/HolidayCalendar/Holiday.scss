@@ -1,0 +1,218 @@
+@import "../../../assets/Style/base";
+.HolidayCalender-ListView-Head,
+.HolidayCalender-Modal-Head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .HeadNameCst {
+    width: 100%;
+  }
+  .HolidayCalender-List-labeling {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+  }
+}
+.PageTopHead {
+  &.PTH-student-holiday-listHead,
+  &.PTH-teacher-holiday-listHead {
+    grid-template-columns: auto auto 250px 1fr;
+    align-items: center;
+  }
+}
+.LeftRightCalender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  .LeftDateIcon,
+  .RightDateIcon {
+    background-color: $white;
+    color: $base;
+    line-height: 0;
+    height: 32px;
+    outline: none;
+    border: 0;
+    width: 15%;
+    border-radius: 3px;
+  }
+  .DateCntMain {
+    border: 1px solid $lgray;
+    border-radius: 3px;
+    padding: 5px 15px;
+    @extend .text-xxs;
+    font-weight: 500;
+    width: 70%;
+    text-align: center;
+  }
+}
+.Holiday-List-Tab-Wrap {
+  margin-top: 15px;
+  .card {
+    margin-bottom: 20px;
+    border-color: rgba($lgray, 0.5);
+    background-color: $white;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .cardHeader {
+      background-color: $silver;
+      border-radius: inherit;
+      cursor: pointer;
+      position: relative;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      .HeaderCnt {
+        padding: 15px 15px 15px 35px;
+        &.active {
+          &::before {
+            transform: rotate(-45deg);
+            top: 22px;
+          }
+        }
+        &::before {
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid $base;
+          border-right: 2px solid $base;
+          transform: rotate(137deg);
+          left: 15px;
+          top: 18px;
+          transition: all 0.8s ease;
+        }
+      }
+    }
+
+    .cardBody {
+      opacity: 1;
+      padding: 0;
+      background-color: rgba($silver, 0.5);
+      .CardBodyHolidayListItem {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+        @extend .text-xxs;
+        border-top: 1px solid $lgray;
+        cursor: pointer;
+
+        // &:hover {
+        //   .holiday-action {
+        //     li {
+        //       &:nth-child(1),
+        //       &:nth-child(2) {
+        //         visibility: visible;
+        //         opacity: 1;
+        //       }
+        //     }
+        //   }
+        // }
+        .holiday-action {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 5px;
+          cursor: pointer;
+
+          li {
+            padding: 0 5px;
+            cursor: pointer;
+            // &:nth-child(1),
+            // &:nth-child(2) {
+            //   visibility: hidden;
+            //   opacity: 0;
+            // }
+          }
+          .holiday_type {
+            @extend .text-xxs;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid $lgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+.add-new-holiday-Wrap {
+  width: 600px;
+  @media (max-width: 600px) {
+    max-width: 100%;
+  }
+  .chooseHolidayLevelList {
+    height: 200px;
+    overflow: hidden;
+    overflow: auto;
+  }
+  .holidayScheduleCalender {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+  }
+}
+.scroll-nav-tab-wrapper {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+}
+
+.HolidayCalender-Modal-Head {
+  .scroll-nav-tab-wrapper {
+    display: flex;
+  }
+}
+@media screen and (max-width: 992px) {
+  .scroll-nav-tab-wrapper {
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  .PageTopHead {
+    &.PTH-student-holiday-listHead,
+    &.PTH-teacher-holiday-listHead {
+      grid-template-columns: 1fr;
+    }
+  }
+  .Holiday-List-Tab-Wrap {
+    .card {
+      .cardBody {
+        .CardBodyHolidayListItem {
+          grid-template-columns: 1fr;
+          .holiday-action {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+  .HolidayCalender-ListView-Head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}

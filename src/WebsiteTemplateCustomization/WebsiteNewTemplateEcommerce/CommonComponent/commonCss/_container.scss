@@ -1,0 +1,42 @@
+.ecom-layout {
+
+  font-family: "Mulish", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Poppins:wght@100&display=swap");
+
+  .container-fluid {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+  }
+
+  .containerTrue {
+    width: 90%;
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+
+  .section-gap {
+    margin-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .mt-24 {
+    padding-top: 36px;
+  }
+
+  .mt-20 {
+    margin-top: 20px;
+  }
+
+  .mt-64 {
+    padding-top: 64px;
+  }
+
+  .pb-45 {
+    padding-bottom: 45px;
+  }
+
+  .formpaddingbottom {
+    padding-bottom: 15px !important;
+  }
+}

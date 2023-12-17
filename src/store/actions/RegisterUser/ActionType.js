@@ -1,0 +1,3 @@
+export const REGISTERUSERTYPE = {
+  POST_USER_INFO = "POST_USER_DATA"
+}

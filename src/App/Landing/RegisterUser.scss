@@ -1,0 +1,79 @@
+@import "../../assets/Style/base";
+.chech-domain-error {
+  color: $secondary;
+  @extend .text-xxs;
+  @extend .w-400;
+  display: block;
+  position: absolute;
+  width: 100%;
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.RegisterPersonalInstitute {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0 30px;
+  padding-top: 20px;
+}
+.otp-verify-cst {
+  .otp-verify-input {
+    display: flex;
+    &:focus-within {
+      .button {
+        background-color: $primary;
+        color: $white;
+      }
+      .form-group {
+        .form-control {
+          border-color: $primary;
+        }
+      }
+    }
+    .form-group {
+      margin-bottom: 0;
+      max-width: 150px;
+      left: 1px;
+      .form-control {
+        border-right: none;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-color: $lgray;
+      }
+    }
+    .button {
+      border-left: none;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      background-color: $mgray;
+      color: $white;
+      height: 40px;
+    }
+  }
+  .otp-verify-denied-message {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @extend .text-xxs;
+    color: $red;
+    @extend .w-500;
+  }
+  .otp-verify-success-message {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @extend .text-xxs;
+    color: $secondary;
+    @extend .w-500;
+  }
+}
+@media screen and (max-width: 480px) {
+  .RegisterPersonalInstitute {
+    grid-template-columns: 1fr;
+    .RegisterPersonalInstituteHead {
+      grid-column: 1;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../../../../assets/Style/base';
+
+.uploadMedia-container {
+  border: 1px dashed rgba($base, 0.3);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  position: relative;
+
+  .upload-file {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+
+}
+
+[aria-disabled="true"] {
+  opacity: 0.8;
+  pointer-events: none;
+
+  img {
+    filter: grayscale(1);
+  }
+
+  p {
+    color: $lgray;
+  }
+}

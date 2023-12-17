@@ -1,0 +1,105 @@
+{
+     "company": [
+          {
+               "menuName": "Company",
+               "menuLink": "/",
+               "sectionRef": null,
+               "menuHeadCls": "f_list_head"
+          },
+          {
+               "menuName": "About us",
+               "menuLink": "/about",
+               "sectionRef": null,
+               "menuHeadCls": ""
+          },
+          {
+               "menuName": "Support",
+               "menuLink": "https://api.whatsapp.com/send?phone=918368214889&text=Hi,%20There!",
+               "sectionRef": null,
+               "menuHeadCls": ""
+          },
+          {
+               "menuName": "Contact",
+               "menuLink": "/contact",
+               "sectionRef": null,
+               "menuHeadCls": ""
+          },
+          {
+               "menuName": "Annual Report(2020-2021)",
+               "menuLink": "/edneed-mgt7a",
+               "sectionRef": null,
+               "menuHeadCls": ""
+          },
+          {
+               "menuName": "How Edneed Works",
+               "menuLink": "/",
+               "sectionRef": "hewRef",
+               "menuHeadCls": "f_scroll_menu"
+          }
+     ],
+     "product": [
+          {
+               "menuName": "Products",
+               "menuLink": "/",
+               "sectionRef": null,
+               "menuHeadCls": "f_list_head"
+          },
+          {
+               "menuName": "LMS",
+               "menuLink": "/products",
+               "sectionRef": "#lmsRef",
+               "menuHeadCls": "f_scroll_menu"
+          },
+          {
+               "menuName": "Website Builder",
+               "menuLink": "/products",
+               "sectionRef": "#wbRef",
+               "menuHeadCls": "f_scroll_menu"
+          },
+          {
+               "menuName": "Digital Marketing",
+               "menuLink": "/products",
+               "sectionRef": "#dmRef",
+               "menuHeadCls": "f_scroll_menu"
+          }
+     ],
+     "resources": [
+          {
+               "menuName": "Resources",
+               "menuLink": "/",
+               "sectionRef": null,
+               "menuHeadCls": "f_list_head"
+          },
+          {
+               "menuName": "Blog",
+               "menuLink": "https://blog.edneed.com/",
+               "menuHeadCls": ""
+          },
+          {
+               "menuName": "FAQs",
+               "menuLink": "/faq",
+               "sectionRef": null,
+               "menuHeadCls": ""
+          },
+          {
+               "menuName": "Request Free Demo",
+               "menuLink": "/request-demo",
+               "sectionRef": null,
+               "menuHeadCls": ""
+          },
+          {
+               "menuName": "Watch Our Videos",
+               "menuLink": "/edneed-video",
+               "sectionRef": null,
+               "menuHeadCls": ""
+          },
+          {
+               "menuName": "Testimonials",
+               "menuLink": "/profile-review-list",
+               "sectionRef": null,
+               "menuHeadCls": ""
+          }
+     ]
+
+
+}

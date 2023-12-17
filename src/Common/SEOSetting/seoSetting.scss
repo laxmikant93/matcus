@@ -1,0 +1,78 @@
+@import '../../assets/Style/base';
+
+.seoContainer {
+  height: 100vh;
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .seoSetting-preview-wrap {
+    width: 100%;
+    position: relative;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    padding: 24px;
+
+    .seo-link {
+      color: #146D25;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .seo-link-describtion {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .seo-upper-section {
+    padding: 0 24px;
+
+    .meta-title-wrap {
+      margin-top: 16px;
+    }
+
+    .meta-description-wrap {}
+  }
+
+  .showOverFlow {
+    height: 42vh;
+    overflow-y: auto;
+  }
+
+
+  .seobtn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 16px;
+    padding: 0 24px;
+  }
+
+  .hireProfessinal-section {
+    background-color: rgba($primary, 0.1);
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px 24px;
+
+    .hireProfessinal-details {
+      margin-top: 12px;
+      p{
+        span{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .line {
+    background-color: $base;
+    opacity: 0.1;
+  }
+}

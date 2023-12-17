@@ -1,0 +1,36 @@
+@import "../../../assets/Style/base";
+.EditService-MBody {
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-gap: 5px;
+}
+.MonthaNameModal{
+  grid-column: 1/18;
+}
+.DateDesignmodal {
+  padding: 10px 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.classDataNamestudent{
+  padding-top:10px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr );
+   border-bottom:1px solid #0000001f;
+   padding-bottom: 5px;
+   text-align: center;
+   margin-bottom: 10px;
+  p
+  { &:first-child{
+     text-align: left;
+   }
+   &:last-child{
+     text-align: right;
+   }
+  }
+ 
+}

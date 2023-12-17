@@ -1,0 +1,36 @@
+@import "../../../../assets/Style/base";
+
+.supportCenterWrapper {
+  .input-custom-type {
+    gap: 10px;
+    max-width: 400px;
+    label {
+      padding: 6px 0;
+      &.animLabel {
+        @extend .text-xxs;
+        padding: 0 5px;
+      }
+    }
+    .formFieldwrap {
+      .cstmPhoneInput {
+        .form-group {
+          &.react-tel-input {
+            .flag-dropdown {
+              .country-list {
+                .search {
+                  z-index: 10;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .submitBtnWrap {
+    width: 100%;
+  }
+  .smallError {
+    width: 88px;
+  }
+}

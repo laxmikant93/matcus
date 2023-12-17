@@ -1,0 +1,439 @@
+@import "../../assets/Style/base";
+///Feed Section
+.ED-FeedWrapper {
+  background-color: $silver;
+  padding: 30px;
+}
+
+.ED-InstituteListingFeedWrapper {
+  background-color: $primary;
+}
+
+.ED-CommunityFeedWrapper {
+  background-color: $silver;
+}
+
+.ED-FeedHeadWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  align-items: center;
+}
+
+.FeedHeroContentAction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.FeedHeroContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.FeedHeroContentItem {
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 250px;
+  box-shadow: 2px 2px 20px rgba($base, 0.125);
+}
+
+.FeedHeroContWrap {
+  padding: 20px 0 50px 0;
+}
+
+.InstituteListingFeedHead {
+  color: $white;
+}
+
+.CommunityFeedCst {
+  padding: 50px 0;
+}
+
+.CommunityFeedQuestion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  .community-asked {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba($mgray, 0.5);
+    border-radius: 5px;
+    padding: 20px 30px;
+    &:hover {
+      box-shadow: 0 0 10px rgba($mgray, 0.5);
+    }
+    .ask-profile {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 10px;
+      align-items: flex-start;
+      .ask-profile-img {
+        background-color: $mgray;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: block;
+        overflow: hidden;
+        img {
+          width: 100%;
+          max-width: 100%;
+          min-width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .asked-question-delete {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .asked-question-area {
+      // padding: 30px 30px 0 30px;
+      // display: grid;
+      // grid-template-columns: 15fr 1fr;
+      .asked-ques-detail {
+        ul {
+          display: inline-flex;
+          flex-direction: row;
+          align-items: center;
+          li {
+            margin-right: 10px;
+            &:last-child {
+              margin-right: 0;
+            }
+            span {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .asked-answer-all {
+      border-top: 1px solid rgba($mgray, 0.5);
+      border-bottom: 1px solid rgba($mgray, 0.5);
+      margin-top: 30px;
+
+      .asked-answer-all-ui {
+        display: grid;
+        grid-template-columns: auto 4fr auto auto auto;
+        align-items: center;
+        .asked-answer-all-ui-item {
+          color: $dgray;
+          @extend .text-xxs;
+          @extend .w-500;
+          border-right: 1px solid rgba($mgray, 0.5);
+          padding: 10px 15px;
+          &:last-child {
+            border-right: 1px solid transparent;
+          }
+          i {
+            margin-right: 5px;
+          }
+
+          a {
+            display: block;
+            // padding: 10px 15px;
+            color: $bsPink;
+            font-weight: 600;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .asked-answer-area {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr 20fr;
+      grid-gap: 5px;
+      align-items: flex-start;
+      .answered-profile-img {
+        img {
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+      .answered-profile-detail {
+        .answered-profile-detail-m-grid {
+          display: grid;
+          grid-template-columns: 15fr 3fr;
+          grid-gap: 5px;
+          align-items: flex-start;
+          .answered-profile-detail-m-g2 {
+            .btnEditQuestion {
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+            }
+            .btnDeleteQuestion {
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+              border-left-color: transparent;
+            }
+          }
+        }
+        .sub-heading {
+          span {
+            margin-right: 5px;
+          }
+        }
+        .answered-question-area {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .answered-question-actionBtn {
+          .button {
+            line-height: 1;
+            &:first-child {
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+            }
+            &:last-child {
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+              border-left-color: transparent;
+            }
+          }
+        }
+      }
+    }
+    .c-ques-answered-area {
+      border: 0;
+      padding-top: 40px;
+      margin: 0;
+    }
+  }
+
+  .asked-ques-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.InstituteListingFeedHeadWrap {
+  padding: 80px 0;
+}
+
+.InstituteListingFeedActionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InstituteListingFeed {
+  .FeaturedInstituteFeedSlider {
+    .rec-arrow-right,
+    .rec-arrow-left {
+      background-color: $silver;
+    }
+  }
+}
+
+.InstagramFeedCst {
+  padding: 50px 0;
+
+  .InstagramFeedHead {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 10px;
+
+    .InstagramItem {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }
+
+  .InstagramFeedBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding-top: 30px;
+  }
+}
+
+.edFeedInstituteListSlider {
+  .InstituteListCardWrapper {
+    padding-right: 10px;
+    .DefaultInsListCoverImg {
+      height: 11.25vw;
+    }
+  }
+}
+.SpQeE {
+  display: inline-block !important;
+}
+.bQjoUN {
+  box-shadow: 0 0 1px 2px rgba($white, 0.5) !important;
+}
+.rec-carousel-wrapper .cetQhm {
+  background-color: $white;
+  box-shadow: none;
+}
+.institute-card-wrap {
+  .card {
+    background: $white;
+    box-shadow: 0 0 20px rgba($silver, 0.125);
+    border: none;
+    border-radius: 15px;
+  }
+
+  .cardMedia {
+    position: relative;
+    .InsListCoverImg,
+    .DefaultInsListCoverImg {
+      width: 100%;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+    .DefaultInsListCoverImg {
+      background-color: rgba($lgray, 0.5);
+      height: 12.25vw;
+      img {
+        height: 12.25vw;
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+    }
+  }
+  .CardActionCustom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    width: 100%;
+    left: 0;
+    .CardActionCustomList {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 20px;
+      border-radius: 30px;
+      background-color: $white;
+      width: 85%;
+    }
+    li {
+      padding: 0 20px;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      button {
+        @extend .w-500;
+        @extend .text-xs;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5px;
+        position: relative;
+        z-index: 1;
+        i {
+          margin-bottom: 3px;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .popup {
+      bottom: 0;
+      left: 0;
+      right: auto;
+    }
+    .c-socialShare-icon {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      margin: 10px 0;
+    }
+  }
+  .cardBody {
+    line-height: 1.5;
+    position: relative;
+    padding: 0 20px 40px 20px;
+    text-align: center;
+    .inst-name {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      img {
+        height: 20px;
+        width: auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  ///Feed Section
+  .ED-FeedHeadWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    .ED-FeedHeadItem {
+      &:last-child {
+        justify-content: flex-start;
+      }
+    }
+  }
+  .InstagramFeedCst {
+    .InstagramFeedBody {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  // .InstituteListingFeed {
+  //   grid-template-columns: 1fr;
+  //   .FeaturedInstituteFeedSlider {
+  //     grid-column: 1/2;
+  //   }
+  // }
+  .InstituteListingFeedSubHead {
+    align-items: flex-start;
+  }
+  .CommunityFeedQuestion {
+    grid-template-columns: 1fr;
+  }
+  .CommunityFeedCst {
+    .asked-question-area {
+      padding: 0;
+    }
+    .community-asked {
+      .asked-question-area {
+        .asked-ques-detail {
+          ul {
+            display: inline-block;
+          }
+        }
+      }
+      .asked-answer-all {
+        .asked-answer-all-ui {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .FeedHeadCst {
+    p {
+      &:first-child {
+        font-size: 22px;
+        padding-top: 50px;
+      }
+    }
+  }
+}

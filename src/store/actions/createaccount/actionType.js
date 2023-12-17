@@ -1,0 +1,3 @@
+export const THANKYOU_USER = {
+    THANKYOU_MESSAGE:"THANKYOU_MESSAGE",    
+}

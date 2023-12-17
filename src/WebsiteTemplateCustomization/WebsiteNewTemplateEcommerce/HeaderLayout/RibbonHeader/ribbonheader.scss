@@ -1,0 +1,66 @@
+@import "../../CommonComponent/commonCss/base.scss";
+.ribbon-wrapper {
+  height: 32px;
+  background-color: $white;
+  border-bottom: 1px solid #eaeaea;
+  z-index: 120;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .multilang-drop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    #google_translate_element {
+      position: relative;
+      .icon-translate {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        background-color: $black;
+        display: block;
+        width: 11.67px;
+        pointer-events: none;
+        height: 11.67px;
+        mask-image: url("../../assets/icons/icon-translate.svg") no-repeat center;
+        -webkit-mask: url("../../assets/icons/icon-translate.svg") no-repeat center;
+        z-index: 1;
+      }
+      .skiptranslate {
+        &.goog-te-gadget {
+          height: 28px;
+          font-size: 0;
+          &::after {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 7px;
+            background-color: $black;
+            display: block;
+            pointer-events: none;
+            width: 10px;
+            height: 100%;
+            mask-image: url("../../assets/icons/arrow-down.svg") no-repeat center;
+            -webkit-mask: url("../../assets/icons/arrow-down.svg") no-repeat center;
+          }
+          .goog-te-combo {
+            border: none;
+            padding-left: 16px;
+            color: $black;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            margin: 4px 0 2px 0 !important;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}

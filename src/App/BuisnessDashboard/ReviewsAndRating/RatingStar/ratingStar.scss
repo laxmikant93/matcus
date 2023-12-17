@@ -1,0 +1,37 @@
+@import '../../../../assets/Style/base';
+
+.star-container {
+  .rating-label {
+    line-height: 32px;
+  }
+
+  .star-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+    .rating-label {
+      input[type='radio'] {
+        display: none;
+      }
+    }
+  }
+
+  .star-icon {
+    display: block;
+    width: 21px;
+    height: 21px;
+    -webkit-mask: url("./star.svg") no-repeat center;
+    mask-image: url("./star.svg") no-repeat center;
+    cursor: pointer;
+  }
+
+  .starIcon-filled {
+    background: #DCAE09;
+  }
+
+  .starIcon-empty {
+    background: rgba($base, 0.2)
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../commonCss/base.scss';
+
+.ecom-layout {
+
+  .deletePop-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($black, 0.5);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .trueThemepop-wrap {
+      background-color: $white;
+      width: 400px;
+      max-width: 90%;
+      padding: 24px;
+      padding-bottom: 0;
+      border-radius: 4px;
+
+      .deletepop-p {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2em;
+        color: $black;
+      }
+
+      .deletepop-para {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.4em;
+        color: $black;
+        padding-top: 2px;
+      }
+
+      .deletePop-btn-wrapper {
+        padding-top: 24px;
+        width: 100%;
+        position: relative;
+
+        .line {
+          background-color: $black;
+          opacity: 0.1;
+
+        }
+
+        button {
+          border: none;
+          outline: none;
+          background-color: transparent;
+          width: 50%;
+          padding: 12px 0px;
+          text-align: center;
+        }
+
+        .btn-delete {
+          border-left: 1px solid rgba($black, 0.1);
+          color: $red;
+        }
+
+        .btn-wishlist {
+          @extend .btn-delete;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}

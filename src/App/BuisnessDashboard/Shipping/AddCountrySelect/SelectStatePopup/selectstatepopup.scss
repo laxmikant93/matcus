@@ -1,0 +1,19 @@
+@import '../../../../../assets/Style/base';
+
+.createCollectionpop-search {
+  .SearchControlbar.tableSearchbar {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .SearchControlbar {
+    .form-control-search {
+      background: rgba($primary, 0.09) !important;
+    }
+  }
+}
+
+.states-item-div {
+  overflow-y: scroll;
+  max-height: 275px;
+}

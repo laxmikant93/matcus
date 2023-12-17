@@ -1,0 +1,452 @@
+@import "../../../../assets/Style/base";
+@import "../../../../assets/Style/button";
+@import "../../../../assets/Style/table";
+
+.CategoryServices-wrapper {
+  .category-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 190px;
+
+    &.seo-setting {
+      margin-top: 16px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid rgba($base, 0.2);
+      .category-subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $base;
+      }
+    }
+
+    .column {
+      &.btn-column {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        .custom-btn {
+          background-color: transparent;
+          border: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          position: relative;
+
+          .icon-Seosetting,
+          .icon-website {
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+            display: block;
+            background-color: $primary;
+            -webkit-mask: url("../../../../assets/Icons/icon-seoserach.svg") no-repeat center;
+            mask-image: url("../../../../assets/Icons/icon-seoserach.svg") no-repeat center;
+          }
+
+          .icon-website {
+            -webkit-mask: url("../../../../assets/Icons/icon-seosetting.svg") no-repeat center;
+            mask-image: url("../../../../assets/Icons/icon-seosetting.svg") no-repeat center;
+          }
+        }
+      }
+    }
+
+    .edit-category-Name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+        color: $base;
+
+        .count {
+          font-weight: 400;
+          font-size: 36px;
+          color: #797979;
+        }
+      }
+
+      .edit-btn {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 3.5px;
+        .edit-icon {
+          display: block;
+          cursor: pointer;
+          width: 14px;
+          height: 14px;
+          background-color: $primary;
+          -webkit-mask: url('../../../../assets/Icons/icon-penedit.svg') no-repeat center;
+          mask-image: url('../../../../assets/Icons/icon-penedit.svg') no-repeat center;
+        }
+      }
+    }
+
+    .edit-category-input {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .form-control {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid rgba($base, 0.6);
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+        color: $base;
+        padding: 0;
+        padding-right: 50px;
+      }
+
+      .save-btn {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        gap: 3.5px;
+      }
+    }
+
+    .subtitle {
+      margin-top: 9px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: $base;
+    }
+  }
+
+  .add-category-wrap {
+    margin-top: 36px;
+  }
+
+  .CategoryList-Wrapper {
+    border-radius: 9px 9px 0px 0px;
+    overflow: hidden;
+    margin-top: 24px;
+
+    .category-table-wrapper {
+      table {
+        thead {
+          .category-tr-list {
+            th {
+              position: -webkit-sticky;
+              position: sticky;
+              top: 0;
+              background: rgba($base, 0.03);
+              color: #121212;
+              z-index: 9;
+              font-weight: 500;
+              text-transform: uppercase;
+              font-size: 14px;
+              font-weight: 600;
+              color: rgba($base, 0.4);
+              padding: 10px 24px;
+              text-align: left;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            border-bottom: 1px solid rgba($base, 0.3);
+            background-color: $white;
+
+            &.disable {
+              background-color: rgba($base, 0.1);
+            }
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            &:hover {
+              background-color: #cee8ff;
+            }
+
+            td {
+              padding: 18px 24px;
+              font-weight: 500;
+              text-transform: capitalize;
+              font-size: 16px;
+              line-height: 24px;
+              color: $base;
+              text-align: left;
+
+              .group-icons {
+                display: flex;
+                align-items: center;
+                gap: 23px;
+                .edit-button{
+                  .lgray{
+                    background-color: #b4b9bd;
+                  }
+                }
+
+                .edit-button,
+                .icon {
+                  background-color: transparent;
+                  border: none;
+
+                  .icon-plus {
+                    font-size: 14px;
+                    line-height: 6px;
+                    height: 15px;
+                    display: flex;
+                    color: #b4b9bd;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2.3px solid #b4b9bd;
+                    border-radius: 5px 5px 5px 0;
+                    width: 15px;
+                    font-weight: 400;
+                  }
+                }
+              }
+
+              .switch-wrap {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+
+              .profile-detail {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .img-icon {
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 8rem;
+                  border: 1px solid rgba($base, 0.15);
+                  display: block;
+                  object-fit: cover;
+                }
+
+                .title {
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: $base;
+                }
+              }
+
+              .addservice-btn {
+                background-color: transparent;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ModalsBody {
+  &.model-wrap {
+    padding: 0;
+  }
+
+  .serviceList-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 24px 36px;
+
+    .title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $base;
+    }
+
+    .Column {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .serach-warp {
+        .SearchControlbar {
+          .form-control-search {
+            background: rgba($primary, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+  .category-servicelist-table {
+    .group-btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 24px;
+      padding: 12px 38px;
+    }
+
+    .gridListTable {
+      .gridHeader {
+        background: rgba($base, 0.03);
+      }
+
+      .gridBody {
+        .gridRow {
+          border-bottom: 1px solid rgba($base, 0.3);
+          background-color: $white;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          li {
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size: 16px;
+            line-height: 24px;
+            color: $base;
+            text-align: left;
+            white-space: nowrap;
+
+            .profile-detail {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+
+              .img-icon {
+                width: 48px;
+                height: 48px;
+                border-radius: 8rem;
+                border: 1px solid rgba($base, 0.15);
+                display: block;
+                object-fit: cover;
+              }
+
+              .title {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: $base;
+              }
+            }
+
+            .Uncategorized-btn,
+            .delete-btn {
+              background-color: transparent;
+              border: none;
+              display: flex;
+              align-items: center;
+              gap: 9px;
+              white-space: nowrap;
+
+              .icon-Uncategorized {
+                display: block;
+                height: 24px;
+                width: 24px;
+                cursor: pointer;
+                background-color: $primary;
+                -webkit-mask: url("../../../../assets/Icons/icon-Uncategorized.svg") no-repeat center;
+                mask-image: url("../../../../assets/Icons/icon-Uncategorized.svg") no-repeat center;
+              }
+            }
+
+            .delete-btn {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Moved-toste-wrap {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $white;
+  border-radius: 16px;
+  padding: 9px 43px;
+  z-index: 9999;
+
+  .title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $primary;
+
+    &.red {
+      color: $red;
+    }
+  }
+}
+
+.EdneedDialog {
+  .DialogWrapper {
+    padding: 0 !important;
+    overflow: hidden;
+
+    .dialog-cancel-btn {
+      margin-top: 16px;
+      background: rgba($base, 0.4);
+      height: 20px;
+      width: 20px;
+      border-radius: 8rem;
+      color: $white;
+      .dialog-cancel-icon {
+        &::after,
+        &::before {
+          background: $white;
+          top: 9px;
+        }
+      }
+    }
+
+    .head {
+      .title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $white;
+        background-color: $primary;
+        padding: 16px 24px;
+      }
+    }
+
+    .DialogBody {
+      padding: 24px 36px;
+
+      .subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: $base;
+        margin-bottom: 24px;
+      }
+
+      .button_group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import "../CommonComponent/commonScss/common.scss";
+
+footer {
+  background-color: $primary;
+  padding: 50px 60px;
+  margin-top: 40px;
+
+  .footer-container {
+    color: $white;
+    display: flex;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer-store-wrap {
+      width: 25%;
+    }
+
+    .footer-wrap {
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.4em;
+      }
+
+      ul {
+        margin-top: 15px;
+
+        li {
+          list-style-type: none;
+          font-size: 16px;
+          font-weight: 300;
+          padding-bottom: 8px;
+          line-height: 1.4em;
+        }
+
+        &:not:first-child {
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+
+  .footer-hr {
+    width: 100%;
+    height: 2px;
+    background-color: $secondary;
+    margin-top: 20px;
+  }
+
+  .footer-lowerSection {
+    margin-top: 20px;
+
+    .footer-lowerSection-first-para {
+      font-size: 14px;
+      font-weight: 400;
+      color: $white;
+    }
+
+    .footer-loweSection-imag-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 40px;
+      margin-top: 20px;
+
+      .footer-lowerSection-image-div {
+        // width: 70px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+    }
+  }
+
+  .footer-copywrite-text {
+    font-size: 16px;
+    color: $white;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin-top: 50px;
+  }
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: $white;
+  cursor: pointer;
+
+}
+
+.icons-large {
+  width: 100px;
+  height: 100px;
+}
+
+.icons-facebook {
+  -webkit-mask-image: url("../assets/icons/facebookIcon.svg");
+  mask-image: url("../assets/icons/facebookIcon.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.icons-instagram {
+  -webkit-mask-image: url("../assets/icons/instagramIcon.svg");
+  mask-image: url("../assets/icons/instagramIcon.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+}
+
+.icons-twitter {
+  -webkit-mask-image: url("../assets/icons/twitterIcon.svg");
+  mask-image: url("../assets/icons/twitterIcon.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.icons-americanIcon {
+  -webkit-mask-image: url("../assets/icons/americanExpressIcon.svg");
+  mask-image: url("../assets/icons/americanExpressIcon.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}

@@ -1,0 +1,144 @@
+// Extra-light - 200
+// Light - 300
+// Regular - 400
+// Medium - 500
+// Semi-bold - 600
+// Bold - 700
+// Extra-bold - 800
+@for $i from 1 through 9 {
+  $fbase: 100;
+  $fontweight: $fbase * $i;
+
+  .w-#{$fontweight} {
+    font-weight: $fontweight + 0;
+  }
+}
+
+// h1 {
+//   font-size: ;
+// }
+// h2 {
+//   font-size: ;
+// }
+// h3 {
+//   font-size: ;
+// }
+// h4 {
+//   font-size: ;
+// }
+// h5 {
+//   font-size: ;
+// }
+// h6 {
+//   font-size: ;
+// }
+
+h1 {
+  &.middle-text {
+    font-size: 22px;
+    line-height: 1.33;
+  }
+}
+
+h2 {
+  &.middle-text {
+    line-height: 1.133;
+    font-size: 16.88px;
+  }
+}
+
+.width-auto {
+  width: auto;
+}
+
+$fontSize: (
+  "3xl": "56px",
+  "2xl": "48px",
+  "xl": "40px",
+  "lg": "36px",
+  "md": "32px",
+  "sm": "24px",
+  "s": "20px",
+  "xs": "16px",
+  "xxs": "14px",
+  "2xs": "12px",
+  "3xs": "10px",
+);
+
+// $fontSize: (
+//   "3xl": clamp(0.8rem, 2vw, 3.5rem),
+//   "2xl": clamp(0.8rem, 2vw, 3rem),
+//   "xl": clamp(0.8rem, 2vw, 2.5rem),
+//   "lg": clamp(0.8rem, 2vw, 2.25rem),
+//   "md": clamp(0.8rem, 2vw, 2rem),
+//   "sm": clamp(0.8rem, 2vw, 1.5rem),
+//   "s": clamp(0.8rem, 2vw, 1.25rem),
+//   "xs": clamp(0.8rem, 2vw, 1rem),
+//   "xxs": clamp(0.8rem, 2vw, 0.875rem),
+//   "2xs": clamp(0.75rem, 2vw, 0.75rem),
+//   "3xs": clamp(0.625rem, 2vw, 0.625rem),
+// );
+
+
+// $fontSize: (
+//   "3xl": "4.099560761347vw",
+//   "2xl": "3.51390922401171vw",
+//   "xl": "2.92825768667643vw",
+//   "lg": "2.63543191800878vw",
+//   "md": "2.34260614934114vw",
+//   "sm": "1.75695461200586vw",
+//   "s": "1.46412884333821vw",
+//   "xs": "1.171303075vw",
+//   "xxs": "1.02489019033675vw",
+//   "2xs": "0.878477306002928vw",
+//   "3xs": "0.732064421669107vw",
+// );
+@media (max-width: 600px) {}
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.inline {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+@each $key,
+$val in $fontSize {
+  .text-#{$key} {
+    font-size: #{$val};
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    &.middle-text {
+      font-size: 16.66px;
+    }
+  }
+}

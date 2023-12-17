@@ -1,0 +1,417 @@
+@import '../../CommonComponent/commonCss/base.scss';
+
+.color-red {
+  color: $red;
+  font-weight: 700;
+  padding-left: 8px;
+}
+
+.color-green {
+  color: #4A9E42;
+  font-weight: 700;
+  padding-left: 8px;
+}
+
+.color-processing {
+  color: #0184FF;
+  font-weight: 700;
+  padding-left: 8px;
+
+
+}
+
+.color-shipped {
+  color: #F9AC1B;
+  font-weight: 700;
+  padding-left: 8px;
+}
+
+.ecom-layout {
+  .myOrders-container {
+    min-height: 250px;
+    padding-top: 24px;
+
+    .pagination-wrapper {
+      margin-top: 12px;
+      justify-content: center;
+      width: 70%;
+
+      @media(max-width:1024px) {
+        width: 90%;
+      }
+
+      @media(max-width:768px) {
+        width: 100%;
+      }
+    }
+
+    .myOrders-heading {
+      font-size: 20px;
+      font-weight: 800;
+      color: $primary;
+      line-height: 1.2em;
+    }
+
+    .mt-12 {
+      margin-top: 12px;
+    }
+
+    .mt-16 {
+      margin-top: 16px;
+    }
+
+    .mt-20 {
+      margin-top: 20px;
+    }
+
+    .myOrders-list-wraper {
+      width: 70%;
+      margin-top: 24px;
+      border: 1px solid rgba($primary, 0.6);
+      padding: 16px;
+      border-radius: 8px;
+
+      @media(max-width:1024px) {
+        width: 90%;
+      }
+
+      @media(max-width:768px) {
+        width: 100%;
+      }
+
+      .myOrders-id-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        @media (max-width:768px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .id-p {
+          font-size: 14px;
+          font-weight: 500;
+          color: $black;
+
+          @media(max-width: 500px) {
+            font-size: 14px;
+          }
+        }
+
+        .id-sapn {
+          @extend .id-p;
+          font-weight: 600;
+          color: #093351;
+        }
+      }
+
+      .orderid-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 4px 16px;
+        background: #F2F4F6;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        gap: 7px;
+        flex-wrap: wrap;
+
+        p {
+          span {
+            color: $primary;
+          }
+        }
+      }
+
+      .myOrder-orderList-main-wrap {
+        margin-bottom: 20px;
+        background: #F2F4F6;
+        padding: 16px;
+        border-radius: 8px;
+
+        .bottom-id {
+          color: #093351;
+        }
+
+        .bottom-id-wrapper {
+          display: flex;
+          justify-content: space-between;
+          background: $white;
+          align-items: center;
+          margin-top: 12px;
+          padding: 8px 16px;
+          text-align: center;
+
+          @media (max-width:768px) {
+            flex-direction: column;
+            text-align: center;
+
+          }
+
+          @media (max-width:500px) {
+            display: block;
+            text-align: start;
+            align-items: flex-start;
+          }
+
+          .bottom-id-item-divider {
+            height: 22px;
+            width: 2px;
+            border: 1px solid rgba($black, 0.1);
+
+            @media (max-width:768px) {
+              display: none;
+            }
+          }
+        }
+
+        .myOrder-orderList-wrap {
+          border-radius: 4px;
+          margin-top: 3px;
+          height: auto;
+          display: flex;
+          justify-content: flex-start;
+          column-gap: 5px;
+
+          @media(max-width:768px) {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+          }
+
+          .left-myOrder-orderList-item {
+            width: 65%;
+            background: $white ;
+            padding: 12px;
+            gap: 16px;
+            border-radius: 8px;
+
+            @media (max-width:768px) {
+              width: 100%;
+            }
+
+            @media (max-width:500px) {
+              display: block;
+            }
+
+            .right-myOrder-orderList-item {
+              width: 66%;
+              text-align: start;
+
+              @media (max-width:500px) {
+                margin-top: 8px;
+                width: 100%;
+              }
+            }
+
+            .myOrder-orderList-leftsidebar {
+              width: 153px;
+              height: 172px;
+
+              @media(max-width:500px) {
+                width: 100%;
+                height: 300px;
+                margin: auto;
+              }
+
+              @media(min-width:768px) and (max-width:992px) {
+                width: 190px;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 4px;
+              }
+            }
+          }
+
+
+
+          .right-myOrder-orderList-wrapper {
+            padding-left: 16px;
+            width: 35%;
+
+            @media (max-width:768px) {
+              width: 100%;
+              padding-left: 0;
+            }
+
+            .order-id-wrapper {
+              background-color: $white;
+              padding: 16px 10px 10px 16px;
+              border-radius: 4px;
+            }
+
+
+
+
+
+            .btn-order-details {
+              background: $white;
+              padding: 9px 0 9px 0;
+              margin-top: 16px;
+              border: none;
+              width: 100%;
+              font-size: 14px;
+              font-weight: 600;
+              color: #093351;
+              box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+              border-radius: 4px;
+            }
+
+            .cancel-btn {
+              color: #093351;
+            }
+          }
+
+          .myOrder-orderList-rightsidebar {
+            // padding: 20px;
+            padding: 20px 20px 0 20px;
+
+            @media(max-width:500px) {
+              padding-bottom: 20px;
+            }
+
+            .trackingid-wrapper {
+              gap: 20px;
+
+              .tracking-id-item {
+                text-decoration: underline;
+              }
+            }
+
+            .para {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.2em;
+              color: $black;
+            }
+
+
+
+
+            .tracking-url-div {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin-top: 2px;
+
+              .tracking-url-p {
+                padding-left: 5px;
+                font-weight: 500;
+                color: $black;
+
+              }
+            }
+
+
+
+          }
+        }
+      }
+
+      // .myOrder-orderList-wrap {
+      //   border: 1px solid rgba($black, 0.1);
+      //   border-radius: 4px;
+      //   margin-top: 3px;
+      //   height: auto;
+
+      //   display: flex;
+      //   justify-content: flex-start;
+      //   column-gap: 5px;
+
+      //   @media(max-width:500px) {
+      //     flex-direction: column;
+      //     text-align: center;
+      //   }
+
+      //   .myOrder-orderList-leftsidebar {
+      //     width: 160px;
+      //     height: 190px;
+
+      //     @media(max-width:500px) {
+      //       width: 100%;
+      //       height: 300px;
+      //       margin: auto;
+      //     }
+
+      //     @media(min-width:768px) and (max-width:992px) {
+      //       width: 190px;
+      //     }
+
+      //     img {
+      //       width: 100%;
+      //       height: 100%;
+      //       object-fit: cover;
+      //       object-position: center;
+      //     }
+      //   }
+
+      //   .myOrder-orderList-rightsidebar {
+      //     // padding: 20px;
+      //     padding: 20px 20px 0 20px;
+
+      //     @media(max-width:500px) {
+      //       padding-bottom: 20px;
+      //     }
+
+      //     .trackingid-wrapper {
+      //       gap: 20px;
+
+      //       .tracking-id-item {
+      //         text-decoration: underline;
+      //       }
+      //     }
+
+      //     .para {
+      //       font-size: 16px;
+      //       font-weight: 500;
+      //       line-height: 1.2em;
+      //       color: $black;
+      //     }
+
+      //     .color-red {
+      //       color: $red;
+      //     }
+
+      //     .color-green {
+      //       color: $secondary
+      //     }
+
+      //     .myOrder-btn-wrap {
+      //       margin-top: 24px;
+      //       display: flex;
+      //       gap: 10px;
+
+      //       @media(max-width:500px) {
+      //         justify-content: center;
+      //       }
+
+      //       .btn-order {
+      //         border-color: rgba($black, 0.1);
+      //       }
+      //     }
+
+      //     .tracking-url-div {
+      //       display: flex;
+      //       align-items: center;
+      //       justify-content: flex-start;
+      //       margin-top: 2px;
+
+      //       .tracking-url-p {
+      //         padding-left: 5px;
+      //         font-weight: 500;
+      //         color: $black;
+
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}

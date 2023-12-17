@@ -1,0 +1,366 @@
+@import "../../../assets/Style/base";
+
+.PageTopHead {
+  &.PTH-InviteFacultyList {
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+    .PTH-Item {
+      &:first-child {
+        grid-column: 1/5;
+      }
+    }
+  }
+}
+.teacherList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+  .btn_badge_tech {
+    background-color: $base;
+    color: $white;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    font-size: 13px;
+    border-radius: 50%;
+    display: flex;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1px;
+  }
+  .teacherListCustom {
+    position: absolute;
+    background-color: $white;
+    top: 25px;
+    right: auto;
+    left: 0;
+    min-height: 100%;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &::before {
+      position: absolute;
+      left: 14px;
+      top: -10px;
+      right: auto;
+      border: 4px solid transparent;
+      border-bottom: 6px solid $white;
+    }
+    .teacherItem {
+      height: 90%;
+      width: 100%;
+      overflow: hidden;
+      overflow-y: auto;
+      margin: 10px 10px 10px 10px;
+    }
+  }
+}
+.addSubWrapper {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 15px;
+  input {
+    margin-right: 15px;
+  }
+  .cstmSelectWrap {
+    margin-bottom: 0;
+    width: 100%;
+    margin-right: 15px;
+  }
+  .form-group {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .form-group {
+    .cstmSelectWrap {
+      margin-bottom: 0;
+    }
+  }
+  button {
+    position: relative;
+    text-align: center;
+    top: 6px;
+  }
+}
+.invite-main-wrap {
+  border-bottom: 1px solid rgba($mgray, 0.5);
+  margin-bottom: 20px;
+}
+.invite-wrap {
+  display: grid;
+  gap: 0 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.courseSelectWrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px;
+}
+.editFacultyBoxWrapper {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  .editFacultyBox {
+    background-color: $white;
+    background-clip: border-box;
+    border-radius: 5px;
+    height: 170px;
+    position: relative;
+    border: 1px solid rgba($mgray, 0.3);
+    line-height: 1.2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    .sub-heading {
+      overflow: hidden;
+      width: 90%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .editFacultyAction {
+    .groupBtn {
+      .btnText {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.Bulk-teacher-invite-section {
+  text-align: center;
+}
+.bulk-xls-download {
+  .btnText {
+    @extend .w-600;
+    color: $primary;
+    text-decoration: underline;
+    i {
+      padding-right: 5px;
+    }
+  }
+}
+.bulk-xls-upload {
+  display: inline-block;
+  text-align: center;
+  margin-top: 40px;
+  .file-input-wrapper {
+    .file-input-overlap {
+      border-radius: 25px;
+      border: 1px solid $primary;
+      height: 38px;
+      line-height: 1.4;
+      padding: 10px 20px;
+      width: 100%;
+      color: $primary;
+    }
+  }
+}
+.profileImgWrap {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba($mgray, 0.25);
+  padding: 2px;
+  background: $white;
+  box-shadow: 0 0 10px rgba($base, 0.125);
+  img {
+    max-width: 98%;
+    object-fit: cover;
+    background-color: $mgray;
+    border-radius: 50%;
+  }
+}
+.closableBtn {
+  display: inline-flex;
+  li {
+    border: 1px solid $silver;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: $white;
+    padding: 5px;
+    color: $primary;
+    padding-right: 20px;
+    @extend .text-xxs;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    margin-right: 5px;
+    border-radius: 5px;
+    &:hover {
+      background-color: $white;
+    }
+  }
+  .close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 5px;
+    transform: translate(0%, -50%);
+    &:hover {
+      background: $silver;
+    }
+  }
+}
+.information-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  .information-section-box {
+    min-width: 500px;
+    max-width: 500px;
+    border: 1px solid rgba($mgray, 0.5);
+    padding: 30px;
+    border-radius: 5px;
+  }
+}
+.invite-again-wrap {
+  display: inline-block;
+}
+.TableBottomBtn {
+  display: flex;
+  align-items: center;
+  &.justify-between {
+    justify-content: space-between;
+  }
+  &.justify-start {
+    justify-content: space-between;
+  }
+  .button {
+    i {
+      &.ed-download {
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    &:hover i {
+      left: 0;
+    }
+  }
+}
+.gridListTable {
+  .gridBody {
+    li {
+      list-style: none;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .pagination_list {
+    margin: 15px auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .PageTopHead {
+    &.PTH-InviteFacultyList {
+      grid-template-columns: 1fr 1fr 2fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .PageTopHead {
+    &.PTH-InviteFacultyList {
+      grid-template-columns: 1fr 1fr auto;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1/4;
+        }
+        &:nth-child(4) {
+          grid-column: 1/4;
+          grid-row: 3/3;
+        }
+      }
+    }
+  }
+}
+.inviteStudentWrappper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+  .inviteStudentItem {
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+    background-color: $white;
+    &:first-child {
+      min-height: 350px;
+      height: 100%;
+    }
+    &:last-child {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .invite-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Bulk-teacher-invite-section {
+    text-align: center;
+  }
+  .PageTopHead {
+    &.PTH-InviteFacultyList {
+      grid-template-columns: 1fr;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+  .PageTopHead {
+    &.PTH-InviteFacultyList {
+      grid-template-columns: 1fr;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1;
+        }
+        &:nth-child(4) {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+}
+//Close Edit Faculty
+@media screen and (max-width: 480px) {
+  .TableBottomBtn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .information-section-wrapper {
+    .information-section-box {
+      min-width: auto;
+    }
+  }
+
+  .Bulk-teacher-invite-section {
+    text-align: center;
+  }
+  .bulk-xls-download {
+    text-align: center;
+  }
+}

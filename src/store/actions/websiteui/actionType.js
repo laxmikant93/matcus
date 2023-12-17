@@ -1,0 +1,5 @@
+export const INSTITUTE_WEBSITE_LIST_AT = {
+    
+    INSTITUTE_WEBSITE_LIST_:"INSTITUTE_WEBSITE_LIST_",  
+   
+}

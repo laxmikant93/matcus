@@ -1,0 +1,67 @@
+@import "../../assets/Style/base";
+
+.PageTopHead {
+  &.PTH-InvitationHistory {
+    grid-template-columns: auto auto 1fr auto;
+    .PTH-Item {
+      &:first-child {
+        grid-column: 1/5;
+      }
+    }
+  }
+}
+.TableBottomBtn {
+  display: flex;
+  align-items: center;
+  &.justify-between {
+    justify-content: space-between;
+  }
+  &.justify-start {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .PageTopHead {
+    &.PTH-InvitationHistory {
+      grid-template-columns: 1fr 1fr 2fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .PageTopHead {
+    &.PTH-InvitationHistory {
+      grid-template-columns: 1fr 1fr auto;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1/4;
+        }
+        &:nth-child(4) {
+          grid-column: 1/4;
+          grid-row: 3/3;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .PageTopHead {
+    &.PTH-InvitationHistory {
+      grid-template-columns: 1fr;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1;
+        }
+        &:nth-child(4) {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .TableBottomBtn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}

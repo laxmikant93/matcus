@@ -1,0 +1,73 @@
+@import '../../../../assets/Style/base';
+
+.freeShppingDropDown-container {
+  position: relative;
+
+  .shppinglable {
+    line-height: 32px;
+  }
+
+  .btn-freeshipping {
+    background-color: transparent;
+    border: 1px solid rgba(32, 32, 32, 0.2);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &:focus-within {
+      border-color: $primary;
+    }
+  }
+
+  .freeShipping-content {
+    display: none;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 7px;
+    border-radius: 4px;
+
+    position: absolute;
+
+    width: 100%;
+    background-color: $white;
+
+    z-index: 99;
+
+    .dropdown-li {
+      padding: 4px 25px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+
+      /* Standard syntax */
+      &:hover {
+        background-color: rgba($primary, 0.2);
+      }
+
+      p {
+        line-height: 18px;
+      }
+    }
+  }
+
+  .content-show {
+    display: block;
+  }
+
+  .icon-arrow {
+    -webkit-mask: url("../../DashboardSetting/asserts/icons/arrow-down.svg") no-repeat center;
+    mask-image: url("../../DashboardSetting/asserts/icons/arrow-down.svg") no-repeat center;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    transform: rotate(360deg);
+  }
+
+  .icon-rotate {
+    transform: rotate(180deg);
+  }
+}

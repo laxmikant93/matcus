@@ -1,0 +1,912 @@
+@import "./theme";
+@import "./typo";
+
+.ed-icon {
+  width: 54px;
+  height: 54px;
+  display: block;
+  cursor: pointer;
+
+  &.i-md {
+    width: 30px;
+    height: 30px;
+  }
+
+  &.i-s {
+    width: 22px;
+    height: 22px;
+  }
+
+  &.i-xs {
+    width: 18px;
+    height: 18px;
+  }
+
+  &.i-xxs {
+    width: 14px;
+    height: 14px;
+  }
+
+  &.i-xxxs {
+    width: 12px;
+    height: 12px;
+  }
+
+  &.i-65 {
+    width: 65px;
+    height: 65px;
+  }
+
+  &.i-75 {
+    width: 75px;
+    height: 75px;
+  }
+
+  &.i-85 {
+    width: 85px;
+    height: 85px;
+  }
+
+  &.i-95 {
+    width: 95px;
+    height: 95px;
+  }
+
+  &.primary {
+    background-color: $primary;
+  }
+
+  &.secondary {
+    background-color: $secondary;
+  }
+
+  &.mgray {
+    background-color: $mgray;
+  }
+
+  &.gray {
+    background-color: $gray;
+  }
+
+  &.base {
+    background-color: $base;
+  }
+
+  &.white {
+    background-color: $white;
+  }
+
+  &.bsPink {
+    background-color: $bsPink;
+  }
+
+  &.red {
+    background-color: $red;
+  }
+
+  &.purple {
+    background-color: $purple;
+  }
+}
+
+.icon-basic-info {
+  -webkit-mask: url("../Icons/icon-basic-info.svg") no-repeat center;
+  mask-image: url("../Icons/icon-announcement.svg") no-repeat center;
+}
+
+.icon-content {
+  -webkit-mask: url("../Icons/icon-content.svg") no-repeat center;
+  mask-image: url("../Icons/icon-content.svg") no-repeat center;
+}
+
+.icon-faculties {
+  -webkit-mask: url("../Icons/icon-faculty.svg") no-repeat center;
+  mask-image: url("../Icons/icon-faculty.svg") no-repeat center;
+}
+
+.icon-services {
+  -webkit-mask: url("../Icons/icon-services.svg") no-repeat center;
+  mask-image: url("../Icons/icon-services.svg") no-repeat center;
+}
+
+.icon-fee-structure {
+  -webkit-mask: url("../Icons/icon-circle-rupees.svg") no-repeat center;
+  mask-image: url("../Icons/icon-circle-rupees.svg") no-repeat center;
+}
+
+.icon-online-test {
+  -webkit-mask: url("../Icons/icon-online-test.svg") no-repeat center;
+  mask-image: url("../Icons/icon-online-test.svg") no-repeat center;
+}
+
+.icon-admission {
+  -webkit-mask: url("../Icons/icon-admission.svg") no-repeat center;
+  mask-image: url("../Icons/icon-admission.svg") no-repeat center;
+}
+
+.icon-gallery {
+  -webkit-mask: url("../Icons/icon-gallery.svg") no-repeat center;
+  mask-image: url("../Icons/icon-gallery.svg") no-repeat center;
+}
+
+.icon-announcement {
+  -webkit-mask: url("../Icons/icon-announcement.svg") no-repeat center;
+  mask-image: url("../Icons/icon-announcement.svg") no-repeat center;
+}
+
+.icon-faqs {
+  -webkit-mask: url("../Icons/icon-faqs.svg") no-repeat center;
+  mask-image: url("../Icons/icon-faqs.svg") no-repeat center;
+}
+
+.icon-vacancy {
+  -webkit-mask: url("../Icons/icon-vacancy.svg") no-repeat center;
+  mask-image: url("../Icons/icon-vacancy.svg") no-repeat center;
+}
+
+.icon-support-center {
+  -webkit-mask: url("../Icons/icon-support-center.svg") no-repeat center;
+  mask-image: url("../Icons/icon-support-center.svg") no-repeat center;
+}
+
+.icon-social-link {
+  -webkit-mask: url("../Icons/icon-social-link.svg") no-repeat center;
+  mask-image: url("../Icons/icon-social-link.svg") no-repeat center;
+}
+
+.icon-search {
+  -webkit-mask: url("../Icons/icon-search.svg") no-repeat center;
+  mask-image: url("../Icons/icon-search.svg") no-repeat center;
+}
+
+.icon-rupee {
+  -webkit-mask: url("../Icons/icon-currency-rupee.svg") no-repeat center;
+  mask-image: url("../Icons/icon-currency-rupee.svg") no-repeat center;
+}
+
+.icon-testimonial {
+  -webkit-mask: url("../Icons/icon-testimonial.svg") no-repeat center;
+  mask-image: url("../Icons/icon-testimonial.svg") no-repeat center;
+}
+
+.icon-circle-rupee {
+  -webkit-mask: url("../Icons/icon-circle-rupees.svg") no-repeat center;
+  mask-image: url("../Icons/icon-circle-rupees.svg") no-repeat center;
+}
+
+.icon-payment-mode {
+  -webkit-mask: url("../Icons/icon-payment-mode.svg") no-repeat center;
+  mask-image: url("../Icons/icon-payment-mode.svg") no-repeat center;
+}
+
+.icon-delete {
+  -webkit-mask: url("../Icons/icon-delete.svg") no-repeat center;
+  mask-image: url("../Icons/icon-delete.svg") no-repeat center;
+}
+
+.icon-plus-add {
+  -webkit-mask: url("../Icons/icon-plus-add.svg") no-repeat center;
+  mask-image: url("../Icons/icon-plus-add.svg") no-repeat center;
+}
+
+.icon-star {
+  -webkit-mask: url("../Icons/icon-star.svg") no-repeat center;
+  mask-image: url("../Icons/icon-star.svg") no-repeat center;
+}
+
+.icon-video {
+  -webkit-mask: url("../Icons/icon-video.svg") no-repeat center;
+  mask-image: url("../Icons/icon-video.svg") no-repeat center;
+}
+
+.icon-upload-video {
+  -webkit-mask: url("../Icons/icon-upload-video.svg") no-repeat center;
+  mask-image: url("../Icons/icon-upload-video.svg") no-repeat center;
+}
+
+// .icon-whatsapp {
+//   background-image: url("../Icons/icon-whatsapp.png");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
+.icon-external-link {
+  -webkit-mask: url("../Icons/icon-external-link.svg") no-repeat center;
+  mask-image: url("../Icons/icon-external-link.svg") no-repeat center;
+}
+
+.icon-video-play {
+  -webkit-mask: url("../Icons/icon-video-play.svg") no-repeat center;
+  mask-image: url("../Icons/icon-video-play.svg") no-repeat center;
+}
+
+// .icon-mail {
+//   -webkit-mask: url("../Icons/icon-mail.svg") no-repeat center;
+//   mask-image: url("../Icons/icon-mail.svg") no-repeat center;
+// }
+.icon-whatsapp {
+  -webkit-mask: url("../Icons/icon-whatsapp.svg") no-repeat center;
+  mask-image: url("../Icons/icon-whatsapp.svg") no-repeat center;
+}
+
+.icon-share {
+  -webkit-mask: url("../Icons/icon-share.svg") no-repeat center;
+  mask-image: url("../Icons/icon-share.svg") no-repeat center;
+}
+
+.icon-like-thumb {
+  -webkit-mask: url("../Icons/like-thumb.svg") no-repeat center;
+  mask-image: url("../Icons/like-thumb.svg") no-repeat center;
+}
+
+.icon-awesome-eye {
+  -webkit-mask: url("../Icons/icon-awesome-eye.svg") no-repeat center;
+  mask-image: url("../Icons/icon-awesome-eye.svg") no-repeat center;
+}
+
+.icon-rotate-left {
+  -webkit-mask: url("../Icons/icon-rotate-left.svg") no-repeat center;
+  mask-image: url("../Icons/icon-rotate-left.svg") no-repeat center;
+}
+
+.icon-rotate-right {
+  -webkit-mask: url("../Icons/icon-rotate-right.svg") no-repeat center;
+  mask-image: url("../Icons/icon-rotate-right.svg") no-repeat center;
+}
+
+.icon-zoom-out {
+  -webkit-mask: url("../Icons/icon-zoom-out.svg") no-repeat center;
+  mask-image: url("../Icons/icon-zoom-out.svg") no-repeat center;
+}
+
+.icon-zoom-in {
+  -webkit-mask: url("../Icons/icon-zoom-in.svg") no-repeat center;
+  mask-image: url("../Icons/icon-zoom-in.svg") no-repeat center;
+}
+
+.icon-reset {
+  -webkit-mask: url("../Icons/icon-reset.svg") no-repeat center;
+  mask-image: url("../Icons/icon-reset.svg") no-repeat center;
+}
+
+.icon-web {
+  -webkit-mask: url("../Icons/icon-web.svg") no-repeat center;
+  mask-image: url("../Icons/icon-web.svg") no-repeat center;
+}
+
+.icon-attachment {
+  -webkit-mask: url("../Icons/icon-attachment.svg") no-repeat center;
+  mask-image: url("../Icons/icon-attachment.svg") no-repeat center;
+}
+
+.icon-break-link {
+  -webkit-mask: url("../Icons/icon-break-link.svg") no-repeat center;
+  mask-image: url("../Icons/icon-break-link.svg") no-repeat center;
+}
+
+.icon-fb {
+  -webkit-mask: url("../Icons/icon-fb.svg") no-repeat center;
+  mask-image: url("../Icons/icon-fb.svg") no-repeat center;
+}
+
+.icon-instagram {
+  -webkit-mask: url("../Icons/icon-instagram.svg") no-repeat center;
+  mask-image: url("../Icons/icon-instagram.svg") no-repeat center;
+}
+
+.icon-twitter {
+  -webkit-mask: url("../Icons/icon-twitter.svg") no-repeat center;
+  mask-image: url("../Icons/icon-twitter.svg") no-repeat center;
+}
+
+.icon-linkedin {
+  -webkit-mask: url("../Icons/icon-linkedin.svg") no-repeat center;
+  mask-image: url("../Icons/icon-linkedin.svg") no-repeat center;
+}
+
+.icon-youtube {
+  -webkit-mask: url("../Icons/icon-youtube.svg") no-repeat center;
+  mask-image: url("../Icons/icon-youtube.svg") no-repeat center;
+}
+
+.icon-edit {
+  -webkit-mask: url("../Icons/icon-edit.svg") no-repeat center;
+  mask-image: url("../Icons/icon-edit.svg") no-repeat center;
+}
+
+// .icon-edit1 {
+//   -webkit-mask: url("../Icons/icon-edit-1.svg") no-repeat center;
+//   mask: url("../Icons/icon-edit-1.svg") no-repeat center;
+// }
+.icon-edit2 {
+  -webkit-mask: url("../Icons/icon-edit-2.svg") no-repeat center;
+  mask-image: url("../Icons/icon-edit-2.svg") no-repeat center;
+}
+
+.icon-file-upload {
+  -webkit-mask: url("../Icons/icon-file-upload.svg") no-repeat center;
+  mask-image: url("../Icons/icon-file-upload.svg") no-repeat center;
+}
+
+.icon-check {
+  -webkit-mask: url("../Icons/icon-check.svg") no-repeat center;
+  mask-image: url("../Icons/icon-check.svg") no-repeat center;
+}
+
+.icon-current-employer {
+  -webkit-mask: url("../Icons/icon-current-employer.svg") no-repeat center;
+  mask-image: url("../Icons/icon-current-employer.svg") no-repeat center;
+}
+
+.icon-experience {
+  -webkit-mask: url("../Icons/icon-experience.svg") no-repeat center;
+  mask-image: url("../Icons/icon-experience.svg") no-repeat center;
+}
+
+.icon-location {
+  -webkit-mask: url("../Icons/icon-location.svg") no-repeat center;
+  mask-image: url("../Icons/icon-location.svg") no-repeat center;
+}
+
+.icon-domain-cart {
+  -webkit-mask: url("../Icons/icon-domain-cart.svg") no-repeat center;
+  mask-image: url("../Icons/icon-domain-cart.svg") no-repeat center;
+}
+
+.icon-bell {
+  -webkit-mask: url("../Icons/icon-bell.svg") no-repeat center;
+  mask-image: url("../Icons/icon-bell.svg") no-repeat center;
+}
+
+.icon-watch-now {
+  -webkit-mask: url("../Icons/icon-watch-now.svg") no-repeat center;
+  mask-image: url("../Icons/icon-watch-now.svg") no-repeat center;
+}
+
+.icon-contact-now {
+  -webkit-mask: url("../Icons/icon-contact-now.svg") no-repeat center;
+  mask-image: url("../Icons/icon-contact-now.svg") no-repeat center;
+}
+
+.icon-call-back {
+  -webkit-mask: url("../Icons/icon-call-back.svg") no-repeat center;
+  mask-image: url("../Icons/icon-call-back.svg") no-repeat center;
+}
+
+.icon-courserbuilder {
+  -webkit-mask: url("../Icons/icon-courserbuilder.svg") no-repeat center;
+  mask-image: url("../Icons/icon-courserbuilder.svg") no-repeat center;
+}
+
+.icon-onlineclass {
+  -webkit-mask: url("../Icons/icon-onlineclass.svg") no-repeat center;
+  mask-image: url("../Icons/icon-onlineclass.svg") no-repeat center;
+}
+
+.icon-testbuilder {
+  -webkit-mask: url("../Icons/icon-testbuilder.svg") no-repeat center;
+  mask-image: url("../Icons/icon-testbuilder.svg") no-repeat center;
+}
+
+.icon-bulkinvite {
+  -webkit-mask: url("../Icons/icon-bulkinvite.svg") no-repeat center;
+  mask-image: url("../Icons/icon-bulkinvite.svg") no-repeat center;
+}
+
+.icon-institutemanagementsystem {
+  -webkit-mask: url("../Icons/icon-institutemanagementsystem.svg") no-repeat center;
+  mask-image: url("../Icons/icon-institutemanagementsystem.svg") no-repeat center;
+}
+
+.icon-assignments {
+  -webkit-mask: url("../Icons/icon-assignments.svg") no-repeat center;
+  mask-image: url("../Icons/icon-assignments.svg") no-repeat center;
+}
+
+.icon-GoogleRanking {
+  -webkit-mask: url("../Icons/icon-ranking-google.svg") no-repeat center;
+  mask-image: url("../Icons/icon-ranking-google.svg") no-repeat center;
+}
+
+.icon-MobileFriendly {
+  -webkit-mask: url("../Icons/icon-mobile-friendly.svg") no-repeat center;
+  mask-image: url("../Icons/icon-mobile-friendly.svg") no-repeat center;
+}
+
+.icon-PrebuiltTheme {
+  -webkit-mask: url("../Icons/icon-prebuilt-theme.svg") no-repeat center;
+  mask-image: url("../Icons/icon-prebuilt-theme.svg") no-repeat center;
+}
+
+.icon-BusinessEmail {
+  -webkit-mask: url("../Icons/icon-business-email.svg") no-repeat center;
+  mask-image: url("../Icons/icon-business-email.svg") no-repeat center;
+}
+
+.icon-SecureWebsite {
+  -webkit-mask: url("../Icons/icon-secure-website.svg") no-repeat center;
+  mask-image: url("../Icons/icon-secure-website.svg") no-repeat center;
+}
+
+.icon-ShareKnowledge {
+  -webkit-mask: url("../Icons/icon-share-knowledge.svg") no-repeat center;
+  mask-image: url("../Icons/icon-share-knowledge.svg") no-repeat center;
+}
+
+.icon-GiveYourAnswer {
+  -webkit-mask: url("../Icons/icon-give-your-answer.svg") no-repeat center;
+  mask-image: url("../Icons/icon-give-your-answer.svg") no-repeat center;
+}
+
+.icon-AskAnswerQuestion {
+  -webkit-mask: url("../Icons/icon-ask-answer-question.svg") no-repeat center;
+  mask-image: url("../Icons/icon-ask-answer-question.svg") no-repeat center;
+}
+
+.icon-EyeIcon {
+  -webkit-mask: url("../Icons/password-eye.svg") no-repeat center;
+  mask-image: url("../Icons/password-eye.svg") no-repeat center;
+}
+
+.icon-EyeCloseIcon {
+  -webkit-mask: url("../Icons/password-eye-close.svg") no-repeat center;
+  mask-image: url("../Icons/password-eye-close.svg") no-repeat center;
+}
+
+.icon-GoogleLogin {
+  -webkit-mask: url("../Icons/icon-google.svg") no-repeat center;
+  mask-image: url("../Icons/icon-google.svg") no-repeat center;
+}
+
+.icon-StudentRole {
+  -webkit-mask: url("../Icons/icon-student.svg") no-repeat center;
+  mask-image: url("../Icons/icon-student.svg") no-repeat center;
+}
+
+.icon-InstituteRole {
+  -webkit-mask: url("../Icons/icon-institute.svg") no-repeat center;
+  mask-image: url("../Icons/icon-institute.svg") no-repeat center;
+}
+
+.icon-TeacherRole {
+  -webkit-mask: url("../Icons/icon-teacher.svg") no-repeat center;
+  mask-image: url("../Icons/icon-teacher.svg") no-repeat center;
+}
+
+.icon-OtherRole {
+  -webkit-mask: url("../Icons/icon-other-role.svg") no-repeat center;
+  mask-image: url("../Icons/icon-other-role.svg") no-repeat center;
+}
+
+.icon-thumbup {
+  -webkit-mask: url("../Icons/icon-thumbup.svg") no-repeat center;
+  mask-image: url("../Icons/icon-thumbup.svg") no-repeat center;
+}
+
+.icon-thumbdown {
+  -webkit-mask: url("../Icons/icon-thumbdown.svg") no-repeat center;
+  mask-image: url("../Icons/icon-thumbdown.svg") no-repeat center;
+}
+
+.icon-instagram-feed {
+  -webkit-mask: url("../Icons/icon-instagram-feed.svg") no-repeat center;
+  mask-image: url("../Icons/icon-instagram-feed.svg") no-repeat center;
+}
+
+.icon-student {
+  -webkit-mask: url("../Icons/icon-student.svg") no-repeat center;
+  mask-image: url("../Icons/icon-student.svg") no-repeat center;
+}
+
+.icon-website {
+  -webkit-mask: url("../Icons/icon-website.svg") no-repeat center;
+  mask-image: url("../Icons/icon-website.svg") no-repeat center;
+}
+
+.icon-classrooms {
+  -webkit-mask: url("../Icons/icons-classrooms.svg") no-repeat center;
+  mask-image: url("../Icons/icons-classrooms.svg") no-repeat center;
+}
+
+.icon-join-class {
+  -webkit-mask: url("../Icons/icon-join-class.svg") no-repeat center;
+  mask-image: url("../Icons/icon-join-class.svg") no-repeat center;
+}
+
+.icon-online-test {
+  -webkit-mask: url("../Icons/icon-online-test.svg") no-repeat center;
+  mask-image: url("../Icons/icon-online-test.svg") no-repeat center;
+}
+
+.icon-download {
+  -webkit-mask: url("../Icons/icon-download.svg") no-repeat center;
+  mask-image: url("../Icons/icon-download.svg") no-repeat center;
+}
+
+.icon-tooltip {
+  -webkit-mask: url("../Icons/icon-tooltip.svg") no-repeat center;
+  mask-image: url("../Icons/icon-tooltip.svg") no-repeat center;
+}
+
+.icon-check-circle {
+  -webkit-mask: url("../Icons/icon-check-circle.svg") no-repeat center;
+  mask-image: url("../Icons/icon-check-circle.svg") no-repeat center;
+}
+
+.icon-like-heart {
+  -webkit-mask: url("../Icons/icon-like-heart.svg") no-repeat center;
+  mask-image: url("../Icons/icon-like-heart.svg") no-repeat center;
+}
+
+.icon-liked-heart {
+  -webkit-mask: url("../Icons/icon-liked-heart.svg") no-repeat center;
+  mask-image: url("../Icons/icon-liked-heart.svg") no-repeat center;
+}
+
+.icon-camera {
+  -webkit-mask: url("../Icons/icon-camera.svg") no-repeat center;
+  mask-image: url("../Icons/icon-camera.svg") no-repeat center;
+}
+
+.icon-subjective {
+  -webkit-mask: url("../Icons/icon-subjective.svg") no-repeat center;
+  mask-image: url("../Icons/icon-subjective.svg") no-repeat center;
+}
+
+.icon-truefalse {
+  -webkit-mask: url("../Icons/icon-truefalse.svg") no-repeat center;
+  mask-image: url("../Icons/icon-truefalse.svg") no-repeat center;
+}
+
+.icon-radio {
+  -webkit-mask: url("../Icons/icon-radio.svg") no-repeat center;
+  mask-image: url("../Icons/icon-radio.svg") no-repeat center;
+}
+
+.icon-checkbox {
+  -webkit-mask: url("../Icons/icon-checkbox.svg") no-repeat center;
+  mask-image: url("../Icons/icon-checkbox.svg") no-repeat center;
+}
+
+.icon-404-link {
+  -webkit-mask: url("../Icons/icon-404-link.svg") no-repeat center;
+  mask-image: url("../Icons/icon-404-link.svg") no-repeat center;
+}
+
+.icon-404-sad {
+  -webkit-mask: url("../Icons/icon-404-sad.svg") no-repeat center;
+  mask-image: url("../Icons/icon-404-sad.svg") no-repeat center;
+}
+
+.icon-access-denied {
+  -webkit-mask: url("../Icons/icon-access-denied.svg") no-repeat center;
+  mask-image: url("../Icons/icon-access-denied.svg") no-repeat center;
+}
+
+.icon-access-denied-eye {
+  -webkit-mask: url("../Icons/icon-access-denied-eye.svg") no-repeat center;
+  mask-image: url("../Icons/icon-access-denied-eye.svg") no-repeat center;
+}
+
+.icon-affiliations {
+  -webkit-mask: url("../Icons/icon-affiliations.svg") no-repeat center;
+  mask-image: url("../Icons/icon-affiliations.svg") no-repeat center;
+}
+
+.icon-clock {
+  -webkit-mask: url(../Icons/clocksmall-icon.svg) no-repeat center;
+  mask: url(../Icons/clocksmall-icon.svg) no-repeat center;
+}
+
+.icon-basic-info {
+  -webkit-mask: url(../Icons/icon-basic-info.svg) no-repeat center;
+  mask: url(../Icons/icon-announcement.svg) no-repeat center;
+}
+
+.icon-content {
+  -webkit-mask: url(../Icons/icon-content.svg) no-repeat center;
+  mask: url(../Icons/icon-content.svg) no-repeat center;
+}
+
+.icon-faculties {
+  -webkit-mask: url(../Icons/icon-faculty.svg) no-repeat center;
+  mask: url(../Icons/icon-faculty.svg) no-repeat center;
+}
+
+.icon-services {
+  -webkit-mask: url(../Icons/icon-services.svg) no-repeat center;
+  mask: url(../Icons/icon-services.svg) no-repeat center;
+}
+
+.icon-fee-structure {
+  -webkit-mask: url(../Icons/icon-circle-rupees.svg) no-repeat center;
+  mask: url(../Icons/icon-circle-rupees.svg) no-repeat center;
+}
+
+.icon-admission {
+  -webkit-mask: url(../Icons/icon-admission.svg) no-repeat center;
+  mask: url(../Icons/icon-admission.svg) no-repeat center;
+}
+
+.icon-gallery {
+  -webkit-mask: url(../Icons/icon-gallery.svg) no-repeat center;
+  mask: url(../Icons/icon-gallery.svg) no-repeat center;
+}
+
+.icon-announcement {
+  -webkit-mask: url(../Icons/icon-announcement.svg) no-repeat center;
+  mask: url(../Icons/icon-announcement.svg) no-repeat center;
+}
+
+.icon-faqs {
+  -webkit-mask: url(../Icons/icon-faqs.svg) no-repeat center;
+  mask: url(../Icons/icon-faqs.svg) no-repeat center;
+}
+
+.icon-vacancy {
+  -webkit-mask: url(../Icons/icon-vacancy.svg) no-repeat center;
+  mask: url(../Icons/icon-vacancy.svg) no-repeat center;
+}
+
+.icon-support-center {
+  -webkit-mask: url(../Icons/icon-support-center.svg) no-repeat center;
+  mask: url(../Icons/icon-support-center.svg) no-repeat center;
+}
+
+.icon-social-link {
+  -webkit-mask: url(../Icons/icon-social-link.svg) no-repeat center;
+  mask: url(../Icons/icon-social-link.svg) no-repeat center;
+}
+
+.icon-search {
+  -webkit-mask: url(../Icons/icon-search.svg) no-repeat center;
+  mask: url(../Icons/icon-search.svg) no-repeat center;
+}
+
+.icon-rupee {
+  -webkit-mask: url(../Icons/icon-currency-rupee.svg) no-repeat center;
+  mask: url(../Icons/icon-currency-rupee.svg) no-repeat center;
+}
+
+.icon-testimonial {
+  -webkit-mask: url(../Icons/icon-testimonial.svg) no-repeat center;
+  mask: url(../Icons/icon-testimonial.svg) no-repeat center;
+}
+
+.icon-circle-rupee {
+  -webkit-mask: url(../Icons/icon-circle-rupees.svg) no-repeat center;
+  mask: url(../Icons/icon-circle-rupees.svg) no-repeat center;
+}
+
+.icon-payment-mode {
+  -webkit-mask: url(../Icons/icon-payment-mode.svg) no-repeat center;
+  mask: url(../Icons/icon-payment-mode.svg) no-repeat center;
+}
+
+.icon-delete {
+  -webkit-mask: url(../Icons/icon-delete.svg) no-repeat center;
+  mask: url(../Icons/icon-delete.svg) no-repeat center;
+}
+
+.icon-plus-add {
+  -webkit-mask: url(../Icons/icon-plus-add.svg) no-repeat center;
+  mask: url(../Icons/icon-plus-add.svg) no-repeat center;
+}
+
+.icon-star {
+  -webkit-mask: url(../Icons/icon-star.svg) no-repeat center;
+  mask: url(../Icons/icon-star.svg) no-repeat center;
+}
+
+.icon-video {
+  -webkit-mask: url(../Icons/icon-video.svg) no-repeat center;
+  mask: url(../Icons/icon-video.svg) no-repeat center;
+}
+
+.icon-upload-video {
+  -webkit-mask: url(../Icons/icon-upload-video.svg) no-repeat center;
+  mask: url(../Icons/icon-upload-video.svg) no-repeat center;
+}
+
+.icon-whatsapp {
+  background-image: url("../Icons/icon-whatsapp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.icon-external-link {
+  -webkit-mask: url(../Icons/icon-external-link.svg) no-repeat center;
+  mask: url(../Icons/icon-external-link.svg) no-repeat center;
+}
+
+.icon-video-play {
+  -webkit-mask: url(../Icons/icon-video-play.svg) no-repeat center;
+  mask: url(../Icons/icon-video-play.svg) no-repeat center;
+}
+
+.icon-mail {
+  -webkit-mask: url(../Icons/icon-mail.svg) no-repeat center;
+  mask: url(../Icons/icon-mail.svg) no-repeat center;
+}
+
+.icon-share {
+  -webkit-mask: url(../Icons/icon-share.svg) no-repeat center;
+  mask: url(../Icons/icon-share.svg) no-repeat center;
+}
+
+.icon-like-thumb {
+  -webkit-mask: url(../Icons/like-thumb.svg) no-repeat center;
+  mask: url(../Icons/like-thumb.svg) no-repeat center;
+}
+
+.icon-awesome-eye {
+  -webkit-mask: url(../Icons/icon-awesome-eye.svg) no-repeat center;
+  mask: url(../Icons/icon-awesome-eye.svg) no-repeat center;
+}
+
+.icon-rotate-left {
+  -webkit-mask: url(../Icons/icon-rotate-left.svg) no-repeat center;
+  mask: url(../Icons/icon-rotate-left.svg) no-repeat center;
+}
+
+.icon-rotate-right {
+  -webkit-mask: url(../Icons/icon-rotate-right.svg) no-repeat center;
+  mask: url(../Icons/icon-rotate-right.svg) no-repeat center;
+}
+
+.icon-right-arrow {
+  -webkit-mask: url(../Icons/Icon-small-awesome-arrow-right.svg) no-repeat center;
+  mask: url(../Icons/Icon-small-awesome-arrow-right.svg) no-repeat center;
+}
+
+.icon-big-right-arrow {
+  -webkit-mask: url(../Icons/Icon-feather-arrow-right.svg) no-repeat center;
+  mask: url(../Icons/Icon-feather-arrow-right.svg) no-repeat center;
+}
+
+.icon-zoom-out {
+  -webkit-mask: url(../Icons/icon-zoom-out.svg) no-repeat center;
+  mask: url(../Icons/icon-zoom-out.svg) no-repeat center;
+}
+
+.icon-zoom-in {
+  -webkit-mask: url(../Icons/icon-zoom-in.svg) no-repeat center;
+  mask: url(../Icons/icon-zoom-in.svg) no-repeat center;
+}
+
+.icon-reset {
+  -webkit-mask: url(../Icons/icon-reset.svg) no-repeat center;
+  mask: url(../Icons/icon-reset.svg) no-repeat center;
+}
+
+.icon-web {
+  -webkit-mask: url(../Icons/icon-web.svg) no-repeat center;
+  mask: url(../Icons/icon-web.svg) no-repeat center;
+}
+
+.icon-attachment {
+  -webkit-mask: url(../Icons/icon-attachment.svg) no-repeat center;
+  mask: url(../Icons/icon-attachment.svg) no-repeat center;
+}
+
+.icon-break-link {
+  -webkit-mask: url(../Icons/icon-break-link.svg) no-repeat center;
+  mask: url(../Icons/icon-break-link.svg) no-repeat center;
+}
+
+.icon-fb {
+  -webkit-mask: url(../Icons/icon-fb.svg) no-repeat center;
+  mask: url(../Icons/icon-fb.svg) no-repeat center;
+}
+
+.icon-instagram {
+  -webkit-mask: url(../Icons/icon-instagram.svg) no-repeat center;
+  mask: url(../Icons/icon-instagram.svg) no-repeat center;
+}
+
+.icon-twitter {
+  -webkit-mask: url(../Icons/icon-twitter.svg) no-repeat center;
+  mask: url(../Icons/icon-twitter.svg) no-repeat center;
+}
+
+.icon-linkedin {
+  -webkit-mask: url(../Icons/icon-linkedin.svg) no-repeat center;
+  mask: url(../Icons/icon-linkedin.svg) no-repeat center;
+}
+
+.icon-youtube {
+  -webkit-mask: url(../Icons/icon-youtube.svg) no-repeat center;
+  mask: url(../Icons/icon-youtube.svg) no-repeat center;
+}
+
+.icon-edit {
+  -webkit-mask: url(../Icons/icon-edit.svg) no-repeat center;
+  mask: url(../Icons/icon-edit.svg) no-repeat center;
+}
+
+// .icon-edit1 {
+//   -webkit-mask: url(../Icons/icon-edit-1.svg) no-repeat center;
+//   mask: url(../Icons/icon-edit-1.svg) no-repeat center;
+// }
+.icon-edit2 {
+  -webkit-mask: url(../Icons/icon-edit-2.svg) no-repeat center;
+  mask: url(../Icons/icon-edit-2.svg) no-repeat center;
+}
+
+.icon-file-upload {
+  -webkit-mask: url(../Icons/icon-file-upload.svg) no-repeat center;
+  mask: url(../Icons/icon-file-upload.svg) no-repeat center;
+}
+
+.icon-check {
+  -webkit-mask: url(../Icons/icon-check.svg) no-repeat center;
+  mask: url(../Icons/icon-check.svg) no-repeat center;
+}
+
+.icon-current-employer {
+  -webkit-mask: url(../Icons/icon-current-employer.svg) no-repeat center;
+  mask: url(../Icons/icon-current-employer.svg) no-repeat center;
+}
+
+.icon-experience {
+  -webkit-mask: url(../Icons/icon-experience.svg) no-repeat center;
+  mask: url(../Icons/icon-experience.svg) no-repeat center;
+}
+
+.icon-location {
+  -webkit-mask: url(../Icons/icon-location.svg) no-repeat center;
+  mask: url(../Icons/icon-location.svg) no-repeat center;
+}
+
+.icon-domain-cart {
+  -webkit-mask: url(../Icons/icon-domain-cart.svg) no-repeat center;
+  mask: url(../Icons/icon-domain-cart.svg) no-repeat center;
+}
+
+.icon-bell {
+  -webkit-mask: url(../Icons/icon-bell.svg) no-repeat center;
+  mask: url(../Icons/icon-bell.svg) no-repeat center;
+}
+
+.icon-awesome-bell {
+  -webkit-mask: url(../Icons/Icon-awesome-bell.svg) no-repeat center;
+  mask: url(../Icons/Icon-awesome-bell.svg) no-repeat center;
+}
+
+.icon-cross {
+  -webkit-mask: url(../Icons/cross.svg) no-repeat center;
+  mask: url(../Icons/cross.svg) no-repeat center;
+}
+
+.icon-watch-now {
+  -webkit-mask: url(../Icons/icon-watch-now.svg) no-repeat center;
+  mask: url(../Icons/icon-watch-now.svg) no-repeat center;
+}
+
+.icon-contact-now {
+  -webkit-mask: url(../Icons/icon-contact-now.svg) no-repeat center;
+  mask: url(../Icons/icon-contact-now.svg) no-repeat center;
+}
+
+.metro-calendar {
+  -webkit-mask: url(../Icons/metro-calendar.svg) no-repeat center;
+  mask: url(../Icons/metro-calendar.svg) no-repeat center;
+}
+
+.icon-call-back {
+  -webkit-mask: url(../Icons/icon-call-back.svg) no-repeat center;
+  mask: url(../Icons/icon-call-back.svg) no-repeat center;
+}
+
+.icon-Seo-meta-tag {
+  -webkit-mask: url(../Icons/Seo_meta_data_icon.svg) no-repeat center;
+  mask: url(../Icons/Seo_meta_data_icon.svg) no-repeat center;
+}
+
+.icon-whatsapp-chat {
+  background-image: url("../Icons/edneed-whatsapp-customer-support.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}

@@ -1,0 +1,68 @@
+@import '../../CommonComponent/commonCss/base.scss';
+.ecom-layout {
+.getInTouch-container {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 200px;
+  position: relative;
+  height: 100%;
+
+  @media(max-width:992px) {
+    column-gap: 40px;
+  }
+
+  @media(max-width:768px) {
+    column-gap: 40px;
+    flex-direction: column;
+  }
+
+  .getInTouch-leftSidebar {
+    width: 50%;
+
+    @media(max-width:768px) {
+      width: 100%;
+    }
+
+    .getInTouch-details {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .left-sidebar {
+        .getInTouch-p {
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 1.4em;
+          color: $black;
+        }
+      }
+
+
+
+      .right-sidebar {
+        margin: auto;
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.4em;
+          color: $black;
+          padding: 24px 0;
+        }
+
+        h3 {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 1.4em;
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .getInTouch-rightSidebar {
+    // width: 50%;
+  }
+
+}
+}

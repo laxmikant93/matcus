@@ -1,0 +1,113 @@
+@import '../../../../../../assets/Style/base';
+
+.locationAndContact-container {
+
+  .locationAndContact-wrapper {
+    padding: 16px 24px;
+
+    .map-wrapper {
+      margin-top: 20px;
+
+      .locationAndContact-Inputwrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 36px;
+        margin-top: 20px;
+
+        @media (max-width:768px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .inputWrapper-left {
+          width: 100%;
+
+          .formFieldwrap {
+            width: 100%;
+            padding-bottom: 8px;
+            box-sizing: border-box;
+          }
+        }
+
+        .inputWrapper-right {
+          .inputWrapper-map {
+            width: 308px;
+            height: 129px;
+
+            img {
+              max-width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+
+      }
+
+
+    }
+  }
+
+  .searchLocationValue {
+    border: 1px solid rgba(32, 32, 32, 0.2);
+    height: 40px;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    word-break: keep-all;
+
+    p {
+      width: 100%;
+      overflow: hidden;
+      word-break: keep-all;
+      white-space: nowrap;
+    }
+
+    &:hover {
+      border-color: hsl(0, 0%, 70%);
+    }
+
+    .searchLocation-arrow {
+      position: absolute;
+      top: 49%;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      transform: translateY(-50%);
+      margin: auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99;
+      overflow: hidden;
+      background-color: #fff;
+
+      .v-line {
+        height: 20px;
+        width: 1px;
+        background-color: rgba(32, 32, 32, 0.2);
+        z-index: 99;
+        margin: auto 0;
+
+      }
+
+      i {
+        margin-left: 10px;
+        margin-right: 8px;
+        top: 2px;
+        margin-top: 3px;
+      }
+
+    }
+  }
+
+  .icon-arrowDown {
+    -webkit-mask: url("../../../asserts/icons/arrow-down.svg") no-repeat center;
+    mask-image: url("../../../asserts/icons/arrow-down.svg") no-repeat center;
+    background-color: rgba(32, 32, 32, 0.2);
+  }
+}

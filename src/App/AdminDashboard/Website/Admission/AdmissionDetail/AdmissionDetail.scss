@@ -1,0 +1,110 @@
+@import "../../../../../assets/Style/base";
+.PageTopHead {
+  &.PTH-AdmissionApplicantsList {
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+  }
+}
+// .BtnCaret {
+//   color: $primary;
+//   padding: 10px 0;
+//   position: relative;
+//   @extend .w-500;
+//   &::after {
+//     height: 5px;
+//     width: 5px;
+//     border-left: 2px solid $primary;
+//     border-top: 2px solid $primary;
+//     transform: rotate(-135deg);
+//     color: $primary;
+//     left: auto;
+//     top: 14px;
+//     right: -15px;
+//   }
+//   &.active {
+//     &::after {
+//       transform: rotate(45deg);
+//       top: 18px;
+//     }
+//   }
+// }
+.ToggleBtnSectionCst {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  a,
+  span {
+    color: $base;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+    @extend .w-500;
+    &:last-child {
+      margin-right: 0;
+    }
+    &::after {
+      height: 5px;
+      width: 5px;
+      border-left: 2px solid $base;
+      border-top: 2px solid $base;
+      transform: rotate(-135deg);
+      color: $primary;
+      left: auto;
+      top: 6px;
+      right: -15px;
+    }
+    &.active {
+      color: $primary;
+      &::after {
+        border-left: 2px solid $primary;
+        border-top: 2px solid $primary;
+        transform: rotate(45deg);
+        top: 8px;
+      }
+    }
+  }
+}
+.TableToggleBtn {
+  justify-content: flex-end;
+  span {
+    border: 1px solid rgba($gray, 0.5);
+    padding: 5px 25px 5px 15px;
+    border-radius: 5px;
+    @extend .w-300;
+    &::after {
+      top: 7px;
+      right: 13px;
+    }
+    &.active {
+      &::after {
+        top: 10px;
+      }
+    }
+  }
+}
+.ManageAdmissionCount {
+  @extend .text-sm;
+  @extend .w-300;
+  color: $dgray;
+  span {
+    margin-right: 5px;
+  }
+}
+
+.ManageVacancyCount {
+  @extend .text-sm;
+  @extend .w-300;
+  color: $dgray;
+  span {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .PageTopHead {
+    &.PTH-AdmissionApplicantsList {
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+  }
+}

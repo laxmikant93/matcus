@@ -1,0 +1,252 @@
+.EdneedModals {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  overflow-y: auto;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 999999;
+  box-sizing: border-box;
+
+
+  &.modals-fade {
+    animation: fade-in 1s 1 linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes fade-in {
+    0% {
+      animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .ModalsOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ModalsClose {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    color: black;
+    cursor: pointer;
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height: 20px;
+    // padding: 10px;
+    // border-radius: 50%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // z-index: 999999;
+    // box-sizing: border-box;
+    // width: 16px;
+    // height: 16px;
+    // border-radius: 50%;
+    // background-color: rgba(0, 0, 0, 0.65);
+
+    .modals-cancel-icon {
+      box-sizing: border-box;
+      position: relative;
+      display: block;
+      transform: scale(var(5, 1));
+      width: 22px;
+      height: 22px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        background: $white;
+        transform: rotate(45deg);
+        border-radius: 5px;
+        top: 10px;
+        left: 5px
+      }
+
+      &::after {
+        transform: rotate(-45deg)
+      }
+    }
+
+
+  }
+
+  .ModalsWrapper {
+    z-index: 2;
+    position: relative;
+    border-radius: 8px 0 0 8px;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    // max-height: 100%;
+    // padding: 35px; 
+    color: #c3c0c0;
+    z-index: 1080;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.125);
+    // min-height: 100vh;
+    margin-right: 0;
+    margin-left: auto;
+
+
+
+    &.slide-left {
+      animation: 1.5s slide-left;
+    }
+
+    @keyframes slide-left {
+      from {
+        margin-right: -100%;
+      }
+
+      to {
+        margin-left: auto;
+      }
+    }
+
+    &.slide-top {
+      animation: 1.5s slide-top;
+    }
+
+    @keyframes slide-top {
+      from {
+        margin-top: -100%;
+      }
+
+      to {
+        margin-bottom: auto;
+      }
+    }
+
+    &.modal-full {
+      width: 100%;
+    }
+
+    &.modal-xl {
+      width: 80%;
+    }
+
+    &.modal-l {
+      width: 60%;
+    }
+
+    &.modal-m {
+      width: 50%;
+    }
+
+    &.modal-s {
+      width: 40%;
+    }
+
+    &.modal-xs {
+      width: 30%;
+    }
+
+
+  }
+
+  .ModalsBody {
+    padding: 16px 24px;
+    // min-height: 80vh;
+    // max-height: 80vh;
+    // overflow: hidden;
+    // overflow-y: auto;
+
+    &.center {
+      min-height: auto;
+    }
+  }
+
+  .ModalsFooter {
+    padding: 16px 24px;
+    min-height: 10vh;
+    max-height: 10vh;
+    border-bottom-left-radius: 8px;
+  }
+
+  .ModalsHead {
+    padding: 16px 48px 16px 24px;
+    min-height: 10vh;
+    max-height: 10vh;
+    background-color: #0184FF;
+    color: #fff;
+    border-top-left-radius: 8px;
+
+    h2 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 18px;
+    }
+
+    &.transparent {
+      background: transparent;
+    }
+  }
+
+
+  &.center {
+    // padding-top: 48px;
+    padding: 48px 0;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .ModalsWrapper {
+      min-height: auto;
+      margin-right: auto;
+      border-radius: 8px;
+
+      @media (max-width: 1024px) {
+        width: 90%;
+      }
+    }
+
+    .ModalsBody {
+      min-height: 20vh;
+      // max-height: 100%;
+    }
+
+    .ModalsHead {
+      min-height: auto;
+      // max-height: 100%;
+
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .ModalsFooter {
+      min-height: auto;
+      // max-height: 100%;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+}

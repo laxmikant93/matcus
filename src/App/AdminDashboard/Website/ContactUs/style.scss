@@ -1,0 +1,87 @@
+@import "../../../../assets/Style/base";
+
+.PHT-contact-list {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+
+  .contact-list-count {
+    grid-column: 1/5;
+  }
+}
+.refreshBtn {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  color: $primary;
+}
+.SortByTableHeadCst {
+  .wrapper {
+    .select_wrap {
+      .default_option {
+        border: 1px solid rgba(1, 132, 255, 0.4);
+        border-radius: 18px;
+        li {
+          padding: 7px 25px 7px 12px;
+        }
+      }
+    }
+  }
+}
+
+.PHT-contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+.contact-list-count {
+  .ManageAdmissionCount {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: $base;
+    margin-bottom: 20px;
+    span {
+      color: rgba($base, 0.6);
+      padding-left: 16px;
+    }
+  }
+}
+
+.TableBottomBtn {
+  .downlord-btn {
+    border-radius: 50px;
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+    padding: 13px;
+    .cssIcon {
+      line-height: 0;
+    }
+  }
+  .Result-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    .TotalCount-wrap {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      color: rgba($base, 0.6);
+    }
+  }
+}
+
+.PageTopHead{
+  &.PTH-AdminServiceList{
+    .PTH-Item{
+      @media (max-width:768px) {
+        width: 100%;
+      }
+    }
+  }
+}

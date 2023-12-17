@@ -1,0 +1,28 @@
+@import '../../commonCss/base.scss';
+.ecom-layout {
+.socialMedia-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  .socialMedia-wrap {
+    width: 52px;
+    height: 32px;
+    border: 1px solid rgba($black, 0.09);
+    position: relative;
+    object-fit: cover;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+
+    img {
+      width: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+}

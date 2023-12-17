@@ -1,0 +1,36 @@
+@import '../../../../assets/Style/base';
+
+.transparent {
+  background-color: transparent;
+  border-bottom: 1px solid $lgray;
+
+  h2 {
+    color: $base;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+}
+
+.seoPop-btn-wrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+
+  .btn-edit {
+    border: 1px solid $base;
+    background-color: transparent;
+  }
+
+  .btn-save {
+
+    border: none;
+    background-color: #4A9E42;
+    color: $white;
+    // margin-right: 30%;
+  }
+}
+
+.modal-width {
+
+  width: 520px;
+}

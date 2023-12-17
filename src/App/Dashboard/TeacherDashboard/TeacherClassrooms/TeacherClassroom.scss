@@ -1,0 +1,73 @@
+@import "../../../../assets/Style/base";
+
+.PageTopHead {
+  &.PTH-TeacherClassroomList {
+    grid-template-columns: auto 1fr;
+  }
+  &.PTH-SubjectList {
+    grid-template-columns: 1fr auto;
+    gap: 0 15px;
+    align-items: center;
+    .PTH-Item {
+      &:first-child {
+        grid-column: 1/3;
+      }
+    }
+  }
+}
+.SubjectListBoxWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  .SubjectListBox {
+    border-radius: 5px;
+    // border: 1px solid rgba($lgray, 0.3);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .PageTopHead {
+    &.PTH-TeacherClassroomList {
+      grid-template-columns: 1fr auto;
+    }
+  }
+  .SubjectListBoxWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+  .SubjectListBoxWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 480px) {
+  .PageTopHead {
+    &.PTH-TeacherClassroomList {
+      grid-template-columns: 1fr;
+    }
+    &.PTH-SubjectList {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+  .SubjectListBoxWrapper {
+    grid-template-columns: 1fr;
+  }
+}

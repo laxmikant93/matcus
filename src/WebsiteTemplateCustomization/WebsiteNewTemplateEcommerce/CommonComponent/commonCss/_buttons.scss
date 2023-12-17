@@ -1,0 +1,83 @@
+@import './theme.scss';
+
+.buttonTrue {
+  padding: 10px 20px;
+  word-break: keep-all;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0px, 0px, 1px rgba(0, 0, 0, 0.15);
+  word-spacing: 0.1em;
+  border: 1px solid rgba($black, 0.1);
+  display: inline-flex;
+  column-gap: 8px;
+  align-items: center;
+  position: relative;
+  justify-content: space-around;
+  // text-align: center;
+  text-transform: uppercase;
+  color: var(--beta);
+  background-color: $white;
+
+  @media(min-width:1200px) {
+    padding: 8px 24px;
+  }
+
+  @media(max-width:992px) {
+    font-size: 13px;
+  }
+}
+
+.btnTrue-primary {
+  background-color: var(--beta);
+  border: 1px solid var(--beta);
+  color: $white;
+}
+
+.btnTrue-o-primary {
+  border-color: var(--beta);
+  background-color: $white;
+  color: var(--beta);
+}
+
+.btn-sm {
+  padding: 7px 30px;
+
+  @media (max-width:600px) {
+    padding: 7px 20px;
+  }
+}
+
+.btn-disable {
+  background-color: rgba($black, 0.2);
+  color: $white;
+  border: 1px solid rgba($black, 0.2);
+}
+
+.btn-md {
+  padding: 10px 45px;
+}
+
+.btn-xs {
+  padding: 7px 20px;
+
+  @media (max-width:992px) {
+    padding: 7px 15px;
+  }
+
+  @media (max-width:600px) {
+    padding: 5px 8px;
+  }
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-disable {
+  background-color: rgba($black, 0.2);
+  color: $white;
+  border: 1px solid rgba($black, 0.2);
+  cursor: default;
+}

@@ -1,0 +1,280 @@
+.NotificationDropdownListWrapper {
+  position: relative;
+}
+
+.NotificationIcon {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 5px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.NotificationIcon2 {
+  height: 35px;
+  width: 42px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 5px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.NotificationDropdownContentWrap {
+  position: absolute;
+  right: -50px;
+  z-index: 1200;
+  background: #FFF;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  width: 362px;
+
+  @media (max-width: 768px) {
+    width: 280px;
+  }
+
+  @media (max-width: 468px) {
+    width: 220px;
+  }
+}
+
+.NotificationDropdownHeader {
+  background: #FFFFFF;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 38px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  padding: 8px 16px;
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+}
+
+.NotificationDropdownBody {
+  height: 100%;
+  min-height: 360px;
+  max-height: 360px;
+  overflow: hidden;
+  overflow-y: auto;
+  margin: 8px 8px 8px 0;
+
+}
+
+.NotificationMessageList {}
+
+.NotificationMessageListItem {
+  padding: 8px 8px 8px 16px;
+  border-top: 1px solid rgba(32, 32, 32, 0.2);
+
+  &:first-child {
+    border-top: none;
+  }
+
+  .NMLI_Head {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    position: relative;
+    padding-left: 16px;
+
+    &::before {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      top: 6px;
+    }
+
+    &.Success {
+      &::before {
+        background-color: #0184FF;
+      }
+    }
+
+    &.Pending {
+      &::before {
+        background-color: #0918A0;
+      }
+    }
+
+    &.Decline {
+      &::before {
+        background-color: #D1332E;
+      }
+    }
+  }
+
+
+
+  :global {
+    .card {
+      background-color: #FFFFFF;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+
+      .cardBody {
+        padding: 14px 12px;
+      }
+    }
+
+  }
+
+  .NMLI_DetailsGrid {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    align-items: center;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .NMLI_DetailsGridItem {
+    display: block;
+
+    h4 {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: #0184FF;
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 15px;
+      color: rgba(32, 32, 32, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .NMLI_GridDivider {
+    height: 40px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 1px;
+    }
+  }
+
+  .NMLI_ProfileImage {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.Success {
+      background: rgba(1, 132, 255, 0.05);
+    }
+
+    &.Pending {
+      background: rgba(9, 24, 160, 0.05);
+    }
+
+    &.Reject {
+      background: rgba(209, 51, 46, 0.05);
+    }
+
+    img {
+      width: 16px;
+      height: auto;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .CalenderIcon,
+  .TimeIcon {
+    width: 14px;
+    height: 14px;
+    background-color: #747779;
+    display: block;
+    cursor: pointer;
+  }
+
+  .CalenderIcon {
+    -webkit-mask: url("./calender-icon.svg") no-repeat center;
+    mask-image: url("./calender-icon.svg") no-repeat center;
+  }
+
+  .TimeIcon {
+    -webkit-mask: url("./time-icon.svg") no-repeat center;
+    mask-image: url("./time-icon.svg") no-repeat center;
+  }
+
+  .NMLI_Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 8px;
+
+    @media (max-width: 768px) {
+      gap: 8px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: rgba(32, 32, 32, 0.6);
+    }
+
+    .CancelledButton {
+      background-color: rgba(209, 51, 46, 0.1);
+      border: none;
+      pointer-events: none;
+      position: relative;
+
+      .CircleIcon {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #D1332E;
+        margin-right: 8px;
+      }
+    }
+  }
+}

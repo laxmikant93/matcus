@@ -1,0 +1,172 @@
+@import "../../../../assets/Style/base";
+
+.PageTopHead {
+  &.PTH-AdminAdmission {
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+  }
+}
+
+.ManageVacancyCount {
+  @extend .text-sm;
+  @extend .w-300;
+  color: $dgray;
+
+  span {
+    margin-right: 5px;
+  }
+}
+
+.AddAdmissionCst {
+  display: grid;
+  padding: 30px 0 30px 0;
+}
+
+.AdmissionProfileCard {
+  &.card {
+    background-color: transparent;
+    border: none;
+  }
+
+  .cardBody {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+
+    .formFieldwrap {
+      &:first-child {
+        grid-column: 1/4;
+      }
+    }
+  }
+}
+
+.ThumnailPreview {
+  img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .PageTopHead {
+    &.PTH-AdminAdmission {
+      grid-template-columns: auto 1fr;
+
+      .PTH-Item {
+
+        &:last-child {
+          grid-column: 1/5;
+          grid-row: 3;
+        }
+
+        &:nth-child(3) {
+          .SearchControlbar.tableSearchbar {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+
+        &:first-child {
+          grid-column: 1/5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .AdmissionProfileCard,
+  .AdmissionProfileCard {
+    .cardBody {
+      grid-template-columns: repeat(2, 1fr);
+
+      .formFieldwrap {
+        &:first-child {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {
+  .PageTopHead {
+    &.PTH-AdminAdmission {
+      grid-template-columns: repeat(2, 1fr);
+
+      .PTH-Item {
+        &:nth-child(1) {
+          grid-column: 1/3;
+        }
+
+        &:nth-child(3) {
+          grid-column: 1/3;
+          grid-row: 2/3;
+        }
+
+        &:nth-child(2) {
+          grid-column: 1/3;
+        }
+
+        &:last-child {
+          grid-column: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .PageTopHead {
+    &.PTH-AdminAdmission {
+      .PTH-Item:nth-child(2) {
+        grid-column: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .PageTopHead {
+    &.PTH-AdminAdmission {
+      .PTH-Item:nth-child(2) {
+        grid-column: 1/3;
+      }
+    }
+  }
+
+  .AdmissionProfileCard,
+  .AdmissionProfileCard {
+    .cardBody {
+      grid-template-columns: repeat(1, 1fr);
+
+      .formFieldwrap {
+        &:first-child {
+          grid-column: auto;
+        }
+      }
+    }
+  }
+
+  .AddAdmissionCst {
+    grid-template-columns: 1fr;
+  }
+
+  .AdmissionProfileCard {
+    .cardBody {
+      grid-template-columns: repeat(1, 1fr);
+
+      .formFieldwrap {
+        &:first-child {
+          grid-column: 1/1;
+        }
+      }
+    }
+  }
+}

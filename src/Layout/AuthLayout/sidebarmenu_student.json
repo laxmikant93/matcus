@@ -1,0 +1,44 @@
+[
+  {
+    "menuName": "LMS",
+    "menuLink": "/",
+    "Icon": "LMS",
+    "subMenuItem": [
+      {
+        "menuName": "Classroom",
+        "menuLink": "/dashboard/student-classroom-list"
+      },
+      {
+        "menuName": "Online Class",
+        "menuLink": "/dashboard/student-join-class"
+      },
+      {
+        "menuName": "Assignment",
+        "menuLink": "/dashboard/student-assignments"
+      },
+      {
+        "menuName": "Online Test",
+        "menuLink": "/dashboard/student/online-test"
+      },
+      {
+        "menuName": "Study Material",
+        "menuLink": "/dashboard/student/course-detail-list"
+      }
+    ]
+  },
+  {
+    "menuName": "ERP",
+    "menuLink": "/",
+    "Icon": "ERP",
+    "subMenuItem": [
+      {
+        "menuName": "Attendance",
+        "menuLink": "/dashboard/attendance-student-classroomlist"
+      },
+      {
+        "menuName": "Fee Management",
+        "menuLink": "/dashboard/student/fee-management"
+      }
+    ]
+  }
+]

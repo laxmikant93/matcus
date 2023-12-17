@@ -1,0 +1,308 @@
+@import "../../CommonComponent/commonCss/base.scss";
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+
+
+.displayHide {
+  display: none;
+}
+
+.loginsignup-wrapper {
+  background: linear-gradient(180deg, #ffffff 20.38%, rgba(215, 221, 217, 0.82) 147.85%);
+  min-height: inherit;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .login-login-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .login-p {
+      font-size: 15px;
+      font-weight: 600;
+      color: $primary;
+      line-height: 1.6em;
+      text-decoration: underline;
+    }
+  }
+
+  .login_wrap {
+    background: $white;
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.04), 2px 2px 4px rgba(0, 0, 0, 0.04);
+    max-width: 450px;
+    width: 90%;
+    height: fit-content;
+    margin-top: 45px;
+
+
+    .banner {
+      width: 100%;
+      height: 170px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .login-content {
+      padding: 48px 36px 36px;
+
+      .animLabel {
+
+        @media(max-width:400px) {
+          white-space: nowrap;
+          max-width: 210px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          &:hover {
+            overflow: visible;
+          }
+        }
+        
+
+      }
+
+      .font {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 33px;
+        color: $primary;
+
+        &.mb-0 {
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 20px;
+          line-height: 27.32px;
+          font-weight: 500;
+          color: rgba($black, 0.4);
+        }
+
+        button {
+          background-color: transparent;
+          border: none;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 33px;
+          color: $primary;
+        }
+      }
+
+      .OTP_text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $black;
+        margin-bottom: 14px;
+
+        span {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+      }
+
+
+      .formFieldwrap {
+        padding-bottom: 0px;
+
+        .OTP_inputfields {
+          gap: 13px;
+          max-width: 100%;
+          justify-content: space-between;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 10px;
+
+          .form-control,
+          input {
+            width: 41.74px;
+            height: 40px;
+            border: 0.8px solid rgba($black, 0.2);
+            font-weight: 500;
+            font-size: 20.8696px;
+            line-height: 31px;
+            color: $black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+          }
+
+          input::-webkit-input-placeholder {
+            font-size: 20.8696px;
+            line-height: 31px;
+          }
+        }
+      }
+
+      .cstmPhoneInput {
+        padding-bottom: 0px;
+
+        .form-group {
+          .flag-dropdown {
+            .selected-flag {
+              width: 55px;
+              padding: 0px 0px 0px 16px;
+              height: 40px;
+              margin: 1px;
+
+              &::after {
+                height: 25px;
+                width: 1px;
+                top: 8px;
+                background-color: rgba($black, 0.4);
+                left: 53px;
+              }
+            }
+          }
+        }
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $primary;
+
+
+        .secondaryLink {
+          color: $secondary;
+          font-weight: 700;
+        }
+      }
+
+      .button-secondary {
+        padding: 12px 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: $secondary;
+        color: $white;
+        border-radius: 4px;
+        display: block;
+        border: none;
+        width: 100%;
+      }
+    }
+  
+  }
+
+}
+
+.social-media-wrapper {
+  margin-top: 24px;
+  text-align: center;
+  // width: 100%;
+  // display: flex;
+  // justify-content: center;
+
+  .social-login-text {
+    font-size: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba($black, 0.4);
+    width: 100%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      bottom: 50%;
+      background: #202020;
+      height: 1px;
+      opacity: 0.2;
+      width: 32%;
+
+      @media(max-width:500px) {
+        width: 30%;
+      }
+
+      @media(max-width:425px) {
+        width: 28%;
+      }
+
+      @media(max-width:360px) {
+        width: 25%;
+      }
+
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 68%;
+      bottom: 50%;
+      background: #202020;
+      height: 1px;
+      opacity: 0.2;
+      width: 35%;
+
+
+      @media(max-width:500px) {
+        left: 70%;
+      }
+
+      @media(max-width:425px) {
+        left: 72%;
+      }
+
+      @media(max-width:425px) {
+        left: 75%;
+      }
+    }
+
+
+
+  }
+
+  .google-loginBtn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 15px;
+    border-radius: 3px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #202020;
+    text-decoration: none;
+    border: 1px solid rgba(32, 32, 32, 0.2) !important;
+    border-radius: 4px;
+    background: white;
+  }
+
+
+}
+
+.social-login {
+
+  margin-top: 24px;
+}
+
+.radio-btn-div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}

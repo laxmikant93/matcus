@@ -1,0 +1,50 @@
+    [
+        {
+            "menuName": "Home",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "About",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "Our Team",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "Admissions",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "Fee structures",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "School Facilities",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "Announcements",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "Gallery",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "FAQ",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "Vacancy",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "Contact",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "SiteMap",
+            "menuLink": "/"
+        }
+    ]

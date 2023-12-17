@@ -1,0 +1,206 @@
+@import "../../assets/Style/base";
+
+.contact_us_sec_wrap {
+  margin-top: 0px;
+}
+.contactUsSec_1 {
+  // background-color: rgba($primary, 0.05);
+  padding: 90px 0 40px 0;
+}
+.contactUsSec_2 {
+  background-color: $primary;
+  padding: 80px 0;
+  .officeLocationGrid_head {
+    &.underline {
+      padding: 0 0 5px 0;
+      &::after {
+        border-bottom: 0.15rem solid $primary;
+      }
+    }
+  }
+  .contact-card {
+    background-color: $white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 90%;
+    margin: auto;
+    @media only screen and (max-width: 600px) {
+      max-width: 90%;
+    }
+  }
+  .contactNumberHead {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $primary;
+    @extend .text-xs;
+    @extend .w-600;
+  }
+}
+.ContactUsWrap {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  align-items: flex-start;
+  .ContactUsRightItem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
+    .formFieldwrap {
+      &:nth-child(3),
+      &:nth-child(4) {
+        grid-column: 1/3;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+      .formFieldwrap {
+        &:nth-child(3),
+        &:nth-child(4) {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+}
+.ContactUsHeading {
+  grid-column: 1/3;
+  h1 {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+}
+.ContactUsLeftItem {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  .item {
+    p {
+      &.underline {
+        padding: 0 0 5px 0;
+        &::after {
+          border-width: 2px;
+        }
+      }
+    }
+    a {
+      display: block;
+    }
+  }
+}
+.SD-ContactAddress {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+}
+.SD-ContactFormCst {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 25px;
+  align-items: center;
+  .SD-ContactFormHead {
+    grid-column: 1/4;
+  }
+  .formFieldwrap {
+    &:nth-child(5) {
+      grid-column: 1/4;
+    }
+  }
+}
+
+.C-ContactBasicDetail {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.C-ContactFormHead {
+  padding-top: 30px;
+}
+.C-ContactForm {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 15px;
+  .C-ContactFormCst {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
+    .formFieldwrap {
+      &:nth-child(3),
+      &:nth-child(4) {
+        grid-column: 1/3;
+      }
+    }
+  }
+}
+
+.officeLocationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  margin-top: 15px;
+  padding-bottom: 30px;
+  letter-spacing: 0.033em;
+  address {
+    @extend .w-500;
+    line-height: 1.33;
+    margin: 0 0 20px 0;
+    text-transform: capitalize;
+  }
+  .contactNumber {
+    line-height: 1;
+    a {
+      cursor: pointer;
+      display: inline-flex;
+      padding: 5px 0;
+    }
+  }
+}
+.mapPointerBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+  span {
+    border-radius: 30px;
+    display: inline-flex;
+    padding: 8px 20px;
+    border: 1px solid $primary;
+    color: $primary;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba($primary, 0.125);
+    }
+  }
+}
+@media only screen and (max-width: 667px) {
+  .ContactUsWrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .C-ContactBasicDetail {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding-top: 0;
+    .item {
+      background-color: $white;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba($dgray, 0.125);
+    }
+  }
+  .C-ContactForm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .officeLocationGrid {
+    .olgItem {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba($mgray, 0.5);
+      &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+////Sub domain

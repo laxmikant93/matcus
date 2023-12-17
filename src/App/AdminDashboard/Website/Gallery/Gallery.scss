@@ -1,0 +1,116 @@
+@import "../../../../assets/Style/base";
+.heading-with-edit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .form-group {
+    margin-bottom: 0;
+  }
+  .form-control {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgba($mgray, 0.5);
+    border-radius: 0;
+  }
+  i {
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+.edit-gallery-imgpreview {
+  display: inline-block;
+  img {
+    width: 110px;
+  }
+  video {
+    width: 110px;
+    height: 80px;
+  }
+}
+.gallery-list-table {
+  .gallery-thumnail {
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+.g-thumb-video-overlay {
+  position: absolute;
+  width: 120px;
+  height: 70px;
+  left: 0;
+  top: 0;
+  background-color: rgba($base, 0.3);
+  border-radius: 5px;
+}
+.g-thumb-video-wrap {
+  position: relative;
+  display: inline-block;
+  video {
+    width: 120px;
+    height: 70px;
+  }
+  .icon-video {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+}
+// Edit Gallery
+.ThumnailPopWrapper {
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 18, 18, 0.75);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 49999;
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease-in-out;
+  display: flex;
+  .closeModal {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+    &:hover {
+      opacity: 1;
+    }
+    cursor: pointer;
+    &::before,
+    &::after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: $primary;
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+}
+.ThumnailPopBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+  img {
+    height: 80vh;
+    width: auto;
+    object-fit: cover;
+  }
+}
+// close Edit Gallery

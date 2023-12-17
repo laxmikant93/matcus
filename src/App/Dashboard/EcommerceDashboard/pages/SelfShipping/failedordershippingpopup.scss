@@ -1,0 +1,20 @@
+.paymenntDetails-container {
+  height: auto;
+
+  .heading-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .failed-buttons-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+
+    .failed-button-item {
+      padding: 9px 45px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}

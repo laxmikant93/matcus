@@ -1,0 +1,289 @@
+@import "../../../assets/Style/base";
+
+.PageTopHead {
+  &.PTH-CourseListing {
+    grid-template-columns: auto 2fr auto;
+  }
+}
+
+.closableBtn {
+  display: inline-flex;
+
+  li {
+    border: 1px solid $silver;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: $white;
+    padding: 5px;
+    color: $primary;
+    padding-right: 20px;
+    @extend .text-xxs;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    margin-right: 5px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  .close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 5px;
+    transform: translate(0%, -50%);
+
+    &:hover {
+      background: $silver;
+    }
+  }
+}
+
+.addSubWrapper {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 15px;
+  input {
+    margin-right: 15px;
+  }
+
+  .cstmSelectWrap {
+    margin-bottom: 0;
+    width: 100%;
+    margin-right: 15px;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .form-group {
+    .cstmSelectWrap {
+      margin-bottom: 0;
+    }
+  }
+
+  button {
+    position: relative;
+    text-align: center;
+    top: 0;
+  }
+}
+.tooltip-cst {
+  &.defaultNamingTooltip {
+    .tooltip-content-cst {
+      top: 28px;
+      left: auto;
+      right: 0;
+    }
+  }
+}
+// .BtnCaret {
+//   color: $primary;
+//   padding: 10px 0;
+//   position: relative;
+//   @extend .w-500;
+//   &::after {
+//     height: 5px;
+//     width: 5px;
+//     border-left: 2px solid $primary;
+//     border-top: 2px solid $primary;
+//     transform: rotate(-135deg);
+//     color: $primary;
+//     left: auto;
+//     top: 14px;
+//     right: -15px;
+//   }
+//   &.active {
+//     &::after {
+//       transform: rotate(45deg);
+//       top: 18px;
+//     }
+//   }
+// }
+
+.SectionTitleCustomWrap {
+  display: flex;
+  // margin-bottom: 20px;
+}
+
+.SectionTitleCustom {
+  width: 60%;
+}
+
+.SectionTitleInput {
+  width: 100%;
+  background-color: rgba($silver, 0.5);
+  padding: 30px 30px 15px 30px;
+  border: 1px solid rgba($gray, 0.125);
+}
+
+.profileImgWrap {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba($mgray, 0.25);
+  padding: 2px;
+  background: $white;
+  box-shadow: 0 0 10px rgba($base, 0.125);
+
+  img {
+    max-width: 98%;
+    object-fit: cover;
+    background-color: $mgray;
+    border-radius: 50%;
+  }
+}
+
+.heading-with-edit {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .form-control {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgba($mgray, 0.5);
+    border-radius: 0;
+  }
+
+  .editButton {
+    padding: 10px;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.ToggleBtnSectionCst {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  a,
+  span {
+    color: $base;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+    @extend .w-500;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::after {
+      height: 5px;
+      width: 5px;
+      border-left: 2px solid $base;
+      border-top: 2px solid $base;
+      transform: rotate(-135deg);
+      color: $primary;
+      left: auto;
+      top: 6px;
+      right: -15px;
+    }
+
+    &.active {
+      color: $primary;
+
+      &::after {
+        border-left: 2px solid $primary;
+        border-top: 2px solid $primary;
+        transform: rotate(45deg);
+        top: 8px;
+      }
+    }
+  }
+}
+
+.editFacultyBoxWrapper {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  .editFacultyBox {
+    background-color: $white;
+    background-clip: border-box;
+    border-radius: 5px;
+    height: 170px;
+    position: relative;
+    border: 1px solid rgba($mgray, 0.3);
+    line-height: 1.2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+
+    .sub-heading {
+      overflow: hidden;
+      width: 90%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .editFacultyAction {
+    .groupBtn {
+      .btnText {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .PageTopHead {
+    &.PTH-CourseListing {
+      grid-template-columns: 1fr auto;
+
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1/3;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .PageTopHead {
+    &.PTH-CourseListing {
+      grid-template-columns: 1fr;
+
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+
+  .SectionTitleCustom {
+    background: $white;
+    width: 100%;
+  }
+
+  .SectionTitleCustomWrap {
+    margin-top: 20px;
+  }
+}

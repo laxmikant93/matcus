@@ -1,0 +1,71 @@
+@import "../../assets//Style/base";
+
+.TableBottomBtn {
+  .button {
+    i {
+      &.ed-download {
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    &:hover i {
+      left: 0;
+    }
+  }
+}
+.pagination_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  li {
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    &.pagi_active {
+      background-color: rgba($primary, 0.2);
+      color: $primary;
+      border: 1px solid rgba($primary, 0.5);
+      text-align: center;
+      border-radius: 5px;
+      display: flex;
+      padding: 5px 12px;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+      // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+  }
+  .disabled {
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    color: $mgray;
+  }
+  .enable {
+    // color: $base;
+    color: $primary;
+  }
+  li {
+    &.arrow {
+      &.right,
+      &.left {
+        span {
+          font-size: 32px;
+          line-height: 27px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .pagination_list {
+    margin: 15px auto;
+  }
+}

@@ -1,0 +1,127 @@
+    [
+        {
+            "cat": "Website Builder",
+            "question": "What is an Edneed Website Builder?",
+            "answer": "Edneed Website Builder is designed to be very easy to use, allowing anyone – beginners or experienced designers – to create an entire website within minutes using a Edneed’s predesigned themes. Users can build a website simply by registering their institute and filling website content, no coding knowledge or experience is required."
+        },
+        {
+            "cat": "User Role",
+            "question": "What is an Institute Admin?",
+            "answer": "Institute Admin oversee administrative tasks in schools, colleges or other educational institutions. They ensure that the organization runs smoothly and they also manage facilities and staff."
+        },
+        {
+            "cat": "General",
+            "question": "What can I do with other user role?",
+            "answer": "Edneed is for everybody and our user's comfort and flexibility is our priority. If you are unsure about your role, choose Others as your default role. You can change to a different role later on in your learning journey."
+        },
+        {
+            "cat": "General",
+            "question": "I am running a coaching centre, can I register it on Edneed?",
+            "answer": "Yes, you can. Edneed is not limited to schools. In the Institute Information form, from the Select Category dropdown menu, Select the category most suitable for your institute."
+        },
+        {
+            "cat": "General",
+            "question": "How to send bulk invite to teachers?",
+            "answer": "<b>To bulk invite teachers;</b><ol><li>Login to www.edneed.com with Institute Admin account.</li><li>From the dashboard, go to Teachers. Invite Teachers page will appear.</li><li>From the top right corner click Download Excel Sheet link to download Edneed sample format and fill your data as per column.</li><li>After completing all the details, upload the document by clicking Upload Excel Sheet, your bulk invitations will be sent.</li></ol>"
+        },
+        {
+            "cat": "General",
+            "question": "How to send bulk invite to students?",
+            "answer": "<b>To bulk invite students;</b><ol><li>Login to www.edneed.com with Institute Admin account.</li><li>From the dashboard, go to Students. Invite Students page will appear. </li><li>From the top right corner click Download Excel Sheet link to download Edneed sample format and fill your data as per column.</li><li>After completing all the details, upload the document by clicking Upload Excel Sheet, your bulk invitations will be sent.</li></ol>"
+        },
+        {
+            "cat": "General",
+            "question": "Why my bulk invitations failed?",
+            "answer": "Invitations fail due to incomplete details. Kindly download the Excel and fill in the details required to send invitations successfully. Once completed, re-upload the Excel sheet. "
+        },
+        {
+            "cat": "Website Builder",
+            "question": "Do I need to be a member of Edneed to view my website?",
+            "answer": "No, viewing websites created through Edneed is not limited to Edneed users. Any user on the internet can view an institute’s website online, regardless of not being an Edneed user."
+        },
+        {
+            "cat": "Website Builder",
+            "question": "Will my website be mobile-friendly?",
+            "answer": "Yes, websites created through the Edneed Website Builder are mobile friendly, searchable and shareable on all search engines."
+        },
+        {
+            "cat": "Website Builder",
+            "question": "Do I need to buy a domain name for my website?",
+            "answer": "To create and publish a website, you do not have to buy a domain separately. By default all websites created on Edneed, have a subdomain name. Subdomain websites are both shareable and searchable on any search engine."
+        },
+        {
+            "cat": "Website Builder",
+            "question": "Why should I put so many details on my website?",
+            "answer": "We strongly recommend completing the Create Your Institute’s Website form with all the details. Your website is your face on the internet. An informative and updated website builds trust and credibility."
+        },
+        {
+            "cat": "Website Builder",
+            "question": "How to display faculty list on my website?",
+            "answer": "<b>Login to your Edneed account.</b><ol><li>From Institute Admin dashboard, go to Website.</li><li>From Manage Website page, select Add Faculty.</li><li>After filling the Add Faculty form, click Save.</li><li>Your faculty will be added to your website.</li></ol>"
+        },
+        {
+            "cat": "Website Builder",
+            "question": "How to add announcements on my website?",
+            "answer": "<b>Login to your Edneed account.</b><ol><li>From Institute Admin dashboard, go to Website.</li><li>From Manage Website page, select Announcements.</li><li>Click Add New Announcement, to add a new announcement to your website.</li></ol>"
+        },
+        {
+            "cat": "Website Builder",
+            "question": "How to edit website content?",
+            "answer": "<b>Login to your Edneed account.</b><ol><li>From Institute Admin dashboard, go to Website.</li><li>From Manage Website page, select Edit Contents to edit your website.</li></ol>"
+        },
+        {
+            "cat": "User Roles",
+            "question": "What are user roles?",
+            "answer": "Edneed is a global platform for educators, learners and institutes. Therefore we have divided our users into 3 broad categories.<ol><li>Institute Admin: If you run an education institute; i.e. school, college, coaching classes, home tuitions, training institutes, then this role is for you. Running an institute is no piece of cake, therefore on Edneed you can manage your institute, invite teachers and students, and create a website for free.</li><li>Teachers: If you are passionate towards teaching and knowledge sharing then this role is for you. With this role, you can conduct online classes, tests and assignments, all on one platform. Managing a class was never this easy.</li><li>Students:  If you want to expand your knowledge and connect with learners who share the same interests with you, then this role is for you. Ask and answer questions on Edneed Community. Find the best schools, colleges and coaching classes in your area with Institute Listing.</li></ol>"
+        },
+        {
+            "cat": "User Roles",
+            "question": "Is it compulsory to choose a user role?",
+            "answer": "No, it is not compulsory to choose a user role. You can select Others."
+        },
+        {
+            "cat": "Institute Listing",
+            "question": "How can I list my Institute on Edneed?",
+            "answer": "You can list your institute on Edneed simply by creating your institute’s website with Edneed Website Builder.<ol><li>Create an Edneed account.<li>Select Institute Admin user role and click Agree and Sign Up.<li>After completing email verification, enter password and click Add Your Institute button.<li>Check subdomain availability and fill the Register Your Institute form.<li>Fill the Website Information form with all the details and click Publish Website.<li>Your website will automatically get listed on Edneed.</li></ol>"
+        },
+        {
+            "cat": "Institute Listing",
+            "question": "Do I have to pay to list my institute?",
+            "answer": "Not at all! Getting listed on Edneed is for FREE. Simply, register your institute and create your website with Edneed to get listed."
+        },
+        {
+            "cat": "Community",
+            "question": "What is the purpose of Edneed Learning Community?",
+            "answer": "Power is gained by sharing knowledge. The purpose of Edneed Learning Community is to promote this practice. Any user can ask questions, share knowledge, participate in discussions and share experience."
+        },
+        {
+            "cat": "Institute Management System",
+            "question": "I have registered my institute, what should I do next?",
+            "answer": "Once you register your institute on Edneed, we suggest setting up your Classrooms and Subjects. After which you should invite your teachers and students to Edneed."
+        },
+        {
+            "cat": "Institute Management System",
+            "question": "How will I notify students about new assignment, test, or online class?",
+            "answer": "Don’t worry, Edneed takes care of all the communication that takes place from scheduling a class to canceling it. Teachers only have to focus on teaching, we take care of the rest for you."
+        },
+        {
+            "cat": "Institute Management System",
+            "question": "I am a teacher but I want to register my private tuitions on Edneed, what role should I choose?",
+            "answer": "You require an Institute Admin profile to register your institute on Edneed and manage it. However, to conduct online classes, assignments, and tests, you require a Teacher profile. On Edneed, you can easily multiple user roles with one account and have complete control over both."
+        },
+        {
+            "cat": "Institute Management System",
+            "question": "How can I invite students to join my institute on Edneed?",
+            "answer": "<ol><li>Log in to your Edneed account.</li><li>From Institute Admin Dashboard, open Students.</li><li>In Invite Student form, enter student email and select their course from the drop down menu.</li><li>Click Send Invitations to invite student.</li></li>You can invite up to 10 students at one time.</li></ol>"
+        },
+        {
+            "cat": "Institute Management System",
+            "question": "How can I invite teachers to join my institute on Edneed?",
+            "answer": "<b>To invite teachers to your institute on Edneed, follow the steps given below:</b><ol><li>Log in to your Edneed account.</li><li>From Institute Admin Dashboard, open Teachers.</li><li>In Invite Teachers form, enter teacher emails and click Send Invitations.</li><li>You can invite up to 10 teachers at one time.</li></ol>"
+        },
+        {
+            "cat": "Institute Management System",
+            "question": "What is the difference between Classrooms and Subjects?",
+            "answer": "Edneed is an inclusive platform that caters to the need of all educational institutes globally. Keeping this diversity in mind, we have come up with Courses and Classrooms.<br/><br/>A Course is where you place a school standard or degree. Classrooms are a subdivision of Courses, and are meant to segregate the various subjects within a Course."
+        }
+    ]

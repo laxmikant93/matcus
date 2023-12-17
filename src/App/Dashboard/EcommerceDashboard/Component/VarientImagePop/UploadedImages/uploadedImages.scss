@@ -1,0 +1,106 @@
+@import '../../../commonEcommerce';
+
+
+.uploadedImages-container {
+  box-shadow: 1px 10px 10px rgba(19, 18, 18, 0.09);
+  z-index: 99999;
+  padding: 8px;
+  position: absolute;
+  bottom: 123%;
+
+  border-radius: 4px;
+  background-color: $white;
+  width: 370px;
+
+  @media (max-width:768px) {
+     width: auto;
+     
+  }
+  .uploadedImages-div {
+    .upload-text {
+      color:#4D4D4D;
+      
+    }
+.image-container {
+  padding-top: 10px;
+  .list-images-wrappwer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    .image-div {
+      width: 48px;
+      height: 48px;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      img {
+        max-width: 100%;
+        border-radius: 4px;
+      }
+
+      .image-check{
+       position:absolute;
+       top: 4px;
+       right: 4px;
+       width: 14px;
+       height: 14px;
+       border-radius: 50%;
+       background-color: $primary;
+       cursor: pointer;
+       i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 8px;
+          height: 8px;
+     
+       }
+      }
+    }
+  }
+}
+}
+
+.icon-check{
+  -webkit-mask: url("../../../assets/icons/checkGreen.svg") no-repeat center;
+  mask-image: url("../../../assets/icons/checkGreen.svg") no-repeat center;
+}
+}
+
+.positionRight {
+  right: 0;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 91%;
+    // transform: translateX(-50%);
+    // box-shadow: 1px 1px 8px rgba($base, 0.4);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #fffcfc;
+
+  }
+}
+
+.positionLeft {
+   left:0;
+   &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 6%;
+    transform: translateX(-50%);
+    // box-shadow: 1px 1px 8px rgba($base, 0.4);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #fffcfc;
+  
+  
+  
+  }
+}

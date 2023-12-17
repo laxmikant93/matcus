@@ -1,0 +1,45 @@
+$black: #000000;
+$white: #ffffff;
+
+$dgray: #393939;
+$gray: #666666;
+$mgray: #808080;
+$lgray: #a1a1a1;
+$silver: #f0f0f0;
+
+/***Default***/
+/***L = Light***/
+/***D = Dark***/
+
+$base: #202020;
+$baseL: #282828;
+$baseD: #1a1a1a;
+
+$primary: #0184ff;
+$primaryL: #41a3ff;
+$primaryD: #006acd;
+
+$secondary: #14a032;
+$secondaryL: #19c83f;
+$secondaryD: #108028;
+
+$purple: #540be4;
+$purpleL: #7635f5;
+$purpleD: #4309b6;
+
+$red: #d93025;
+$redL: #e3635b;
+$redD: #ae261e;
+
+$bsPink: #b26945;
+$bsPinkL: #c78b6e;
+$bsPinkD: #8e5437;
+
+$gradient: linear-gradient(90deg, #336cf1 0%, #4a9e42 100%);
+$gradientL: linear-gradient(90deg, #336cf1 0%, #4a9e42 100%);
+$gradientD: linear-gradient(90deg, #336cf1 0%, #4a9e42 100%);
+
+$font: "Poppins", sans-serif;
+
+@import '../../Common/Modals/Modals.scss';
+@import '../../Common/Dialog/Dialog.scss';

@@ -1,0 +1,98 @@
+@import '../../CommonComponent/commonCss/base.scss';
+.ecom-layout {
+.myprofile-container {
+
+  .width-40 {
+    width: 47%;
+
+    @media(max-width:500px) {
+      width: 100%;
+    }
+  }
+
+  .width-100 {
+    width: 100%;
+  }
+
+  .savedAddress-heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: $black;
+
+    .heading-arrow {
+      font-size: 28px;
+      font-weight: 800;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  }
+
+  .myprofile-wrapper {
+    .select-address-p {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2em;
+      color: $primary;
+    }
+
+    .myprofile-wrapper {
+      width: 50%;
+
+      @media (max-width:1024px) {
+        width: 70%;
+      }
+
+      @media (max-width:768px) {
+        width: 90%;
+      }
+
+      @media (max-width:500px) {
+        width: 100%;
+      }
+
+      .myprofile-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 30px;
+
+        @media(max-width:500px) {
+          flex-direction: column;
+        }
+      }
+
+      .select-gender-p {
+        font-size: 16px;
+        font-weight: 600;
+        color: $black;
+        line-height: 1.4em;
+        padding-bottom: 12px;
+      }
+
+      .gender-group {
+        margin-bottom: 24px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+
+        .radio-button {
+          padding: 7px 14px;
+          background: $white;
+          color: $black;
+          border: 1px solid rgba($black, 0.1);
+          border-radius: 4px;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 500;
+
+          &.active {
+            border: 1px solid $secondary;
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+}

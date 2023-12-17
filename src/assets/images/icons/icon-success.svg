@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="Group_216" data-name="Group 216" transform="translate(-779 -116)">
+    <g id="Group_215" data-name="Group 215">
+      <g id="Group_214" data-name="Group 214">
+        <g id="Ellipse_36" data-name="Ellipse 36" transform="translate(779 116)" fill="#fff" stroke="#09b14b" stroke-width="2">
+          <circle cx="28" cy="28" r="28" stroke="none"/>
+          <circle cx="28" cy="28" r="27" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <path id="Icon_feather-check" data-name="Icon feather-check" d="M30,9,13.5,25.5,6,18" transform="translate(788.546 126.75)" fill="none" stroke="#09b14b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

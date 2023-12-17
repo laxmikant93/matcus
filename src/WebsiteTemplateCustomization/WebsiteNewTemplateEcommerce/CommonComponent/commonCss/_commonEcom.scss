@@ -1,0 +1,70 @@
+@import './theme.scss';
+
+.ecom-layout {
+  .input-custom-type {
+    label.active {
+      color: $primary !important;
+    }
+  }
+
+  // * {
+  //   accent-color: $secondary;
+  // }
+
+  // p {
+  //   font-family: 'Mulish', sans-serif;
+  //   font-weight: 400;
+  // }
+
+  // selection 
+  ::selection {
+    background: var(--gama) !important;
+    color: var(--alpha);
+
+  }
+
+  ::-moz-selection {
+    background: var(--gama) !important;
+    color: var(--alpha);
+  }
+
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: $primary !important;
+  }
+
+  *::-webkit-scrollbar {
+    height: 10px;
+    /* height of horizontal scrollbar ← You're missing this */
+    width: 10px;
+    /* width of vertical scrollbar */
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ececec !important;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--beta) !important;
+    border-radius: 0;
+    border: 0 solid #ececec;
+  }
+
+  input[type='radio']:checked {
+    accent-color: $primary !important;
+    border-color: transparent;
+  }
+
+  .cstmPhoneInput .react-tel-input .form-control:focus {
+    border: 1px solid $primary !important;
+  }
+
+  .form-control.admin:focus {
+    border: 1px solid $primary !important;
+  }
+
+  .sectionBodyContent {
+    min-height: 600px;
+  }
+}

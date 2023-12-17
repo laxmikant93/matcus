@@ -1,0 +1,85 @@
+@import "../../../../assets/Style/base";
+
+.PageTopHead {
+  &.PTH-AdminServiceList {
+    grid-template-columns: auto 1fr 2fr auto;
+  }
+}
+.TableThumbnail {
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.ManageAdmissionCount {
+  @extend .text-sm;
+  @extend .w-300;
+  color: $dgray;
+  span {
+    margin-right: 5px;
+  }
+}
+.ServiceListThubnail {
+  img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+.S-DetailCst {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.S-DetailList {
+  .card {
+    background-color: rgba($gray, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid rgba($mgray, 0.25);
+    position: relative;
+    .itemRemoveBtn {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+  }
+}
+.EditService-MBody {
+  .S-DetailCst {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .PageTopHead {
+    &.PTH-AdminServiceList {
+      grid-template-columns: auto 1fr;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1/3;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .S-DetailCst {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .PageTopHead {
+    &.PTH-AdminServiceList {
+      grid-template-columns: 1fr;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+}

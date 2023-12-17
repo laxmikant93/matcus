@@ -1,0 +1,188 @@
+@import '../../../../assets/Style/base';
+
+.personalSetting-wrap {
+  .mb-12 {
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  .formFieldwrap {
+    padding-bottom: 19px;
+  }
+
+  .animLabelTop {
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  .personalSetting-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 44px;
+
+    @media(max-width:600px) {
+      grid-template-columns: 1fr;
+    }
+
+    .datePickerWrap {
+      padding-bottom: 19px;
+    }
+
+    .email-wrap {
+      position: relative;
+
+      .mobile-verify-wrap {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        @media (max-width:500px) {
+          top: 100%;
+          right: 0;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .mobileNumber-wrap {
+      grid-column: 1/1;
+      width: 100%;
+      margin: 0 auto;
+
+      .mobileFormFiled {
+        position: relative;
+        .cstmPhoneInput {
+          .form-group {
+            &.react-tel-input {
+              .flag-dropdown {
+                .country-list {
+                  .search {
+                    z-index: 10;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .react-tel-input {
+          padding-bottom: 0;
+
+          .form-control {
+            width: 100%;
+            height: 42px;
+          }
+        }
+      }
+
+      .mobile-verify-wrap {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        top: 37%;
+        right: 16px;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        @media (max-width:500px) {
+          top: 100%;
+          right: 0;
+          font-size: 10px;
+        }
+      }
+
+      .selectGender-wrap {
+        grid-row: 3;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+
+      .dob-wrap {
+        grid-row: 3;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+
+      .bloodGroup-wrap {
+        grid-row: 4;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+
+      .aadhaar-wrap {
+        grid-row: 4;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+
+      .fatherName-wrap {
+        grid-row: 5;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+
+      .fatherOccupation-wrap {
+        grid-row: 5;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+
+      .guardianName-wrap {
+        grid-row: 6;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+
+      .guardianOccupation-wrap {
+        grid-row: 6;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+
+      .guardianRelation-wrap {
+        grid-row: 7;
+
+        @media(max-width:600px) {
+          grid-row: auto;
+        }
+      }
+    }
+
+    .address-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 44px;
+
+      @media(max-width:600px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .personalSetting-btn-wraper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import "../../../assets/Style/base";
+.PageTopHead {
+  &.PTH-StudentOnlineTestList {
+    grid-template-columns: auto auto auto 1fr;
+  }
+}
+.refreshBtn {
+  background-color: $white;
+  border: 1px solid $lgray;
+  border-radius: 3px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// add Class from Public
+.terminateInfoIcon {
+  position: relative;
+  // .terminatedInfoIconposi {
+  //   position: absolute;
+  //   top: 0px;
+  // }
+}
+.onlneexamstudenInfoPopup {
+  border: 1px solid;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onlineexamtrinline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  & button {
+    padding: 6px;
+    height: 36px;
+  }
+}
+.popup {
+  &.active {
+    &.terminatedPopuponline {
+      padding: 20px 20px 20px 20px;
+      text-align: left;
+      left: 0px;
+      width: 300px;
+    }
+  }
+  &.inactive {
+    &.terminatedPopuponline {
+      padding: 20px 20px 20px 20px;
+      text-align: left;
+      left: 0px;
+    }
+  }
+}
+.closepopupbutton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .PageTopHead.PTH-StudentOnlineTestList {
+    grid-template-columns: 1fr 1fr auto 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 600px) {
+  .PageTopHead.PTH-StudentOnlineTestList {
+    grid-template-columns: repeat(2, 1fr);
+    .PTH-Item {
+      &:last-child {
+        grid-column: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .PageTopHead.PTH-StudentOnlineTestList {
+    grid-template-columns: repeat(1, 1fr);
+    .PTH-Item {
+      &:last-child {
+        grid-row: 1/3;
+      }
+    }
+  }
+}

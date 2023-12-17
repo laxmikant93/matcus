@@ -1,0 +1,358 @@
+@import "../../../assets/Style/base";
+
+.instituteDashboard-container {
+  .deshwelcome-wrapper {
+    h1 {
+      @media (max-width: 600px) {
+        font-size: 24px;
+      }
+    }
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    .SupportRequest-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+
+      button {
+        background-color: transparent;
+
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
+  .header-notification-bar {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 15px;
+
+    .hnb-wrapper {
+      border: 1px solid rgba($secondary, 0.1);
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      background-color: rgba($secondary, 0.025);
+      @extend .text-2xs;
+      @extend .w-500;
+      display: flex;
+      gap: 1rem;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .icons {
+    display: block;
+    font-size: 30px;
+    background-color: $primary;
+  }
+
+  .instituteDashboard-edit {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5px;
+    align-items: center;
+    margin-top: 5px;
+    cursor: pointer;
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  .icon-large {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-Extra-large {
+    width: 64px;
+    height: 64px;
+  }
+
+  .inquery-icon {
+    -webkit-mask: url("./inquery.svg") no-repeat center;
+    object-fit: cover;
+    mask-image: url("./inquery.svg") no-repeat center;
+  }
+
+  .inqueryBig-icon {
+    -webkit-mask: url(./inqueryBig.svg) no-repeat center;
+    mask-image: url(./inqueryBig.svg) no-repeat center;
+  }
+
+  // .cross-icon {
+  //   -webkit-mask: url(./cross.svg) no-repeat center;
+  //   mask: url(./cross.svg) no-repeat center;
+  // }
+
+  .student-icon {
+    -webkit-mask: url(./student.svg) no-repeat center;
+    mask-image: url(./student.svg) no-repeat center;
+  }
+
+  .fee-icon {
+    -webkit-mask: url(./feeIcon.svg) no-repeat center;
+    mask-image: url(./feeIcon.svg) no-repeat center;
+  }
+
+  .classroom-icon {
+    -webkit-mask: url(./Classroom.svg) no-repeat center;
+    mask-image: url(./Classroom.svg) no-repeat center;
+  }
+
+  .teacher-icon {
+    -webkit-mask: url(./teacher.svg) no-repeat center;
+    mask-image: url(./teacher.svg) no-repeat center;
+    object-fit: cover;
+  }
+
+  .edit-icon {
+    -webkit-mask: url(./edit-icon.svg) no-repeat center;
+    mask-image: url(./edit-icon.svg) no-repeat center;
+  }
+
+  .instituteDashboard-middle-section {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-direction: row;
+
+    // @media (max-width: 600px) {
+    //   grid-template-columns: 1fr;
+    // }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+
+    // .instituteDashboard-middle-left {
+    //   background-color: $white;
+    //   padding: 18px 32px;
+    //   border-radius: 12px;
+
+    //   @media(max-width:768px) {
+    //     width: 100%;
+    //   }
+
+    //   @media(max-width:425px) {
+    //     padding: 15px;
+    //   }
+
+    //   .instituteDashboard-edit {
+    //     display: flex;
+    //     justify-content: flex-start;
+    //     column-gap: 5px;
+    //     align-items: center;
+    //     margin-top: 5px;
+    //     cursor: pointer;
+    //   }
+
+    //   .instituteDashboard-select-div {
+    //     margin-top: 20px;
+    //     position: relative;
+    //     width: 100%;
+    //     height: 200px;
+
+    //     @media(max-width:600px) {
+    //       height: 100%;
+    //     }
+
+    //     &:hover .select-button-wrap {
+    //       display: block;
+    //       z-index: 50;
+    //     }
+
+    //     img {
+    //       width: 100%;
+    //       height: 100%;
+    //     }
+
+    //     .select-button-wrap {
+    //       position: absolute;
+    //       top: 0;
+    //       bottom: 0;
+    //       left: 0;
+    //       right: 0;
+    //       background-color: rgba(#000000, 0.3);
+    //       display: none;
+
+    //       .select-button-div {
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         z-index: 100;
+    //         display: flex;
+    //         flex-direction: column;
+    //         row-gap: 10px;
+
+    //       }
+
+    //     }
+
+    //     .select-plan-text {
+    //       position: absolute;
+    //       top: 50%;
+    //       left: 50%;
+    //       padding: 10px 10px;
+    //       border-radius: 4px;
+    //       transform: translate(-50%, -50%);
+    //       background-color: $white;
+    //       column-gap: 50px;
+    //       z-index: 10;
+    //       cursor: pointer;
+    //       width: 190px;
+    //       text-align: center;
+    //     }
+    //   }
+    // }
+
+    .instituteDashboard-middle-right {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      button {
+        background-color: transparent;
+
+        &:hover {
+          background: $primary;
+        }
+      }
+
+      .instituteDashboard-inquery-wrap {
+        background-color: $white;
+        padding: 16px 24px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .instituteDashboard-icon-wrap {
+          display: flex;
+          column-gap: 20px;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .icon-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid rgba($primary, 0.4);
+            position: relative;
+
+            i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .instituteDashboard-card-container {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+
+
+    .instituteDashboard-card {
+      background-color: $white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.15);
+
+      @media (max-width: 600px) {
+        padding: 16px 8px;
+      }
+
+      .instituteDashboard-card-icon-div {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        column-gap: 30px;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+          margin-top: 8px;
+
+          i {
+            display: none;
+          }
+        }
+
+      }
+    }
+
+    .instituteDashboard-card-fee-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+
+      @media (max-width: 600px) {
+        p {
+          text-decoration: underline;
+        }
+      }
+
+      .arrow-div {
+        width: 22px;
+        height: 22px;
+        background-color: rgba($primary, 0.2);
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+
+        @media (max-width: 600px) {
+          display: none;
+        }
+
+        .right-expend {
+          font-size: 28px;
+          font-weight: 300;
+          color: $primary;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

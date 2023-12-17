@@ -1,0 +1,132 @@
+@import "../../assets/Style/base";
+
+.scroll-nav-tab-wrapper {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+}
+.EdneedVideoHeadCst {
+  margin-top: 125px;
+}
+.EdneedVideoTabBar {
+  padding-top: 30px;
+}
+.EdneedVideoTabList {
+  display: flex;
+  align-items: center;
+  top: 9%;
+  position: sticky;
+  background-color: $white;
+
+  li {
+    border: 1px solid $lgray;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+    color: $primary;
+    @extend .text-xxs;
+    @extend .w-500;
+    white-space: nowrap;
+
+    &.active {
+      background-color: $primary;
+      color: $white;
+      border: 1px solid $primary;
+    }
+  }
+}
+.EdneedAllVideoItem {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  min-height: 500px;
+  .EdneedAllVideoCard {
+    border: none;
+    border-radius: 0;
+
+    .cardMedia {
+      position: relative;
+
+      img {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .ED-OverlayPlayIcon {
+        background-color: $lgray;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ED-OverlayPlayWrap {
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.EdneedVideoPageTopHead {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $lgray;
+  justify-content: space-between;
+  .EdneedVideoPageTopHeadItem {
+    margin-bottom: 1rem;
+    &:first-child {
+      width: 90%;
+    }
+
+    &:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .scroll-nav-tab-wrapper {
+    display: flex;
+  }
+}
+@media (max-width: 320px) {
+  .EdneedAllVideoItem {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .EdneedVideoPageTopHead {
+    .EdneedVideoPageTopHeadItem:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 7px;
+    }
+  }
+}

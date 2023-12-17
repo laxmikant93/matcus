@@ -1,0 +1,41 @@
+@import "../../assets/Style/base";
+
+.cookie-policy-custom {
+  position: relative;
+  z-index: 3;
+  padding: 30px 0;
+}
+
+.cookie-policy-custom {
+  li {
+    margin: 15px 0;
+  }
+  h3 {
+    border-bottom: 0.15rem solid $primary;
+    display: inline-block;
+    line-height: 1.1;
+    margin: 30px 0 5px 0;
+    @extend .w-500;
+  }
+  .CookieCounter {
+    .cookieSublist {
+      padding-left: 40px;
+      li {
+      list-style-type: decimal;
+       @extend .w-500;
+        p {
+          margin: 0;
+          line-height: 1.5;
+        }
+        // &::before {
+        //   width: 8px;
+        //   height: 8px;
+        //   border-radius: 50%;
+        //   background-color: $mgray;
+        //   left: auto;
+        //   margin: 7px 0 0 -20px;
+        // }
+      }
+    }
+  }
+}

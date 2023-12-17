@@ -1,0 +1,37 @@
+@import '../../commonCss/base.scss';
+
+.ecom-layout {
+  .cod-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 0;
+
+    .cod-icon-wrap {
+      width: 32px;
+      height: 32px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .cod-right-text {
+      padding: 6px 16px;
+      background-color: rgba(var(--beta), 0.1);
+      border-radius: 14px;
+
+      .cod-text {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--beta);
+        line-height: 1.2em;
+
+      }
+    }
+  }
+}

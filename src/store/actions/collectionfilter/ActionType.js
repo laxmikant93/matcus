@@ -1,0 +1,6 @@
+export const Collection_Filter_ActionTypes = {
+
+  COLLECTION_FILTER: "COLLECTION_FILTER",
+  RESET_COLLECTION_FILTER: "RESET_COLLECTION_FILTER"
+
+}

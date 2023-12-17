@@ -1,0 +1,44 @@
+@import "../../assets/Style/base";
+
+.RegisterYourInstitute {
+  padding-top: 20px;
+
+  .RegisterYourInstituteHead {
+    grid-column: 1/3;
+  }
+
+  .RegisterYourInstitute1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 10px;
+  }
+
+  .RegisterYourInstitute2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 10px;
+  }
+
+  .RegisterYourInstitute3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 10px;
+  }
+}
+.MIW-BrowseHT {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+@media screen and (max-width: 480px) {
+  .RegisterYourInstitute {
+    .RegisterYourInstitute1 {
+      grid-template-columns: 1fr;
+    }
+    .RegisterYourInstitute3 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /***** Close Domain Selection *****/
+}

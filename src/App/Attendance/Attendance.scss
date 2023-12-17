@@ -1,0 +1,1018 @@
+@import "../../assets/Style/base";
+
+.teacherAttendance-wrapper {
+  background-color: $white;
+  border-radius: 10px;
+  padding: 15px;
+}
+.PageTopHead {
+  &.PTH-T-LR-ListHead {
+    grid-template-columns: auto 250px 1fr;
+  }
+  &.PTH-T-Attendance-ClassroomList {
+    grid-template-columns: 1fr auto auto auto;
+    .PTH-Item {
+      &:last-child {
+        grid-column: 1/4;
+      }
+    }
+  }
+}
+.LeaveRequestButton {
+  border: 1px solid $red;
+  color: $red;
+  @extend .text-xxs;
+  padding: 0 0 0 10px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  .LRBtnNumber {
+    background-color: $red;
+    height: 100%;
+    min-width: 50px;
+    color: #fff;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+}
+.T-Attendance-ClassroomList-Wrap,
+.S-Attendance-ClassroomList-Wrap {
+  margin-top: 10px;
+  .card {
+    margin-bottom: 20px;
+    border-color: rgba($lgray, 0.5);
+    background-color: $white;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .cardHeader {
+      background-color: $silver;
+      border-radius: inherit;
+      cursor: pointer;
+      position: relative;
+      .HeaderCnt {
+        padding: 15px 15px 15px 35px;
+        &.active {
+          &::before {
+            transform: rotate(-45deg);
+            top: 22px;
+          }
+        }
+        &::before {
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid $base;
+          border-right: 2px solid $base;
+          transform: rotate(137deg);
+          left: 15px;
+          top: 18px;
+          transition: all 0.8s ease;
+        }
+      }
+    }
+
+    .cardBody {
+      opacity: 1;
+      padding: 35px 30px;
+      .CardBodyItem-GrpButton {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 0 0 30px 0;
+        @media (max-width: 600px) {
+          gap: 15px;
+        }
+      }
+      .CardBodyItem-Wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        align-items: center;
+        .CardBodyItem {
+          min-height: 150px;
+          max-height: 200px;
+          height: 100%;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 20px;
+          text-align: center;
+          .SubjectListBoxAction {
+            a {
+              padding: 8px 5px 8px 0;
+              position: relative;
+              .RightCaret {
+                height: 6px;
+                width: 6px;
+                border-width: 2px 0 0 2px;
+                border-style: solid;
+                transform: rotate(135deg);
+                left: 2px;
+                position: relative;
+                transition: all 0.25s ease;
+                border-color: initial;
+                display: inline-block;
+                top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.HolidayCalender-ListView-Head,
+.Attendance-ListView-Head,
+.Student-Attendance-ListView-Head {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 1fr 2fr;
+  .HeadNameCst {
+    width: 100%;
+  }
+  .Attendance-List-labeling {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+      }
+    }
+    .disc {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: currentColor;
+      display: inline-block;
+    }
+  }
+}
+.PageTopHead {
+  &.PTH-Attendance-ListView {
+    grid-template-columns: 1fr 250px auto auto;
+    align-items: center;
+    .PTH-Item {
+      // .datePickerWrap {
+      //   padding: 0;
+      //   input[type="text"] {
+      //     border: 1px solid $lgray;
+      //     height: 35px;
+      //     padding: 5px 35px 5px 10px;
+      //   }
+      //   .calendarDates {
+      //     right: 10px;
+      //     left: auto;
+      //     top: 8px;
+      //   }
+      //   .react-datepicker__triangle {
+      //     right: 80px !important;
+      //     left: auto !important;
+      //   }
+      // }
+      .LeftRightCalender {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        .LeftDateIcon,
+        .RightDateIcon {
+          background-color: $white;
+          color: $base;
+          line-height: 0;
+          height: 32px;
+          outline: none;
+          border: 0;
+          width: 15%;
+          border-radius: 3px;
+        }
+        .DateCntMain {
+          border: 1px solid $lgray;
+          border-radius: 3px;
+          padding: 5px 15px;
+          @extend .text-xxs;
+          font-weight: 500;
+          width: 70%;
+          text-align: center;
+        }
+      }
+    }
+    .cstmSelectWrap {
+      width: 200px;
+      &::before {
+        top: 12px;
+      }
+      select {
+        border-color: rgba($mgray, 0.5);
+        @extend .text-xxs;
+        @extend .w-500;
+        padding: 9px 15px 9px 30px;
+      }
+    }
+  }
+}
+.Attendance-List-View-Wrapper {
+  max-width: 100%;
+  max-height: 400px;
+  overflow: auto;
+  position: relative;
+  z-index: 0;
+  margin-top: 10px;
+
+  table {
+    position: relative;
+    border-collapse: collapse;
+    thead {
+      // border-top: none;
+      // border: 1px solid $red;
+      tr {
+        border: none;
+        th {
+          min-width: 80px;
+          position: -webkit-sticky; /* for Safari */
+          position: sticky;
+          top: 0;
+          background: #ebebeb;
+          color: $base;
+          padding: 10px 5px;
+          z-index: 1;
+          &:first-child {
+            min-width: 250px;
+            max-width: 250px;
+            left: 0;
+            z-index: 2;
+            @extend .text-xs;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    td,
+    th {
+      padding: 10px 5px;
+      text-align: center;
+      border-top: 1px solid $lgray;
+      border-bottom: 1px solid $lgray;
+      border-right: 1px solid $lgray;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
+      word-break: break-word;
+      vertical-align: middle;
+      border-top: none;
+    }
+    .S-Period-Cal {
+      position: absolute;
+      background-color: rgba($secondary, 0.25);
+      width: 100%;
+      left: 0;
+      padding: 3px 0;
+      bottom: 0;
+      cursor: pointer;
+    }
+    .Nill-Period-Cal {
+      position: absolute;
+      background-color: rgba($lgray, 0.25);
+      width: 100%;
+      left: 0;
+      padding: 3px 0;
+    }
+    .Present {
+      color: $secondary;
+    }
+    .Absent {
+      color: $red;
+    }
+    .HalfDay {
+      color: $gray;
+    }
+    tbody {
+      tr {
+        z-index: 0;
+        border-bottom: none;
+        &:nth-child(odd) {
+          background-color: #f6f6f6;
+        }
+        &:nth-child(even) {
+          background-color: #ebebeb;
+        }
+        td {
+          width: 50px;
+          cursor: pointer;
+          position: relative;
+          @extend .text-xxs;
+          &.disable {
+            background-color: $mgray;
+            pointer-events: none;
+            cursor: not-allowed;
+          }
+        }
+        &:nth-child(odd) {
+          th {
+            background-color: #f6f6f6;
+          }
+        }
+        &:nth-child(even) {
+          th {
+            background-color: #ebebeb;
+          }
+        }
+      }
+      th {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        left: 0;
+        min-width: 250px;
+        max-width: 250px;
+        z-index: 1;
+      }
+      .Attendance-ProfileDetail {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 10px;
+        gap: 10px;
+        .scroll-nav-tab-wrapper {
+          display: flex;
+        }
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .ProfileDetail {
+          cursor: pointer;
+          text-align: left;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          p {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+.MarkAttendance-Modal {
+  .MarkAttendance-ModalHead {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 200px;
+    padding: 2rem 0;
+    .datePickerWrap {
+      padding: 0;
+    }
+  }
+  .MarkAttendance-Item {
+    position: relative;
+  }
+  .MarkAttendance-ItemInputWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .MarkAttendance-Item .card {
+    margin-bottom: 20px;
+    background-color: $silver;
+    position: relative;
+  }
+  .MarkAttendance-ItemActionWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    .MarkAttendance-ItemActionLeft {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  .MarkAttendance-ItemActionRight .RemoveAttendance {
+    border: 1px solid #c70020;
+    border-radius: 3px;
+    padding: 8px 12px;
+  }
+  .MarkAttendance-ItemActionRight .RemoveAttendance:hover {
+    background-color: #c70020;
+    color: $white;
+  }
+}
+
+// @media (min-width: 501px) and (max-width: 700px) {
+//   .Attendance-List-View-Wrapper {
+//     td {
+//       width: 25%;
+//     }
+//   }
+// }
+
+.LeaveRequest-Wrapper,
+.Manage-Periods-Wrapper {
+  .LR-Time-Details,
+  .Manage-Periods-Time-Details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    margin: 5px 0 0 0;
+    border-bottom: 1px solid rgba($lgray, 0.5);
+    border-top: 1px solid rgba($lgray, 0.5);
+  }
+  .LR-Mail-Body {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba($lgray, 0.5);
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .Manage-Periods-Body-Head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Manage-Periods-Body {
+    padding: 30px 0;
+  }
+  .LR-Mail-Action {
+    padding: 30px 0;
+    .cstmSelectWrap {
+      margin-top: 5px;
+      width: 30%;
+      &::before {
+        top: 11px;
+      }
+      select {
+        padding: 7px 15px 7px 30px;
+        font-weight: 500;
+        font-size: 15px;
+        border-color: rgba($lgray, 0.5);
+      }
+    }
+  }
+}
+.LeaveRequest-Wrapper {
+  .LR-Mail-Footer {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    .Popup {
+      &.RemovePopup {
+        width: 350px;
+        padding: 30px;
+        text-align: center;
+        margin-top: 45px;
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}
+.scroll-nav-tab-wrapper {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+}
+
+/***Leave Request List ***/
+.NewLeaveRequestWrapper {
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+  .LA-Textarea-Wapper,
+  .LA-Action-Wapper {
+    grid-column: 1/3;
+  }
+}
+.PageTopHead {
+  &.PTH-Student-view-leaves {
+    grid-template-columns: auto 250px 1fr;
+    align-items: center;
+  }
+}
+.Reject-Status {
+  background-color: rgba($red, 0.5);
+  height: 100%;
+}
+.RR-Wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  button {
+    float: right;
+  }
+  .RR-Textarea-Wapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .RR-wrap-cnt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+.RR-Attach {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  color: $primary;
+  word-break: break-all;
+  @extend .text-2xs;
+  img {
+    padding-top: 3px;
+  }
+}
+/***Close Leave Request List ***/
+/***Student Attendance ***/
+.PageTopHead {
+  &.PTH-StudentAttendanceClassroomList {
+    grid-template-columns: 1fr auto;
+  }
+}
+.StudentAttendanceClassroomListWrap {
+  .ListItem {
+    padding: 10px 0 0 0;
+    .card {
+      cursor: pointer;
+      &:hover {
+        background-color: $silver;
+      }
+      .cardBody {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn-square {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          outline: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+.PTH-Student-Attendance-ListView,
+.SubjectAttendanceViewModal-Wrapper,
+.PTH-Student-view-leaves,
+.PTH-T-LR-ListHead {
+  .LeftRightCalender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    .LeftDateIcon,
+    .RightDateIcon {
+      background-color: $white;
+      color: $base;
+      line-height: 0;
+      height: 32px;
+      outline: none;
+      border: 0;
+      width: 15%;
+      border-radius: 3px;
+    }
+    .DateCntMain {
+      border: 1px solid $lgray;
+      border-radius: 3px;
+      padding: 5px 15px;
+      @extend .text-xxs;
+      font-weight: 500;
+      width: 70%;
+      text-align: center;
+    }
+  }
+}
+.PageTopHead {
+  &.PTH-Student-Attendance-ListView {
+    grid-template-columns: 250px auto 1fr auto;
+    align-items: center;
+    .PTH-Item {
+      .VL-Oval_Btn {
+        background-color: $white;
+        border: 1px solid $base;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        @extend .w-500;
+        @extend .text-xxs;
+        height: 36px;
+        padding: 0 5px 0 20px;
+        border-radius: 25px;
+        span {
+          font-size: 10px;
+          @extend .w-600;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          border: 1px solid $red;
+          color: $red;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+.S-Attendance-ClassroomList-Wrap {
+  .card {
+    .cardBody {
+      padding: 0;
+      .Subject-Attendance-table {
+        overflow: hidden;
+        overflow-x: auto;
+        overflow-y: auto;
+        table {
+          td,
+          th {
+            min-width: 80px;
+            text-align: center;
+          }
+          thead {
+            tr {
+              border-bottom: 2px solid #dcdcdc;
+              th {
+                background-color: #ededed;
+                padding: 10px 5px;
+                border-right: 2px solid #dcdcdc;
+                &:last-child {
+                  border-right: none;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              border-bottom: 2px solid #dcdcdc;
+              &:last-child {
+                border: none;
+              }
+              td {
+                position: relative;
+                padding: 10px 5px;
+                border-right: 2px solid #dcdcdc;
+                &:last-child {
+                  border-right: none;
+                }
+                height: 75px;
+                vertical-align: middle;
+                background-color: #f6f6f6;
+                .AttendanceCalc-S,
+                .AttendanceCalc-G {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  padding: 2px 5px;
+                  @extend .text-2xs;
+                  @extend .w-600;
+                  left: 0;
+                  background-color: rgba($secondary, 0.25);
+                  cursor: pointer;
+                }
+                .AttendanceCalc-G {
+                  background-color: rgba($mgray, 0.25);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.SubjectAttendanceViewModal-Wrapper {
+  .Item_Wrap {
+    display: grid;
+    grid-template-columns: auto 250px;
+    align-items: center;
+    border-bottom: 2px solid rgba($lgray, 0.5);
+    padding-bottom: 5px;
+  }
+  .SubjectAttendanceViewList-Body {
+    .SubjectAttendanceViewList-Item {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      border-bottom: 1px solid rgba($lgray, 0.5);
+      @extend .w-500;
+      padding: 10px 0;
+    }
+  }
+}
+/***Close Student Attendance ***/
+@media screen and (max-width: 1200px) {
+  .PageTopHead {
+    &.PTH-Attendance-ListView {
+      grid-template-columns: 1fr 1fr 1fr;
+      .PTH-Item {
+        &:last-child {
+          grid-column: 1/4;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .PageTopHead {
+    &.PTH-T-Attendance-ClassroomList {
+      grid-template-columns: 1fr;
+      .PTH-Item {
+        &:last-child {
+          grid-column: 1;
+        }
+      }
+    }
+    &.PTH-T-LR-ListHead {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .NewLeaveRequestWrapper {
+    width: 100%;
+    grid-template-columns: 1fr;
+    .LA-Textarea-Wapper,
+    .LA-Action-Wapper {
+      grid-column: 1;
+    }
+  }
+  .MarkAttendance-Modal {
+    .modalwrapper {
+      padding: 20px !important;
+    }
+    .MarkAttendance-ModalHead {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .MarkAttendance-ItemInputWrap {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .PageTopHead {
+    &.PTH-Attendance-ListView {
+      grid-template-columns: 1fr 1fr;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1/3;
+        }
+        &:last-child {
+          grid-column: 1/3;
+        }
+      }
+    }
+  }
+  .Attendance-List-View-Wrapper,
+  .Subject-Attendance-table {
+    max-height: 100%;
+    overflow: hidden;
+    table {
+      thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      tr {
+        margin-bottom: 10px;
+      }
+      tbody {
+        tr {
+          border: 1px solid #dcdcdc;
+          th {
+            min-width: 100%;
+            max-width: 100%;
+            padding-top: 10px;
+          }
+          th,
+          td {
+            display: block;
+            float: left;
+          }
+
+          td {
+            width: 33.33%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 75px;
+            padding: 10px;
+          }
+
+          td::before {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            font-weight: 500;
+            white-space: nowrap;
+            content: attr(data-label);
+            color: $base;
+            font-size: 12px;
+          }
+        }
+      }
+      .S-Period-Cal {
+        bottom: 0;
+      }
+    }
+  }
+  .S-Attendance-ClassroomList-Wrap {
+    .card {
+      .cardBody {
+        .Subject-Attendance-table {
+          table {
+            tbody {
+              tr {
+                td {
+                  border-right: 2px solid #dcdcdc;
+                  border-bottom: 2px solid #dcdcdc;
+                  &:last-child {
+                    border-right: 2px solid #dcdcdc;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Attendance-ListView-Head,
+  .Student-Attendance-ListView-Head {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    .Attendance-List-labeling {
+      width: 100%;
+      float: left;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .PageTopHead {
+    &.PTH-Student-Attendance-ListView {
+      grid-template-columns: 1fr 1fr;
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1/3;
+        }
+      }
+    }
+    &.PTH-Attendance-ListView {
+      .PTH-Item {
+        .LeftRightCalender {
+          .DateCntMain {
+            min-width: 200px;
+          }
+        }
+      }
+    }
+    &.PTH-T-Attendance-ClassroomList {
+      grid-template-columns: 1fr;
+      .PTH-Item {
+        &:last-child {
+          grid-column: 1;
+        }
+      }
+    }
+    &.PTH-T-LR-ListHead {
+      grid-template-columns: 1fr;
+    }
+  }
+  .LeaveRequest-Wrapper {
+    .LR-Time-Details {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .LR-Mail-Action {
+      .cstmSelectWrap {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .PageTopHead {
+    &.PTH-Student-view-leaves {
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+    &.PTH-Attendance-ListView {
+      grid-template-columns: 1fr;
+      .PTH-Item {
+        &:first-child {
+          grid-column: auto;
+        }
+        &:last-child {
+          grid-column: auto;
+        }
+      }
+    }
+  }
+  .PageTopHead {
+    &.PTH-Attendance-ListView {
+      grid-template-columns: 1fr;
+    }
+    .datePickerWrap {
+      width: 100%;
+    }
+  }
+  .Attendance-List-View-Wrapper {
+    table {
+      tbody {
+        tr {
+          td {
+            width: 50%;
+          }
+          th {
+            &:last-child {
+              max-width: 50%;
+              min-width: 50%;
+              min-height: 75px;
+              vertical-align: middle;
+              padding-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .MarkAttendance-ItemActionWrap {
+    margin-top: 10px;
+    .MarkAttendance-ItemActionLeft {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .PageTopHead {
+    &.PTH-Student-Attendance-ListView {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .MarkAttendance-ItemActionWrap {
+    margin-top: 10px;
+    .MarkAttendance-ItemActionLeft {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../../assets/Style/base";
+/***Dashboard Icon***/
+.teacher-classroomIcon,
+.teacher-OnlineClass,
+.teacher-Assignment,
+.teacher-Onlinetest,
+.teacher-Studymaterial,
+.teacher-Attendance,
+.teacher-classroomIcon,
+.teacher-Visitormanagement {
+  width: 62px;
+  height: 62px;
+  display: block;
+  cursor: pointer;
+  background-color: $secondary;
+  -webkit-mask: url("./icon-classroom.svg") no-repeat center;
+  mask-image: url("./icon-classroom.svg") no-repeat center;
+}
+.teacher-OnlineClass {
+  -webkit-mask: url("./icon-onlineclass.svg") no-repeat center;
+  mask-image: url("./icon-onlineclass.svg") no-repeat center;
+}
+.teacher-Assignment {
+  -webkit-mask: url("./icon-assignment.svg") no-repeat center;
+  mask-image: url("./icon-assignment.svg") no-repeat center;
+}
+.teacher-Onlinetest {
+  -webkit-mask: url("./icon-onlinetest.svg") no-repeat center;
+  mask-image: url("./icon-onlinetest.svg") no-repeat center;
+}
+.teacher-Studymaterial {
+  -webkit-mask: url("./icon-course.svg") no-repeat center;
+  mask-image: url("./icon-course.svg") no-repeat center;
+}
+.teacher-Attendance {
+  -webkit-mask: url("./icon-calender.svg") no-repeat center;
+  mask-image: url("./icon-calender.svg") no-repeat center;
+}
+.teacher-classroomIcon {
+  -webkit-mask: url("./icon-classroom.svg") no-repeat center;
+  mask-image: url("./icon-classroom.svg") no-repeat center;
+}
+.teacher-Visitormanagement {
+  -webkit-mask: url("./icon-visitormanagement.svg") no-repeat center;
+  mask-image: url("./icon-visitormanagement.svg") no-repeat center;
+}
+/***Dashboard Icon end***/
+.PageTopHead {
+  &.PTH-TeacherClassroomList {
+    grid-template-columns: auto 1fr;
+  }
+  &.PTH-TeacherClassroomAssignmentView {
+    grid-template-columns: 1fr auto;
+    gap: 5px 15px;
+    align-items: center;
+    .PTH-Item {
+      &:first-child {
+        grid-column: 1/3;
+      }
+    }
+  }
+  &.PTH-TeacherAssignments2 {
+    grid-template-columns: auto auto auto 1fr;
+  }
+}
+.file-upload-input {
+  .labelcst {
+    padding-bottom: 0;
+  }
+}
+.TeacherScheduleClassModal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 30px;
+}
+.SelectHoursAndMin {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+.LiveClassOptSelect {
+  .btn-o-primary {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.profileImgWrap {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba($mgray, 0.25);
+  padding: 2px;
+  background: $white;
+  box-shadow: 0 0 10px rgba($base, 0.125);
+  img {
+    max-width: 98%;
+    object-fit: cover;
+    background-color: $mgray;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .PageTopHead {
+    &.PTH-TeacherAssignments2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .PageTopHead {
+    &.PTH-TeacherClassroomAssignmentView {
+      grid-template-columns: 1fr;
+    }
+    &.PTH-TeacherAssignments2 {
+      grid-template-columns: 1fr;
+    }
+  }
+}

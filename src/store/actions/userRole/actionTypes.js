@@ -1,0 +1,6 @@
+export const UserRoleType = {
+  GET_USER_ROLE: "GET_USER_ROLE",
+  GET_USER: "GET_USER",
+  GET_USER_WITH_ID: "GET_USER_WITH_ID",
+  GET_SIGNUP_ROLE: "GET_SIGNUP_ROLE",
+};

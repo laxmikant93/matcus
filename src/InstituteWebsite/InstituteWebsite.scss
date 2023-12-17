@@ -1,0 +1,1354 @@
+@import "../assets/Style/base";
+
+html {
+  --scrollbarBG: #cccccc;
+  --thumbBG: #666666;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 0;
+  border: 1px solid var(--scrollbarBG);
+}
+
+//=========== start code for header here  ================
+
+.headerWrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.institute-banner {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .DefaultOverlay {
+    height: 100%;
+  }
+}
+
+.sectionCntrWrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.DefaultOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  .DefaultOverlayWrap {
+    background-color: $white;
+    min-width: 300px;
+    padding: 10px 40px;
+    box-shadow: 0 0 10px rgba($mgray, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .linkbtn {
+      padding-top: 0;
+    }
+
+    &.NoBg {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+.banner-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($base, 0.5);
+  background-blend-mode: overlay;
+  text-align: center;
+  text-shadow: 0 0 10px rgba($base, 0.75);
+
+  .banner-overlay-wrapper {
+    margin: 0 auto;
+    width: 80%;
+    color: $white;
+
+    h1 {
+      // word-break: break-all;
+      // white-space: pre-line;
+      white-space: pre-wrap;
+      @extend .text-lg;
+    }
+  }
+
+  p {
+    white-space: pre-wrap;
+
+    &:nth-child(2) {
+      @extend .text-xs;
+    }
+  }
+}
+
+.institute-info {
+  line-height: 1.2;
+}
+
+.contact-btn-slideUpDown {
+  color: $primary;
+  padding: 10px 0;
+  position: relative;
+  @extend .w-500;
+
+  &::after {
+    height: 5px;
+    width: 5px;
+    border-left: 2px solid $primary;
+    border-top: 2px solid $primary;
+    transform: rotate(-135deg);
+    color: $primary;
+    left: auto;
+    top: 14px;
+    right: -15px;
+  }
+
+  &.active {
+    &::after {
+      transform: rotate(45deg);
+      top: 18px;
+    }
+  }
+}
+
+.institute-info-sec {
+  padding-top: 15px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  .heroInsName {
+    display: none;
+  }
+}
+
+.sd-contact-display {
+  display: flex;
+
+  span {
+    display: inline-block;
+    padding: 5px 0;
+    cursor: pointer;
+
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+}
+
+.sd-navbar {
+  li {
+    a {
+      position: relative;
+      font-weight: 500;
+
+      &:after {
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        transition: all 0.25s ease;
+      }
+
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.secInstHeadWrapCnt {
+  position: relative;
+  padding: 5px 0 20px 0;
+
+  .subdomainBookDomain {
+    padding: 1rem;
+    border: 1px solid $primary;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+}
+
+.secAboutWrapCnt,
+.team-gallery-sec,
+.websiteBookAppoinmentWrapper,
+.AdmissionApplyWrapper,
+.FeeStructureWrapper,
+.ServiceOfferedWrapper,
+.CurrentVacancyWrapper,
+.gallerysecWrap,
+.ContactUsWrapper,
+.announcement-sec,
+.SD-WebFaqs,
+.SD-WebTestimonial {
+  padding: 40px 0;
+  position: relative;
+  min-height: 250px;
+}
+
+.SD-WebTestimonial {
+  .SD-TestimonialMessage {
+    line-height: 1.3;
+    @extend .text-xxs;
+    color: $gray;
+  }
+}
+
+.secAboutWrapCnt {
+  box-shadow: inset 0 30px 30px -30px rgba($base, 0.15);
+}
+
+.SD-AboutSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  position: relative;
+  z-index: 0;
+  min-height: 200px;
+
+  .SD-Item {
+    img {
+      min-width: 100%;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    &.SD-AbtBanner,
+    .SD-IntroVideo {
+      position: relative;
+      background-color: $silver;
+      min-width: 100%;
+      width: 100%;
+      max-width: 100%;
+      height: 300px;
+    }
+
+    .SD-IntroVideo {
+      border-radius: 5px;
+    }
+
+    .NoContentFoundCst {
+      @extend .w-300;
+      color: $primary;
+      @extend .text-xs;
+    }
+  }
+}
+
+.institute-about-video {
+  position: relative;
+
+  .IntroVideoCst {
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
+.institute-missionVision-text {
+  padding-right: 35px;
+
+  ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+
+    li {
+      @extend .text-xxs;
+      @extend .w-300;
+      position: relative;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      i {
+        position: absolute;
+        margin-left: -20px;
+        // margin-top: 2px;
+      }
+    }
+  }
+}
+
+.ContactUsWrapper {
+  address {
+    margin: 0;
+    line-height: 1.25;
+  }
+}
+
+.team-gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px 15px;
+
+  // margin-top: 30px;
+  .team-gallery {
+    position: relative;
+    z-index: 0;
+
+    .team-gallery-img {
+      max-height: 250px;
+      overflow: hidden;
+      height: 250px;
+      min-height: 250px;
+      max-width: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.team-gallery-caption {
+  overflow-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+.AdmissionApplyGallery,
+.FeeStructureGallery,
+.CurrentVacancyGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.card {
+
+  &.AAG-Card,
+  &.FS-Card,
+  &.SO-Card,
+  &.WA-Card,
+  &.CV-Card {
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 5px 20px rgba($base, 0.25);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    &.FS-Card,
+    &.cardPadding {
+      padding: 30px 0;
+    }
+  }
+}
+
+.AAG-CardMedia,
+.WA-CardMedia {
+  position: relative;
+  width: 100%;
+  height: 250px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 0;
+  }
+
+  .thumbOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @extend .text-xs;
+    @extend .w-600;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba($white, 0.025) 0%, rgba($black, 0.8) 110%);
+    color: $white;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.25s ease;
+  }
+
+  .thumbOverlayNoImage {
+    background: linear-gradient(180deg, rgba($white, 0) 0%, rgba($black, 0) 110%);
+    justify-content: center;
+    align-items: center;
+    color: $base;
+  }
+
+  &:hover {
+    .thumbOverlay {
+      background: linear-gradient(180deg, rgba($base, 0.125) 0%, rgba($black, 0.5) 110%);
+    }
+
+    .thumbOverlayNoImage {
+      background: none;
+    }
+  }
+}
+
+.AAG-Action,
+.FS-Action,
+.CV-Action {
+  padding-top: 10px;
+
+  a,
+  .btnLink {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+    @extend .w-500;
+    @extend .text-xxs;
+    margin-right: 20px;
+    transition: all 0.25s ease;
+
+    &::after {
+      height: 1.5px;
+      width: 100%;
+      bottom: 12px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.ServiceOfferedGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.ServiceIcon {
+  display: inline-flex;
+
+  i {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.ViewFeeStructureWrap {
+  .gridTable {
+    table {
+
+      td,
+      th {
+        &:last-child {
+          min-width: auto;
+          text-align: right;
+        }
+      }
+
+      tfoot {
+        tr {
+          td {
+            @extend .text-xs;
+            @extend .w-600;
+          }
+        }
+      }
+    }
+  }
+}
+
+.PAM-BankTransfer {
+  border-bottom: 1px solid $silver;
+  padding-bottom: 15px;
+
+  .PAM-Head {
+    grid-column: 1/3;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+  }
+}
+
+.ProfileAdmissionWrapper {
+  .ProAdmBannerImg {
+    img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+  }
+
+  .ProAdmBannerDetail {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-top: 30px;
+    }
+  }
+
+  .ProAdmBannerSection {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 30px;
+  }
+
+  .ProAdmActionSection {
+    .button {
+      margin-right: 10px;
+    }
+  }
+}
+
+.VacancyDetailWrapper {
+  .VacancyDetailBanner {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 30px;
+    }
+  }
+
+  .VD-ActionSection {
+    .button {
+      margin-right: 10px;
+    }
+  }
+}
+
+.ApplyJobVacancyWrapper,
+.ApplyAdmissionWrapper {
+
+  .ApplyJobVacancyBanner,
+  .ApplyAdmissionBanner {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding-top: 30px;
+    }
+  }
+
+  .ApplyAdmissionBanner {
+    ul {
+      padding-top: 0;
+    }
+  }
+
+  .ApplyJobVacancyForm,
+  .ApplyAdmissionForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+
+    .formFieldwrap {
+      &:last-child {
+        grid-column: 1/4;
+      }
+
+      &:nth-child(8) {
+        grid-column: 2/4;
+      }
+    }
+  }
+}
+
+.ApplyJobVacancyUploadCV,
+.ApplyAdmissionUploadCV {
+  width: 60%;
+}
+
+.announcement-sec {
+  .announcement-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 1px;
+    position: relative;
+    z-index: 0;
+
+    .announcement-grid {
+      transition: all 0.25s ease;
+      background-color: $white;
+
+      .sub-heading {
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        padding: 50px;
+
+        &:hover {
+          text-decoration: underline;
+          color: $primary;
+        }
+
+        i {
+          margin-right: 5px;
+        }
+      }
+
+      &:hover {
+        background-color: rgba($silver, 0.75);
+      }
+    }
+  }
+}
+
+.testSubDomainHome {
+  width: 500px;
+  position: relative;
+}
+
+.announcement-modal {
+  p {
+    margin-bottom: 15px;
+    @extend .w-300;
+  }
+}
+
+.announcement-modal-poster {
+  width: 100%;
+  // margin-top: 20px;
+}
+
+.w-gallery-sec {
+  .gallery-wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    cursor: pointer;
+
+    .gallery-wrap {
+      background-color: rgba($silver, 0.3);
+      border: 1px solid rgba($primary, 0.2);
+      border-radius: 5px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      img {
+        height: 200px;
+        object-fit: contain;
+      }
+    }
+
+    .gallery-1 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      position: relative;
+
+      .gallery-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($base, 0.5);
+        color: $white;
+        background-blend-mode: overlay;
+        padding: 0% 20%;
+        text-align: center;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.institute-Director-msg {
+  .director-profile {
+    display: flex;
+    align-items: center;
+
+    .director-profile-img {
+      background-color: $mgray;
+      display: inline-block;
+      border-radius: 50%;
+      height: 48px;
+      width: 48px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .director-profile-name {
+      margin-left: 10px;
+
+      .subheading {
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.director-message {
+  position: relative;
+  padding: 30px;
+  // background-color: $white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  border-top: 3px solid $primary;
+  min-height: 200px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 0;
+    // z-index: 9999;
+    left: 11%;
+    border-color: transparent transparent $primary transparent;
+    top: -10px;
+  }
+
+  p {
+    font-size: 88%;
+    line-height: 1.44;
+  }
+}
+
+.circle_previewleftpngimag {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  bottom: -10%;
+}
+
+.domainetext-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.pngiconwrapper {
+  width: 80px;
+  position: absolute;
+  left: 5px;
+  top: 100px;
+}
+
+.blackCrickePreview {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 11px;
+  left: -15px;
+  z-index: 29;
+}
+
+span.previewiconlineone {
+  width: 141px;
+  background: $black;
+  height: 4px;
+  display: block;
+}
+
+.roater_pngposition {
+  transform: rotate(40deg);
+  position: relative;
+}
+
+.small_circle_blackpreview {
+  width: 10px;
+  height: 10px;
+  background-color: $black;
+  border-radius: 100%;
+  position: absolute;
+  top: -58px;
+  left: 33%;
+  z-index: 30;
+}
+
+.verysmall_circle_blackpreview {
+  width: 5px;
+  height: 5px;
+  background-color: $black;
+  position: absolute;
+  top: -64px;
+  left: 48%;
+  z-index: 30;
+  border-radius: 50%;
+}
+
+.web-contact {
+  ul {
+    display: flex;
+    flex-direction: column;
+    color: $primary;
+
+    li {
+      @extend .text-xxs;
+      @extend .w-700;
+      padding: 5px 0;
+
+      span {
+        @extend .w-400;
+        width: 60px;
+        display: inline-block;
+        color: $dgray;
+      }
+    }
+  }
+}
+
+// SD social connect
+.sd-social-connect {
+  position: fixed;
+  top: 10rem;
+  right: 5px;
+  background-color: $silver;
+  z-index: 1;
+  padding: 1rem 0.5rem;
+  border-radius: 2rem;
+  display: grid;
+  gap: 20px;
+  box-shadow: 0 0 15px rgba($base, 0.25);
+}
+
+// close SD social connect
+.subdomainHomeFaq {
+  article {
+    border-bottom: 1px solid rgba($mgray, 0.125);
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .faqAnswerDisp {
+      border: 0;
+    }
+
+    &.active {
+      border: 1px solid rgba($mgray, 0.25);
+    }
+  }
+}
+
+.subDomainsec2Col {
+  display: flex;
+  flex-direction: column;
+}
+
+.secHeadWrap {
+  margin-bottom: 15px;
+  letter-spacing: 0;
+
+  p {
+    line-height: 120%;
+  }
+}
+
+.secInstHeadWrapCnt {
+  .slick-slider {
+    .slick-arrow {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: rgba($base, 0.5);
+      z-index: 1;
+
+      &::before {
+        line-height: 0;
+        @extend .text-xs;
+        @extend .w-600;
+        padding: 0 15px;
+      }
+
+      &.slick-prev {
+        left: 20px;
+
+        &::before {
+          content: "\276E";
+        }
+      }
+
+      &.slick-next {
+        right: 20px;
+
+        &::before {
+          content: "\276F";
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: 25px;
+
+    li {
+      button {
+        &::before {
+          font-size: 10px;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &::before {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.gallery-thumnail {
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .sd-social-connect {
+    top: 5rem;
+    z-index: 999;
+
+    .ed-icon.i-xs.icon-youtube {
+      height: 14px;
+      border-radius: 3px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .institute-info-sec {
+    .heroInsName {
+      display: block;
+      font-size: 2rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  .institute-info-sec {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sd-contact-display {
+    flex-direction: column;
+
+    span {
+      &:last-child {
+        padding: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .institute-info-sec {
+    .heroInsName {
+      display: block;
+      font-size: 2rem;
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  .testSubDomainHome {
+    width: 300px;
+  }
+
+  .ViewFeeStructureWrap {
+    .gridTable {
+      table {
+        th {
+          &:last-child {
+            text-align: left;
+          }
+        }
+
+        td {
+          &:last-child {
+            text-align: left;
+            padding-top: 35px;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .ApplyJobVacancyWrapper,
+  .ApplyAdmissionWrapper {
+
+    .ApplyJobVacancyBanner,
+    .ApplyAdmissionBanner {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .ApplyJobVacancyForm,
+    .ApplyAdmissionForm {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0 20px;
+
+      .formFieldwrap {
+        &:last-child {
+          grid-column: 1/1;
+        }
+
+        &:nth-child(8) {
+          grid-column: 2/4;
+        }
+      }
+    }
+  }
+
+  .ProfileAdmissionWrapper {
+    .ProAdmBannerSection {
+      grid-template-columns: 1fr;
+    }
+
+    .ProAdmActionSection {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  .SD-AboutSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ServiceOfferedGallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .secInstHeadWrapCnt {
+    .slick-slider {
+      .slick-arrow {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+        &:before {
+          color: #fff;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  .secInstHeadWrapCnt {
+    .subdomainBookDomain {
+      display: block;
+
+      .subdomainBookDomainHead {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .announcement-sec {
+    .announcement-grid-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+
+      .announcement-grid {
+        .sub-heading {
+          padding: 30px;
+        }
+      }
+    }
+  }
+
+  .w-gallery-sec {
+    .gallery-wraper {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .actionBtnCustom {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .institute-about {
+    .institute-missionVision-text {
+      padding-right: 0;
+    }
+
+    .instituteAboutWrapper {
+      .institute-about-text {
+        padding-right: 0;
+      }
+    }
+
+    .instituteAboutWrapper {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  .banner-overlay {
+    p {
+      &:nth-child(1) {
+        font-size: 12.44px;
+      }
+
+      &:nth-child(2) {
+        font-size: 11.44px;
+      }
+    }
+  }
+
+  .team-gallery-wrapper {
+    .team-gallery {
+      .team-gallery-img {
+        max-height: inherit;
+        height: auto;
+        min-height: auto;
+      }
+
+      img {
+        object-fit: inherit;
+      }
+    }
+  }
+
+  .subDomainsec2Col {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  // SD social connect
+
+  // close SD social connect
+
+  .institute-banner {
+    background-color: $white;
+    height: auto;
+    max-height: inherit;
+
+    img {
+      width: 100%;
+      height: auto;
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.galleryFilter {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+
+  .tabBtn {
+    margin-right: 2px;
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 3px;
+  }
+}
+
+.icon-pinLOc {
+  position: relative;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  font-size: 0.25px;
+  background-color: #fff;
+  margin-right: 5px;
+  top: -6px;
+}
+
+.icon-pinLOc:after {
+  width: 0px;
+  height: 0px;
+  bottom: -15px;
+  left: -5px;
+  border: 5px solid transparent;
+}
+
+.icon-pinLOc:before {
+  width: 6px;
+  height: 6px;
+  bottom: -3px;
+  left: -3px;
+  border-radius: 50%;
+}
+
+.icon-emailBox {
+  height: 13px;
+  top: 2px;
+  width: 18px;
+  position: relative;
+  display: inline-flex;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.icon-emailBox:after,
+.icon-emailBox:before {
+  border-top: none;
+  top: 2px;
+  width: 12px;
+}
+
+.icon-emailBox:after {
+  left: 0;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+
+.icon-emailBox:before {
+  right: 0;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+
+.icon-phonering {
+  width: 10px;
+  position: relative;
+  margin-right: 5px;
+  display: inline-flex;
+}
+
+.icon-phonering:before {
+  position: absolute;
+  left: 2px;
+  width: 4px;
+  height: 8px;
+  border-width: 5px 0 5px 2px;
+  border-style: solid;
+  border-color: #c55500;
+  background: transparent;
+  border-top-left-radius: 3px 5px;
+  border-bottom-left-radius: 3px 5px;
+  transform: rotate(-30deg);
+  top: -13px;
+}
+
+.sd-footer-theme {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footerWrap {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 80%;
+}
+
+.textLink {
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  font-weight: 500;
+
+  &:after {
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    transition: all 0.25s ease;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.sd-social-connect {
+  top: 15rem;
+
+  .ed-icon.i-xs.icon-youtube {
+    height: 14px;
+    border-radius: 3px;
+  }
+}

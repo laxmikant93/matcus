@@ -1,0 +1,134 @@
+@import '../../../assets/Style/base';
+
+
+.heading-item {
+  color: #162D3D;
+}
+
+.bulkupload-wrapper {
+  background: $white;
+  padding: 24px 48px 24px 24px;
+  margin-top: 27px;
+
+  .bulkupload-item {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+
+    @media (max-width:768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .bulkupload-item-div {
+      gap: 24px;
+
+      @media (max-width:425px) {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+
+  .bulkupload-btn-wrapper {
+    text-align: end;
+    position: relative;
+
+    @media (max-width:768px) {
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    .remove-button {
+      padding: 3px 52px;
+    }
+
+    .attachment-div {
+      justify-content: flex-end;
+      cursor: pointer;
+
+      .icon-attachmenticon {
+        -webkit-mask: url("../BulkUpload/attachmenticon.svg") no-repeat center;
+        mask-image: url("../BulkUpload/attachmenticon.svg") no-repeat center;
+      }
+
+    }
+
+
+    .download-csv-btn {
+      position: relative;
+
+      &:hover {
+        background: $primary;
+        color: $white;
+
+        .download-btn-icon {
+          border-top: 6px solid $white;
+          transform: rotate(180deg);
+
+        }
+      }
+
+      .rotate-download-icon {
+        transform: rotate(180deg);
+        transition: 0.5s;
+      }
+
+      .download-btn-icon {
+        width: 0;
+        height: 0;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 6px solid $primary;
+        margin-left: 19px;
+      }
+    }
+
+    .download-csv-dropdown-hide {
+      display: none;
+    }
+
+    .download-csv-dropdown {
+      background-color: $white;
+      box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      position: absolute;
+      padding: 12px 16px 12px 11px;
+      top: 72%;
+      right: 0;
+      z-index: 1;
+      width: 225px;
+      display: block;
+
+      @media (max-width:768px) {
+        top: 100%;
+        margin-top: 8px;
+      }
+
+      p {
+        gap: 7px;
+        cursor: pointer;
+      }
+
+      .icon-csv-download {
+        -webkit-mask: url("../BulkUpload/download-icon.svg") no-repeat center;
+        mask-image: url("../BulkUpload/download-icon.svg") no-repeat center;
+      }
+    }
+  }
+
+
+  .back-import-wrapper {
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .back-button-arrow {
+      border: solid $primary;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 2px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      margin-bottom: 2px;
+
+    }
+  }
+}

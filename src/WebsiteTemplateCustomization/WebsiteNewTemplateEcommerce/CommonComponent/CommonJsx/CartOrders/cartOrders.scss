@@ -1,0 +1,146 @@
+@import '../../commonCss/base.scss';
+.ecom-layout {
+.cartOrdersDetails-container {
+
+  border: 1px solid rgba($black, 0.1);
+  position: relative;
+  width: 100%;
+
+  .order-summary-wrap {
+    background-color: rgba($black, 0.1);
+    padding: 5px 16px;
+
+    .order-summary-text {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.2em;
+      text-transform: uppercase;
+      color: $primary;
+      padding: 4px 0;
+    }
+  }
+
+  .order-value-details {
+    margin-top: 7px;
+    padding: 16px;
+
+    .order-product-details {
+      font-size: 15px;
+      font-weight: 600;
+      color: $primary;
+      line-height: 1.4em;
+      text-transform: capitalize;
+    }
+
+
+
+    .order-value-details-wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 12px;
+
+      .deliveryFee {
+        color: #BCBCBC;
+        &.active{
+          color: $primary;
+        }
+      }
+
+      .discount-price {
+        color: #BCBCBC;
+        font-weight: 600;
+        &.active{
+          color: $secondary;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .hori-line-order {
+    width: 90%;
+    background-color: $black;
+    opacity: 0.2;
+    margin: auto;
+  }
+
+  .order-amount-wrapper {
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .order-amount-div {
+      @media(min-width:768px) and (max-width:992px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      @media(max-width:500px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .order-amount-p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4em;
+        color: $primary;
+      }
+
+      .order-total-amount {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.4em;
+        color: $primary;
+      }
+    }
+
+    .order-amount-button {
+
+
+      @media(min-width:768px) and (max-width:992px) {
+        width: 100%;
+      }
+
+      @media(max-width:500px) {
+        width: 100%;
+      }
+
+      button {
+
+
+        @media(min-width:768px) and (max-width:992px) {
+          width: 100%;
+        }
+
+        @media(max-width:500px) {
+          width: 100% !important;
+        }
+
+      }
+    }
+  }
+}
+[aria-disabled="true"] {
+  // background-color: #e0e0e0;
+  opacity: 0.9;
+
+  p {
+    // opacity: 1 !important;
+    color: rgba(32, 32, 32, 0.1) !important;
+  }
+
+  button {
+    opacity: 0.5;
+    background-color: rgba(32, 32, 32, 0.1) !important;
+    color: rgba(32, 32, 32, 0.4) !important;
+    border-color: rgba(32, 32, 32, 0.1) !important;
+  }
+}
+}

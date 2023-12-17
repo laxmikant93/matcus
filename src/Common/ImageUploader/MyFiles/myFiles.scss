@@ -1,0 +1,252 @@
+.mainMyFiles {
+
+    // filter section css
+    .filterDelete {
+        padding: 16px 32px;
+        display: flex;
+        gap: 16px;
+        border: 1px solid #F3F3F3;
+
+        .filter {
+            margin-left: auto;
+            position: relative;
+
+            .fliterDropDown {
+                position: absolute;
+                top: 40px;
+                background: #FFFFFF;
+                box-shadow: 0px 8px 24px rgba(143, 141, 141, 0.08);
+                border-radius: 8px;
+                padding: 16px 13px;
+                z-index: 1;
+                left: -13px;
+
+                .eComm-checkbox-center {
+                    span {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #000000;
+                    }
+                }
+
+                .btn-apply {
+                    padding: 4px 30px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 140%;
+                }
+            }
+
+            .filterBtn {
+                background: #FFFFFF;
+                border: 1px solid #C8CED2;
+                border-radius: 39px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 9px;
+                padding: 8px 12px;
+                // color 
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #202020;
+
+                span {
+                    color: #9EA2A6;
+                }
+            }
+        }
+
+
+        .deleteBtn {
+            padding: 8px 32px;
+            border: 1px solid #C23934;
+            border-radius: 20px;
+            background: transparent;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #C23934;
+            transition: all .3s;
+
+            &:hover {
+                background: #C23934;
+                color: #fff;
+            }
+        }
+    }
+
+    // gallery section css
+    .gallerySection {
+        padding: 16px 32px;
+        display: flex;
+        position: relative;
+        border: 1px solid #F3F3F3;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-height: 350px;
+        overflow: auto;
+
+        @media screen and (max-width:600px) {
+            grid-template-columns: 1fr;
+
+        }
+
+        .gallaryCard {
+            width: 121px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+
+            .mainImage {
+                width: 121px;
+                height: 121px;
+
+                img {
+                    object-fit: cover;
+                    max-width: 100%;
+                    max-height: 100%;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                .gallaryImage {
+                    border: 2px solid #3758F9;
+                }
+
+                .blueTick {
+                    display: block;
+                }
+            }
+
+            .gallaryImage {
+                max-width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+            }
+
+            h5 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000000;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .blueTick {
+                position: absolute;
+                right: 12px;
+                left: inherit;
+                top: 12px;
+                display: none;
+            }
+        }
+
+    }
+
+    // footer
+    .myFilesFooter {
+        padding: 16px 60px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        // .dataRange {
+        //     display: flex;
+        //     flex-direction: column;
+        //     width: 183px;
+        //     gap: 4px;
+
+        //     .dataUsed {
+        //         width: 100%;
+        //         position: relative;
+
+        //         .fullData {
+        //             height: 4px;
+        //             border-radius: 4px;
+        //             background: #DDE3E9;
+        //         }
+
+        //         .datashow {
+        //             position: absolute;
+        //             width: 50%;
+        //             height: 4px;
+        //             border-radius: 4px;
+        //             background: #3758F9;
+        //             top: 0px;
+        //             left: 0px;
+        //         }
+        //     }
+
+        //     p {
+        //         font-family: 'Montserrat';
+        //         font-style: normal;
+        //         font-weight: 500;
+        //         font-size: 12px;
+        //         line-height: 15px;
+        //         color: #747779;
+        //     }
+        // }
+
+        .footerBtns {
+            display: flex;
+            gap: 16px;
+            margin-left: auto;
+
+            .cancelBtn {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #747779;
+                padding: 8px 24px;
+                border: 1px solid #B3B8BC;
+                border-radius: 4px;
+                background: transparent;
+            }
+
+            .addBtn {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #747779;
+                padding: 8px 24px;
+                background: #B3B8BC;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+
+                &.activeBtn {
+                    background: #3758F9;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+}

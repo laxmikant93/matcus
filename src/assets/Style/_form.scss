@@ -1,0 +1,918 @@
+@import "./theme";
+@import "./typo";
+
+::placeholder,
+textarea::placeholder {
+  color: rgba($base, 0.6);
+  @extend .w-400;
+  @extend .text-xxs;
+  text-transform: none !important;
+}
+
+:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: rgba($base, 0.6);
+  @extend .w-400;
+  @extend .text-xxs;
+  text-transform: none !important;
+}
+
+::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: rgba($base, 0.6);
+  @extend .w-400;
+  @extend .text-xxs;
+  text-transform: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  opacity: 0;
+  display: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  position: relative;
+  cursor: pointer;
+  padding: 3px;
+}
+
+form {
+  width: 100%;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  font-family: $font;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.25s ease;
+  }
+}
+
+.form-group {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.animLabelTop {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $base;
+}
+
+.animLabel {
+  position: absolute;
+  top: 0;
+  background-color: $white;
+  padding: 2px 5px;
+  color: $lgray;
+  left: 12px;
+  top: -12px;
+  text-transform: capitalize;
+  @extend .text-2xs;
+  @extend .w-500;
+  opacity: 0;
+  transition: all 0.2s ease;
+
+  &.show {
+    opacity: 1;
+  }
+
+  &.hide {
+    opacity: 0;
+  }
+}
+
+label {
+  &.hidden {
+    position: absolute;
+    font-size: 1px;
+    text-indent: -9999px;
+  }
+}
+
+.form-control,
+.select-control {
+  border-radius: 4px;
+  border: 1px solid rgba($base, 0.2);
+  height: 40px;
+  padding: 10px 20px;
+  width: 100%;
+  color: $base;
+  @extend .w-500;
+  // position: relative;
+  @extend .text-xxs;
+  line-height: 20px;
+  color: $base;
+  outline: 0;
+  outline: none;
+  box-shadow: none;
+  font-family: $font;
+  resize: none;
+
+  &:active {
+    border-color: $dgray;
+  }
+
+  &.teacher {
+    &:focus {
+      border-color: $secondary;
+      border-width: 2px;
+    }
+  }
+
+  &.student {
+    &:focus {
+      border-color: $purple;
+      border-width: 2px;
+    }
+  }
+
+  &.admin {
+    &:focus {
+      border-color: $primary;
+      border-width: 2px;
+    }
+  }
+
+  &.calender-input {
+    padding: 10px 20px;
+    height: 44px;
+    @extend .text-xs;
+    border: 1px solid $mgray;
+    border-radius: 4px;
+  }
+}
+
+hr {
+  border: 0;
+  background: transparent;
+  border-top: 1px solid rgba($mgray, 0.5);
+  box-shadow: none;
+}
+
+textarea {
+
+  resize: none;
+
+  &.form-control {
+    height: auto;
+  }
+}
+
+.form-control:focus+.animLabel,
+.form-control:not(:placeholder-shown)+.animLabel {
+  opacity: 1;
+}
+
+.form-control-flag {
+  border-radius: 3px;
+  border: 1px solid #ededed;
+  padding: 10px 20px 10px 70px;
+  width: 100%;
+  color: #262626;
+  @extend .w-700;
+  @extend .text-xs;
+  letter-spacing: 0;
+}
+
+.cstmSelectWrap {
+  position: relative;
+
+  .form-group {
+    &::before {
+      height: 6px;
+      width: 6px;
+      border-width: 2px 0 0 2px;
+      border-style: solid;
+      border-color: $dgray;
+      transform: rotate(-135deg);
+      left: 15px;
+      position: relative;
+      transition: all 0.25s ease;
+      position: absolute;
+      top: 15px;
+      color: $base;
+      pointer-events: none;
+    }
+
+    &.caretup {
+      &::before {
+        transform: rotate(45deg);
+        top: 18px;
+      }
+    }
+
+    select {
+      background-color: $white;
+      color: $base;
+      padding-left: 30px;
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid rgba($base, 0.2);
+      -webkit-appearance: button;
+      appearance: button;
+      outline: none;
+      cursor: pointer;
+      @extend .w-500;
+      @extend .text-xxs;
+      line-height: 20px;
+
+      option {
+        color: rgba($dgray, 0.8);
+        @extend .text-xxs;
+        cursor: pointer;
+        @extend .w-500;
+      }
+
+      &::-ms-expand {
+        display: none;
+      }
+
+      -moz-appearance: none;
+      -webkit-appearance: none;
+
+      &:focus {
+        border: 2px solid $primary;
+      }
+
+      &.errorInput {
+        border: 2px solid $red;
+      }
+    }
+
+    option:checked {
+      color: $primary;
+    }
+  }
+}
+
+.cstmPhoneInput {
+  position: relative;
+
+  .react-tel-input {
+    border-radius: 4px;
+    font-family: $font;
+
+    .form-control {
+      width: 100%;
+      border: 1px solid transparent;
+      height: 40px;
+      padding: 10px 20px 10px 60px;
+      width: 100%;
+      color: #121212;
+      outline: 0;
+      box-shadow: none;
+      border: 1px solid rgba($base, 0.2);
+      @extend .text-xs;
+
+      &:focus {
+        border: 2px solid $primary;
+      }
+    }
+
+    .form-group {
+      &:focus {
+        .special-label {
+          display: block;
+        }
+      }
+    }
+
+    .selected-flag {
+      width: 60px;
+      padding: 0 0 0 20px;
+      height: 38px;
+      margin-top: 2px;
+      margin-left: 2px;
+
+      .arrow {
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-top-width: 6px;
+
+        &.up {
+          border-bottom-width: 6px;
+          margin-top: -3px;
+        }
+      }
+    }
+
+    .flag-dropdown {
+      background-color: transparent;
+      border: none;
+      height: 38px;
+
+      .selected-flag {
+        height: 36px;
+      }
+    }
+  }
+
+  .react-tel-input:focus+.animLabel,
+  .react-tel-input:not(:placeholder-shown)+.animLabel {
+    opacity: 1;
+  }
+
+  .country-list {
+    text-align: left;
+  }
+
+  .errorInputMsg {
+    bottom: -17px;
+  }
+}
+
+.table-h-grid-1 {
+  .selectTextType {
+    margin-left: 20px;
+  }
+}
+
+.selectTextType {
+  position: relative;
+
+  // margin-bottom: 20px;
+  &:before {
+    height: 6px;
+    width: 6px;
+    border-width: 2.25px 0 0 2.25px;
+    border-style: solid;
+    border-color: $gray;
+    transform: rotate(-135deg);
+    left: 5px;
+    position: relative;
+    transition: all 0.25s ease;
+    position: absolute;
+    top: 4px;
+    bottom: 13px;
+    pointer-events: none;
+  }
+
+  select {
+    // background-color: $white;
+    // color: $gray;
+    padding: 0 20px;
+    @extend .text-xs;
+    @extend .w-500;
+    width: auto;
+    border-radius: 3px;
+    border: none;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    option {
+      padding: 20px;
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+}
+
+.form-control-flag {
+  border-radius: 3px;
+  border: 1px solid #ededed;
+  padding: 10px 20px 10px 70px;
+  width: 100%;
+  color: #262626;
+  @extend .w-700;
+  @extend .text-xs;
+  letter-spacing: 0;
+}
+
+.actionBtnCustom {
+  text-align: right;
+
+  .groupBtn {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba($mgray, 0.5);
+    border-radius: 4px;
+
+    button,
+    a {
+      border: 0;
+      padding: 6px 10px;
+      border-right: 1px solid rgba($mgray, 0.5);
+      background-color: transparent;
+      // color: $mgray;
+      transition: all 0.25s ease;
+      @extend .text-xxs;
+      @extend .w-500;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &:hover {
+        background-color: $mgray;
+        color: $white;
+      }
+
+      &.grpBtnPurple {
+        border-right: transparent;
+        color: $white;
+        background-color: $purple;
+
+        &:hover {
+          background-color: $purple;
+          color: $white;
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      &.grpBtnPurpleOutline {
+        color: $purple;
+
+        &:hover {
+          background-color: $purple;
+          color: $white;
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      &.grpBtnGray {
+        border-right: transparent;
+        color: $white;
+        background-color: $mgray;
+
+        &:hover {
+          background-color: $mgray;
+          color: $white;
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      &.grpBtnPrimary {
+        border-right: transparent;
+        color: $white;
+        background: $white;
+        color: $primary;
+        border-right: 1px solid rgba($mgray, 0.5);
+
+        &:hover {
+          background-color: $primary;
+          color: $white;
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.button,
+.btnText {
+  .animate-r-arrow-icon {
+    height: 8px;
+    width: 8px;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+    transform: rotate(135deg);
+    left: 5px;
+    position: relative;
+    transition: all 0.25s ease;
+    border-color: initial;
+    display: inline-block;
+    cursor: pointer;
+    top: 1px;
+
+    &.back-i {
+      transform: rotate(-45deg);
+      left: -2px;
+    }
+  }
+
+  &:hover {
+    i {
+      left: 5px;
+
+      &.back-i {
+        left: -5px;
+      }
+    }
+  }
+}
+
+.btnText {
+  background-color: transparent;
+  outline: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  .animate-r-arrow-icon {
+    top: -1px;
+  }
+}
+
+.button {
+  i {
+    margin-right: 5px;
+    display: inline-block;
+  }
+}
+
+.errorInput {
+  border: 2px solid $red;
+}
+
+.datePickerWrap {
+  &.errorInputDateTimePicker {
+    input[type="text"] {
+      border: 1px solid $red;
+    }
+  }
+}
+
+.formFieldwrap {
+  // position: relative;
+  // padding: 0;
+  padding-bottom: 20px;
+
+  // .form-group {
+  //   margin-bottom: 0;
+  // }
+}
+
+.errorInputMsg {
+  // position: absolute;
+  // left: 0;
+  // top: auto;
+  width: 100%;
+  text-align: left;
+  line-height: 1.125;
+  // padding-bottom: 10px;
+  @extend .text-2xs;
+  color: $red;
+  display: flex;
+  align-items: center;
+
+  &.textareaError {
+    top: auto;
+    bottom: 12px;
+  }
+}
+
+.file-input-wrapper {
+  margin: 5px 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  // background-color: $white;
+  .file-input-overlap {
+    border-radius: 4px;
+    border: 1px solid rgba($dgray, 0.5);
+    height: 40px;
+    line-height: 1.4;
+    padding: 10px 20px;
+    width: 100%;
+    color: $base;
+    @extend .w-500;
+    @extend .text-xs;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .file-input-overlapText {
+    color: $primary;
+    @extend .w-500;
+    display: inline-block;
+    @extend .text-xxs;
+    cursor: pointer;
+  }
+
+  input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.attachment {
+  @extend .text-xs;
+  color: $base;
+  @extend .w-500;
+
+  span {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 12px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.labelcst {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.textarea-bottom-text {
+  position: absolute;
+}
+
+// .cstmSelectWrap {
+//   &.errorInput {
+//     border-radius: 3px;
+//     select {
+//       border-color: transparent;
+//     }
+//   }
+// }
+.attachmentwithtext {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  gap: 5px;
+  word-break: break-all;
+
+  @media screen and (max-width: 576px) {
+    .ed-icon {
+      &.i-xs {
+        align-items: flex-start;
+      }
+    }
+
+    i {
+      width: 25%;
+    }
+  }
+}
+
+.CropUploadBtn {
+  justify-content: flex-start;
+
+  i {
+    margin-right: 0;
+  }
+}
+
+.datePickerWrap {
+  position: relative;
+  padding: 0 0 30px;
+
+  // z-index: 0;
+  input[type="text"] {
+    // border-radius: 4px;
+    // border: 1px solid $mgray;
+    // height: 44px;
+    // padding: 10px 20px 10px 50px;
+    // width: 100%;
+    // min-width: 180px;
+    // max-width: 100%;
+    // color: $base;
+    // @extend .w-700;
+    // position: relative;
+    // @extend .text-xs;
+    // outline: 0;
+    // outline: none;
+    // box-shadow: none;
+    // cursor: pointer;
+    // font-family: $font;
+    padding-left: 50px;
+  }
+
+  // .animLabel {
+  //   position: absolute;
+  //   left: 10px;
+  //   top: -10px;
+  //   opacity: 1;
+  // }
+  .calendarDates {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba($base, 0.2);
+    border-radius: 3px;
+    left: 18px;
+    top: 12px;
+    pointer-events: none;
+    outline: 0;
+    outline: none;
+  }
+
+  .calendarDates::after,
+  .calendarDates::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    height: 2px;
+    left: 4px;
+  }
+
+  .calendarDates::before {
+    background: $dgray;
+    width: 2px;
+    box-shadow: 4px 0 0, 8px 0 0, 0 4px 0, 4px 4px 0, 8px 4px 0;
+    top: 7px;
+    left: 3px;
+  }
+
+  .calendarDates::after {
+    width: 10px;
+    top: -4px;
+    left: 3px;
+    box-shadow: 0 6px 0 0;
+  }
+
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+
+  .react-datepicker__triangle {
+    left: 50px !important;
+  }
+
+  .react-datepicker-popper {
+    z-index: 999;
+
+    @media (max-width: 992px) {
+      transform: translate3d(-42px, 42px, 0px) !important;
+    }
+
+    @media (max-width: 768px) {
+      transform: translate3d(0px, 42px, 0px) !important;
+    }
+  }
+
+  .react-datepicker__month {
+    .react-datepicker__month-text {
+      padding: 5px 0;
+      @extend .text-2xs;
+    }
+  }
+
+  .react-datepicker__header {
+    padding-bottom: 8px;
+  }
+}
+
+// TableSortBy
+.SortByTableHeadCst {
+  label {
+    margin-right: 5px;
+  }
+
+  select {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: $mgray;
+    cursor: pointer;
+
+    option {
+      @extend .text-xxs;
+    }
+  }
+}
+
+// close TableSortBy
+//SELECT iNPUT GROUP
+.select-input-group {
+  border: 1px solid rgba($base, 0.2);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  .form-control {
+    border: 0;
+  }
+
+  select {
+    &.form-control {
+      padding: 10px 13px 10px 7px;
+      @extend .text-xxs;
+      width: fit-content;
+    }
+  }
+}
+
+.fileuploadNameTxt {
+  color: $dgray;
+  @extend .text-xxs;
+  @extend .w-500;
+  line-height: 120%;
+  padding-top: 20px;
+}
+
+//CLOSE SELECT iNPUT GROUP
+.CoundownOTP,
+.ResendOTP {
+  position: absolute;
+  left: 0;
+  padding: 15px 20px 10px 0;
+
+  .underline {
+    padding-top: 0;
+  }
+}
+
+.formFieldwrap {
+  &.LoginVerifyFieldWrap {
+    padding-bottom: 70px;
+  }
+}
+
+.InputOverlayRightAlign {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px 20px 10px 0;
+  text-decoration: underline;
+}
+
+.ResendOTP {
+  @extend .text-2xs;
+  color: $primary;
+}
+
+.CoundownOTP {
+  @extend .text-xxs;
+  text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+  .datePickerWrap {
+    input[type="text"] {
+      min-width: unset;
+      max-width: 100%;
+    }
+  }
+}
+
+.info-button-sqaure {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  background: $white;
+  border: 1px solid rgba($primary, 0.5);
+  border-radius: 5px;
+
+  &:hover {
+    border: 1px solid $primary;
+    background-color: rgba($primary, 0.125);
+  }
+
+  span {
+    display: inline-flex;
+    height: 14px;
+    width: 14px;
+    justify-content: center;
+    align-items: center;
+    color: $primary;
+    @extend .w-600;
+  }
+}
+
+@import "customRadioCheckbox";

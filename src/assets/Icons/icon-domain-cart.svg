@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="Group_738" data-name="Group 738" transform="translate(-38 -118)">
+    <g id="Rectangle_912" data-name="Rectangle 912" transform="translate(38 118)" fill="none" stroke="#141414" stroke-width="1">
+      <rect width="80" height="80" rx="40" stroke="none"/>
+      <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" fill="none"/>
+    </g>
+    <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(57.5 132.5)">
+      <path id="Path_2321" data-name="Path 2321" d="M15,31.5A1.5,1.5,0,1,1,13.5,30,1.5,1.5,0,0,1,15,31.5Z" fill="none" stroke="#141414" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_2322" data-name="Path 2322" d="M31.5,31.5A1.5,1.5,0,1,1,30,30,1.5,1.5,0,0,1,31.5,31.5Z" fill="none" stroke="#141414" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_2323" data-name="Path 2323" d="M1.5,1.5h6l4.02,20.085a3,3,0,0,0,3,2.415H29.1a3,3,0,0,0,3-2.415L34.5,9H9" fill="none" stroke="#141414" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <text id="My_Cart" data-name="My Cart" transform="translate(78 180.5)" fill="none" stroke="#141414" stroke-width="1" font-size="13" font-family="SegoeUI, Segoe UI" letter-spacing="0.011em"><tspan x="-22.985" y="0">My Cart</tspan></text>
+  </g>
+</svg>

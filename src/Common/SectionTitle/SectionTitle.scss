@@ -1,0 +1,49 @@
+@import "../../assets/Style/base";
+
+.SectionTitleCustomWrap {
+  display: flex;
+  // margin-bottom: 20px;
+}
+.SectionTitleCustom {
+  width: 60%;
+}
+.SectionTitleInput {
+  width: 100%;
+  background-color: rgba($silver, 0.5);
+  padding: 30px 30px 15px 30px;
+  border: 1px solid rgba($gray, 0.125);
+}
+// .BtnCaret {
+//   color: $primary;
+//   padding: 10px 0;
+//   position: relative;
+//   @extend .w-500;
+//   &::after {
+//     height: 5px;
+//     width: 5px;
+//     border-left: 2px solid $primary;
+//     border-top: 2px solid $primary;
+//     transform: rotate(-135deg);
+//     color: $primary;
+//     left: auto;
+//     top: 14px;
+//     right: -15px;
+//   }
+//   &.active {
+//     &::after {
+//       transform: rotate(45deg);
+//       top: 18px;
+//     }
+//   }
+// }
+@media screen and (max-width: 992px) {
+  .SectionTitleCustom {
+    background: $white;
+    width: 100%;
+  }
+  .SectionTitleCustomWrap {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+}

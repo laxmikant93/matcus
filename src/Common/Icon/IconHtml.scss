@@ -1,0 +1,37 @@
+@import "../../assets/Style/base";
+
+.calenderIconWrap {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $dgray;
+  border-radius: 3px;
+  left: 8px;
+  top: 5px;
+  pointer-events: none;
+  outline: 0;
+  outline: none;
+}
+.calenderIconWrap::after,
+.calenderIconWrap::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  height: 2px;
+  left: 4px;
+}
+.calenderIconWrap::before {
+  background: $dgray;
+  width: 2px;
+  box-shadow: 4px 0 0, 8px 0 0, 0 4px 0, 4px 4px 0, 8px 4px 0;
+  top: 7px;
+}
+.calenderIconWrap::after {
+  width: 10px;
+  top: -4px;
+  box-shadow: 0 6px 0 0;
+}

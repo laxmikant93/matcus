@@ -1,0 +1,147 @@
+@import "../../CommonComponent/commonScss/common.scss";
+
+.rash-theme-hero-wrapper {
+  height: calc(100vh);
+
+  .rash-theme-hero-image-div {
+    background: url("../../assets/images/ecom-theme-hero.png"), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+
+    @media (max-width:768px) {
+      background-position: center;
+    }
+
+    .rash-hero-text {
+      position: absolute;
+      top: 30%;
+      left: 150px;
+
+      .rash-theme-hero-heading {
+        font-size: 61px;
+        font-weight: 600;
+        line-height: 1.2em;
+        color: $primary;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      @media (max-width:600px) {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .button-hero {
+        margin-top: 30px;
+        box-shadow: 0px, 0px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+.rash-theme-slider-container {
+  .rash-theme-slider-div {
+    display: flex;
+
+  }
+}
+
+.rash-theme-featureCategory-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  column-gap: 40px;
+
+  .featurecategory-image-div {
+    width: 315px;
+    height: 315px;
+    border-radius: 50%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .featurecategory-overlay {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .featurecategory-image-div-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: fit-content;
+      z-index: 100;
+
+      .feature-text-para {
+        font-size: 36px;
+        color: $white;
+        line-height: 1.2em;
+      }
+    }
+  }
+}
+
+
+
+// feature section 
+.rash-theme-feture-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+//  our story section
+.rash-theme-our-story-container {
+  display: flex;
+  column-gap: 40px;
+
+
+  .our-story-left {
+    background-color: $secondary;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    p {
+      color: $white;
+      margin: auto;
+      line-height: 2em;
+      padding: 70px;
+    }
+  }
+
+  .our-story-right {
+
+    width: 100%;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

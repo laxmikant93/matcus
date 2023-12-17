@@ -1,0 +1,96 @@
+@import '../../assets/Style/base';
+
+.otp-link-pop {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.popupemail-container {
+  width: 100%;
+  display: flex;
+  gap: 48px;
+  justify-content: space-evenly;
+
+  @media(max-width:600px) {
+    justify-content: flex-start;
+  }
+
+  @media(max-width:600px) {
+    flex-direction: column;
+  }
+
+  @media(max-width:1000px) {
+    gap: 20px;
+  }
+
+  .popup-left-sidebar {
+    // width: 100%;
+
+    @media(max-width:600px) {
+      width: 200px;
+      margin: auto;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: auto;
+    }
+
+
+  }
+
+  .popup-right-sidebar {
+    align-self: center;
+  }
+}
+
+// otp field scss
+
+.main_form {
+
+  .otp_inputs {
+    gap: 13px;
+    max-width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+
+    &.timeline_gap {
+      gap: 8px;
+    }
+
+    input {
+      width: 41.74px;
+      height: 40px;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 31px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+      display: none;
+    }
+
+
+  }
+
+
+}
+
+.otp-rightsidebar {
+  width: 50%;
+
+  @media(max-width:600px) {
+    width: 100%;
+  }
+}

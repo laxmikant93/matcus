@@ -1,0 +1,217 @@
+@import "../../assets/Style/base";
+
+.PageTopHead {
+  &.PTH-AdminFeeStructure {
+    grid-template-columns: auto 1fr auto;
+
+    .PTH-Item {
+      &:first-child {
+        grid-column: 1/4;
+      }
+    }
+  }
+}
+
+.DashedInstructionList {
+  .errorInputMsg {
+    &.success {
+      .erroricon {
+        display: none;
+      }
+    }
+  }
+}
+
+.AddFeeStructure {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .fs-session-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+  }
+}
+
+.ManageVacancyCount {
+  @extend .text-sm;
+  @extend .w-300;
+  color: $dgray;
+
+  span {
+    margin-right: 5px;
+  }
+}
+
+.fs-applylatefine-wrap {
+  position: relative;
+
+  .fs-applylatefine-message {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    @extend .text-xxs;
+    @extend .w-500;
+    letter-spacing: 0.3px;
+  }
+}
+
+.fs-payment-breakdown {
+  position: relative;
+  margin-top: 30px;
+
+  .fs-agg-msg {
+    padding-left: 20px;
+  }
+}
+
+.fs-payment-breakdown-content {
+  background-color: rgba($primary, 0.1);
+  border-color: transparent;
+  position: relative;
+
+  .fs-payment-breakdown-list {
+    line-height: 2;
+
+    li {
+      @extend .text-xxs;
+      @extend .w-300;
+
+      span {
+        @extend .w-500;
+      }
+    }
+  }
+
+  .fs-powered-by-mode {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    @extend .text-xxs;
+  }
+}
+
+.publish-fs-popup-cnt {
+  .center-popupaction {
+    float: right;
+    padding-top: 5rem;
+
+    button {
+      width: 120px;
+      height: 38px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.FS-DetailCst {
+  width: 100%;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 20px;
+
+  .fs-latefine-inputwrap {
+    width: 60%;
+
+    .form-control {
+      &:focus {
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+// .FS-Fee-Type-custom {
+//   .FS-Fee-Type-custom {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr auto;
+//     gap: 15px;
+//     align-items: baseline;
+//   }
+// }
+
+.FS-Fee-Type-custom {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: flex-start;
+
+  .removeBtn {
+    border: 1px solid $red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.FS-Fee-Type-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0 10px;
+  align-items: flex-start;
+}
+
+.FS-TotalFeeCount {
+  display: flex;
+  align-items: center;
+}
+
+.FS-Payment-Mode {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 0;
+  padding-top: 30px;
+}
+
+.FS-DetailActionBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .FS-DetailCst {
+    width: 100%;
+
+    .fs-latefine-inputwrap {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .FS-DetailCst {
+    grid-template-columns: 1fr;
+
+    .fs-latefine-inputwrap {
+      width: 100%;
+    }
+  }
+
+  .FS-DetailActionBtn {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .FS-Fee-Type-input,
+  .FS-Payment-Mode {
+    grid-template-columns: 1fr;
+  }
+}
+
+.freeStrusture-banktype-radio {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+
+  input[type=radio] {
+    margin-right: 3px;
+  }
+}

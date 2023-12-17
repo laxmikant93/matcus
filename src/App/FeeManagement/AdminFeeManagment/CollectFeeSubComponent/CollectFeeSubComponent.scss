@@ -1,0 +1,46 @@
+@import "../../../../assets/Style/base";
+
+.collect-fee-custom {
+  width: 70%;
+  .s-cash-pay,
+  .s-cheque-pay,
+  .s-dd-pay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    margin-top: 30px;
+  }
+  .feeFormWrap {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .collect-fee-custom {
+    width: 100%;
+    .s-cash-pay,
+    .s-cheque-pay,
+    .s-dd-pay {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0 20px;
+      margin-top: 30px;
+    }
+    .scroll-nav-tab-wrapper {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        background: transparent;
+      }
+    }
+  }
+}

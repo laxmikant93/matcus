@@ -1,0 +1,432 @@
+@import "../../assets/Style/base";
+.PageTopHead {
+  &.PTH-ProfileReviewList {
+    grid-template-columns: 1fr auto auto;
+  }
+  &.PTH-ReviewList {
+    grid-template-columns: auto auto 1fr auto;
+  }
+}
+
+/***Edneed profile Review***/
+.scroll-nav-tab-wrapper {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+}
+.PTH-ProfileReviewList {
+  margin-top: 120px;
+  .scroll-nav-tab {
+    display: flex;
+    align-items: center;
+    .button {
+      margin-right: 5px;
+      // &:first-child {
+      //   padding: 0 40px;
+      // }
+    }
+  }
+}
+.ReviewSectionWrapper {
+  width: 600px;
+  .ReviewSectionHead {
+    @extend .text-lg;
+  }
+  .ReviewSectionSubHead {
+    @extend .text-xs;
+  }
+  .input-custom-type {
+    label {
+      padding-right: 40px;
+    }
+  }
+}
+
+.profileReviewListSection {
+  min-height: 500px;
+  columns: 3 auto;
+  // column-gap: 10px;
+  padding: 50px 0;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .card {
+    margin: 0;
+    display: inline-block;
+    // grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    border-radius: 15px;
+    background: $white;
+    border: 1px solid rgba($mgray, 0.125);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    &.institute-review {
+      .wave {
+        background-color: $primary;
+        &:after {
+          background-color: $primary;
+        }
+      }
+      .PRL-ProfilePhoto {
+        .PRL-ProfilePhotoCustom {
+          border-color: $primary;
+        }
+      }
+      .reviewText {
+        border-left: 5px solid $primary;
+        padding-left: 10px;
+      }
+    }
+    .reviewText {
+      letter-spacing: 0.05em;
+      line-height: 1.5em;
+    }
+    &.teacher-review {
+      .wave {
+        background-color: $secondary;
+        &:after {
+          background-color: $secondary;
+        }
+      }
+      .PRL-ProfilePhoto {
+        .PRL-ProfilePhotoCustom {
+          border-color: $secondary;
+        }
+      }
+      .reviewText {
+        border-left: 5px solid $secondary;
+        padding-left: 10px;
+      }
+    }
+    &.student-review {
+      .wave {
+        background-color: $purple;
+        &:after {
+          background-color: $purple;
+        }
+      }
+      .PRL-ProfilePhoto {
+        .PRL-ProfilePhotoCustom {
+          border-color: $purple;
+        }
+      }
+      .reviewText {
+        border-left: 3px solid $purple;
+        padding-left: 15px;
+      }
+    }
+    &.others-review {
+      .wave {
+        background-color: $gray;
+        &:after {
+          background-color: $gray;
+        }
+      }
+      .PRL-ProfilePhoto {
+        .PRL-ProfilePhotoCustom {
+          border-color: rgba($lgray, 0.5);
+        }
+      }
+      .reviewText {
+        border-left: 5px solid $secondary;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .cardBody {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    .PRL-ReviewVideoCustom {
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .PRL-ReviewAudioCustom {
+      width: 100%;
+      height: 100%;
+      audio {
+        width: 100%;
+      }
+    }
+  }
+  .PRL-ProfilePhoto {
+    .PRL-ProfilePhotoCustom {
+      height: 85px;
+      width: 85px;
+      object-fit: cover;
+      background-color: $silver;
+      border-radius: 50%;
+      border-width: 3px;
+      border-style: solid;
+      z-index: 1;
+    }
+  }
+  .PRL-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    // top: 0;
+    padding: 0 30px 0 30px;
+    img {
+      grid-row: 1 / -1;
+      grid-column: 1;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+
+  .cardMedia {
+    min-height: 130px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .wave {
+    height: 70px;
+    width: 100%;
+    // border-top-left-radius: 15px;
+    // border-top-right-radius: 15px;
+    opacity: 0.09;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 100% 50%;
+      width: 60%;
+      height: 80px;
+      background-color: white;
+      right: 0;
+      left: auto;
+      top: 40px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 100% 50%;
+      width: 50%;
+      height: 70px;
+      left: 0;
+      top: 19px;
+    }
+  }
+}
+/***Close Edneed profile Review***/
+.g-thumb-video-overlay {
+  position: absolute;
+  width: 120px;
+  height: 70px;
+  left: 0;
+  top: 0;
+  background-color: rgba($base, 0.3);
+  border-radius: 5px;
+}
+.g-thumb-video-wrap {
+  position: relative;
+  display: inline-block;
+  video {
+    width: 120px;
+    height: 70px;
+  }
+  .icon-video {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+}
+.gallery-thumnail {
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+// Edit Gallery
+.ThumnailPopWrapper {
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 18, 18, 0.75);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 49999;
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease-in-out;
+  display: flex;
+  .closeModal {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+    &:hover {
+      opacity: 1;
+    }
+    cursor: pointer;
+    &::before,
+    &::after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: $primary;
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+}
+.ThumnailPopBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+  img {
+    height: 80vh;
+    width: auto;
+    object-fit: cover;
+  }
+}
+// close Edit Gallery
+@media only screen and (max-width: 1200px) {
+  .PageTopHead {
+    &.PTH-ProfileReviewList {
+      grid-template-columns: repeat(3, 1fr);
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1/4;
+        }
+      }
+      .scroll-nav-tab {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+      }
+    }
+    &.PTH-ReviewList {
+      grid-template-columns: 1fr 1fr 1fr;
+      .PTH-Item {
+        &:nth-child(3) {
+          grid-column: 1/4;
+          grid-row: 1/2;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .scroll-nav-tab-wrapper {
+    display: flex;
+  }
+  .profileReviewListSection {
+    column-count: 2;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
+  .profileReviewListSection {
+    column-count: 1;
+  }
+  .PageTopHead {
+    &.PTH-ProfileReviewList {
+      grid-template-columns: repeat(1, 1fr);
+      .PTH-Item {
+        &:first-child {
+          grid-column: 1;
+        }
+      }
+      .scroll-nav-tab {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &.PTH-ReviewList {
+      grid-template-columns: 1fr;
+      .PTH-Item {
+        &:nth-child(3) {
+          grid-column: 1;
+          grid-row: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  // .PTH-Item {
+  //   &:nth-child(2) {
+  //     grid-column: 1/3;
+  //   }
+  //   &:nth-child(3) {
+  //     grid-column: 1/3;
+  //   }
+  // }
+}
+@media only screen and (max-width: 480px) {
+  /***Edneed profile Review***/
+
+  .ProfileReviewContentList {
+    grid-template-columns: auto 1fr;
+    .ProfileReviewText {
+      grid-column: 1/3;
+    }
+  }
+  .ProfileReviewFormWrap {
+    width: 48vh;
+    right: -17%;
+  }
+  /***Close Edneed profile Review***/
+  .ReviewSectionWrapper {
+    width: 100%;
+    .ReviewSectionHead {
+      font-size: 30px;
+    }
+    .ReviewSectionSubHead {
+      font-size: 15px;
+    }
+  }
+  .scroll-nav-tab {
+    ul {
+      display: inline-flex;
+      flex-direction: row;
+      flex-flow: row;
+      li {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.readMoreLink {
+  &.underline {
+    display: flex;
+  }
+}

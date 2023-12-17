@@ -1,0 +1,532 @@
+@import "../../../assets/Style/base";
+
+.alignitems {
+  align-content: center;
+}
+
+// . {
+//   .animLabel {
+//     opacity: 0;
+//   }
+// }
+// . > select:focus + .animLabel {
+//   opacity: 1;
+// }
+
+// . > select:valid + .animLabel {
+//   opacity: 1;
+// }
+.TeacherScheduleClassModal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+  grid-row-gap: 8px;
+}
+
+.SelectHoursAndMin {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  // align-items: center;
+}
+
+.fiveColumWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  .cstmSelectWrap {
+    & select {
+      padding: 12px 15px 9px 30px;
+    }
+  }
+
+  .datePickerWrap {
+    z-index: 9;
+  }
+}
+
+.tooltiprecurringClasss {
+  position: absolute;
+  right: 5%;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.tooltipPopuptextboxwrapper {
+  right: 0px;
+  position: absolute;
+  border: 1px solid rgba($lgray, 0.5);
+  padding: 1;
+  z-index: 10;
+  background: #fff;
+  padding: 10px;
+  border-radius: 7px;
+  top: 80px;
+  width: 300px;
+
+  &::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid rgba($lgray, 0.5);
+    top: -10px;
+    left: 75%;
+  }
+}
+
+.TeacherScheduleClassModal {
+  .Recurringradio {
+    grid-column: 1/3;
+    position: relative;
+
+    .inputradiorecurring {
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+    }
+  }
+
+  .Recurringreapton {
+    grid-column: 1/3;
+    border: 1px solid rgba($lgray, 0.5);
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .weekdayrecurring {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    gap: 5px;
+  }
+}
+
+.weekdayrecurring input {
+  display: none !important;
+}
+
+.weekdayrecurring input[type="checkbox"]+label {
+  border-radius: 3px;
+  background: #ddd;
+  height: 30px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+}
+
+.AssignStudentSearchLiest {
+  display: none;
+  max-height: 150px;
+  overflow: hidden;
+  max-width: 300px;
+  overflow-y: auto;
+
+  ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    max-height: 50vh;
+    background: #fff;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    z-index: 1;
+
+    li {
+      padding: 5px 20px;
+    }
+  }
+}
+
+.assigntostudensearchinput {
+  position: absolute;
+  right: 0;
+  padding: 13px 12px 5px;
+  left: auto;
+}
+
+input.assignstudensreachinput {
+  padding-right: 35px;
+
+  &:focus~.AssignStudentSearchLiest {
+    display: block;
+  }
+}
+
+.weekdayrecurring input[type="checkbox"]:checked+label {
+  background: $primary;
+  color: #ffffff;
+}
+
+.timemangerRecurring {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  grid-template-rows: 50px;
+
+  .datePickerWrap {
+    z-index: 9;
+  }
+
+  .repeatcountminmax {
+    position: relative;
+    /* Chrome, Safari, Edge, Opera */
+  }
+
+  .cstmSelectWrap {
+    select {
+      padding: 0px 20px 0px 30px;
+    }
+
+    &::before {
+      z-index: 1;
+    }
+  }
+
+  .formFieldwrap {
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: inner-spin-button !important;
+      margin: 0;
+      opacity: 1;
+      display: none;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: inherit;
+    }
+  }
+}
+
+.cstmSelectWrap.durationselctioningooglemeet {
+  select {
+    padding: 10px 20px 10px 50px;
+  }
+}
+
+.OccuseZoomModelDaysinput {
+  display: grid;
+  grid-template-columns: auto 1fr 5fr;
+  gap: 10px;
+  align-items: center;
+
+  .cstmSelectWrap {
+    &::before {
+      z-index: 1;
+    }
+  }
+}
+
+.weekdayerrormassage {
+  position: relative;
+}
+
+.teachonlineclasspopcutomeheight {
+  height: 65vh;
+}
+
+//  New Changes Style
+.recurrringattendesdateformat {
+  position: relative;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Datejoinclassrightarrow {
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid $black;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+
+    &::after {
+      height: 6px;
+      width: 6px;
+      border-width: 2.25px 0 0 2.25px;
+      border-style: solid;
+      border-color: $black;
+      transform: rotate(135deg);
+      right: 40%;
+      left: auto;
+      top: 50%;
+      transition: all 0.25s ease;
+      position: absolute;
+      top: 10px;
+      bottom: 13px;
+      pointer-events: none;
+    }
+  }
+
+  .Datejoinclassleftarrow {
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid $black;
+    background-color: transparent;
+    height: 30px;
+    cursor: pointer;
+    width: 30px;
+
+    &::after {
+      height: 6px;
+      width: 6px;
+      border-width: 2.25px 0 0 2.25px;
+      border-style: solid;
+      border-color: $black;
+      transform: rotate(315deg);
+      left: 40%;
+      top: 50%;
+      transition: all 0.25s ease;
+      position: absolute;
+      top: 10px;
+      bottom: 13px;
+      pointer-events: none;
+    }
+  }
+}
+
+.attendesPopuprecurringclass {
+  display: flex;
+  grid-column-gap: 10px;
+}
+
+.absolute-b-30 {
+  bottom: -30px;
+}
+
+.tooltip-cst.reucrringtooltipmainwrapper {
+  position: absolute;
+  right: 0px;
+
+  .tooltip-content-cst.positioninofrecurring {
+    left: -310px;
+    top: 30px;
+    padding: 10px 20px;
+    // &:after{
+    //   position: absolute;
+    //   top:-13px;
+    //   left: 90%;
+    //   border-left: 13px solid transparent;
+    //   border-right: 13px solid transparent;
+    //   border-bottom: 13px solid $lgray;
+    //   box-shadow: inherit;
+    // }
+  }
+}
+
+.datetimedurationgooglemeetrow {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.CreatedByAndAsign {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.onlineclassteacherdateTabsnew {
+  gap: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto 1fr;
+}
+
+.gridTable table {
+  .recurringclasseslasttd {
+    td:last-child {
+      min-width: 230px;
+    }
+  }
+}
+
+.showMoreBtngreen {
+  width: 95px;
+
+  span {
+    &.active::after {
+      transform: rotate(45deg);
+      top: 15px;
+    }
+
+    &::after {
+      height: 6px;
+      width: 6px;
+      border-width: 2.25px 0 0 2.25px;
+      border-style: solid;
+      border-color: $secondary;
+      transform: rotate(-135deg);
+      right: 0px;
+      left: auto;
+      transition: all 0.25s ease;
+      position: absolute;
+      top: 10px;
+      bottom: 13px;
+      pointer-events: none;
+    }
+  }
+}
+
+.AssignTofullWidth {
+  grid-column: 1/3;
+  position: relative;
+}
+
+.starton {
+  width: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .TeacherScheduleClassModal {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .fiveColumWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .TeacherScheduleClassModal {
+
+    .Recurringradio,
+    .Recurringreapton {
+      grid-column: 1;
+      margin-top: 20px;
+    }
+
+    .Recurringradio {
+      .inputradiorecurring {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  }
+
+  .timemangerRecurring {
+    grid-template-columns: 1fr 1fr 1fr 100px;
+  }
+}
+
+.aling-center {
+  align-items: center;
+}
+
+.dataonlineclass-timedate {
+  padding: 0px 0px 0px 20px;
+}
+
+.onlineclasslistbtngroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.startbtnonlineclass {
+  grid-column: 1/3;
+}
+
+@media (max-width: 768px) {
+  .cutome_rtcmodal .modalwrapper.modal-m {
+    width: 90%;
+
+    .TeacherScheduleClassModal {
+      display: block;
+      grid-template-columns: 1fr;
+
+      .timemangerRecurring {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .TeacherScheduleClassModal {
+    .assignToWrapperStudent {
+      grid-column: 1/3;
+      margin-top: 20px;
+    }
+  }
+
+  .fiveColumWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .timemangerRecurring {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+
+  .TeacherScheduleClassModal {
+    .Recurringreapton {
+      padding: 50px 30px 30px 30px;
+    }
+  }
+
+  .tooltiprecurringClasss {
+    right: 5%;
+    top: 12px;
+  }
+
+  .tooltipPopuptextboxwrapper {
+    right: 3px;
+    top: 55px;
+
+    &::after {
+      left: 88%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .onlineclassteacherdateTabsnew {
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fiveColumWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .timemangerRecurring {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .cutome_rtcmodal .modalwrapper.modal-m {
+    width: 100%;
+
+    .TeacherScheduleClassModal {
+      display: block;
+      grid-template-columns: 1fr;
+
+      .timemangerRecurring {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .TeacherScheduleClassModal {
+    .assignToWrapperStudent {
+      grid-column: 1/3;
+    }
+  }
+
+  .OccuseZoomModelDaysinput {
+    grid-template-columns: 1fr;
+  }
+}

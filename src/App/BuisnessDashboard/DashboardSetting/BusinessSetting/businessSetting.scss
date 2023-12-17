@@ -1,0 +1,59 @@
+@import '../../../../assets/Style/base';
+
+.businessSetting-container {
+  .tex-18 {
+    font-size: 18px;
+  }
+
+  .website-name {
+    position: relative;
+    padding-bottom: 3px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 48px;
+      height: 1px;
+      background-color: rgba(32, 32, 32, 0.2);
+      margin-top: 5px;
+    }
+  }
+
+  .businessSetting-wrapper {
+    .businessSettign-topDiv {
+      .heading-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+
+        .business-setting-p {
+          @media (max-width:425px) {
+            font-size: 24px;
+          }
+        }
+
+        .heading-btn {
+          width: 65%;
+        }
+      }
+    }
+
+    .businessSetting-lowerDiv {
+      margin-top: 36px;
+
+
+      .businessSetting-locationSection {
+        margin-top: 36px;
+      }
+    }
+
+  }
+
+  .v-line {
+    height: 100%;
+    width: 1px;
+    background-color: rgba(32, 32, 32, 0.2);
+  }
+}

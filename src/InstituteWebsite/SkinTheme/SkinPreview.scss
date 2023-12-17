@@ -1,0 +1,256 @@
+@import "../../assets/Style/base";
+@import "../SkinTheme.scss";
+
+html {
+  --scrollbarBG: #cccccc;
+  --thumbBG: #146efa;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 0;
+  border: 1px solid var(--scrollbarBG);
+}
+
+.institutes_skinpreviewrightshow {
+  padding: 0 0px 20px 35px;
+  position: relative;
+}
+
+.domaintextskinprevtextbox {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 4px;
+  align-items: center;
+  border: 1px solid rgba($lgray, 0.5);
+}
+
+.sidePrevCenter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.domaintextskinprevtextbox_full {
+  background-color: $white;
+  padding: 20px 30px;
+  width: 95%;
+  position: relative;
+  border-radius: 5px;
+}
+
+.secAboutWrapCnt.prevskinaboutussection {
+  margin-top: 0px;
+}
+
+.previesliderOne {
+  height: 200px;
+  background-color: $lgray;
+  color: $white;
+}
+
+.perviewslider_textone {
+  line-height: 200px;
+  text-align: center;
+}
+
+button.btnText.w-500.previewconatectDetailsBtn {
+  background-color: $primary;
+  color: $black;
+  padding: 10px 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.previewconatectDetailsBtn::after {
+  height: 5px;
+  width: 5px;
+  border-left: 2px solid $black;
+  border-top: 2px solid $black;
+  transform: rotate(-135deg);
+  color: $black;
+  left: auto;
+  top: 15px;
+  right: 15px;
+}
+
+.previewconatectDetailsBtn.active::after {
+  transform: rotate(45deg);
+  top: 15px;
+}
+
+.sd-header-theme {
+  position: relative;
+}
+
+.edHeaderSDWrapper {
+  padding: 0 10px;
+}
+
+.circle_previewleftpngimag {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  bottom: -10%;
+}
+
+.domainetext-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.sd-aboutwrap {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.institute-info-sec {
+  display: flex;
+}
+
+.pngiconwrapper {
+  width: 80px;
+  position: absolute;
+  left: -10px;
+  top: 100px;
+}
+
+.blackCrickePreview {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 11px;
+  left: -15px;
+  z-index: 29;
+}
+
+span.previewiconlineone {
+  width: 141px;
+  background: $black;
+  height: 4px;
+  display: block;
+}
+
+.roater_pngposition {
+  transform: rotate(40deg);
+  position: relative;
+}
+
+.small_circle_blackpreview {
+  width: 10px;
+  height: 10px;
+  background-color: $black;
+  border-radius: 100%;
+  position: absolute;
+  top: -58px;
+  left: 33%;
+  z-index: 30;
+}
+
+.verysmall_circle_blackpreview {
+  width: 5px;
+  height: 5px;
+  background-color: $black;
+  position: absolute;
+  top: -64px;
+  left: 48%;
+  z-index: 30;
+  border-radius: 50%;
+}
+
+.preview_full_gridbooksection {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.booknowBtnPrview-full {
+  background-color: $black;
+  padding: 10px 20px;
+}
+
+.gold {
+  color: #ebc15f;
+}
+
+.previesliderOne_full {
+  height: 400px;
+  background-color: $lgray;
+  color: $white;
+}
+
+.perviewslider_textone-full {
+  text-align: center;
+  line-height: 400px;
+}
+
+.followsharelikebtnpreviewbtn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.choose_color_option {
+  position: fixed;
+  right: 10%;
+  top: 20%;
+  z-index: 99;
+  height: 90px;
+  background: #fff;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-bottom-left-radius: 14px;
+  border-top-left-radius: 14px;
+  outline: none;
+  display: block;
+  border: 0px;
+}
+
+.rightarrowcutomedesign {
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 11px solid $white;
+  left: -11px;
+  position: absolute;
+  top: 40px;
+}
+
+@media (max-width: 480px) {
+  .displayblockskinpreviewmobile {
+    display: block;
+  }
+
+  .pngiconwrapper {
+    display: none;
+  }
+
+  .institutes_skinpreviewrightshow {
+    padding: 0 0px 20px 20px;
+  }
+}
+
+.blockreadmore {
+  display: block;
+}

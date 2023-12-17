@@ -1,0 +1,203 @@
+@import "../../../assets/Style/base";
+
+/***Payment Razor Pay***/
+.PaymentRazorCommonWrapper {
+  margin-top: 10rem;
+
+  .PaymentRazorCommonCst {
+    width: 700px;
+  }
+  .PaymentInvoiceRazor {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .RazorPayNowBtn {
+    .button {
+      width: 250px;
+    }
+  }
+}
+/***Close Payment Razor Pay***/
+///Payment summary flow///
+
+.PaymentSummaryCommonWrapper {
+  margin-top: 10rem;
+  width: 700px;
+
+  .PaymentInvoiceSummary {
+    display: grid;
+    margin-top: 30px;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.PaymentInvoiceSummary {
+  margin-top: 30px;
+}
+
+.PaymentSummary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .PaymentSummaryCommonCst {
+    text-align: center;
+  }
+}
+.summaryPaymentBtnWrap {
+  display: inline-flex;
+  width: 300px;
+  max-width: 300px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+///Close Payment summary flow///
+
+///Payment Invoice flow///
+.DomainTechSupportWells {
+  position: relative;
+  background-color: rgba($secondary, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid rgba($secondary, 0.3);
+
+  .closeWellBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.PaymentInvoice {
+  .OrderSummary,
+  .PurchasedDomainSummary {
+    border-bottom: 1px solid rgba($mgray, 0.5);
+    padding-top: 50px;
+  }
+
+  .PurchasedDomainSummaryCst,
+  .PurchasedExtraDetailsCst {
+    width: 100%;
+    padding: 10px 0 15px 0;
+  }
+
+  .PurchasedDomainSummaryItem,
+  .PurchasedExtraDetailsItem {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    li {
+      &:nth-child(2) {
+        text-align: center;
+      }
+
+      &:last-child {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .PurchasedExtraDetailsItem {
+    border-bottom: 1px solid rgba($mgray, 0.5);
+    padding: 20px 0;
+  }
+
+  .PurchasedTotalPricing {
+    border-bottom: 1px solid rgba($mgray, 0.5);
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: center;
+
+    li {
+      &:first-child {
+        text-align: right;
+      }
+    }
+  }
+
+  .PurchasedExtraDetailsCst {
+    padding: 0;
+  }
+
+  .OrderSummaryCst {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px 0;
+  }
+
+  .OrderSummaryCstItem {
+    p {
+      &:first-child {
+        @extend .text-xxs;
+        @extend .w-500;
+        columns: $mgray;
+      }
+
+      &:last-child {
+        @extend .text-xxs;
+        @extend .w-500;
+      }
+    }
+  }
+}
+
+.PaymentInvoiceActionBtn {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+///Close Payment Invoice flow///
+
+@media screen and (max-width: 770px) {
+  .PurchasedDomainSummaryCst {
+    width: 100%;
+  }
+  /***** Payment Invoice flow *****/
+  .PaymentInvoice {
+    .OrderSummaryCst {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+    .PurchasedDomainSummaryItem,
+    .PurchasedExtraDetailsItem {
+      grid-template-columns: 1fr;
+      border: 1px solid $lgray;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      li {
+        &:nth-child(2) {
+          text-align: left;
+        }
+        &:last-child {
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+    }
+    .PurchasedExtraDetailsCst {
+      margin-top: 20px;
+    }
+    .PaymentInvoiceActionBtn {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+  /***** Close Payment Invoice flow *****/
+}

@@ -1,0 +1,1510 @@
+@import "../../assets/Style/base";
+.onlineexamstudenQuestionlistimg {
+  width: 100%;
+}
+
+// multiselect css
+
+.q-match-list-cst,
+.q-blankfill-list {
+  .fillup-file {
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+  .Question-video {
+    .gallery-thumnail {
+      max-width: 280px;
+      min-width: 280px;
+      width: 100%;
+      height: 160px;
+      @media (max-width: 768px) {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+      }
+      @media (max-width: 360px) {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .wrapper-audio {
+    audio {
+      background: #e5e5e5;
+      position: relative;
+      width: 280px;
+      border-radius: 5px;
+      overflow: hidden;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      @media (max-width: 360px) {
+        width: 100%;
+      }
+    }
+    audio::-webkit-media-controls-panel {
+      background: #e5e5e5;
+      border-radius: 5px;
+      width: 280px;
+      outline: 0px;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    audio::-webkit-media-controls-play-button {
+      color: #fff;
+      background-color: #fff;
+      font-size: 20px;
+      border: 2px solid #fff;
+      border-radius: 3rem;
+    }
+  }
+  .formFieldwrap {
+    .file-fill-up {
+      width: 197px;
+      .file-input-overlap {
+        justify-content: center;
+      }
+    }
+  }
+  .MIW-AboutImagePreview {
+    width: 200px;
+  }
+  .MIW-IntroVideoPreview {
+    .gallery-thumnail {
+      width: 280px;
+      max-width: 280px;
+      min-width: 280px;
+    }
+  }
+  .fill-form {
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+  input {
+    border: 1px solid rgb(218, 218, 218);
+    &:focus {
+      border: 1px solid rgba(0, 168, 0, 0.582);
+    }
+  }
+  .question-grid {
+    counter-reset: my-sec-counter;
+    position: relative;
+    display: grid;
+    align-items: flex-start;
+    justify-content: space-between;
+    grid-template-columns: 1fr 8fr;
+    .MIW-AboutImagePreview {
+      .MIW-AboutImgPreview {
+        max-width: 180px;
+      }
+    }
+    span {
+      &.count-question {
+        &::before {
+          counter-increment: section;
+          content: "Q-" counter(section) "";
+          @extend .text-xs;
+          padding-left: 10px;
+          padding-top: 3px;
+          @extend .w-600;
+          width: auto;
+        }
+      }
+    }
+    .gallery-thumnail {
+      width: 278px;
+      min-width: 278px;
+      max-width: 278px;
+      @media (max-width: 992px) {
+        min-width: 150px;
+        max-width: 100%;
+      }
+    }
+    .font {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 8px 0;
+    }
+    .q-match-promt {
+      background-color: #fff !important;
+    }
+    .file-grid {
+      align-items: center;
+      gap: 8px;
+      display: flex;
+      label.badge {
+        position: relative;
+        line-height: 11px;
+        background-color: #14a032;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        display: flex;
+        border-radius: 3rem;
+        height: 16px;
+        cursor: pointer;
+        width: 16px;
+        font-size: 14px;
+        &:hover .tooltip {
+          visibility: visible;
+        }
+      }
+      .tooltip {
+        padding: 15px;
+        visibility: hidden;
+        position: absolute;
+        left: 27px;
+        top: 8px;
+        background: #ffffff;
+        color: #8b8b8b;
+        max-width: 100%;
+        min-width: 300px;
+        width: 100%;
+        min-height: 100%;
+        z-index: 1;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.05);
+        @media (max-width: 992px) {
+          left: 50%;
+          top: 50%;
+          min-width: 278px;
+          transform: translate(-50%, 25%);
+        }
+      }
+    }
+    .form-group {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+// online Exam Collapese Menu
+
+.onlineExamCollapesMenu {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  background-color: #000;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  z-index: 9;
+  display: none;
+  &::after {
+    background-color: #000;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+  }
+  &::before {
+    background-color: #000;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+  }
+}
+
+// end here
+
+/*** Create Test***/
+.start-create-test {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 20px;
+  align-items: center;
+  .formFieldwrap {
+    &:first-child {
+      grid-column: 1/4;
+    }
+  }
+}
+.createTestAllowAction {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 20px;
+  align-items: center;
+}
+.createTestRestrictionMode {
+  p {
+    &:first-child {
+      grid-column: 1/4;
+    }
+  }
+  .input-custom-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+    align-items: flex-start;
+  }
+  .RadioContainer {
+    &.SmallRadio {
+      padding-top: 0;
+    }
+  }
+}
+.onlineTestAction {
+  display: block;
+}
+.deleteQuestioBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.attached-assignment {
+  .cstmSelectWrap {
+    &::before {
+      top: 12px;
+    }
+    select {
+      width: auto;
+      padding: 8px 15px 8px 30px;
+      @extend .text-xxs;
+      @extend .w-500;
+    }
+  }
+}
+.grace-time-view-attachment {
+  display: flex;
+  a {
+    margin-right: 10px;
+  }
+}
+/*** CloseCreate Test***/
+.question-card {
+  position: relative;
+  .create-question-section {
+    padding: 20px 0 10px 0;
+    // border-bottom: 2px solid rgba($mgray, 0.5);
+    margin-bottom: 20px;
+  }
+  .choose-q-type {
+    padding: 20px 0;
+    .choose-q-type-custom {
+      @extend .text-xxs;
+      display: flex;
+      gap: 10px;
+      // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+      .input-q-type {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        border: 1px solid $mgray;
+        //   margin: 5px 0 5px 0px;
+        cursor: pointer;
+        position: relative;
+        padding: 8px 20px;
+        border-radius: 3px;
+        .text {
+          @extend .w-500;
+          @extend .text-xxs;
+          color: $base;
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        i {
+          margin-right: 5px;
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        &.active {
+          box-shadow: rgba($secondary, 0.4) 0px 1px 10px 0px;
+          background-color: $white;
+          border-color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.input-output-section {
+  .inline-input-output {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 5fr 1fr auto;
+    align-items: center;
+    // margin-bottom: 10px;
+    @extend .text-xxs;
+    .form-group {
+      margin-bottom: 0;
+    }
+    // .input-custom-type {
+    //   display: grid;
+    //   gap: 10px;
+    //   grid-template-columns: 2fr 1fr;
+    //   align-items: center;
+    //   label {
+    //     margin: 0;
+    //     padding: 0;
+    //     border: 0;
+    //     background-color: transparent;
+    //     input {
+    //       &:checked + .designCheck {
+    //         border: 1px solid $secondary;
+    //         &::before {
+    //           background: $secondary;
+    //         }
+    //         color: $secondary;
+    //       }
+    //       &:checked + .designCheck + .text {
+    //         color: $secondary;
+    //       }
+    //       &:checked + .designRadio {
+    //         border: 1px solid $secondary;
+    //         &::before {
+    //           background: $secondary;
+    //         }
+    //         color: $secondary;
+    //       }
+    //       &:checked + .designRadio + .text {
+    //         color: $secondary;
+    //       }
+    //     }
+    //   }
+    // }
+
+    &.input-truefalse-output {
+      grid-template-columns: 100px auto;
+      padding-bottom: 10px;
+      .TF-text {
+        background-color: rgba($mgray, 0.3);
+        padding: 10px 20px;
+        border-radius: 3px;
+        text-align: center;
+      }
+    }
+  }
+  .errorInputMsg {
+    &.questionErrorLabel {
+      top: 0;
+      margin-bottom: 10px;
+      position: relative;
+      padding: 0;
+    }
+  }
+}
+.question-title {
+  .optional-file-upload {
+    .file-input-wrapper {
+      margin-top: 5px;
+      display: inline-block;
+      .form-control {
+        width: 200px;
+      }
+      .file-input-overlap {
+        width: 200px;
+      }
+    }
+  }
+}
+.marks-create-input {
+  width: 150px;
+  @extend .text-xs;
+  @extend .w-400;
+  input {
+    width: 100px;
+    margin-top: 5px;
+    height: 35px;
+  }
+}
+.question-marks-section {
+  line-height: 1.5;
+}
+
+.question-instruction-section {
+  margin: 10px 0;
+  padding: 10px 10px;
+  background-color: $white;
+  border-top: 1px solid rgba($mgray, 0.5);
+  border-bottom: 1px solid rgba($mgray, 0.5);
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .question-instruction-first {
+    @extend .text-xxs;
+    text-align: left;
+    p {
+      display: grid;
+      grid-template-columns: 5vw 1fr;
+    }
+  }
+
+  .question-instruction-last {
+    @extend .text-xxs;
+    text-align: right;
+    p {
+      display: grid;
+      grid-template-columns: 1fr 3vw;
+    }
+  }
+}
+.q-attempted-status {
+  @extend .text-xxs;
+  @extend .w-400;
+  margin-bottom: 5px;
+}
+.answer-f-status {
+  color: $red;
+  @extend .text-xs;
+  @extend .w-400;
+  padding-left: 50px;
+}
+// .Qhead {
+
+// }
+.q-option-area {
+  label {
+    @extend .text-xs;
+    @extend .w-400;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    &.active {
+      .designRadio {
+        &::before {
+          background: $secondary;
+        }
+      }
+      .designCheck {
+        &::before {
+          background: $secondary;
+        }
+      }
+      .designCheck {
+        border: 1px solid $secondary;
+      }
+      .designRadio {
+        border: 1px solid $secondary;
+      }
+      .text {
+        color: $secondary;
+      }
+    }
+  }
+  .q-match-grid {
+    .q-match-grid-head {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .q-match-list-wrap {
+      .q-match-list-cst {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: flex-start;
+        margin-top: 10px;
+        .question-img {
+          width: 160px;
+        }
+        .q-match-promt {
+          background-color: rgba($silver, 0.5);
+          border: 1px solid rgba($lgray, 0.5);
+          padding: 10px 20px;
+          border-radius: 5px;
+          min-height: 44px;
+          @extend .text-xxs;
+          @extend .w-700;
+        }
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .cstmSelectWrap {
+          select {
+            border-width: 2px;
+            border-radius: 5px;
+            &:focus {
+              border-color: $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .q-blankfill-grid {
+    .q-blankfill-list {
+      .q-blankfill-question {
+        @extend .text-xs;
+        @extend .w-500;
+        strong {
+          &.border-underline {
+            position: relative;
+            &::after {
+              width: 100%;
+              height: 2px;
+              background-color: $secondary;
+              margin-top: 5px;
+              bottom: 0;
+            }
+          }
+        }
+        audio {
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+        .question-img {
+          width: 160px;
+        }
+        .Question-video {
+          .gallery-thumnail {
+            max-width: 280px;
+            min-width: 280px;
+            width: 100%;
+            @media (max-width: 768px) {
+              min-width: 100%;
+              max-width: 100%;
+              width: 100%;
+            }
+            @media (max-width: 360px) {
+              min-width: 100%;
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .q-blankfill-answer {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        strong {
+          padding-top: 5px;
+          position: relative;
+          @extend .text-xs;
+          @extend .w-700;
+          &::after {
+          }
+        }
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+        .form-control {
+          border-width: 2px;
+          border-radius: 5px;
+          &:focus {
+            border-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.answer-t-status {
+  color: $secondary;
+  @extend .text-xs;
+  @extend .w-400;
+  padding-left: 50px;
+}
+.teacherExamReviewWrapper,
+.StudentExamResultWrapper {
+  margin-top: 10px;
+  .TER-headerFirst,
+  .TER-headerSecond,
+  .TER-headerThird,
+  .SER-headerFirst,
+  .SER-headerSecond {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .TER-headerThird {
+    border-bottom: 1px solid rgba($mgray, 0.5);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .TER-headerSecond,
+  .SER-headerSecond {
+    padding: 8px 0;
+    margin: 8px 0;
+    border-top: 1px solid rgba($mgray, 0.5);
+    border-bottom: 1px solid rgba($mgray, 0.5);
+  }
+  .TER-headerLeftItem,
+  .SER-headerLeftItem {
+    display: grid;
+    grid-template-columns: 10vw 1fr;
+  }
+  .TER-headerRightItem,
+  .SER-headerRightItem {
+    display: grid;
+    grid-template-columns: 1fr 3vw;
+  }
+}
+.SER-headerThird {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.review-question-section,
+.view-student-exam-result {
+  counter-reset: section;
+  position: relative;
+  // padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  .card {
+    &.borderCstm {
+      &.attempted {
+        border: 1px solid rgba($mgray, 0.5);
+        padding: 20px 20px 20px 45px;
+        border-radius: 5px;
+
+        .q-attempted-status {
+          color: $secondary;
+        }
+      }
+      &.not-attempted {
+        border: 1px solid rgba($red, 0.5);
+        padding: 20px 20px 20px 45px;
+        border-radius: 5px;
+        opacity: 0.5;
+        pointer-events: none;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+        .obtained-marks-input {
+          display: none;
+        }
+
+        .q-attempted-status {
+          @extend .text-2xs;
+          color: $red;
+        }
+      }
+      .q-not-attempted-status {
+        @extend .text-xxs;
+        @extend .w-400;
+        color: $red;
+        margin-bottom: 5px;
+      }
+      .Qhead {
+        &::before {
+          counter-increment: section;
+          content: "" counter(section) ".";
+          @extend .text-xxs;
+          padding-left: 25px;
+          padding-top: 5px;
+          @extend .w-600;
+          width: auto;
+        }
+      }
+    }
+    .cardBody {
+      display: grid;
+      grid-template-columns: 1fr 150px;
+      .total-ques-marks {
+        text-align: right;
+      }
+    }
+  }
+  .file-upload-input {
+    width: 50%;
+  }
+  .preview-ques-textarea {
+    textarea {
+      width: 60%;
+    }
+    p {
+      @extend .text-xs;
+      @extend .w-400;
+      color: $mgray;
+      width: 60%;
+    }
+  }
+  .obtained-marks-input {
+    input {
+      width: 100px;
+      padding: 5px 10px;
+      margin-top: 3px;
+      height: 30px;
+    }
+    input[type="number"]:disabled {
+      background: rgba($lgray, 0.7);
+      border: 1px solid rgba($lgray, 0.7);
+      color: rgba($base, 0.5);
+      text-align: center;
+    }
+  }
+}
+
+.TeacherOptionalComment {
+  .button {
+    padding: 0px 75px;
+  }
+}
+.add-more-multi-input {
+  button {
+    margin-bottom: 15px;
+  }
+}
+.activepopstudentexam {
+  display: block;
+  position: absolute;
+  top: 100%;
+  border: 1px solid rgba($base, 0.5);
+  padding: 20px;
+  background: $white;
+  border-radius: 5px;
+}
+.notActivepopstudentexam {
+  display: none;
+}
+
+.notifypoponlineexamstuden {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+.ExamPushNotificationWrapper {
+  width: 70%;
+}
+.ExamPushNotificationHead {
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: $white;
+  border: 1px solid rgba($base, 0.125);
+  position: relative;
+  color: $base;
+  .ExamPushNotificationIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.strictonlinepopexamnoti {
+  border: 1px solid $red;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.ExamPushNotificationBody {
+  border: 1px solid $red;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  img {
+    width: 100%;
+  }
+}
+.instruction-section {
+  padding-left: 20px;
+  ol {
+    li {
+      &::marker {
+        color: $purple;
+      }
+      ol {
+        padding-left: 20px;
+        li {
+          @extend .text-xxs;
+          margin-top: 5px;
+          color: $dgray;
+          line-height: 1.5;
+          &::marker {
+            color: $dgray;
+          }
+        }
+      }
+    }
+  }
+}
+.ExamInstructionBtn {
+  position: relative;
+  display: inline-block;
+}
+.QuestionListHeadWrapper {
+  position: sticky;
+  top: 0;
+  // background-color: $white;
+  padding-top: 20px;
+  z-index: 1;
+}
+.QuestionListHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  align-items: flex-start;
+  position: relative;
+}
+.QuestionListHeader-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+.QuestionListHeader-time {
+  text-align: center;
+}
+.remaining-time-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .remaining-time-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+}
+.QuestionListHeader-attempted-question {
+  text-align: center;
+}
+.QuestionListHeader-user {
+  text-align: right;
+}
+
+.quest-attempt-count {
+  cursor: pointer;
+  position: relative;
+  display: inline;
+  align-items: center;
+  letter-spacing: -3px;
+  span {
+    &:last-child {
+      letter-spacing: 0;
+    }
+  }
+  &::after {
+    height: 4px;
+    width: 4px;
+    border-left: 2px solid $gray;
+    border-top: 2px solid $gray;
+    transform: rotate(-135deg);
+    color: $primary;
+    left: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    top: 5px;
+    right: -15px;
+  }
+  &.active {
+    color: $primary;
+    &::after {
+      border-left: 2px solid $primary;
+      border-top: 2px solid $primary;
+      transform: rotate(45deg);
+      top: 9px;
+    }
+  }
+}
+.attempted-q-preview {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid $mgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &.active {
+    background-color: $purple;
+    color: $white;
+  }
+}
+.attempted-q-preview-list {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    flex-flow: row wrap;
+  }
+  li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 10px;
+  }
+}
+.attempted-question-drop {
+  position: absolute;
+  border: 1px solid rgba($mgray, 0.5);
+  border-radius: 3px;
+  min-height: 150px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 50px;
+  background-color: $white;
+  box-shadow: 0 0 8px rgba($base, 0.125);
+  z-index: 99;
+}
+.attempted-q-preview-label {
+  @extend .text-2xs;
+  @extend .w-300;
+  margin-top: 5px;
+  color: $gray;
+}
+
+.student-online-test {
+  counter-reset: section;
+  position: relative;
+  // padding-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .card {
+    padding: 20px 20px 20px 35px;
+
+    .cardHeader {
+      margin-top: -5px;
+      &::before {
+        counter-increment: section;
+        content: "" counter(section) ".";
+        @extend .text-xs;
+        padding-left: 10px;
+        padding-top: 3px;
+        @extend .w-600;
+        width: auto;
+      }
+    }
+    .cardBody {
+      display: grid;
+      grid-template-columns: 1fr 150px;
+      .total-ques-marks {
+        text-align: right;
+      }
+    }
+  }
+
+  .onlineTestAttachmentPopup {
+    audio {
+      width: 100%;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+    }
+    object {
+      max-height: 400px;
+      width: 100%;
+    }
+    img {
+      max-height: 400px;
+    }
+    .modalbody {
+      max-height: 100vh;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+.restrictedExamWarningPopup {
+  .modalFooter {
+    border-top: 1px solid $lgray;
+    text-align: right;
+  }
+}
+.createTestRestrictionMode,
+.createTestAllowAction,
+.create-question-section,
+.review-question-section {
+  .RadioContainer {
+    &.active {
+      color: $secondary;
+    }
+    .RadioCheckmark {
+      &:after {
+        border-color: $secondary;
+      }
+      &:hover {
+        border-color: $secondary;
+      }
+    }
+    &:hover {
+      border-color: $secondary;
+    }
+  }
+  .CheckboxContainer {
+    &.active {
+      color: $secondary;
+    }
+    .CheckboxCheckmark {
+      &:after {
+        border-color: $secondary;
+      }
+      &:hover {
+        border-color: $secondary;
+      }
+    }
+    &:hover {
+      border-color: $secondary;
+    }
+  }
+  .RadioContainer:hover input ~ .RadioCheckmark,
+  .RadioContainer input:checked ~ .RadioCheckmark,
+  .CheckboxContainer:hover input ~ .CheckboxCheckmark,
+  .CheckboxContainer input:checked ~ .CheckboxCheckmark {
+    border-color: $secondary;
+  }
+}
+.student-online-test,
+.view-student-exam-result {
+  .RadioContainer {
+    &.active {
+      color: $purple;
+    }
+    .RadioCheckmark {
+      &:after {
+        border-color: $purple;
+      }
+      &:hover {
+        border-color: $purple;
+      }
+    }
+    &:hover {
+      border-color: $purple;
+    }
+  }
+  .CheckboxContainer {
+    &.active {
+      color: $purple;
+    }
+    .CheckboxCheckmark {
+      &:after {
+        border-color: $purple;
+      }
+      &:hover {
+        border-color: $purple;
+      }
+    }
+    &:hover {
+      border-color: $purple;
+    }
+  }
+  .RadioContainer:hover input ~ .RadioCheckmark,
+  .RadioContainer input:checked ~ .RadioCheckmark,
+  .CheckboxContainer:hover input ~ .CheckboxCheckmark,
+  .CheckboxContainer input:checked ~ .CheckboxCheckmark {
+    border-color: $purple;
+  }
+}
+.cancelExamPopup {
+  &.popup {
+    .removePopBtn {
+      margin-top: 0;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .q-match-list-cst {
+    .formFieldwrap {
+      padding-bottom: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .q-match-list-cst {
+    margin-bottom: 0px;
+    .question-grid {
+      grid-template-columns: 1fr;
+    }
+    .formFieldwrap {
+      padding-bottom: 0px;
+    }
+  }
+  .ExamPushNotificationWrapper {
+    width: 90%;
+    .ExamPushNotificationHead {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      .ExamPushNotificationIcon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .ExamPushNotificationHeadContent {
+    .customeresponsive {
+      font-size: 18px;
+    }
+  }
+  .notifypoponlineexamstuden {
+    top: 15%;
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  // onlineMobileExam Menu Design
+  .activepopstudentexam {
+    width: 200px;
+    left: -150px;
+    img {
+      width: 100%;
+    }
+  }
+  .notifypoponlineexamstuden {
+    top: 15%;
+  }
+  .onlineExamCollapesMenu {
+    display: block;
+  }
+  .QuestionListHeadWrapper {
+    &.inactive {
+      padding-top: 0px;
+      .QuestionListHeader-intro {
+        display: none;
+      }
+      .QuestionListHeader-user {
+        display: none;
+      }
+      .question-instruction-section {
+        border-bottom: none;
+        position: relative;
+      }
+      .QuestionListHeader-detail {
+        .question-instruction-section {
+          .question-instruction-first {
+            display: none;
+          }
+          .question-instruction-last {
+            display: none;
+          }
+          .gradtimebtnMobileViewChange {
+            position: fixed;
+            top: 4%;
+            right: 13%;
+            background: #ffff;
+            border-radius: 7px;
+          }
+        }
+      }
+
+      &.active {
+        .QuestionListHeader-intro {
+          display: block;
+        }
+        .QuestionListHeader-user {
+          display: block;
+        }
+        .QuestionListHeader-detail {
+          .QuestionListHeader-time {
+            text-align: center;
+            .remaining-time-wrapper {
+              justify-content: center;
+            }
+          }
+          .QuestionListHeader-attempted-question {
+            display: block;
+          }
+        }
+        .question-instruction-section {
+          border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+          position: relative;
+        }
+
+        .question-instruction-section {
+          .question-instruction-first {
+            display: block;
+          }
+          .question-instruction-last {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .MobileViewStudenremaingtime {
+    text-align: left;
+    .remaining-time-wrapper {
+      justify-content: flex-start;
+    }
+  }
+  .attached-assignment {
+    .attachment {
+      width: 100%;
+    }
+  }
+  /**Push Notication **/
+  .ExamPushNotificationWrapper {
+    width: 100%;
+  }
+
+  .ExamPushNotificationHead {
+    display: grid;
+    // grid-template-columns: 1fr auto;
+    .ExamPushNotificationIcon {
+      height: 40px;
+      width: 40px;
+    }
+    .ExamPushNotificationHeadContent {
+      .customeresponsive {
+        font-size: 18px;
+      }
+    }
+  }
+  .ExamPushNotificationBody {
+    padding: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  .strictonlinepopexamnoti {
+    .customeresponsive {
+      font-size: 18px;
+    }
+  }
+  /**close Push Notication **/
+  /*** Create Test***/
+  .start-create-test {
+    grid-template-columns: repeat(1, 1fr);
+    .formFieldwrap {
+      &:first-child {
+        grid-column: auto;
+      }
+    }
+  }
+  .createTestAllowAction {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .createTestRestrictionMode {
+    .input-custom-type {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+  .input-output-section {
+    .inline-input-output {
+      gap: 10px 0;
+      &.input-truefalse-output {
+        gap: 10px;
+      }
+      .form-group {
+        grid-column: 1/4;
+      }
+    }
+  }
+  /*** Close Create Test***/
+  /*** review test teacher ***/
+  .teacherExamReviewWrapper,
+  .StudentExamResultWrapper {
+    margin: 20px 0;
+    .TER-headerFirst,
+    .SER-headerFirst {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+    }
+    .TER-headerLeftItem,
+    .TER-headerRightItem,
+    .SER-headerLeftItem,
+    .SER-headerRightItem {
+      grid-template-columns: 1fr;
+      gap: 5px;
+      padding-bottom: 10px;
+    }
+  }
+  .review-question-section,
+  .view-student-exam-result {
+    background-color: $white;
+    .card {
+      background-color: $white;
+    }
+    .input-custom-type {
+      label {
+        justify-content: space-between;
+      }
+    }
+  }
+  /*** close review test teacher ***/
+  .question-instruction-section {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    .question-instruction-first {
+      p {
+        grid-template-columns: 1fr;
+      }
+    }
+    .question-instruction-last {
+      p {
+        grid-template-columns: 1fr;
+      }
+    }
+    .question-instruction-middle {
+      grid-row: 2/4;
+      grid-column: 1/4;
+      text-align: center;
+      // padding-top: 20px;
+    }
+  }
+  .review-question-section,
+  .view-student-exam-result {
+    .card {
+      .cardBody {
+        grid-template-columns: 1fr;
+        .total-ques-marks {
+          text-align: left;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .AfterUploadDocActionBtn {
+    display: inline-grid;
+    gap: 10px;
+    width: 100%;
+  }
+  .attempted-question-drop {
+    top: auto;
+  }
+  .student-online-test {
+    .cardBody {
+      grid-template-columns: 1fr;
+      .total-ques-marks {
+        text-align: left;
+        margin-top: 20px;
+      }
+    }
+  }
+  .QuestionListHeader {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .QuestionListHeader-detail {
+    grid-row: 3/4;
+  }
+  .QuestionListHeader-user {
+    text-align: left;
+    padding: 10px 0;
+    border-top: 1px solid $lgray;
+    border-bottom: 1px solid $lgray;
+  }
+}
+@media (max-width: 992px) {
+  .QuestionListHeader {
+    grid-template-columns: auto 1fr auto;
+  }
+  .student-online-test {
+    .card {
+      .cardBody {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .q-blankfill-grid {
+    .formFieldwrap {
+      width: 100%;
+    }
+  }
+  .restrictedExamWarningPopup {
+    .modalFooter {
+      .button {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .student-online-test {
+    .card {
+      .answer-head {
+        text-align: end;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .question-grid {
+    grid-template-columns: 1fr;
+  }
+  .student-online-test {
+    .card {
+      .cardBody {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .QuestionListHeader {
+    grid-template-columns: 1fr;
+  }
+  .QuestionListHeader-detail {
+    grid-template-columns: 1fr 1fr 1rem;
+  }
+  .pageInCenter {
+    width: 90%;
+  }
+  .ExamPushNotificationHeadContent {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 428px) {
+  .q-option-area {
+    .q-match-list-wrap {
+      audio {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      .q-match-list-cst {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 568px) {
+  .q-blankfill-grid {
+    .formFieldwrap {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .restrictedExamWarningPopup {
+    .modalFooter {
+      .button {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

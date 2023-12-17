@@ -1,0 +1,141 @@
+[
+  {
+    "menuName": "Home",
+    "menuLink": "/dashboard",
+    "menuTag": "button",
+    "Icon": "home"
+  },
+  {
+    "menuName": "Website Management",
+    "menuLink": "/",
+    "Icon": "ManageWebsite",
+    "subMenuItem": [
+      {
+        "menuName": "Pages",
+        "menuLink": "/",
+        "subMenuItem": [
+          {
+            "menuName": "Business Info",
+            "menuLink": "/ecommerce/businessInfo"
+          },
+          {
+            "menuName": "Edit Overview",
+            "menuLink": "/ecommerce/business-info-manage"
+          },
+          {
+            "menuName": "FAQs",
+            "menuLink": "/manage-faqs"
+          },
+          {
+            "menuName": "Social Links",
+            "menuLink": "/add-social-links"
+          },
+          {
+            "menuName": "Support Center",
+            "menuLink": "/admin-support-center"
+          },
+          {
+            "menuName": "Inquiries Recieved",
+            "menuLink": "/contact-list"
+          }
+        ]
+      },
+      {
+        "menuName": "SEO Meta",
+        "menuLink": "/seo-metatag"
+      }
+    ]
+  },
+  {
+    "menuName": "Products",
+    "menuLink": "/",
+    "Icon": "product",
+    "subMenuItem": [
+      {
+        "menuName": "Products List",
+        "menuLink": "/ecommerce/productList"
+      },
+      {
+        "menuName": "Category",
+        "menuLink": "/ecommerce/create-category"
+      },
+      {
+        "menuName": "Collections",
+        "menuLink": "/ecommerce/allCollection"
+      },
+      {
+        "menuName": "Inventory",
+        "menuLink": "/ecommerce/inventory"
+      }
+    ]
+  },
+  {
+    "menuName": "Order",
+    "menuLink": "/",
+    "Icon": "order",
+    "subMenuItem": [
+      {
+        "menuName": "Order List",
+        "menuLink": "/ecommerce/orderList/:id/OrderList/"
+      }
+    ]
+  },
+  {
+    "menuName": "Payments",
+    "menuLink": "/ecommerce/payments/default/id",
+    "menuTag": "button",
+    "Icon": "payment"
+  },
+  {
+    "menuName": "Shipping",
+    "menuLink": "/ecommerce/shipping",
+    "menuTag": "button",
+    "Icon": "shipping"
+  },
+  {
+    "menuName": "Customers",
+    "menuLink": "/ecommerce/customerList",
+    "menuTag": "button",
+    "Icon": "customer"
+  },
+  {
+    "menuName": "Marketing",
+    "menuLink": "/marketing",
+    "Icon": "ERP",
+    "subMenuItem": [
+      {
+        "menuName": "SEO",
+        "menuLink": "/google-marketing"
+      },
+      {
+        "menuName": "Email Marketing",
+        "menuLink": "/email-marketing"
+      },
+      {
+        "menuName": "Digital Marketing",
+        "menuLink": "/digital-marketing"
+      },
+      {
+        "menuName": "Logos ",
+        "menuLink": "/logo-marketing"
+      },
+      {
+        "menuName": "Business Cards ",
+        "menuLink": "/business-card-marketing"
+      }
+    ]
+  },
+  {
+    "featureId": "63187f0bed42kunu79826673",
+    "menuName": "Review & Rating",
+    "menuLink": "/ecommerce/review&rating",
+    "menuTag": "button",
+    "Icon": "review"
+  },
+  {
+    "menuName": "Settings",
+    "menuLink": "/ecommerce/settings",
+    "menuTag": "button",
+    "Icon": "settings"
+  }
+]

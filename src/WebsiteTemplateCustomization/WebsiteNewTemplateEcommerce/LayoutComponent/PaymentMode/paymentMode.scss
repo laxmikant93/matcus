@@ -1,0 +1,98 @@
+@import '../../CommonComponent/commonCss/base.scss';
+.ecom-layout {
+.payment-container {
+  display: grid;
+  grid-template-columns: 1.5fr auto 1fr;
+  grid-column-gap: 14px;
+  column-gap: 14px;
+  grid-row-gap: 20px;
+  row-gap: 20px;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  @media(max-width:768px) {
+    grid-template-columns: 1fr;
+  }
+
+
+  .paymentMode-wrapper {
+    width: 100%;
+    position: relative;
+
+    .paymentMode-text {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2em;
+      color: $primary;
+    }
+
+    .payment-div {
+      margin-top: 48px;
+
+
+      .payment-rozarPay {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        width: 100%;
+
+        .rozarpay-radio {
+          .change-address-radio {
+            width: 20px;
+            height: 24px;
+          }
+        }
+
+        .paymentMode-container {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 16px;
+          border-radius: 8px;
+          padding: 16px 21px;
+          border: 1px solid rgba($black, 0.2);
+          width: 100%;
+          cursor: pointer;
+          .payment-container-img {
+            img {
+              max-width: 100%;
+            }
+
+            .imgFilter {
+              filter: grayscale(1);
+            }
+          }
+
+          .paymentMode-container-text-div {
+            .paymentMode-container-text {
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 1.4em;
+            }
+          }
+        }
+      }
+    }
+
+    .info-text {
+      padding-left: 35px;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.2em;
+      margin-top: 8px;
+    }
+  }
+
+  .vLine {
+    height: 95%;
+    width: 1px;
+    background-color: rgba(32, 32, 32, 0.1);
+    margin: auto 20px;
+  }
+}
+
+[aria-disabled="true"] {
+  opacity: 0.4;
+}
+}

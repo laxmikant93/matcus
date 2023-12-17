@@ -1,0 +1,135 @@
+@import"../../../CommonComponent/commonCss/base.scss";
+
+.guest-login-stepper-wrapper {
+  width: 100%;
+  margin-top: 10px;
+
+
+  .stepper-div {
+    width: 100%;
+    height: 1px;
+    background: rgba(32, 32, 32, 0.3);
+    // position: absolute;
+    // bottom: 83%;
+    margin-bottom: -10px;
+
+
+    @media (max-width:500px) {
+      width: 1px !important;
+      height: 100px;
+      margin-bottom: -15px;
+      margin-left: 10px;
+    }
+  }
+
+  .stepper-info-item {
+    // position: relative;
+
+    @media (max-width:500px) {
+      flex-direction: column;
+      gap: 16px;
+      margin-top: -103px;
+    }
+
+    .stepper-count-div {
+      text-align: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      color: $white;
+      border-radius: 50%;
+      font-size: 15px;
+      font-weight: 600;
+      padding-top: 2px;
+
+    }
+
+    .pending-div {
+      background: rgba(32, 32, 32, 0.3);
+    }
+
+    .reach-info {
+      color: #093351;
+    }
+
+    .reach-div {
+      background: #093351;
+    }
+
+    // .pending-info {
+    //   @media (max-width:425px) {
+    //     font-size: 12px;
+    //   }
+    // }
+
+    .payment-div {
+      gap: 6px;
+      background: $white;
+      padding: 0 6px;
+
+      @media (max-width:500px) {
+        padding: 0;
+      }
+    }
+
+    .shipping-address-div {
+      gap: 6px;
+      background: $white;
+      padding: 0 6px;
+
+      @media (max-width:500px) {
+        padding: 0;
+      }
+
+      .success-div {
+        background: $secondary;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        position: relative;
+
+
+        .icon-tick {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-mask: url("../../../assets/icons/tickright.svg") no-repeat center;
+          mask-image: url("../../../assets/icons/tickright.svg") no-repeat center;
+        }
+
+      }
+
+    }
+
+    .cart-div {
+      gap: 6px;
+      background: $white !important;
+      padding: 0 6px;
+
+      @media (max-width:500px) {
+        padding: 0;
+      }
+
+      .success-div {
+        background: $secondary;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        position: relative;
+
+
+        .icon-tick {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-mask: url("../../../assets/icons/tickright.svg") no-repeat center;
+          mask-image: url("../../../assets/icons/tickright.svg") no-repeat center;
+        }
+
+      }
+
+    }
+  }
+}

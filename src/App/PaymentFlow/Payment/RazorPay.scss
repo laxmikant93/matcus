@@ -1,0 +1,21 @@
+@import "../../../assets/Style/base";
+
+/***Payment Razor Pay***/
+.PaymentRazorCommonWrapper {
+  margin-top: 10rem;
+
+  .PaymentRazorCommonCst {
+    width: 700px;
+  }
+  .PaymentInvoiceRazor {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .RazorPayNowBtn {
+    .button {
+      width: 250px;
+    }
+  }
+}
+/***Close Payment Razor Pay***/

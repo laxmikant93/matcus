@@ -1,0 +1,108 @@
+@import "../../../../../../src/assets/Style/base";
+
+.accept-order-container {
+  padding: 0 !important;
+
+  .accept-order-table-container {
+    padding-top: 0 !important;
+
+    .gridHeader {
+      background: rgba($base, 0.03);
+      color: rgba($base, 0.4);
+      .cheqbox-item {
+        text-align: center;
+
+        @media (max-width: 992px) {
+          text-align: left;
+        }
+
+        label {
+          .eComm-checkbox {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .gridBody {
+      .gridRow {
+        background-color: $white;
+        cursor: pointer;
+        border: 2px solid rgba($base, 0.1);
+        border-radius: 0;
+        .topInfo {
+          .cheqbox-item {
+            text-align: center;
+
+            @media (max-width: 992px) {
+              text-align: left;
+            }
+
+            label {
+              .eComm-checkbox {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          background-color: rgba($primary, 0.03);
+        }
+      }
+
+      .accept-ordertable-image-wrapper {
+        .userDetails {
+          gap: 30px;
+
+          .product-image-wraper-div {
+            border-radius: 8px;
+            width: 72px;
+            height: 72px;
+            object-fit: cover;
+            border: 1px solid rgba(32, 32, 32, 0.15);
+            padding: 3px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+
+      .order-quantity-wrapper {
+        align-items: center;
+        width: 69px;
+        height: 28px;
+        border: 1px solid rgba($base, 0.2);
+        border-radius: 4px;
+        padding: 4px 8px 3px 8px;
+
+        .order-quantity-number {
+          color: #093351;
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.accept-order-footer-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  //  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60.69%, rgba(0, 0, 0, 0.21) 115.32%);
+  padding: 25px 36px 24px 36px;
+
+  @media (max-width: 550px) {
+    padding: 10px;
+  }
+
+  .accept-order-footer-item {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+}

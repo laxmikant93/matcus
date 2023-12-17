@@ -1,0 +1,14 @@
+@import '../../../Dashboard//EcommerceDashboard/_commonEcommerce.scss';
+
+.ecom-container {
+  width: 100%;
+  box-shadow: 1px 0px 8px rgba($base, 0.05);
+  border-radius: 12px;
+  background-color: $white;
+  position: relative;
+  height: auto;
+}
+
+.bgColor {
+  background-color: rgba($primary, 0.02);
+}

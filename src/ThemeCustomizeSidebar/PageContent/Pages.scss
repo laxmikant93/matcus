@@ -1,0 +1,89 @@
+@import "../../assets/Style/base";
+
+.dropList-wrapper {
+  padding: 12px 5px;
+  border-top: 1px solid $white;
+  margin: 0 5px;
+  .droplist_item {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $base;
+    background-color: $white;
+    border-radius: 4px;
+    .wrap {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      line-height: 1px;
+    }
+    button {
+      background: transparent;
+      border: none;
+    }
+    .disable {
+      color: rgba($base, 0.4);
+      .icon-gallery,
+      .icon-eye,
+      .icon-hiddenEye,
+      .icon-theedot {
+        background-color: rgba($base, 0.4);
+      }
+    }
+    .icon-gallery,
+    .icon-eye,
+    .icon-hiddenEye,
+    .icon-theedot {
+      height: 14px;
+      width: 14px;
+      cursor: pointer;
+      display: block;
+      background-color: $base;
+      -webkit-mask: url("../sidebar-icon/icon-theedots.svg") no-repeat center;
+      mask-image: url("../sidebar-icon/icon-theedots.svg") no-repeat center;
+    }
+    .icon-gallery {
+      -webkit-mask: url("../sidebar-icon/icon-gallery.svg") no-repeat center;
+      mask-image: url("../sidebar-icon/icon-gallery.svg") no-repeat center;
+    }
+    .icon-eye {
+      -webkit-mask: url("../sidebar-icon/icon-eye.svg") no-repeat center;
+      mask-image: url("../sidebar-icon/icon-eye.svg") no-repeat center;
+    }
+    .icon-hiddenEye {
+      -webkit-mask: url("../sidebar-icon/icon-hiddenEye.svg") no-repeat center;
+      mask-image: url("../sidebar-icon/icon-hiddenEye.svg") no-repeat center;
+    }
+  }
+
+  .listDisable {
+    background-color: #D2D2D2;
+  }
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      span {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        color: $base;
+      }
+    }
+  }
+  .hr-line {
+    color: #fff;
+    background-color: #fff;
+    border-top: 1px solid #ffff;
+    margin: 14px 0;
+  }
+}

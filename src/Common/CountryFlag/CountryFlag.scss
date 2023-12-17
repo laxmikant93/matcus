@@ -1,0 +1,142 @@
+.flag-dropdown-wrapper {
+  position: relative;
+
+  .flag {
+    margin-right: 8px;
+  }
+
+  button {
+    border: 1px solid rgba(32, 32, 32, 0.6);
+    border-radius: 4px;
+    padding: 8px 32px 8px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #797979;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+
+    .button-content {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    &:hover {
+      border-color: #0184FF;
+      color: #0184FF;
+
+      &.caret-stroke {
+        &::after {
+          border-color: #0184FF;
+        }
+      }
+    }
+
+    &.caret-stroke {
+      &::after {
+        width: 8px;
+        height: 8px;
+        border-bottom: 2px solid #797979;
+        border-right: 2px solid #797979;
+        left: auto;
+        right: 16px;
+        position: absolute;
+        top: 12px;
+        transform: rotate(45deg);
+        transition-duration: 700ms;
+      }
+    }
+
+
+
+    &.active {
+      border-color: #0184FF;
+      color: #0184FF;
+
+      &.caret-stroke {
+        &::after {
+          border-color: #0184FF;
+          transform: rotate(-135deg);
+          top: 16px;
+        }
+      }
+    }
+  }
+
+  .data-list {
+    background: #FFFFFF;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+    transition-duration: 500ms;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      z-index: 99;
+    }
+
+    .data-list-item {
+      padding: 8px 16px;
+      cursor: pointer;
+      transition-duration: 500ms;
+
+      .dt-item-content {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        span {
+          margin-right: 8px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      &:hover {
+        background: #CCE6FF;
+
+        .country-name,
+        .country-code,
+        .currency-name,
+        .currency-symbol {
+          color: #202020;
+        }
+      }
+
+
+    }
+
+
+  }
+
+  .country-name,
+  .country-code,
+  .currency-name,
+  .currency-symbol {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #797979;
+  }
+
+  .currency-symbol {
+    font-weight: 700;
+  }
+
+}

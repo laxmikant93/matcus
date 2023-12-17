@@ -1,0 +1,46 @@
+    [
+        {
+            "menuName": "Home",
+            "menuLink": "/"
+        },
+        {
+            "menuName": "About",
+            "menuLink": "/aboutus"
+        },
+        {
+            "menuName": "Our Team",
+            "menuLink": "/faculty"
+        },
+        {
+            "menuName": "Admissions",
+            "menuLink": "/admission"
+        },
+        {
+            "menuName": "Fee structures",
+            "menuLink": "/feestructure"
+        },
+        {
+            "menuName": "School Facilities",
+            "menuLink": "/facility"
+        },
+        {
+            "menuName": "Announcements",
+            "menuLink": "/announcements"
+        },
+        {
+            "menuName": "Gallery",
+            "menuLink": "/gallery"
+        },
+        {
+            "menuName": "FAQ",
+            "menuLink": "/faqs"
+        },
+        {
+            "menuName": "Vacancy",
+            "menuLink": "/vacancy"
+        },
+        {
+            "menuName": "Contact",
+            "menuLink": "/contactus"
+        }
+    ]

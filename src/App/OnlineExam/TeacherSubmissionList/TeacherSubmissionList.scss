@@ -1,0 +1,167 @@
+@import "../../../assets/Style/base";
+.profileImgWrap {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba($mgray, 0.25);
+  padding: 2px;
+  background: $white;
+  box-shadow: 0 0 10px rgba($base, 0.125);
+  img {
+    max-width: 98%;
+    object-fit: cover;
+    background-color: $mgray;
+    border-radius: 50%;
+  }
+}
+.attached-assignment {
+  .attachment {
+    width: 50%;
+    span {
+      &:last-child {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+.TableBottomBtn {
+  display: flex;
+  align-items: center;
+  &.justify-between {
+    justify-content: space-between;
+  }
+  &.justify-start {
+    justify-content: space-between;
+  }
+}
+.refreshBtn {
+  background-color: $white;
+  border: 1px solid $lgray;
+  border-radius: 3px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ViewClassroomTabListNew {
+  display: flex;
+  align-items: center;
+  top: 9%;
+  position: sticky;
+  // background-color: #fff;
+}
+
+// add Class from Public
+.terminateInfoIcon {
+  position: relative;
+  .terminatedInfoIconposi {
+    position: absolute;
+    top: 0px;
+  }
+}
+.DetailonlinetextWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.button-transparent {
+  background-color: transparent;
+  text-decoration: underline;
+}
+.popup {
+  &.active {
+    &.terminatedPopuponline {
+      padding: 20px 20px 20px 20px;
+      text-align: left;
+      left: 0px;
+    }
+  }
+  &.inactive {
+    &.terminatedPopuponline {
+      padding: 20px 20px 20px 20px;
+      text-align: left;
+      left: 0px;
+    }
+  }
+}
+.closepopupbutton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.clampline2online {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.windowSwitchdropdown {
+  width: 100px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px #b8b8b870;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+.windowswitchWrappermain {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  .windowSwitchdropdownwrapper {
+    position: relative;
+    .BtnCaret {
+      &::after {
+        border-left: 2px solid $base;
+        border-top: 2px solid $base;
+        color: $base;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .PageTopHead {
+    &.PTH-TeacherOnlineExamList-2 {
+      &.PTH-CustomeResponsive {
+        grid-template-columns: 1fr 1fr auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .PageTopHead {
+    &.PTH-TeacherOnlineExamList-2 {
+      &.PTH-CustomeResponsive {
+        grid-template-columns: 1fr auto auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .TableBottomBtn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .attached-assignment {
+    .attachment {
+      width: 100%;
+    }
+  }
+  .DetailonlinetextWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    .PTH-Item {
+      text-align: left;
+      &:nth-child(2) {
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// common color 
+$primary: #093351;
+$secondary: #23A573;
+$white: #fff;
+
+.container-fluid {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4em;
+  word-wrap: break-word;
+
+}

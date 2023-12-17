@@ -1,0 +1,17 @@
+{
+    "development":{
+        "pageadmin":"5efd56cd7f6723f520c3c924",
+        "teacher": "5efd56cd7f6723f520c3c925",
+        "student": "5efd56cd7f6723f520c3c926"
+    },
+    "production":{
+        "pageadmin":"5efd3320be16b16e6b061b49",
+        "teacher": "5f095b21a9f3904208aab435",
+        "student": "5f095b21a9f3904208aab436"
+    },
+    "productiondev":{
+        "pageadmin":"5efd3320be16b16e6b061b49",
+        "teacher": "5efd333cbe16b16e6b061b4a",
+        "student": "5efd3350be16b16e6b061b4b"
+    }
+}

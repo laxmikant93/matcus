@@ -1,0 +1,8 @@
+.selectDropDown-container {
+position: relative;
+[aria-disabled="true"] {
+  opacity: 0.2;
+  pointer-events: none;
+
+}
+}

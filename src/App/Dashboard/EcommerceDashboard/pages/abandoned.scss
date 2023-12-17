@@ -1,0 +1,33 @@
+@import "../_commonEcommerce";
+
+.abandonedPage-container {
+  width: 85%;
+
+  .abandonedpgae-content-wrap {
+    .abandonedpgae-content-div {
+      .abandonedpgae-cart {
+        background-color: $white;
+        border-radius: 12px;
+        padding: 10px 70px 10px 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        width: 100%;
+        position: relative;
+
+        .abandonedpgae-image {
+          width: 120px;
+          height: 72px;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../CommonComponent/commonCss/base.scss";
+.ecom-layout {
+  .return-section {
+    min-height: 50vh;
+  }
+
+  .return-heading {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: $primary;
+    margin-bottom: 36px;
+  }
+
+  .text-underline {
+    text-decoration: underline;
+    padding-top: 2px;
+  }
+
+  .return-para {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    color: $black;
+    margin-top: 16px;
+  }
+
+  .return-policy-wrapper {
+    // margin-top: 36px;
+    // .return-heading {
+    //   font-weight: 800;
+    //   font-size: 20px;
+    //   line-height: 27px;
+    //   color: #093351;
+    //   margin-bottom: 16px;
+    // }
+  }
+
+  .retun-ul-wrapper {
+    // margin-top: 36px;
+
+    ul {
+      padding-left: 12px;
+
+      li {
+        @extend .return-para;
+        margin-top: 0;
+        // list-style-type: disc;
+        position: relative;
+        padding-left: 5px;
+
+        &:before {
+          display: inline-block;
+          content: "\2022";
+          background-color: $black;
+          position: absolute;
+          left: -20px;
+          font-size: 24px;
+          font-weight: 600;
+        }
+
+        &:not(:first-child) {
+          padding-top: 12px;
+        }
+      }
+    }
+  }
+}

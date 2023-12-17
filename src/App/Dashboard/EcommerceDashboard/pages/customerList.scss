@@ -1,0 +1,50 @@
+.customer-list-view-order-p {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.customer-tr-List {
+
+  th:nth-child(1) {
+    min-width: 48px !important;
+  }
+
+  th:last-child {
+    min-width: 90px !important;
+  }
+
+  th {
+    min-width: 180px !important;
+    max-width: 180px;
+  }
+}
+
+.coustmerlist-table-body {
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  height: auto !important;
+}
+
+.customer-list-wrapper {
+
+  .cusotmer-image-wrapper-div {
+    width: 58px !important;
+    height: 58px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50% !important;
+    }
+  }
+}
+
+.hideMinheight {
+  height: auto !important;
+  min-height: auto !important;
+}

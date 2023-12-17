@@ -1,0 +1,52 @@
+@import "../../assets/Style/base";
+
+.SiteUnderMaintenanceWrapper {
+  padding-top: 50px;
+  height: 100vh;
+  p {
+    line-height: 1;
+    &.underline {
+      &::after {
+        height: 4px;
+        bottom: 4px;
+        background-color: $bsPink;
+      }
+    }
+  }
+}
+.UnderMaintenanceBannerImage {
+  img {
+    position: fixed;
+    right: -140px;
+    left: auto;
+    bottom: -146px;
+    height: auto;
+    width: 70vw;
+  }
+}
+.UnderMaintenanceBottomArt {
+  img {
+    position: fixed;
+    right: auto;
+    left: 135px;
+    bottom: -40px;
+    height: auto;
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .UnderMaintenanceBannerImage {
+    img {
+      right: -70px;
+      bottom: -60px;
+      width: 90vw;
+    }
+  }
+  .UnderMaintenanceBottomArt {
+    img {
+      left: 25px;
+      bottom: -22px;
+      width: 28vw;
+    }
+  }
+}

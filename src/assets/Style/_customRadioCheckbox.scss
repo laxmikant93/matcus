@@ -1,0 +1,93 @@
+@import "./theme";
+@import "./typo";
+
+* {
+  accent-color: #146efa;
+}
+.input-custom-type {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  &.inline {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    label {
+      padding-right: 10px;
+    }
+  }
+  label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    gap: 5px;
+    line-height: 1;
+    @extend .text-xs;
+    .lable-text {
+      white-space: pre;
+    }
+    input[type="radio"] {
+      height: 20px;
+      width: 20px;
+    }
+    input[type="checkbox"] {
+      height: 20px;
+      width: 20px;
+    }
+    &.active {
+      color: $primary;
+    }
+    &.s-active {
+      color: $purple;
+      input[type="radio"] {
+        accent-color: $purple;
+      }
+      input[type="checkbox"] {
+        accent-color: $purple;
+      }
+    }
+    &.t-active {
+      color: $secondary;
+      input[type="radio"] {
+        accent-color: $secondary;
+      }
+      input[type="checkbox"] {
+        accent-color: $secondary;
+      }
+    }
+    &.large {
+      @extend .text-sm;
+      input[type="radio"] {
+        height: 24px;
+        width: 24px;
+      }
+      input[type="checkbox"] {
+        height: 24px;
+        width: 24px;
+      }
+    }
+    &.small {
+      @extend .text-xxs;
+      input[type="radio"] {
+        height: 16px;
+        width: 16px;
+      }
+      input[type="checkbox"] {
+        height: 16px;
+        width: 16px;
+      }
+    }
+    &.xsmall {
+      @extend .text-xxs;
+      input[type="radio"] {
+        height: 14px;
+        width: 14px;
+      }
+      input[type="checkbox"] {
+        height: 14px;
+        width: 14px;
+      }
+    }
+  }
+}

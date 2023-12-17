@@ -1,0 +1,40 @@
+@import '../../../../../assets/Style/base';
+
+.circleButton-container {
+  position: relative;
+
+  .circle-div {
+    background-color: rgba($primary, 0.1);
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 50%;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+
+  .icon-rightIcon {
+    -webkit-mask: url(../../asserts/icons/rightIcon.svg) no-repeat center;
+    mask: url(../../asserts/icons/rightIcon.svg) no-repeat center;
+  }
+
+  .position-right {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  .position-left {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .position-top {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  .position-down {
+    transform: translate(-50%, -50%) rotate(270deg);
+  }
+}

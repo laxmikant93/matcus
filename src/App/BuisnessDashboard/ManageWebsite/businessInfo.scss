@@ -1,0 +1,25 @@
+@import "../../../assets/Style/base";
+
+.institute-wrapper {
+  padding: 20px;
+  background: $white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.formFieldwrap {
+  .cstmPhoneInput {
+    .form-group {
+      &.react-tel-input {
+        .flag-dropdown {
+          .country-list {
+            .search {
+              z-index: 10;
+            }
+          }
+        }
+      }
+    }
+  }
+}

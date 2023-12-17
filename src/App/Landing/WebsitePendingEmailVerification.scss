@@ -1,0 +1,16 @@
+@import "../../assets/Style/base";
+
+.PendingEmailVerifyItem {
+  h1 {
+    font-size: 44px;
+    @extend .w-600;
+    color: $primary;
+  }
+}
+.PendingEmailVerifyWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  margin-top: 8rem;
+  gap: 30px;
+}

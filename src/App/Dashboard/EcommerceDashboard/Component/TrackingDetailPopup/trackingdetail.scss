@@ -1,0 +1,85 @@
+@import '../../commonEcommerce';
+
+.main-tarcking-container {
+  .track-heading {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .shipping-track-wrapper {
+    gap: 20px;
+    align-items: center;
+    margin-top: 12px;
+
+    @media (max-width:550px) {
+      flex-direction: column;
+    }
+
+    .track-star {
+      color: #FF0000;
+      font-size: 16px;
+    }
+
+    .shipping-track-left-item {
+      width: 50%;
+
+      @media (max-width:550px) {
+        width: 100%;
+      }
+
+      .addProduct-align-div {
+        width: 100%;
+        align-items: center;
+        border-color: rgba(1, 132, 255, 0.2) !important;
+        padding: 11px 0 11px 16px;
+        border-radius: 4px;
+        margin-top: 8px;
+
+
+
+        // select {
+        //   padding-top: 0;
+        //   font-size: 12px;
+        //   padding: 11px 0 11px 16px;
+        // }
+
+
+      }
+
+    }
+
+    .shipping-track-right-item {
+      width: 50%;
+
+      @media (max-width:550px) {
+        width: 100%;
+      }
+
+      .track-id-item {
+        border: 1px solid rgba(1, 132, 255, 0.2);
+        padding: 12px 0 12px 16px;
+        width: 100%;
+        color: black;
+        border-radius: 4px;
+        font-size: 12px;
+        margin: auto;
+
+        @media (max-width:570px) {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: black;
+    }
+  }
+
+  .done-btn-wrap {
+    text-align: end;
+  }
+}

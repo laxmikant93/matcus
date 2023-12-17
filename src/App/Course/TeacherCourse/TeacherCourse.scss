@@ -1,0 +1,219 @@
+@import "../../../assets/Style/base";
+.PageTopHead {
+  &.PTH-T-Course {
+    grid-template-columns: auto auto auto auto 1fr;
+  }
+}
+.scroll-nav-tab-wrapper {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+  .groupFilterBtn {
+    &.scroll-nav-tab {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: sticky;
+      li {
+        text-align: center;
+        border: 1px solid $base;
+        @extend .text-xxs;
+        border-radius: 3px;
+        padding: 10px;
+        color: $base;
+        @extend .w-600;
+        cursor: pointer;
+        white-space: nowrap;
+        &:hover {
+          background-color: $base;
+          color: $white;
+        }
+        &.active {
+          background-color: $base;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.refreshBtn {
+  background-color: $white;
+  border: 1px solid $lgray;
+  border-radius: 3px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CourseListItemWrap {
+  margin: 15px 0;
+  .CourseListItem {
+    border-radius: 4px;
+    border: 1px solid rgba($lgray, 0.5);
+    margin-bottom: 10px;
+    padding: 25px 15px;
+    background-color: rgba($silver, 0.5);
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    align-items: flex-start;
+    &:hover {
+      background-color: rgba($lgray, 0.1);
+      border: 1px solid rgba($lgray, 0.2);
+      .grp-hover {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .CourseListMediaItem {
+      width: 225px;
+      height: 112px;
+      .banner-image {
+        width: 100%;
+        border-radius: 5px;
+        height: 100%;
+        object-fit: cover;
+      }
+      .banner-video {
+        width: 100%;
+        border-radius: 5px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .detailAttr {
+      display: flex;
+      align-items: center;
+      grid-gap: 50px;
+      gap: 50px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.CourseListActionItem {
+  display: flex;
+  height: 100%;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  button {
+    padding: 10px;
+    line-height: 1px;
+  }
+  .grp-hover {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba($lgray, 0.5);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+  }
+}
+
+.buttonRoleLevel {
+  padding: 1px 10px;
+  background-color: $secondary;
+  color: $white;
+  @extend .text-2xs;
+  @extend .w-500;
+  margin-bottom: 3px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 992px) {
+  .scroll-nav-tab-wrapper {
+    display: flex;
+  }
+  .PageTopHead {
+    &.PTH-T-Course {
+      grid-template-columns: 1fr 1fr 1fr;
+      .PTH-Item {
+        &:nth-child(5) {
+          grid-column: 1/4;
+          grid-row: 1/4;
+        }
+        &:last-child {
+          grid-column: 2/4;
+        }
+      }
+    }
+  }
+  .CourseListItemWrap {
+    .CourseListItem {
+      grid-template-columns: 1fr;
+      .detailAttr {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .CourseListMediaItem {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  }
+  .CourseListActionItem {
+    justify-content: center;
+    margin-top: 20px;
+    .grp-hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .PageTopHead {
+    &.PTH-T-Course {
+      grid-template-columns: 1fr 1fr;
+      .PTH-Item {
+        &:nth-child(5) {
+          grid-column: 1;
+          grid-row: 1;
+        }
+        &:last-child {
+          grid-column: 1;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .PageTopHead {
+    &.PTH-T-Course {
+      grid-template-columns: 1fr;
+    }
+    .PTH-Item {
+      &:nth-child(5) {
+        grid-row: 1/3;
+      }
+    }
+  }
+  .CourseListActionItem {
+    justify-content: center;
+    margin-top: 20px;
+    .grp-hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

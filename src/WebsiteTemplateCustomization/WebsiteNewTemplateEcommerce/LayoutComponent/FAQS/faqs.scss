@@ -1,0 +1,21 @@
+@import "../../CommonComponent/commonCss/base.scss";
+.ecom-layout {
+  .faq-section-wrapper {
+    min-height: 20vh;
+  }
+
+  .faq-ul-wrapper {
+    .faq-li {
+      font-size: 24px;
+      font-weight: 500;
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6em;
+        padding-top: 4px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

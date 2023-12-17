@@ -1,0 +1,132 @@
+@import '../../../../assets/Style/base';
+
+.websiteSetting-container {
+
+
+  .btn-check {
+    background-color: transparent;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .websiteSetting-wrapper {
+    .websiteSetting-topdiv {
+      .heading-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+
+        .website-Setting-heading {
+          @media (max-width:425px) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .websiteSetting-lowerDiv {
+      margin-top: 36px;
+
+      .website-name {
+        position: relative;
+        padding-bottom: 3px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          width: 48px;
+          height: 1px;
+          background-color: rgba($base, 0.2);
+          margin-top: 5px;
+        }
+      }
+
+      .lowerSection-nameSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 44px;
+
+        @media (max-width:680px) {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+
+        .nameSection-leftSidebar {
+          .siteName-wrapper {
+            padding: 24px;
+
+            .siteNameDone-wrapper {
+              display: grid;
+              grid-template-columns: 7fr 1fr;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px;
+              margin-top: 16px;
+
+              .input-wrapper {
+                // display: flex;
+                // align-items: center;
+                // gap: 16px;
+                // margin-top: 16px;
+                // display: grid;
+                // grid-template-columns: 2fr 44px;
+                // justify-content: space-between;
+                width: 100%;
+
+                .formFieldwrap {
+                  padding-bottom: 0;
+                }
+              }
+
+              .edit-text-wrap {
+                // width: 15%;
+              }
+            }
+
+            .siteName-edit-wrapper {
+              display: grid;
+              grid-template-columns: 7fr 1fr;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px;
+              margin-top: 16px;
+
+              .edit-input-wrapper {
+                width: 100%;
+
+                .formFieldwrap {
+                  padding-bottom: 0;
+                }
+              }
+
+              .edit-text-wrap {
+                // width: 15%;
+              }
+            }
+          }
+        }
+
+        .nameSection-rightSidebar {
+          .site-wrapper-right {
+            padding: 24px;
+            padding-left: 0;
+
+
+          }
+        }
+      }
+
+      .uploadIocn-div {
+        margin-top: 36px;
+      }
+
+      .websiteMeta-title {
+        margin-top: 36px;
+      }
+    }
+  }
+}

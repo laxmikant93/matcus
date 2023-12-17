@@ -1,0 +1,76 @@
+@import '../../CommonComponent/commonCss/base.scss';
+
+.ecom-layout {
+  .orderConfirm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 45px;
+
+
+
+    .order-heading {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2em;
+    }
+
+    .color-primary {
+      color: $primary;
+    }
+
+    .color-red {
+      color: $red;
+    }
+
+    .order-confirm-status {
+      text-align: center;
+
+      .status-div {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+
+        @media(max-width:768px) {
+          width: 300px;
+          height: 300px;
+        }
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+
+
+
+    .order-confirm-lower-div {
+      text-align: center;
+
+      .view-btn-div {
+        .view-btn {
+          margin-top: 8px;
+          background: transparent;
+          border: none;
+          text-decoration: underline;
+          color: $primary;
+
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-family: 500;
+        color: $primary;
+        line-height: 1.4em;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

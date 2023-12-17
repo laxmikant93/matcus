@@ -1,0 +1,200 @@
+@import "../../../assets/Style/base";
+
+/*** Domain Cart ***/
+.DomainCartWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.domainTopInfo {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+.buttonCartWrapOnPD {
+  display: inline-flex;
+  max-width: 446px;
+}
+.CartTopCustom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 0;
+
+  .suggestDomainNameList {
+    border: 1px solid rgba($base, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+    // border-bottom: 1px solid rgba($mgray, 0.5);
+  }
+}
+
+.EditcartDomainName,
+.SearchcartDomainName {
+  width: 100%;
+
+  .form-group {
+    margin-bottom: 10px;
+
+    input[type="text"] {
+      text-align: center;
+    }
+
+    ::-webkit-input-placeholder {
+      color: $base;
+      font-weight: 600;
+      @extend .text-xs;
+      text-transform: none !important;
+      text-align: center;
+    }
+  }
+}
+.EditcartDomainName {
+  margin-top: 74px;
+}
+.ecdnTxtWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  flex-direction: column;
+}
+.CartDiscountandPriceSection {
+  border: 1px solid $lgray;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  .CartPriceSection {
+    border-right: 1px solid $lgray;
+    padding: 24px 20px;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+  }
+}
+
+.CartCheckoutSectionwrapper {
+  padding: 24px 20px;
+
+  .CartDiscountSection {
+    position: relative;
+    border: 1px dashed $base;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    .scissorIcon {
+      position: absolute;
+      top: -22px;
+      left: -16px;
+      @extend .text-md;
+      transform: rotate(15deg);
+    }
+  }
+}
+
+.cartConditionAnchor {
+  a {
+    text-decoration: underline;
+    @extend .text-2xs;
+  }
+}
+
+.CartDomainFeatureHead {
+  border-bottom: 1px solid rgba($base, 0.1);
+  text-align: start;
+  color: $base;
+  font-weight: 700;
+  padding: 0 0 8px 0;
+  margin-bottom: 30px;
+}
+
+.CartDomainFeatureList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 35px;
+  column-gap: 60px;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .CartDomainFeatureListHead {
+      h5 {
+        @extend .w-600;
+        @extend .text-xs;
+        color: $primary;
+        cursor: pointer;
+        line-height: 20px;
+        margin: 5px 0;
+        color: $base;
+        text-align: left;
+        display: inline-flex;
+        position: relative;
+        border-bottom: 1px solid rgba($base, 0.8);
+      }
+    }
+
+    .CartDomainFeatureListAnswerDisp {
+      @extend .text-xxs;
+      line-height: 21px;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+}
+.cartFeatureWrap {
+  margin-top: 30px;
+  border-radius: 10px;
+}
+/*** Close Domain Cart ***/
+
+@media only screen and (max-width: 480px) {
+  .domainPriceRgt {
+    margin-top: 0;
+  }
+  .cartRowWrap {
+    gap: 0;
+  }
+  .CartDiscountandPriceSection .CartPriceSection,
+  .CartCheckoutSectionwrapper {
+    padding: 10px 20px;
+  }
+  .domainTopInfo {
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /*** Domain Cart ***/
+  .DomainCartWrapper {
+    .DomainCartCustom {
+      width: 100%;
+    }
+  }
+  .CartTopCustom {
+    padding: 0;
+  }
+  .CartDiscountandPriceSection {
+    grid-template-columns: 1fr;
+    .CartPriceSection {
+      border-right: none;
+      justify-content: center;
+      padding-bottom: 0;
+    }
+  }
+  /*** close Domain Cart ***/
+}

@@ -1,0 +1,214 @@
+@import "../../assets/Style/base";
+
+// Domain Selection
+.registerDomainSelWrap {
+  width: 70%;
+}
+
+.registerDomainSel {
+  .input-custom-type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    label {
+      align-items: flex-start;
+    }
+  }
+}
+
+.PrivateAndSubDomainCst {
+  border: 1px solid $lgray;
+  background-color: $white;
+  border-radius: 5px;
+
+  .PrivateAndSubDomainItem {
+    position: relative;
+    // display: grid;
+    // grid-template-columns: 1fr auto;
+    // gap: 0 10px;
+    // align-items: center;
+    // justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid $lgray;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.SubdomainSuggestion {
+  padding: 20px;
+  border-top: 1px solid $lgray;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 10px;
+  align-items: center;
+  position: relative;
+  &:first-child {
+    border-top: none;
+    &::before {
+      display: none;
+    }
+  }
+  &::before {
+    content: "\002B";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid $lgray;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    background-color: $white;
+    @extend .text-sm;
+    @extend .w-300;
+    color: $mgray;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .errorInputMsg {
+    position: relative;
+  }
+}
+
+.suggestDomainNameList {
+  margin-top: 5px;
+  width: 100%;
+
+  .input-custom-type {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px 30px;
+    margin: 10px 0;
+    max-height: 118px;
+    overflow-x: hidden;
+    overflow: auto;
+  }
+}
+.PrivateAndSubDomainRightCnt {
+  .suggestDomainNameList {
+    padding-left: 15px;
+  }
+}
+
+.aniWrapFlow {
+  position: relative;
+  top: -20px;
+  grid-row: 2 / 3;
+  .domainPriceRgt {
+    margin-top: 0;
+  }
+}
+.cartRowWrap {
+  display: grid;
+  gap: 15px;
+  &.col3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  &.col4 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .react-tel-input .form-control {
+    width: 100%;
+    height: 44px;
+  }
+}
+.domainPriceRgt {
+  margin-top: 74px;
+}
+
+.DomainSelectionEditAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.DomainNameSelectDropdown {
+  position: relative;
+  display: inline-block;
+
+  select {
+    background-color: rgba($silver, 0.5);
+    color: $base;
+    padding: 7px 25px 7px 15px;
+    border-radius: 3px;
+    border: 1px solid $silver;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    cursor: pointer;
+    @extend .w-500;
+    @extend .text-xxs;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+
+  &::before {
+    height: 6px;
+    width: 6px;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #393939;
+    transform: rotate(-135deg);
+    left: auto;
+    right: 12px;
+    position: absolute;
+    top: 11px;
+    color: #121212;
+  }
+}
+
+//Close  Domain Selection
+
+@media screen and (max-width: 480px) {
+  /***** Domain Selection *****/
+
+  .registerDomainSelWrap {
+    width: 100%;
+  }
+  .registerDomainSel {
+    .input-custom-type {
+      grid-template-columns: 1fr;
+    }
+  }
+  .PrivateAndSubDomainCst {
+    .PrivateAndSubDomainItem {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+  .RegisterYourInstitute {
+    .RegisterYourInstitute1 {
+      grid-template-columns: 1fr;
+    }
+    .RegisterYourInstitute3 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /***** Close Domain Selection *****/
+}

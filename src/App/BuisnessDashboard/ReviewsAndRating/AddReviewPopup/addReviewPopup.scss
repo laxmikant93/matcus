@@ -1,0 +1,203 @@
+@import '../../../../assets/Style/base';
+
+.addReviewpop-container {
+
+  // display: grid;
+  // grid-template-columns: 3fr 1fr;
+  // gap: 36px;
+  // coomon for images
+  .productOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 4px;
+    background-color: rgba($base, 0.5);
+    display: none;
+
+    .productIcon-wrap {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+
+      .product-circle {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        border-radius: 50%;
+        background-color: rgba($base, 0.6);
+
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+  }
+
+
+  .addReviewpop-topSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+
+
+
+    .addReviewPop-leftSidebar {}
+
+    .addReviewPop-rightSidebar {
+
+      .image-wrpper {
+        width: 150px;
+        height: 140px;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          .productOverlay {
+            display: block;
+          }
+        }
+
+
+
+        .gallery_img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .image-drag {
+        padding: 11px;
+        position: relative;
+        background: rgba(1, 132, 255, 0.05);
+        border-radius: 4px;
+        width: 150px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        @media (max-width:425px) {
+          width: 232px;
+        }
+
+        .gallery_img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+
+        .dragbutton {
+          border: 1px dashed $primary;
+          background-color: rgba(1, 132, 255, 0.05);
+          border-radius: 0;
+          margin: 0;
+          padding: 60px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+
+        }
+
+        .set__icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          pointer-events: none;
+          transform: translate(-50%, -50%);
+
+          .icon-plus {
+            color: $primary;
+            font-size: 34px;
+            cursor: pointer;
+          }
+        }
+      }
+
+    }
+  }
+
+  .uploadMedia-section {
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: flex-end;
+    gap: 26px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    padding-bottom: 20px;
+
+    .v-line {
+      height: 100%;
+      width: 1px;
+      background-color: rgba($base, 0.2);
+    }
+
+    .uploadMedia-images-section {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+
+      .uploadMedia-image-wrap {
+        width: 140px;
+        height: 140px;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          .productOverlay {
+            display: block;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 4px;
+
+        }
+
+      }
+    }
+  }
+
+  .hr-line {
+    background: $base;
+    opacity: 0.2;
+  }
+
+  .reviewPopup-btn-section {
+    padding-top: 20px;
+
+
+  }
+
+  [aria-disabled="true"] {
+    opacity: 0.6;
+    pointer-events: none;
+
+    button {
+      background: rgba($base, 0.8);
+    }
+  }
+}

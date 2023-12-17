@@ -1,0 +1,427 @@
+@import '../../CommonComponent/commonCss/base.scss';
+
+.ecom-layout {
+  .orderDetails-container {
+    .page-heading-button-container {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      .cancel-product-btn {
+        color: #093351;
+        font-weight: 500 !important;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .color-shipped {
+      color: #F9AC1B;
+    }
+
+    .color-dilevered {
+      color: #4A9E42;
+    }
+
+    .order-border {
+      border: 1px solid rgba($black, 0.1);
+      border-radius: 4px;
+      margin-top: 3px;
+      height: auto;
+    }
+
+    .myOrders-heading {
+      font-size: 20px;
+      font-weight: 800;
+      color: $primary;
+      position: relative;
+
+
+      .heading-arrow {
+        font-size: 28px;
+        font-weight: 800;
+        cursor: pointer;
+        padding-top: 5px;
+      }
+    }
+
+    .mt-12 {
+      margin-top: 12px;
+    }
+
+    .mt-16 {
+      margin-top: 16px;
+    }
+
+    .mt-20 {
+      margin-top: 20px;
+    }
+
+    .orderDetails-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      column-gap: 30px;
+      row-gap: 18px;
+
+      @media(max-width:1024px) {
+        flex-direction: column;
+      }
+
+      .orderDetails-wrapper-leftSidebar {
+        width: 60%;
+
+        @media (max-width:1024px) {
+          width: 100%;
+        }
+
+        // @media(max-width:768px) {
+        //   width: 100%;
+        // }
+
+        .myOrders-list-wraper {
+          width: 100%;
+          margin-top: 24px;
+          background: #F2F4F6;
+          padding: 10px 16px 16px 16px;
+          border-radius: 8px;
+
+          .myOrders-id-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 3px;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .id-item {
+              color: #093351;
+              font-weight: 600;
+            }
+
+            .id-p {
+              font-size: 14px;
+              font-weight: 500;
+              color: $black;
+
+              :nth-child(1) {
+                color: #093351;
+              }
+
+              @media(max-width: 992px) {
+                font-size: 14px;
+              }
+
+              @media(max-width: 768px) {
+                font-size: 12px;
+              }
+            }
+
+            .id-sapn {
+              @extend .id-p;
+              font-weight: 600;
+            }
+          }
+
+          .myOrder-orderList-wrap {
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 5px;
+            position: relative;
+            background: $white;
+            padding: 12px 16px 12px 12px;
+            border-radius: 8px;
+
+
+            @media(max-width:500px) {
+              flex-direction: column;
+              text-align: center;
+            }
+
+            .myOrder-orderList-leftsidebar {
+              width: 153px;
+              height: 172px;
+
+              @media(max-width:500px) {
+                width: 100%;
+                height: 350px;
+                margin: auto;
+              }
+
+              // @media(min-width:768px) and (max-width:992px) {
+              //   width: 350px;
+              // }
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 4px;
+              }
+            }
+
+            .myOrder-orderList-rightsidebar {
+              padding-left: 16px;
+              width: 75%;
+
+              @media(max-width:500px) {
+                padding-bottom: 20px;
+                width: 100%;
+                margin-top: 10px;
+              }
+
+              .order-info-status-item {
+                align-items: flex-start;
+
+                @media (max-width :768px) {
+                  display: block;
+                  text-align: start;
+                }
+
+                .cancel-status-item {
+                  .order-status-div {
+                    background: #F2F4F6;
+                    padding: 9px 31px 9px 31px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+
+                    @media (max-width:768px) {
+                      margin-top: 5px;
+                    }
+
+                    .status-marker {
+                      width: 6px;
+                      height: 6px;
+                      border-radius: 50%;
+                      background: green;
+                    }
+                  }
+
+                  .cancel-product-btn {
+                    background: $white;
+                    padding: 9px 0 9px 0;
+                    margin-top: 16px;
+                    border: none;
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #093351;
+                    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+                    border-radius: 4px;
+
+                    @media (max-width:768px) {
+                      width: 100%;
+                    }
+                  }
+                }
+
+
+
+              }
+
+              .orderdetails-trackingid-wrapper {
+                gap: 20px;
+
+                .orderdetails-tracking {
+                  display: grid;
+                  grid-template-columns: 100px 1fr;
+                  gap: 24px
+                }
+
+                .trackid-item {
+                  text-decoration: underline;
+                }
+              }
+
+              .para {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1.2em;
+                color: $black;
+              }
+
+              .date-bold {
+                @extend .para;
+                font-weight: 700;
+              }
+
+              .color-red {
+                color: $red;
+              }
+
+              .color-green {
+                color: $secondary
+              }
+
+              .myOrder-btn-wrap {
+                margin-top: 24px;
+
+                .btn-order {
+                  border-color: rgba($black, 0.1);
+                }
+              }
+            }
+          }
+        }
+
+        .orderDetails-help {
+          padding: 16px;
+
+          p {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba($black, 0.4);
+            line-height: 1.2em;
+            padding-bottom: 8px;
+          }
+
+          .orderDetails-support {
+            color: $secondary;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .orderDetails-wrapper-rightSidebar {
+        width: 40%;
+
+        @media(max-width:1024px) {
+          width: 100%;
+          display: flex;
+          gap: 20px;
+        }
+
+        @media(max-width:600px) {
+          flex-direction: column;
+        }
+
+
+
+        .order-details-wrap-shipping {
+          margin-top: 30px;
+          padding: 10px;
+
+          @media(max-width:1024px) {
+            width: 50%;
+            margin-top: 0;
+            height: fit-content;
+          }
+
+          @media(max-width:600px) {
+            width: 100%;
+          }
+
+          .shipping-p {
+            font-size: 14px;
+            font-weight: 500;
+            color: $primary;
+            text-transform: uppercase;
+          }
+
+          .name {
+            @extend .shipping-p;
+            font-weight: 700;
+            color: $black;
+          }
+
+          .shipping-address {
+            @extend .shipping-p;
+            color: $black;
+
+          }
+        }
+
+        .paymentSummary-container {
+
+          @media(max-width:1024px) {
+            width: 50%;
+            margin-top: 0;
+          }
+
+          @media(max-width:600px) {
+            width: 100%;
+          }
+
+          .paymentSummary-div {
+            padding: 10px 16px;
+            background-color: rgba($primary, 0.05);
+
+            p {
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 1.2em;
+              text-transform: uppercase;
+              color: $primary;
+            }
+          }
+
+          .payment-details {
+            padding: 0 16px;
+            margin-top: 20px;
+            padding-bottom: 20px;
+
+            .payment-div {
+              margin-top: 12px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              p {
+
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.2em;
+                color: $primary;
+                text-transform: capitalize;
+              }
+
+              .total-amount {
+                font-size: 16px;
+                font-weight: 800;
+                line-height: 1.2em;
+                color: $primary;
+              }
+
+              .delivery-fee {
+                color: rgba($black, 0.6);
+              }
+            }
+          }
+
+          .line {
+            margin: 16px 0;
+            background-color: $black;
+            opacity: 0.1;
+          }
+
+
+        }
+
+
+
+
+      }
+    }
+
+  }
+
+  .orderDetails-popup-container {
+    .modal {
+      .modalwrapper {
+        .modalbody {
+          .modalHead {
+            .closeModal {
+              top: 6px;
+              right: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

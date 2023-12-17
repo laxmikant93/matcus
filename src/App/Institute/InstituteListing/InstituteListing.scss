@@ -1,0 +1,131 @@
+@import "../../../assets/Style/base";
+
+@import "./edTooltip";
+.institute-info-display {
+  .institue-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    img {
+      display: inline-flex;
+      width: auto;
+      height: inherit;
+    }
+    .DefaultInsLogo {
+      height: inherit;
+      width: 80px;
+      border-radius: 50%;
+      // border: 4px solid rgba($primary, 0.5);
+      background-color: $silver;
+      color: $primary;
+      @extend .text-sm;
+      @extend .w-600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .inst-name {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.institute-info {
+  line-height: 1.2;
+}
+.discoverInstituteList {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  .CardActionCustom {
+    .CardActionCustomList {
+      width: 65%;
+    }
+  }
+}
+.InstituteListingFilter {
+  button {
+    &.active {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+.InstituteListingFilter {
+  .actionBtnCustom {
+    text-align: left;
+  }
+}
+
+.digitizeLinkbtn {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 200px;
+}
+
+.InstituteListingFilter {
+  padding: 5px 0 10px 0;
+  .actionBtnCustom {
+    .groupBtn {
+      button {
+        padding: 5px 20px;
+      }
+    }
+  }
+}
+.insDispWrap {
+  padding: 30px 0;
+  background: rgba($silver, 0.5);
+  margin-top: 10px;
+}
+@media only screen and (max-width: 480px) {
+  .InstituteListingFilter {
+    .actionBtnCustom {
+      text-align: center;
+    }
+  }
+  .insDispWrap {
+    padding-top: 15px;
+  }
+  .institute-card-wrap {
+    display: flex;
+    flex-direction: column;
+    .CardActionCustom {
+      .CardActionCustomList {
+        width: 90%;
+      }
+    }
+  }
+  .institute-card-wrap {
+    .cardMedia {
+      .DefaultInsListCoverImg {
+        height: 40vw;
+        img {
+          height: 40vw;
+        }
+      }
+    }
+  }
+  .PTH-InstituteListing {
+    .pthMLBtn {
+      border-radius: 5px;
+      padding: 8px 0;
+      border: 1px solid rgba($gray, 0.25);
+      margin-bottom: 5px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .tbLine {
+        border: 0;
+      }
+    }
+  }
+}

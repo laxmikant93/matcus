@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="Group_584" data-name="Group 584" transform="translate(-130 -2170)">
+    <g id="Ellipse_184" data-name="Ellipse 184" transform="translate(130 2170)" fill="#fff" stroke="#141414" stroke-width="2">
+      <circle cx="35" cy="35" r="35" stroke="none"/>
+      <circle cx="35" cy="35" r="34" fill="none"/>
+    </g>
+    <path id="Icon_awesome-briefcase" data-name="Icon awesome-briefcase" d="M23.127,24.221a1.156,1.156,0,0,1-1.156,1.156H15.033a1.156,1.156,0,0,1-1.156-1.156V20.752H0V31.159a3.557,3.557,0,0,0,3.469,3.469H33.535A3.557,3.557,0,0,0,37,31.159V20.752H23.127ZM33.535,9.188H27.753V5.719A3.557,3.557,0,0,0,24.284,2.25H12.72A3.557,3.557,0,0,0,9.251,5.719V9.188H3.469A3.557,3.557,0,0,0,0,12.657v5.782H37V12.657A3.557,3.557,0,0,0,33.535,9.188Zm-10.407,0H13.876V6.875h9.251Z" transform="translate(146 2186.75)" fill="#141414"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+    [
+        {
+            "menuName": "Home",
+            "menuLink": "/",
+            "sectionRef": null
+        },
+        {
+            "menuName": "Products",
+            "menuLink": "/products",
+            "sectionRef": "serviceRef"
+        },
+        {
+            "menuName": "About us",
+            "menuLink": "/about",
+            "sectionRef": null
+        },
+        {
+            "menuName": "Channel Partner",
+            "menuLink": "/channel-partners",
+            "sectionRef": null
+        },
+        {
+            "menuName": "Free Demo",
+            "menuLink": "/request-demo",
+            "sectionRef": null
+        }
+    ]

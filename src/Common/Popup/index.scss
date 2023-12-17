@@ -1,0 +1,41 @@
+@import "../../assets/Style/base";
+
+.Popup {
+  background: #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  z-index: 2;
+  &.RemovePopup {
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+    right: 0;
+    left: auto;
+    @media (max-width: 992px) {
+      padding: 13px;
+    }
+  }
+
+  .RemovePopBtn {
+    margin-top: 20px;
+    button {
+      margin-right: 5px;
+      border-right: auto;
+      border-top-left-radius: auto;
+      @media (max-width: 992px) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,326 @@
+[
+  {
+    "code": "AF",
+    "name": "AFRIKAANS"
+  },
+  {
+    "code": "AM",
+    "name": "AMHARIC"
+  },
+  {
+    "code": "AR",
+    "name": "ARABIC"
+  },
+  {
+    "code": "AZ",
+    "name": "AZERBAIJANI"
+  },
+  {
+    "code": "BE",
+    "name": "BELARUSIAN"
+  },
+  {
+    "code": "BG",
+    "name": "BULGARIAN"
+  },
+  {
+    "code": "BN",
+    "name": "BENGALI"
+  },
+  {
+    "code": "BO",
+    "name": "TIBETAN STANDARD"
+  },
+  {
+    "code": "CA",
+    "name": "CATALAN"
+  },
+  {
+    "code": "CS",
+    "name": "CZECH"
+  },
+  {
+    "code": "CY",
+    "name": "WELSH"
+  },
+  {
+    "code": "DA",
+    "name": "DANISH"
+  },
+  {
+    "code": "DE",
+    "name": "GERMAN"
+  },
+  {
+    "code": "EE",
+    "name": "EWE"
+  },
+  {
+    "code": "EL",
+    "name": "GREEK"
+  },
+  {
+    "code": "EN",
+    "name": "ENGLISH"
+  },
+  {
+    "code": "EO",
+    "name": "ESPERANTO"
+  },
+  {
+    "code": "ES",
+    "name": "SPANISH"
+  },
+  {
+    "code": "ET",
+    "name": "ESTONIAN"
+  },
+  {
+    "code": "EU",
+    "name": "BASQUE"
+  },
+  {
+    "code": "FA",
+    "name": "PERSIAN"
+  },
+  {
+    "code": "FI",
+    "name": "FINNISH"
+  },
+  {
+    "code": "FO",
+    "name": "FAROESE"
+  },
+  {
+    "code": "FR",
+    "name": "FRENCH"
+  },
+  {
+    "code": "GA",
+    "name": "IRISH"
+  },
+  {
+    "code": "GL",
+    "name": "GALICIAN"
+  },
+  {
+    "code": "GU",
+    "name": "GUJARATI"
+  },
+  {
+    "code": "HE",
+    "name": "HEBREW"
+  },
+  {
+    "code": "HI",
+    "name": "HINDI"
+  },
+  {
+    "code": "HR",
+    "name": "CROATIAN"
+  },
+  {
+    "code": "HU",
+    "name": "HUNGARIAN"
+  },
+  {
+    "code": "HY",
+    "name": "ARMENIAN"
+  },
+  {
+    "code": "IA",
+    "name": "INTERLINGUA"
+  },
+  {
+    "code": "ID",
+    "name": "INDONESIAN"
+  },
+  {
+    "code": "IS",
+    "name": "ICELANDIC"
+  },
+  {
+    "code": "IT",
+    "name": "ITALIAN"
+  },
+  {
+    "code": "JA",
+    "name": "JAPANESE"
+  },
+  {
+    "code": "KA",
+    "name": "GEORGIAN"
+  },
+  {
+    "code": "KI",
+    "name": "KIKUYU"
+  },
+  {
+    "code": "KM",
+    "name": "KHMER"
+  },
+  {
+    "code": "KN",
+    "name": "KANNADA"
+  },
+  {
+    "code": "KO",
+    "name": "KOREAN"
+  },
+  {
+    "code": "LG",
+    "name": "GANDA"
+  },
+  {
+    "code": "LO",
+    "name": "LAO"
+  },
+  {
+    "code": "LT",
+    "name": "LITHUANIAN"
+  },
+  {
+    "code": "LV",
+    "name": "LATVIAN"
+  },
+  {
+    "code": "MK",
+    "name": "MACEDONIAN"
+  },
+  {
+    "code": "ML",
+    "name": "MALAYALAM"
+  },
+  {
+    "code": "MR",
+    "name": "MARATHI"
+  },
+  {
+    "code": "MS",
+    "name": "MALAY"
+  },
+  {
+    "code": "MT",
+    "name": "MALTESE"
+  },
+  {
+    "code": "MY",
+    "name": "BURMESE"
+  },
+  {
+    "code": "NB",
+    "name": "NORWEGIAN BOKMAL"
+  },
+  {
+    "code": "NE",
+    "name": "NEPALI"
+  },
+  {
+    "code": "NL",
+    "name": "DUTCH"
+  },
+  {
+    "code": "NN",
+    "name": "NORWEGIAN NYNORSK"
+  },
+  {
+    "code": "NO",
+    "name": "NORWEGIAN"
+  },
+  {
+    "code": "OR",
+    "name": "ORIYA"
+  },
+  {
+    "code": "PL",
+    "name": "POLISH"
+  },
+  {
+    "code": "PT",
+    "name": "PORTUGUESE"
+  },
+  {
+    "code": "RM",
+    "name": "ROMANSH"
+  },
+  {
+    "code": "RO",
+    "name": "ROMANIAN"
+  },
+  {
+    "code": "RU",
+    "name": "RUSSIAN"
+  },
+  {
+    "code": "SE",
+    "name": "NORTHERN SAMI"
+  },
+  {
+    "code": "SK",
+    "name": "SLOVAK"
+  },
+  {
+    "code": "SL",
+    "name": "SLOVENE"
+  },
+  {
+    "code": "SN",
+    "name": "SHONA"
+  },
+  {
+    "code": "SQ",
+    "name": "ALBANIAN"
+  },
+  {
+    "code": "SR",
+    "name": "SERBIAN"
+  },
+  {
+    "code": "SV",
+    "name": "SWEDISH"
+  },
+  {
+    "code": "TA",
+    "name": "TAMIL"
+  },
+  {
+    "code": "TE",
+    "name": "TELUGU"
+  },
+  {
+    "code": "TH",
+    "name": "THAI"
+  },
+  {
+    "code": "TI",
+    "name": "TIGRINYA"
+  },
+  {
+    "code": "TL",
+    "name": "TAGALOG"
+  },
+  {
+    "code": "TR",
+    "name": "TURKISH"
+  },
+  {
+    "code": "UK",
+    "name": "UKRAINIAN"
+  },
+  {
+    "code": "UR",
+    "name": "URDU"
+  },
+  {
+    "code": "VI",
+    "name": "VIETNAMESE"
+  },
+  {
+    "code": "ZH-CN",
+    "name": "CHINESE SIMPLIFIED"
+  },
+  {
+    "code": "ZH-TW",
+    "name": "CHINESE TRADITIONAL"
+  }
+]

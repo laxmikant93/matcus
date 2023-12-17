@@ -1,0 +1,158 @@
+@import "../../assets/Style/base";
+
+// .industry-top-container {
+
+// .ModalsWrapper {
+//   width: 530px !important;
+//   max-width: 90%;
+// }
+
+.industry-container {
+  position: relative;
+  width: 100%;
+
+  .selectActive {
+    color: $primary;
+  }
+
+  .activeIcon {
+    background: $primary !important;
+  }
+
+  .icons {
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: $base;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .industry-body-wrapper {
+    max-height: 370px;
+    overflow-y: auto;
+    padding-bottom: 24px;
+
+    .kirana {
+      -webkit-mask: url("../../assets/Icons/kirana.svg") no-repeat center;
+      mask-image: url("../../assets/Icons/kirana.svg") no-repeat center;
+    }
+
+    .fashion {
+      -webkit-mask: url("../../assets/Icons/fashion.svg") no-repeat center;
+      mask-image: url("../../assets/Icons/fashion.svg") no-repeat center;
+    }
+
+    .home {
+      -webkit-mask: url("../../assets/Icons/homeDecor.svg") no-repeat center;
+      mask-image: url("../../assets/Icons/homeDecor.svg") no-repeat center;
+    }
+
+    .gift {
+      -webkit-mask: url("../../assets/Icons/giftShop.svg") no-repeat center;
+      mask-image: url("../../assets/Icons/giftShop.svg") no-repeat center;
+    }
+
+    .fruit {
+      -webkit-mask: url("../../assets/Icons/fruit.svg") no-repeat center;
+      mask-image: url("../../assets/Icons/fruit.svg") no-repeat center;
+    }
+
+    .books {
+      -webkit-mask: url("../../assets/Icons/book.svg") no-repeat center;
+      mask-image: url("../../assets/Icons/book.svg") no-repeat center;
+    }
+
+    .electronics {
+      -webkit-mask: url("../../assets/Icons/Electronics.svg") no-repeat center;
+      mask-image: url("../../assets/Icons/Electronics.svg") no-repeat center;
+    }
+
+    .list-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      margin-top: 24px;
+
+      .industry-leftside {
+        .industry-circle {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background-color: rgba($primary, 0.1);
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .industry-selection-bottom {
+    // position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $white;
+    z-index: 10;
+    padding: 0px 0px;
+
+    .cross {
+      -webkit-mask: url("./cross.svg") no-repeat center;
+      mask-image: url("./cross.svg") no-repeat center;
+    }
+    .hr {
+      background: rgba($base, 0.01);
+      width: 200;
+      margin-bottom: 24px;
+      width: 96%;
+    }
+
+    .industry-input-div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+
+      .industry-input {
+        padding-bottom: 0px !important;
+        width: 60%;
+      }
+
+      .businessbtn-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+
+        .btn-circle {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          border: 1px solid rgba($base, 0.4);
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .btn-circle-active {
+          background-color: $primary;
+          border: 2px solid $primary;
+
+          .icon-check {
+            width: 20px;
+            height: 20px;
+            background-color: $white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+@import "../../assets/Style/theme";
+@import "../../assets/Style/typo";
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($base, 0.3);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow-y: auto;
+
+  &.modalShowing-true {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+  }
+  &.modalShowing-false {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .modalwrapper {
+    position: relative;
+    z-index: 1080;
+    width: 60%;
+    background-color: $white;
+    box-shadow: 0 0 8px rgba($base, 0.125);
+    text-align: left;
+    padding: 20px 50px;
+    min-height: 100vh;
+    margin: auto 0 auto auto;
+    .closeModal {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      @extend .w-400;
+      @extend .text-2xs;
+      text-decoration: underline;
+    }
+    &.modal-full {
+      width: 100%;
+    }
+    &.modal-l {
+      width: 90%;
+    }
+    &.modal-m {
+      width: 70%;
+    }
+  }
+  .goSuccessModal {
+    padding: 80px 0;
+  }
+  .modalFooter {
+    padding: 20px 0;
+  }
+  .modalbody {
+    padding: 20px 0;
+  }
+  .modalHead {
+    padding: 10px 0 0 0;
+  }
+  .pageFullCenter {
+    padding: 0;
+  }
+}
+
+.showInlinePopup {
+  position: absolute;
+  z-index: 2;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  box-shadow: 0 0 15px rgba($base, 0.125);
+  top: 36px;
+  right: 0;
+  border-radius: 10px;
+  padding: 25px 0;
+  .lateFineMessage {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: $primary;
+    @extend .text-xxs;
+    @extend .w-500;
+  }
+  .showInlinePopupInner {
+    position: relative;
+  }
+  .closeBtn {
+    // display: inline-flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: $mgray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    // padding: 0.5rem;
+    // @extend .w-500;
+    // @extend .text-2xs;
+    // cursor: pointer;
+    // color: $gray;
+    // text-decoration: underline;
+    // text-transform: uppercase;
+    &::after {
+      width: 18px;
+      height: 2px;
+      background-color: $white;
+      transform: rotate(45deg);
+      top: 15px;
+      left: 6px;
+    }
+    &::before {
+      width: 18px;
+      height: 2px;
+      background-color: $white;
+      transform: rotate(-45deg);
+      top: 15px;
+      left: 6px;
+    }
+    &:hover {
+      color: $base;
+    }
+  }
+  .itemsRow {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba($gray, 0.125);
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    .modalwrapper {
+      width: 100%;
+      padding: 20px;
+      &.modal-full {
+        width: 100%;
+      }
+      &.modal-l {
+        width: 100%;
+      }
+      &.modal-m {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    .modalwrapper {
+      padding: 20px;
+    }
+  }
+}

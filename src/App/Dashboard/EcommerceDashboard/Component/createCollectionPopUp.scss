@@ -1,0 +1,99 @@
+@import '../../../../assets/Style/base';
+
+.createCollection-modalwrap {
+
+  .createCollectionModal {
+
+
+    .createCollection-modal-body-wrap {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .createCollection-search-bar {
+        padding: 0px 20px;
+
+        .createCollectionpop-search {
+          .SearchControlbar.tableSearchbar {
+            width: 100% !important;
+            max-width: 100%;
+          }
+        }
+      }
+
+
+      .createCollection-product-list-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        z-index: 10;
+
+
+        .createCollection-product-list-left {
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+
+          .image-container {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            padding: 1px;
+            border: 1px solid #c4c4c4;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        .createCollection-product-list-right {
+
+          .createCollection-radio {
+            width: 25px;
+            height: 25px;
+          }
+        }
+
+        &:hover {
+          background-color: rgba($primary, 0.2);
+        }
+      }
+
+      .col-active {
+        background-color: rgba($primary, 0.2);
+      }
+    }
+  }
+
+  .createCollectionpop-search {
+    .SearchControlbar {
+      .form-control-search {
+        background: rgba($primary, 0.09) !important;
+      }
+    }
+  }
+
+  .createCollection-action-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    z-index: 999;
+
+    .button-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 30px;
+    }
+
+  }
+}

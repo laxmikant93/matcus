@@ -1,0 +1,49 @@
+@import "../../../assets/Style/base";
+
+.createBlog {
+
+
+  .createBlog-Wrapper {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 24px;
+    padding-top: 22px;
+
+
+    .createBlog-editor {
+      border: 1px solid $lgray;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .createBlog-sideBar {
+      border: 1px solid $lgray;
+      border-left: none;
+      padding: 20px;
+    }
+
+    .wrapper-class {
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    .editor-class {
+      background-color: lightgray;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      height: 300pt;
+      width: auto;
+      overflow: hidden;
+    }
+
+    .toolbar-class {
+      border: 1px solid #ccc;
+    }
+  }
+
+  // blog list page
+  .blogListtopheader {
+    display: flex;
+    justify-content: space-around;
+  }
+}

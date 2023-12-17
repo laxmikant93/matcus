@@ -1,0 +1,72 @@
+@import '../../../../assets/Style/base';
+
+.inventory-edit-delete-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 15px;
+  align-items: center;
+
+  .padding-left {
+    padding-left: 20px;
+  }
+
+}
+
+// .inventory-select-text-type {
+
+//   &:before {
+//     left: 85% !important;
+//     top: 30%;
+//     border-color: $primary;
+//   }
+// }
+
+.inventory-select {
+  &::before {
+    display: none;
+  }
+  .inventory-select-list {
+    // background-color: aqua;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px 10px 0px;
+    font-size: 14px;
+    color: $base;
+    font-weight: 400;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    background-image: url('../assets/images/arrowDownPrimary.png');
+    background-position:  center right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    option {
+      padding: 10px;
+    }
+
+
+
+   
+  //  -moz-appearance:none; /* Firefox */
+  //  -webkit-appearance:none; /* Safari and Chrome */
+  //  appearance:none;
+  // color: $primary;
+  }
+
+}
+
+.hideMinheight {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.headerSearchBarinventory {
+  .SearchControlbar {
+    .form-control-search {
+      background: rgba($primary, 0.09) !important;
+    }
+  }
+}

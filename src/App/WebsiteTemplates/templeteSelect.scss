@@ -1,0 +1,106 @@
+@import "../Dashboard/EcommerceDashboard/commonEcommerce";
+
+.templete-select-container {
+  .dashboard-type-text {
+    text-decoration: underline;
+  }
+
+  .templete-top-menu-header-wrap {
+    display: grid;
+    justify-content: flex-start;
+    column-gap: 30px;
+  }
+
+  .templete-area-container {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+
+    .templete-card-wrap {
+      width: 100%;
+      .templete-image-wrap {
+        max-width: 100%;
+        height: 200px;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 12px;
+        }
+
+        .templete-overlay-wrap {
+          position: absolute;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          row-gap: 10px;
+          border-radius: 12px;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+          .button {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        &:hover .templete-overlay-wrap {
+          opacity: 1;
+        }
+      }
+      p {
+        margin-top: 8px;
+      }
+
+      @media (min-width: 1440px) {
+        width: 350px;
+        height: 220px;
+      }
+
+      // @media(max-width:700px) {
+      //   width: 250px;
+      //   height: 150px;
+      // }
+
+      // @media(max-width:600px) {
+      //   width: 200px;
+      //   height: 150px;
+      // }
+
+      // @media(max-width:500px) {
+      //   width: 300px;
+      //   height: 200px;
+      // }
+    }
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 90px;
+
+    .pagination_list {
+      background-color: #f5f7f7;
+      padding: 4px 20px;
+    }
+  }
+}

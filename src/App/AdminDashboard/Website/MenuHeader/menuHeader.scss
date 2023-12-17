@@ -1,0 +1,63 @@
+@import "../../../../assets/Style/base.scss";
+
+.menuHeaderBody {
+  width: 60%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+
+  .menuHeaderLi {
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 1px solid $lgray;
+    margin: 8px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mainCategory {
+    background-color: #e3e3e3;
+  }
+
+  .menuHeaderTopInfo {
+    // .eye {
+    //   background-image: url('../../../../assets/Icons/password-eye.svg');
+    //   background-position: center;
+    //   background-size: cover;
+    // }
+
+    .icon {
+      img {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+    }
+
+    .eye {
+      img {
+        filter: brightness(0);
+      }
+    }
+
+    .displayShow {
+      display: block;
+    }
+
+    .displayHide {
+      display: none;
+    }
+
+    .Selected {
+      background-color: #fff;
+      border-color: lighten($color: $lgray, $amount: 20%);
+      cursor: default;
+    }
+  }
+}

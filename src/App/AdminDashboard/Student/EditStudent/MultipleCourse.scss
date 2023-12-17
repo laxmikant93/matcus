@@ -1,0 +1,302 @@
+// grid input design
+.parents_student_list_inputs_second {
+  display: grid;
+  grid-template-columns: 70% auto;
+  gap: 80px;
+}
+.parents_student_list_inputs {
+  display: grid;
+  grid-template-columns: 70% auto;
+  gap: 80px;
+
+  .wrapper-input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 25px;
+
+    .formFieldwrap {
+      grid-column: 1/3;
+    }
+    .cstmPhoneInput .errorInputMsg {
+      bottom: 12px;
+    }
+  }
+  .wrapper-input{
+    .cstmPhoneInput{
+      .form-group {
+        &.react-tel-input {
+          .flag-dropdown {
+            .country-list {
+              .search {
+                z-index: 10;
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+.checkbox {
+  grid-column: 1/3;
+  position: relative;
+  margin-bottom: 10px;
+}
+// end here
+
+.student_name_heading {
+  font-size: 33px;
+  color: #202020;
+}
+.mr {
+  margin-right: 10px;
+}
+
+.border_bottom {
+  margin: 40px 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+.student_list_img_perview {
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+  }
+}
+
+// end here
+// upload image section styling
+.Upload_btn_student_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  //    .button{
+  //     width:115px;
+  //     height:35px;
+  //    }
+  //   .upload_img_student_page{
+  //   border:1px solid #E1E1E1;
+  //   border-radius: 5px;
+  //   outline: none;
+  //   background:transparent;
+  //   display: inline-flex;
+  //   justify-content: center;
+  //   color:#202020;
+  //   align-items: center;
+  // }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.student_list_fill_flied_verify,
+.student_filed_not verify {
+  position: relative;
+}
+.student_list_fill_flied_verify,
+.student_filed_not_verify {
+  &::before {
+    content: "\2713";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #14a032;
+    right: 15px;
+    top: 12px;
+    left: auto;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.student_filed_not_verify {
+  &::before {
+    content: "\00D7";
+    background-color: #dc2828;
+  }
+}
+.full_address_student_list {
+  height: 132px;
+  border: 1px solid #b4b4b4;
+}
+.student_list_update_btn {
+  width: 250px;
+  height: 44px;
+  font-size: 18px;
+}
+.coursechooseclass_grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.btn_update_cancel {
+  display: flex;
+  // grid-template-columns: auto auto;
+  gap: 10px;
+}
+.studentmaintogglebtn {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+.student_list_heading_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+//Gaurav
+.studentlistcoursebtngrid {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  display: grid;
+  gap: 10px;
+}
+.S-DetailList {
+  width: 70%;
+  .card {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.coursechooseclass_grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select_deselect {
+  display: flex;
+  gap: 10px;
+}
+.List_coures_wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+.button {
+  .listremove_btn {
+    height: 48px;
+  }
+}
+.Popup {
+  &.RemovePopup {
+    &.customPopup {
+      top: 35px;
+    }
+  }
+}
+.customPopup > .RemovePopBtn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-minidesk: 992px;
+
+@media (max-width: $breakpoint-minidesk) {
+  .parents_student_list_inputs {
+    gap: 10px;
+
+    .wrapper-input {
+      order: 0;
+      gap: 0px 10px;
+    }
+  }
+  .S-DetailList {
+    width: 80%;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .parents_student_list_inputs {
+    gap: 10px;
+    .wrapper-input {
+      order: 0;
+
+      .cstmPhoneInput {
+        grid-column: 1/3;
+        margin: 6px 0px;
+        .errorInputMsg {
+          bottom: 5px;
+        }
+      }
+      .cstmSelectWrap {
+        grid-column: 1/3;
+      }
+      .PersonalInfoDOB {
+        grid-column: 1/3;
+        margin: 20px 0px;
+      }
+    }
+  }
+  .S-DetailList {
+    width: 100%;
+  }
+
+  .List_coures_wrapper {
+    grid-template-columns: 1fr auto;
+  }
+  .listcoursebtngrid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    display: grid;
+    gap: 10px;
+  }
+  .btn_update_cancel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .parents_student_list_inputs_second {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .parents_student_list_inputs {
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    .cstmPhoneInput {
+      grid-column: 1/3;
+    }
+    .cstmSelectWrap {
+      grid-column: 1/3;
+    }
+    .PersonalInfoDOB {
+      grid-column: 1/3;
+      margin: 20px 0px;
+    }
+    .wrapper-input {
+      order: 2;
+    }
+  }
+  .List_coures_wrapper {
+    gap: 0px;
+  }
+
+  .S-DetailList {
+    width: 100%;
+  }
+  .List_coures_wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .student_list_img_perview img {
+    height: auto;
+  }
+  .border_bottom {
+    margin: 30px 0px;
+  }
+}

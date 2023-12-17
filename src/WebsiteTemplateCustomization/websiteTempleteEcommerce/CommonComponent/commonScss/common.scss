@@ -1,0 +1,89 @@
+@import "./typo";
+@import"./theme";
+
+// all common css here 
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+::selection {
+  background: $primary  !important;
+  color: $white;
+
+}
+
+::-moz-selection {
+  background: $primary;
+  color: $white;
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $primary $white;
+}
+
+*::-webkit-scrollbar {
+  height: 10px;
+  /* height of horizontal scrollbar ← You're missing this */
+  width: 10px;
+  /* width of vertical scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: $white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 0;
+  // border: 0 solid $silver;
+}
+
+// section gap 
+.section-gap {
+  margin-top: 90px;
+
+}
+
+.section-padding {
+  padding-top: 60px;
+}
+
+.buttonRash-primary {
+  padding: 10px 40px;
+  background-color: $secondary;
+  color: $white;
+  word-break: keep-all;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0px, 0px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  word-spacing: 0.1em;
+
+  &:hover {
+    background-color: rgba($secondary, 0.8);
+  }
+}
+
+.button-gap {
+  padding-top: 30px;
+}
+
+
+.bg-blue {
+  background-color: $primary;
+}
+
+.bg-red {
+  background-color: #EB0000;
+}

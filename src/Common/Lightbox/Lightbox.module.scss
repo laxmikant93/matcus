@@ -1,0 +1,234 @@
+.EdneedLightbox {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  overflow-y: auto;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 999999;
+  box-sizing: border-box;
+
+
+  &.Lightbox_Fade {
+    animation: fade-in 1s 1 linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes fade-in {
+    0% {
+      animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .LightboxOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .LightboxClose,
+  .LightboxBack {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+
+    .Lightbox_Cancel_Icon {
+      box-sizing: border-box;
+      position: relative;
+      display: block;
+      transform: scale(var(5, 1));
+      width: 32px;
+      height: 32px;
+      // background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background: #FFF;
+        transform: rotate(45deg);
+        border-radius: 5px;
+        top: 14px;
+        left: 5px
+      }
+
+      &::after {
+        transform: rotate(-45deg)
+      }
+    }
+
+
+  }
+
+  .Lightbox_Back_Icon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-right: 8px;
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      box-sizing: border-box;
+      position: absolute;
+      left: 3px
+    }
+
+    &::after {
+      width: 15px;
+      height: 15px;
+      border-bottom: 2px solid;
+      border-left: 2px solid;
+      transform: rotate(45deg);
+      bottom: 7px;
+      border-radius: 2px;
+    }
+
+    &::before {
+      width: 20px;
+      height: 2px;
+      bottom: 13px;
+      background: currentColor;
+      border-radius: 2px;
+    }
+  }
+
+  .LightboxWrapper {
+    z-index: 2;
+    border-radius: 8px 0 0 8px;
+    max-height: 100%;
+    color: #c3c0c0;
+    z-index: 1080;
+    width: fit-content;
+    /* background-color: #fff; */
+    // box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    margin-right: 0;
+    margin-left: auto;
+    /* margin-top: 10vh; */
+    margin: auto;
+    /* position: absolute;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .LightboxContent {
+      z-index: 2;
+      border-radius: 8px 0 0 8px;
+      max-height: 100%;
+      color: #c3c0c0;
+      z-index: 1080;
+      width: -moz-fit-content;
+      width: auto;
+      overflow: hidden;
+      /* background-color: #fff; */
+
+      margin-right: 0;
+      margin-left: auto;
+      /* margin-top: 10vh; */
+      margin: auto;
+      /* position: absolute; */
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // padding-top: 100px;
+
+      .LightboxContentInner {
+        min-height: auto;
+        height: 90vh;
+        width: 90vw;
+        object-fit: contain;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding-right: 8px;
+        margin-top: 7vh;
+      }
+    }
+
+  }
+
+  .LightboxHeaderLeft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .LightboxHeaderRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .LightboxBody {
+    padding: 16px 24px;
+    min-height: 80vh;
+    max-height: 80vh;
+    overflow: hidden;
+    overflow-y: auto;
+
+    &.center {
+      min-height: auto;
+    }
+  }
+
+  .LightboxFooter {
+    padding: 16px 24px;
+    min-height: 10vh;
+    max-height: 10vh;
+    border-bottom-left-radius: 8px;
+  }
+
+  .LightboxHeader {
+    padding: 12px 24px 12px 24px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-top-left-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+
+    h2 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+
+  .LightboxHead {
+    min-height: auto;
+    // max-height: 100%;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}

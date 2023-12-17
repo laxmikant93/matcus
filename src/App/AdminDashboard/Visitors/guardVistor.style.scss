@@ -1,0 +1,479 @@
+// common css
+@import "../../../assets/Style/base";
+
+.guardeManagementAdmin-wrapper {
+  background-color: $white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.displayShow {
+  display: block;
+}
+
+.displayhide {
+  display: none;
+}
+
+.dis-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.dis-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.visitorModal {
+  padding-left: 15px;
+}
+
+.visitormodalList {
+  padding-top: 0px;
+  padding-bottom: 5x;
+}
+
+.visitorWrap {
+  width: 75%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}
+
+.guardVistorpageInCenter {
+  // width: 80%;
+  // margin: 0 auto;
+
+  .guardVistorPageTopHead {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    gap: 15px;
+
+    @media only screen and (max-width: 480px) {
+      align-items: flex-end;
+    }
+
+    .guardVistorTopSection {
+      display: grid;
+      grid-template-columns: auto 250px 1fr auto;
+      grid-gap: 15px;
+      align-items: center;
+
+      @media screen and (max-width: 1300px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+
+      .guardDropDown {
+      }
+
+      .guardTopCalenderWrapper {
+        display: flex;
+        justify-content: flex-start;
+
+        .visitorMonthCnt {
+          border: 1px solid #b8b8b8;
+          border-radius: 3px;
+          padding: 3px 15px;
+          font-weight: 500;
+          width: 70%;
+          text-align: center;
+          margin: 0 4px;
+        }
+
+        .vistorManaDateIcon {
+          background-color: #ececec;
+          color: #121212;
+          line-height: 0;
+          height: 32px;
+          outline: none;
+          border: 0;
+          width: 15%;
+          border-radius: 3px;
+        }
+      }
+
+      .guradSearchWraper {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .guradButtonWrapper {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+
+      .button-addVistor {
+        padding: 0 45px;
+      }
+    }
+  }
+
+  //  visitor list css
+  .visitorImg {
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .nameText {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2px;
+    color: #121212;
+  }
+
+  .headlightText {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 3px;
+  }
+
+  .otherText {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 3px;
+    color: #121212;
+  }
+
+  .approved {
+    color: #42ba96;
+    font-weight: 500;
+  }
+
+  .rejected {
+    color: #ff0000;
+    font-weight: 500;
+  }
+
+  .pending {
+    color: #333333;
+    font-weight: 500;
+  }
+
+  .col-padding {
+    padding: 15px 15px 0px 15px;
+  }
+
+  // print css
+  .ed-printer {
+    background: linear-gradient(to left, currentColor 5px, transparent 0) no-repeat 0 10px/6px 2px,
+      linear-gradient(to left, currentColor 5px, transparent 0) no-repeat 14px 10px/6px 2px,
+      linear-gradient(to left, currentColor 5px, transparent 0) no-repeat 4px 4px/2px 2px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--eds, 1));
+    width: 24px;
+    height: 14px;
+    border: 2px solid transparent;
+    border-bottom: 0;
+    box-shadow: inset 0 2px 0, inset 2px 2px 0, inset -2px 2px 0, inset -2px 2px 0;
+  }
+
+  .ed-printer::after,
+  .ed-printer::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    border: 2px solid;
+    left: 4px;
+  }
+
+  .ed-printer::before {
+    height: 6px;
+    top: -4px;
+  }
+
+  .ed-printer::after {
+    height: 8px;
+    top: 8px;
+  }
+
+  // checkout button
+  .ed-vistor-arrow-right-r {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    transform: scale(var(--eds, 1));
+    border-radius: 4px;
+  }
+
+  .ed-vistor-arrow-right-r::after,
+  .ed-vistor-arrow-right-r::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 4px;
+  }
+
+  .ed-vistor-arrow-right-r::after {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    bottom: 2px;
+    left: 14px;
+  }
+
+  .ed-vistor-arrow-right-r::before {
+    width: 11px;
+    height: 2px;
+    bottom: 4px;
+    left: 8px;
+    background: currentColor;
+  }
+}
+
+.addVisitorForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 30px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  .addVisitorDetails {
+    grid-column: 1/3;
+  }
+
+  .addVisitorReason {
+    grid-column: 1/3;
+  }
+
+  .addVisitorUploadImage {
+    // grid-column: ;
+  }
+  .formFieldwrap {
+    .cstmPhoneInput {
+      .form-group {
+        &.react-tel-input {
+          .flag-dropdown {
+            .country-list {
+              .search {
+                z-index: 10;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// add visitor form
+.visitorFromfield {
+  // padding-bottom: 0px !important;
+
+  .visitorFormError {
+    padding: 5px 0px;
+    position: relative !important;
+    padding: 5px 0;
+  }
+}
+
+// visitor print page
+// .visitorPrintWrapper {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-top: 25px;
+
+//   .textLable {
+//     font-size: 18px;
+//     font-weight: 600;
+//     color: #121212;
+//   }
+
+//   .textData {
+//     font-size: 16px;
+//     font-weight: 400;
+//     color: #121212;
+//     padding-left: 10px;
+//   }
+
+//   .visitorPrintCover {
+//     width: 90%;
+//     border: 1px solid #333333;
+//     padding: 30px;
+
+//     @media screen and (max-width: 600px) {
+//       padding: 30px 5px;
+//       width: 100%;
+//     }
+
+//     .vistorPrintImg {
+//       display: flex;
+//       justify-content: center;
+
+//       .vistorImage {
+//         max-width: 40%;
+//         height: auto;
+//       }
+//     }
+
+//     .visitorPrintTopSection {
+//       margin-top: 70px;
+//     }
+
+//     .visitorMiddleSection {
+
+//       .visitorCheckIn {
+//         display: flex;
+//         align-items: flex-end;
+//         flex-wrap: wrap;
+//       }
+//     }
+
+//     .visitorPrintBtn {
+//       display: flex;
+//       justify-content: center;
+
+//       .actionBtn button:hover,
+//       .actionBtn a:hover {
+//         outline: 3px solid rgba(15, 15, 15, 0.25) !important;
+//       }
+
+//       .visitorPrintButton {
+//         color: #fff;
+//         padding: 3px 15px;
+//         background-color: #000;
+//         border-color: #000;
+
+//       }
+
+//       .visitorPrintButton :hover {
+//         border-color: #000;
+//         outline: 3px solid rgb(29, 29, 29) !important;
+//       }
+//     }
+//   }
+// }
+.printGuestDetailsWrap {
+  .guestImage {
+    width: 70% !important;
+
+    @media (max-width: 600px) {
+      width: 50% !important;
+      margin: auto;
+    }
+  }
+
+  .guestProfileImg {
+    display: inline !important;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .detailsItems {
+    margin-bottom: 10px;
+  }
+
+  .visitorListPrintButtton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+
+    button {
+      height: 45px;
+      padding: 0 35px;
+    }
+  }
+}
+
+// .ed-printer {
+//   background:
+//     linear-gradient(to left,
+//       currentColor 5px, transparent 0) no-repeat 0 10px/6px 2px,
+//     linear-gradient(to left,
+//       currentColor 5px, transparent 0) no-repeat 14px 10px/6px 2px,
+//     linear-gradient(to left,
+//       currentColor 5px, transparent 0) no-repeat 4px 4px/2px 2px;
+//   box-sizing: border-box;
+//   position: relative;
+//   display: block;
+//   transform: scale(var(--eds, 1));
+//   width: 24px;
+//   height: 14px;
+//   border: 2px solid transparent;
+//   border-bottom: 0;
+//   box-shadow:
+//     inset 0 2px 0,
+//     inset 2px 2px 0,
+//     inset -2px 2px 0,
+//     inset -2px 2px 0
+// }
+
+// .ed-printer::after,
+// .ed-printer::before {
+//   content: "";
+//   display: block;
+//   box-sizing: border-box;
+//   position: absolute;
+//   width: 12px;
+//   border: 2px solid;
+//   left: 4px
+// }
+
+// .ed-printer::before {
+//   height: 6px;
+//   top: -4px
+// }
+
+// .ed-printer::after {
+//   height: 8px;
+//   top: 8px
+// }\
+
+// visitor deatils
+// common css
+.visitorDetailspd {
+  padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .visitorDetailspd {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+}
+
+.topInfoPosition {
+  position: relative;
+}
+
+// visitor list popUp
+.visitorListPopUp {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+// guard cancel reason error position
+.guardCancelPopUpError {
+  left: 30px;
+  padding-top: 0px;
+}

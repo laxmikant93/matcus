@@ -1,0 +1,625 @@
+@import "../../../assets/Style/base";
+
+.forgotPswdCustom {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.LoginSignUpCustom {
+  position: fixed;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid $silver;
+  z-index: 99;
+  .scrollCntWrap {
+    ul {
+      display: inline-flex;
+      flex-direction: row;
+      overflow: hidden;
+
+      li {
+        white-space: nowrap;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          display: block;
+          padding: 15px 0;
+          @extend .text-xxs;
+          text-decoration: none;
+          color: $base;
+          position: relative;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .bottomNavScroll {
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+    .bottomNavArrowLeft {
+      padding: 15px 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      .left {
+        left: 10px;
+        position: absolute;
+        top: 20px;
+      }
+    }
+    .bottomNavArrowRight {
+      padding: 15px 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      .right {
+        right: 10px;
+        position: absolute;
+        top: 20px;
+      }
+    }
+    .arrowcustom {
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      // margin-left: 30px;
+      position: relative;
+      top: -2px;
+      cursor: pointer;
+      &.right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      &.left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    }
+  }
+}
+.spotlink {
+  color: $secondary;
+  @extend .w-600;
+  .spotlink_blink {
+    height: 15px;
+    width: 15px;
+    border: 1px solid $secondary;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    &::before {
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      background-color: $secondary;
+      animation: hotspot 1s infinite;
+      -webkit-animation: hotspot 1s infinite;
+      margin: 4px;
+    }
+  }
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.bottomDesignCustom {
+  .purple-ecllipse {
+    bottom: -100px;
+    left: 45px;
+    position: fixed;
+    transform: rotate(0deg);
+    z-index: -1;
+  }
+  .right-btm-vector {
+    bottom: -165px;
+    right: -165px;
+    position: fixed;
+    transform: scale(0.4);
+    z-index: -1;
+  }
+}
+
+.Login-m-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+// .loginContent {
+//   margin-top: 12%;
+// }
+
+.heroIntro {
+  width: 400px;
+  position: relative;
+  .heroRole {
+    margin-top: 60px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      position: relative;
+      width: 100%;
+      li {
+        cursor: pointer;
+        padding: 30px 0 20px 0;
+        margin-right: 20%;
+        .HeroIconSec {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          height: 55px;
+          .svgColorIcon {
+            height: 48px;
+            width: auto;
+            max-width: 60px;
+            display: inline-block;
+          }
+          span {
+            @extend .text-xs;
+          }
+        }
+        &:first-child {
+          &:hover {
+            .InstitutePopup {
+              display: block;
+            }
+          }
+          .HeroIconSec {
+            span {
+              color: $primary;
+            }
+            &:hover {
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                left: 40%;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 6px 6px 6px;
+                z-index: 9999;
+                border-color: transparent transparent $primary transparent;
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          &:hover {
+            .TeacherPopup {
+              display: block;
+            }
+          }
+          .HeroIconSec {
+            span {
+              color: $secondary;
+            }
+            &:hover {
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                left: 35%;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 6px 6px 6px;
+                z-index: 9999;
+                border-color: transparent transparent $secondary transparent;
+              }
+            }
+          }
+        }
+        &:last-child {
+          margin-right: 0%;
+          &:hover {
+            .StudentPopup {
+              display: block;
+            }
+            .HeroIconSec {
+              span {
+                color: $purple;
+              }
+              &:hover {
+                &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: -20px;
+                  left: 40%;
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0 6px 6px 6px;
+                  z-index: 9999;
+                  border-color: transparent transparent $purple transparent;
+                }
+              }
+            }
+          }
+        }
+        ol {
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .InstitutePopup,
+    .StudentPopup,
+    .TeacherPopup {
+      position: absolute;
+      background-color: $white;
+      top: 105px;
+      min-height: 100px;
+      width: 450px;
+      padding: 25px;
+      border: 1px solid rgba($mgray, 0.5);
+      border-top: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      transition: all 0.3s ease;
+      z-index: 1;
+      cursor: default;
+      h2 {
+        margin-bottom: 10px;
+        width: 75%;
+      }
+      .InstitutePopupDetail {
+        p {
+          @extend .text-xxs;
+          padding: 0 0 0 15px;
+          position: relative;
+          margin: 4px 0;
+        }
+      }
+    }
+    .InstitutePopup {
+      left: 0;
+      display: none;
+      border-top: 4px solid $primary;
+      .InstitutePopupDetail {
+        p {
+          &.checkArrow {
+            &::before {
+              content: " ";
+              border-color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .StudentPopup {
+      left: 0;
+      display: none;
+      border-top: 4px solid $purple;
+      .InstitutePopupDetail {
+        p {
+          &.checkArrow {
+            &::before {
+              content: " ";
+              border-color: $purple;
+            }
+          }
+        }
+      }
+    }
+    .TeacherPopup {
+      left: 0;
+      display: none;
+      border-top: 4px solid $secondary;
+      .InstitutePopupDetail {
+        p {
+          &.checkArrow {
+            &::before {
+              content: " ";
+              border-color: $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.googleLogin {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 15px;
+  border-radius: 3px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #202020;
+  text-decoration: none;
+  border: 1px solid rgba(32, 32, 32, 0.2) !important;
+  border-radius: 4px;
+  background: white;
+  .svgColorIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+}
+.orDivider {
+  border-top: 1px solid $lgray;
+  text-align: center;
+  &::after {
+    content: "or";
+    background-color: $white;
+    position: relative;
+    @extend .text-xxs;
+    color: rgba($base, 0.4);
+    border-radius: 50%;
+    text-transform: uppercase;
+    border: 1px solid $silver;
+    top: -15px;
+    @extend .w-500;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.OthLoginOpt {
+  .Button {
+    margin-bottom: 6px;
+    @extend .w-400;
+    text-align: center;
+  }
+}
+.remember-text {
+  label {
+    color: $primary;
+  }
+}
+.sign-agree {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.forgot-passord-text,
+.underlineLink {
+  color: $primary;
+  @extend .w-500;
+  @extend .text-xs;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 8px 0;
+  &::after {
+    position: absolute;
+    height: 1px;
+    background-color: $primary;
+    bottom: 7px;
+    width: 100%;
+  }
+  &:hover {
+    color: $primary;
+    &::after {
+      background-color: $primary;
+    }
+  }
+}
+@keyframes hotspot {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.75, 1.75);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.arrowLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 0;
+  i {
+    height: 8px;
+    width: 8px;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+    transform: rotate(135deg);
+    left: 2px;
+    top: 2px;
+    position: relative;
+    transition: all 0.25s ease;
+  }
+  &.primary {
+    i {
+      border-color: $primary;
+    }
+  }
+  &:hover {
+    i {
+      left: 8px;
+    }
+  }
+}
+
+.succesCheckIconCst {
+  img {
+    width: 48px;
+  }
+}
+
+////EmailForgotPassword
+
+.EmailForgotPasswordWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100vh;
+}
+.EmailForgotPasswordCst {
+  width: 400px;
+  text-align: center;
+}
+
+.SignUpSectionWrapper,
+.loginSectionWrapper {
+  // display: flex;
+  // align-items: flex-start;
+  // justify-content: center;
+  // margin: 100px auto;
+  // width: 600px;
+  // max-width: 100%;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  margin: 120px auto;
+  width: 600px;
+  max-width: 100%;
+  // height: 95vh;
+  // margin: auto;
+  .SignUpSection,
+  .loginSection {
+    width: 400px;
+    text-align: center;
+  }
+}
+.otp-login-wrapper {
+  position: absolute;
+  padding-top: 5px;
+  .otp-login-cst {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      text-decoration: underline;
+    }
+    .otp-verify-denied-message {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      @extend .text-xxs;
+      color: $red;
+      @extend .w-600;
+    }
+    .otp-verify-success-message {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      @extend .text-xxs;
+      color: $secondary;
+      @extend .w-600;
+    }
+  }
+}
+
+.LoginMobileVerification {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .LMV-GuidelineText {
+    padding: 0 50px;
+  }
+  .MobileVerificationCst {
+    text-align: center;
+    width: 65%;
+    .SkipVerificationText {
+      line-height: 1;
+      margin-top: 20px;
+    }
+  }
+}
+.TurnWhatsappNotification {
+  // min-height: 100px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid $secondary;
+  box-shadow: 0 0 30px rgba($mgray, 0.5);
+  display: flex;
+  // align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  margin-bottom: 30px;
+  .TWN-HeadText {
+    display: flex;
+    align-items: center;
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+.LoginOTPVerificationTop {
+  margin-bottom: 20px;
+  p {
+    line-height: 1.4;
+  }
+  .underline {
+    padding: 0 0 5px 0;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      bottom: 5px;
+      background-color: $primary;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroIntro {
+    max-width: 100%;
+    text-align: center;
+    .heroRole {
+      margin-top: 5px;
+    }
+  }
+  .heroIntro .heroRole .InstitutePopup,
+  .heroIntro .heroRole .StudentPopup,
+  .heroIntro .heroRole .TeacherPopup {
+    padding: 25px 15px;
+    text-align: left;
+    max-width: 100%;
+    font-size: 12px;
+    h2 {
+      width: 100%;
+    }
+  }
+  .bottomDesignCustom {
+    display: none;
+  }
+  .Login-m-content {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 25px;
+    height: auto;
+    align-items: flex-start;
+  }
+  .LoginMobileVerification {
+    .LMV-GuidelineText {
+      padding: 0 10px;
+    }
+    .MobileVerificationCst {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,261 @@
+@import "../../assets/Style/base";
+
+// Mukesh add Class
+.SpecificAttendeesSearch {
+  .select-search__select {
+    margin-top: 20px;
+  }
+}
+
+.select-search__input {
+  border-radius: 4px;
+  border: 1px solid $mgray;
+  height: 44px;
+  padding: 10px 35px 10px 20px;
+  width: 100%;
+  color: $base;
+  @extend .w-700;
+  position: relative;
+  @extend .text-xs;
+  outline: 0;
+  outline: none;
+  box-shadow: none;
+  &:active,
+  &:focus {
+    border-color: $dgray;
+  }
+}
+.select-search__input::placeholder {
+  color: $dgray;
+  font-weight: 400;
+  @extend .text-xs;
+  text-transform: none !important;
+}
+.select-search__value {
+  position: relative;
+  &:after {
+    content: "\260C";
+    font-size: 42px;
+    right: 20px;
+    left: auto;
+    color: $lgray;
+    transform: rotate(100deg);
+    top: -17px;
+  }
+}
+.select-search__select {
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 3px;
+  border: 1px solid $silver;
+  margin-top: 5px;
+}
+.SearchListItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 20px;
+
+  .SearchListImage {
+    img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+  }
+}
+.select-search__row {
+  border-bottom: 1px solid $silver;
+  &:last-child {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.CreateQuestionPaperTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .CreateTestCalculatedMarks {
+    text-align: right;
+  }
+}
+.CT_Setting__1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+}
+.CT_Setting__2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  .GraceTime__True {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+.InstructionTimeCstm {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.TestIns_WrapSec {
+  article {
+    display: flex;
+    flex-direction: column;
+    .TestIns_Head {
+      @extend .w-500;
+      @extend .text-xs;
+      color: $base;
+      padding: 10px 0 5px 15px;
+      cursor: pointer;
+      position: relative;
+      margin: 5px 0;
+      &::before {
+        position: absolute;
+        border: solid black;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        top: 14px;
+      }
+    }
+    .TestIns_AnswerDisp {
+      @extend .text-xs;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $silver;
+      padding-left: 15px;
+      line-height: 1.75;
+      ol {
+        padding-left: 15px;
+        li {
+          margin: 5px 0;
+        }
+      }
+    }
+    &.active {
+      .TestIns_Head {
+        &:before {
+          transform: rotate(-135deg);
+          -webkit-transform: rotate(-135deg);
+          top: 19px;
+        }
+      }
+      .TestIns_AnswerDisp {
+        display: block;
+      }
+    }
+  }
+  &.TestIns_Border {
+    border-bottom: 0;
+    margin: 0;
+    padding: 20px 0;
+    article {
+      border: 1px solid $lgray;
+      border-radius: 4px;
+      padding: 5px 15px 8px 15px;
+      margin-bottom: 5px;
+      text-align: left;
+      .TestIns_AnswerDisp {
+        border: 0;
+      }
+    }
+  }
+}
+.AddInstructionInput {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 20px;
+  position: relative;
+  .AddInstructionGroupBtn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid $lgray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &:hover {
+        background-color: $silver;
+        border-radius: inherit;
+      }
+      &:first-child {
+        border-right: 1px solid $lgray;
+      }
+    }
+  }
+}
+
+.select-search__option.is-selected {
+  background: #2fcc8b;
+  color: #fff;
+}
+// add class from public
+
+.SpecificAttendsListOnlineEx {
+  width: 100%;
+  text-align: left;
+  background: 0 0;
+  border: 0px;
+  outline: 0;
+  border-radius: 0px;
+  padding: 15px 10px;
+  &.active {
+    background: $primary;
+    color: $white;
+  }
+}
+.option.SearchListItemWrapper {
+  border: 1px solid #80808036;
+  border-bottom: 0px;
+}
+.option.SearchListItemWrapper:last-child {
+  border-bottom: 1px solid #80808036;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .CT_Setting__1 {
+    grid-template-columns: repeat(2, 1fr);
+    .datePickerWrap {
+      padding: 0px 0px 10px;
+    }
+  }
+  .CT_Setting__2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .CT_Setting__1 {
+    grid-template-columns: repeat(2, 1fr);
+    .datePickerWrap {
+      padding: 0px 0px 10px;
+    }
+  }
+  .CT_Setting__2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .CT_Setting__1 {
+    grid-template-columns: repeat(1, 1fr);
+    .datePickerWrap {
+      padding: 0px;
+    }
+  }
+  .CT_Setting__2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

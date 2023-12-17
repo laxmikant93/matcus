@@ -1,0 +1,127 @@
+@import "../../../CommonComponent/commonCss/base.scss";
+
+.guest-login-form-wrapper {
+  .guest-login-component-container {
+    .heading-item {
+      color: #093351;
+
+      .login-text {
+        text-decoration: underline;
+      }
+    }
+
+    .guest-login-input {
+      height: 48px;
+      padding: 13px 0 12px 24px;
+      // color: rgba($black, 0.4);
+      border-radius: 4px;
+      border: 1.5px solid rgba(0, 0, 0, 0.2);
+      font-size: 15px;
+      font-weight: 500;
+      width: 100%;
+    }
+
+    .email-address-wrapper {
+      .email-address-item {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-column-gap: 16px;
+        align-items: center;
+
+        @media (max-width: 600px) {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+
+    .shipping-address-wrapper {
+      .formFieldwrap {
+        .cstmPhoneInput {
+          .react-tel-input {
+            .form-control {
+              height: 48px !important;
+            }
+          }
+        }
+      }
+
+      .shipping-address-item {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+
+        .formFieldwrap {
+          padding-bottom: 0;
+          .cstmPhoneInput {
+            .form-group {
+              &.react-tel-input {
+                .flag-dropdown {
+                  .country-list {
+                    .search {
+                      z-index: 10;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .name-div {
+          grid-column: 1 / span 2;
+
+          @media (max-width: 600px) {
+            grid-column: 1 / span 3;
+          }
+        }
+
+        .mobile-no-div {
+          grid-column: 3 / span 1;
+
+          @media (max-width: 600px) {
+            grid-column: 1 / span 3;
+          }
+        }
+
+        .street-name-div {
+          grid-column: 1 / span 3;
+        }
+
+        .city-div {
+          grid: 1 / span 2;
+
+          @media (max-width: 600px) {
+            grid-column: 1 / span 3;
+          }
+        }
+
+        .state-div {
+          @media (max-width: 600px) {
+            grid-column: 1 / span 3;
+          }
+        }
+
+        .pincode-div {
+          @media (max-width: 600px) {
+            grid-column: 1 / span 3;
+          }
+        }
+
+        .landmark-div {
+          grid-column: 1 / span 2;
+
+          @media (max-width: 600px) {
+            grid-column: 1 / span 3;
+          }
+        }
+
+        .Country-div {
+          @media (max-width: 600px) {
+            grid-column: 1 / span 3;
+          }
+        }
+      }
+    }
+  }
+}

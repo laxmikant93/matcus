@@ -1,0 +1,23 @@
+@import '../../../../../../src/assets/Style/base';
+
+.reject-popup-wrapper {
+  .reject-msg-item {
+    font-size: 18px;
+  }
+
+  .form-area-wrapper {
+    .form-item {
+      border: 1px solid rgba($base, 0.3);
+      border-radius: 4px;
+    }
+  }
+
+  .warning-note-item {
+    color: rgba($base, 0.7);
+  }
+
+  .reject-popup-button-wrapper {
+    justify-content: end;
+    gap: 16px;
+  }
+}

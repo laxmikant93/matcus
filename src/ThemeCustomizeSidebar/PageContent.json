@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "listname": "Home",
+    "icon": "icon-edit",
+    "icon2": "icon-check",
+    "component": "Home"
+  },
+  {
+    "id": 2,
+    "listname": "About",
+    "icon": "icon-edit",
+    "icon2": "icon-check",
+    "component": "About"
+  },
+  {
+    "id": 3,
+    "listname": "Our Team",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "OurTeam"
+  },
+  {
+    "id": 4,
+    "listname": "Admissions",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "Admissions"
+  },
+  {
+    "id": 5,
+    "listname": "Fee Structures",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "FeeStructures"
+  },
+  {
+    "id": 6,
+    "listname": "School Facilities",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "SchoolFacilities"
+  },
+  {
+    "id": 7,
+    "listname": "Announcements",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "Announcements"
+  },
+  {
+    "id": 8,
+    "listname": "Miscellaneous",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "Miscellaneous"
+  },
+  {
+    "id": 9,
+    "listname": "Gallery",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "Gallery"
+  },
+  {
+    "id": 10,
+    "listname": "FAQs",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "FAQs"
+  },
+  {
+    "id": 11,
+    "listname": "Vacancy",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "Vacancy"
+  },
+  {
+    "id": 12,
+    "listname": "Contact",
+    "icon": "icon-setting",
+    "icon2": "icon-check",
+    "component": "Contact"
+  }
+]

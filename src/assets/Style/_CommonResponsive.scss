@@ -1,0 +1,83 @@
+// @import "./theme";
+// @import "./typo";
+
+@media screen and (max-width: 992px) {
+  .pageInCenter {
+    width: 90%;
+  }
+  .popup {
+    &.removePopup {
+      width: auto;
+      padding: 11px;
+    }
+  }
+  .Popup {
+    &.RemovePopup {
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .popup {
+    &.removePopup {
+      width: auto;
+    }
+  }
+  .Popup {
+    &.RemovePopup {
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .popup {
+    &.removePopup {
+      width: auto;
+    }
+  }
+  .Popup {
+    &.RemovePopup {
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .popup {
+    &.removePopup {
+      width: auto;
+    }
+  }
+  .Popup {
+    &.RemovePopup {
+      width: auto;
+    }
+  }
+  .tooltip-cst {
+    .tooltip-content-cst {
+      right: 50%;
+      left: auto;
+    }
+  }
+  /****social share popup****/
+  .sharePopup {
+    .socialShare-icon {
+      .socialShare-iconItem {
+        padding: 0 5px;
+      }
+    }
+  }
+  /****Close social share popup****/
+
+  .InputOverlayRightAlign {
+    &.ResendOTPBtn {
+      position: relative;
+      padding-top: 0;
+      top: -8px;
+    }
+  }
+  .logoCustom {
+    img {
+      width: 50%;
+    }
+  }
+}

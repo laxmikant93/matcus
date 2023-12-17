@@ -1,0 +1,153 @@
+@import "../../assets/Style/base";
+/***Personal Profile Listing ***/
+// .scroll-nav-tab-wrapper {
+//   display: inline-block;
+//   width: 100%;
+//   overflow: hidden;
+//   overflow-x: scroll;
+//   scrollbar-width: none;
+//   -ms-overflow-style: none;
+// }
+.scroll-nav-tab-wrapper {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+}
+.PTH-PersonalProfileList {
+  .scroll-nav-tab {
+    display: flex;
+    align-items: center;
+    .button {
+      margin-right: 5px;
+      // &:first-child {
+      //   padding: 0 40px;
+      // }
+    }
+  }
+}
+.PTH-PersonalProfileList {
+  .scroll-nav-tab {
+    display: flex;
+    align-items: center;
+    .button {
+      margin-right: 5px;
+      // &:first-child {
+      //   padding: 0 40px;
+      // }
+    }
+  }
+}
+.personalProfileListSection {
+  min-height: 500px;
+  columns: 3 auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 50px 0;
+
+  .card {
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    border-radius: 15px;
+    background: $white;
+    box-shadow: 0 0 20px rgba($silver, 0.125);
+    width: 100%;
+  }
+  .TabletFeature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    .button {
+      padding: 0 10px;
+      @extend .text-2xs;
+    }
+  }
+  .PPL-ActionButton {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .button {
+      width: 50%;
+      margin-right: 5px;
+    }
+  }
+  .cardBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .PPL-ProfilePhoto {
+    height: 80px;
+    width: 80px;
+    background-color: $silver;
+    border-radius: 50%;
+    border: 5px solid $white;
+    margin-top: -55px;
+    z-index: 1;
+    img {
+      border-radius: 50%;
+      max-width: 100%;
+      display: block;
+    }
+    &.without-ppl-cover {
+      margin-top: 0;
+    }
+  }
+  .cardMedia {
+    img {
+      grid-row: 1 / -1;
+      grid-column: 1;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      width: 100%;
+    }
+  }
+}
+/***Close Personal Profile Listing ***/
+@media only screen and (max-width: 992px) {
+  .scroll-nav-tab-wrapper {
+    display: flex;
+  }
+  .personalProfileListSection {
+    column-count: 2;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .personalProfileListSection {
+    column-count: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /***Personal Profile Listing ***/
+  .personalProfileListSection {
+    column-count: 1;
+  }
+  /***close Personal Profile Listing ***/
+  .scroll-nav-tab {
+    ul {
+      display: inline-flex;
+      flex-direction: row;
+      flex-flow: row;
+      li {
+        margin-right: 20px;
+      }
+    }
+  }
+}

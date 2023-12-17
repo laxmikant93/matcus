@@ -1,0 +1,73 @@
+.FilterIcon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  cursor: pointer;
+  background-color: #808080;
+  -webkit-mask: url("./icon-filter.svg") no-repeat center;
+  mask-image: url("./icon-filter.svg") no-repeat center;
+}
+
+.FilterButton {
+  background-color: #FFF;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  padding: 4px;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.RenderFilterContent {
+  overflow: hidden;
+
+  &.Active {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(32, 32, 32, 0.4);
+    z-index: 1200;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .ContentWrapper {
+    display: block;
+    gap: 10px;
+    border: none;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    z-index: 1201;
+    background-color: #FFF;
+    width: 280px;
+    height: 100vh;
+    transform: translateX(-100%);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    transition-duration: 600ms;
+    padding: 8px 16px;
+
+    &.SlideLeft {
+      transform: translateX(0);
+      animation: 1.5s;
+    }
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: auto;
+  }
+}

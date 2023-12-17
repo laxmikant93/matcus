@@ -1,0 +1,44 @@
+[
+  {
+    "menuName": "LMS",
+    "menuLink": "/",
+    "Icon": "LMS",
+    "subMenuItem": [
+      {
+        "menuName": "Classroom",
+        "menuLink": "/dashboard/teacher-classrooms-list"
+      },
+      {
+        "menuName": "Online Class",
+        "menuLink": "/dashboard/teacher-online-class"
+      },
+      {
+        "menuName": "Assignment",
+        "menuLink": "/dashboard/teacher-assignments"
+      },
+      {
+        "menuName": "Online Test",
+        "menuLink": "/dashboard/teacher-online-test"
+      },
+      {
+        "menuName": "Study Material",
+        "menuLink": "/dashboard/teacher/course-list"
+      }
+    ]
+  },
+  {
+    "menuName": "ERP",
+    "menuLink": "/",
+    "Icon": "ERP",
+    "subMenuItem": [
+      {
+        "menuName": "Attendance",
+        "menuLink": "/dashboard/attendance-teacher-classroomSubjectlist"
+      },
+      {
+        "menuName": "Visitor Management",
+        "menuLink": "/teacher-visitor-management"
+      }
+    ]
+  }
+]

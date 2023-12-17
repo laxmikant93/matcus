@@ -1,0 +1,103 @@
+@import "../../assets/Style/base";
+
+.gallerySliderWrapper {
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 18, 18, 0.75);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 49999;
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease-in-out;
+  display: flex;
+  .closeModal {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+    &:hover {
+      opacity: 1;
+    }
+    cursor: pointer;
+    &::before,
+    &::after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: $primary;
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  .gallerySliderContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+    .gallery-lightbox-image {
+      // object-fit: cover;
+      max-height: 80vh;
+      max-width: 100vw;
+      width: auto;
+      height: auto;
+    }
+  }
+  .prev-button {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    background-color: $base;
+    color: $white;
+    border: none;
+    i {
+      height: 7px;
+      width: 7px;
+      border-width: 2.25px 0 0 2.25px;
+      border-style: solid;
+      transform: rotate(-45deg);
+      left: 2px;
+      position: relative;
+      transition: all 0.25s ease;
+      border-color: initial;
+      display: inline-block;
+    }
+  }
+  .next-button {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: $base;
+    color: $white;
+    border: none;
+    i {
+      height: 7px;
+      width: 7px;
+      border-width: 2.25px 0 0 2.25px;
+      border-style: solid;
+      transform: rotate(135deg);
+      right: 2px;
+      position: relative;
+      transition: all 0.25s ease;
+      border-color: initial;
+      display: inline-block;
+    }
+  }
+}

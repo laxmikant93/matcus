@@ -1,0 +1,148 @@
+[
+  {
+    "menuName": "Home",
+    "menuLink": "/dashboard",
+    "menuTag": "button",
+    "Icon": "home"
+  },
+  {
+    "menuName": "Manage Website",
+    "menuLink": "/",
+    "Icon": "ManageWebsite",
+    "subMenuItem": [
+      {
+        "menuName": "Edit Website",
+        "menuLink": "/"
+      },
+      {
+        "menuName": "Pages",
+        "menuLink": "/",
+        "subMenuItem": [
+          {
+            "menuName": "Basic Info",
+            "menuLink": "/manage-basic-info"
+          },
+          {
+            "menuName": "Edit Overview",
+            "menuLink": "/institute-info-manage"
+          },
+          {
+            "menuName": "Faculties",
+            "menuLink": "/faculty-route"
+          },
+          {
+            "menuName": "Services",
+            "menuLink": "/services-list"
+          },
+          {
+            "menuName": "Fee Structure",
+            "menuLink": "/fee-structure"
+          },
+          {
+            "menuName": "Home & Menu",
+            "menuLink": "/menu-header-list"
+          },
+          {
+            "menuName": "Admissions",
+            "menuLink": "/admission-list"
+          },
+          {
+            "menuName": "Gallery",
+            "menuLink": "/gallery-list"
+          },
+          {
+            "menuName": "Announcements",
+            "menuLink": "/announcement-list"
+          },
+          {
+            "menuName": "Testimonials",
+            "menuLink": "/testimonial-list"
+          },
+          {
+            "menuName": "FAQs",
+            "menuLink": "/manage-faqs"
+          },
+          {
+            "menuName": "Vacancies",
+            "menuLink": "/vacancy-list"
+          },
+          {
+            "menuName": "Payment Mode",
+            "menuLink": "/payment-mode-details"
+          },
+          {
+            "menuName": "Social Links",
+            "menuLink": "/add-social-links"
+          },
+          {
+            "menuName": "Support Center",
+            "menuLink": "/admin-support-center"
+          },
+          {
+            "menuName": "Miscellaneous",
+            "menuLink": "/miscellaneous-list"
+          },
+          {
+            "menuName": "Inquiries Recieved",
+            "menuLink": "/contact-list"
+          }
+        ]
+      },
+      {
+        "menuName": "SEO Meta",
+        "menuLink": "/seo-metatag"
+      }
+    ]
+  },
+  {
+    "menuName": "LMS",
+    "menuLink": "/",
+    "Icon": "LMS",
+    "subMenuItem": [
+      {
+        "menuName": "Classroom",
+        "menuLink": "/courses-route"
+      },
+      {
+        "menuName": "Staff",
+        "menuLink": "/teacher-dashboard-route"
+      },
+      {
+        "menuName": "Students",
+        "menuLink": "/student-dashboard-route"
+      },
+      {
+        "menuName": "Study Material",
+        "menuLink": "/course"
+      }
+    ]
+  },
+  {
+    "menuName": "ERP",
+    "menuLink": "/",
+    "Icon": "ERP",
+    "subMenuItem": [
+      {
+        "menuName": "Attendance",
+        "menuLink": "/admin-attendance-classroomSubjectlist"
+      },
+      {
+        "menuName": "Fee Manangement",
+        "menuLink": "/fee-management"
+      },
+      {
+        "menuName": "Visitor Management",
+        "menuLink": "/visitor-management"
+      },
+      {
+        "menuName": "Guard Management",
+        "menuLink": "/visitor-management-list"
+      }
+    ]
+  },
+  {
+    "menuName": "Access Control",
+    "menuLink": "/access-control",
+    "Icon": "AccessControl"
+  }
+]

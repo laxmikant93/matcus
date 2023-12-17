@@ -1,0 +1,82 @@
+@import '../../../../../assets/Style/base';
+
+.settingCard-container {
+  .setting-wrap {
+    .text-18 {
+      font-size: 18px;
+    }
+
+    .sub-category-wrap {
+      .settingCard-wrapper {
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        width: 100%;
+        // display: grid;
+        // grid-template-columns: 30% auto 67% 3%;
+        // align-items: center;
+
+        @media (max-width:768px) {
+          display: block;
+
+        }
+
+        .icon-div {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 16px;
+          width: 30%;
+
+          @media (max-width:768px) {
+            width: 100%;
+          }
+        }
+
+
+        margin-top: 25px;
+
+        .vr-line {
+          height: 40px;
+          display: block;
+          width: 1px;
+          background-color: rgba($base, 0.2);
+
+          @media (max-width:768px) {
+            display: none;
+          }
+        }
+
+        .settingCard-text-wrapper {
+          width: 70%;
+
+          @media (max-width:768px) {
+            margin-top: 8px;
+            width: 100%;
+          }
+
+          .setting-text-div {
+            // width: 100%;
+            padding-left: 16px;
+
+            @media (max-width:768px) {
+              padding-left: 0;
+            }
+          }
+
+        }
+      }
+
+
+    }
+
+    .i-48 {
+      width: 48px;
+      height: 48px;
+    }
+
+
+  }
+}

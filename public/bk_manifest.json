@@ -1,0 +1,24 @@
+{
+  "short_name": "{{institute_name}}",
+  "name": "{{institute_name}}",
+  "description": "{{institute_intro_description}}",
+  "icons": [
+    {
+      "src": "{{institute_logo}}",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "{{institute_logo}}",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#121212",
+  "background_color": "#ffffff",
+  "gcm_sender_id": "971344965786",
+  "orientation": "portrait"
+}

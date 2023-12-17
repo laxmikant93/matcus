@@ -1,0 +1,2385 @@
+{
+  "createTemplate": true,
+  "templateImg": "https://edneed-images-uat.s3.amazonaws.com/blob:http://my_app.com:3000/93f0e2b2-63e8-4b22-8dc9-daf6749a1454",
+  "templateName": "Defaultine",
+  "themeCategory": "LMS",
+  "theme_Name": "DEfaultine",
+  "isDefault": true,
+  "Header": {
+    "NavAuth": {
+      "ButtonLogin": {
+        "Hover": {
+          "Background": "rgba(38, 51, 93, 0.8)",
+          "Color": "#FFFFFF",
+          "BorderColor": "rgba(38, 51, 93, 0.8)"
+        },
+        "Active": {
+          "Background": "rgba(38, 51, 93, 0.8)",
+          "Color": "#FFFFFF",
+          "BorderColor": "rgba(38, 51, 93, 0.8)"
+        },
+        "FontSize": "15px",
+        "FontWeight": "400",
+        "LineHeight": "22px",
+        "FontFamily": "",
+        "FontStyle": "",
+        "LetterSpacing": "",
+        "PaddingY": "8px",
+        "PaddingX": "16px",
+        "Background": "#FFFFFF",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "rgba(38, 51, 93, 0.8)"
+      },
+      "ButtonSignup": {
+        "Hover": {
+          "Background": "rgba(38, 51, 93, 0.8)",
+          "Color": "#FFFFFF",
+          "BorderColor": "rgba(38, 51, 93, 0.8)"
+        },
+        "Active": {
+          "Background": "rgba(38, 51, 93, 0.8)",
+          "Color": "#FFFFF",
+          "BorderColor": "rgba(38, 51, 93, 0.8)"
+        },
+        "FontSize": "15px",
+        "FontWeight": "400",
+        "LineHeight": "22px",
+        "FontFamily": "",
+        "FontStyle": "",
+        "LetterSpacing": "",
+        "PaddingY": "8px",
+        "PaddingX": "16px",
+        "Background": "rgba(38, 51, 93, 0.8)",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF"
+      }
+    },
+    "NavMenuWrapper": {
+      "NavMenuCustom": {
+        "Hover": {
+          "Color": "#26335D"
+        },
+        "Active": {
+          "Color": "#26335D",
+          "FontWeight": "600"
+        },
+        "NavMenuScrollIcon": {
+          "Hover": {
+            "BorderColor": "#26335D"
+          },
+          "BorderColor": "#1A090D"
+        },
+        "MenuGap": "28px",
+        "FontSize": "16px",
+        "FontWeight": "500",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "",
+        "LetterSpacing": "",
+        "Color": "#1A090D"
+      },
+      "Background": "rgba(38, 51, 93, 0.05)"
+    },
+    "sequence": 0,
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "component": "Defaultine_Header",
+    "Background": "#FFFFFF",
+    "Logo": {
+      "Width": "80px",
+      "Height": "80px"
+    },
+    "h4": {
+      "FontSize": "24px",
+      "FontWeight": "600",
+      "LineHeight": "36px",
+      "FontFamily": "",
+      "FontStyle": "",
+      "LetterSpacing": "",
+      "Color": "#202020",
+      "TextTransform": "uppercase",
+      "TextAlignment": "left"
+    },
+    "h5": {
+      "FontSize": "16px",
+      "FontWeight": "500",
+      "LineHeight": "20px",
+      "FontFamily": "",
+      "FontStyle": "",
+      "LetterSpacing": "",
+      "Color": "#202020",
+      "TextTransform": "uppercase",
+      "TextAlignment": "left"
+    },
+    "createdAt": "2022-07-17T23:04:11.980Z",
+    "updatedAt": "2022-07-17T23:04:11.980Z",
+    "__v": 0
+  },
+  "Footer": {
+    "a": {
+      "Hover": {
+        "Color": "#E9DB89"
+      },
+      "FontWeight": "400",
+      "FontSize": "14px",
+      "LineHeight": "20px",
+      "FontFamily": "",
+      "FontStyle": "",
+      "LetterSpacing": "",
+      "Color": "#FFFFFF",
+      "TextTransform": "uppercase",
+      "TextAlignment": ""
+    },
+    "sequence": 100,
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "component": "Defaultine_Footer",
+    "Background": "#343F64",
+    "h4": {
+      "FontWeight": "700",
+      "FontSize": "20px",
+      "LineHeight": "30px",
+      "FontFamily": "",
+      "FontStyle": "",
+      "LetterSpacing": "",
+      "Color": "#FFFFFF",
+      "TextTransform": "uppercase",
+      "TextAlignment": ""
+    },
+    "h5": {
+      "FontWeight": "500",
+      "FontSize": "16px",
+      "LineHeight": "20px",
+      "FontFamily": "",
+      "FontStyle": "",
+      "LetterSpacing": "",
+      "Color": "#FFFFFF",
+      "TextTransform": "uppercase",
+      "TextAlignment": ""
+    },
+    "h6": {
+      "FontWeight": "500",
+      "FontSize": "16px",
+      "LineHeight": "24px",
+      "FontFamily": "",
+      "FontStyle": "",
+      "LetterSpacing": "",
+      "Color": "#FFFFFF",
+      "TextTransform": "uppercase",
+      "TextAlignment": ""
+    },
+    "li": {
+      "FontWeight": "400",
+      "FontSize": "14px",
+      "LineHeight": "21px",
+      "FontFamily": "",
+      "FontStyle": "",
+      "LetterSpacing": "",
+      "Color": "#FFFFFF",
+      "TextTransform": "uppercase",
+      "TextAlignment": ""
+    },
+    "MapContainer": {
+      "Height": "300px"
+    },
+    "SocialMediaIconListItem": {
+      "Width": "38px",
+      "Height": "38px"
+    },
+    "CopyrightSectionItem": {
+      "FontWeight": "400",
+      "FontSize": "10px",
+      "LineHeight": "15px",
+      "FontFamily": "",
+      "FontStyle": "",
+      "LetterSpacing": "",
+      "Color": "#FFFFFF"
+    },
+    "createdAt": "2022-07-17T23:04:11.969Z",
+    "updatedAt": "2022-07-17T23:04:11.969Z",
+    "__v": 0
+  },
+  "themeGlobal": {
+    "typography": {
+      "h1": {
+        "FontSize": "56px",
+        "FontWeight": "700",
+        "LineHeight": "68px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": ""
+      },
+      "h2": {
+        "FontSize": "32px",
+        "FontWeight": "700",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": ""
+      },
+      "h3": {
+        "FontSize": "18px",
+        "FontWeight": "500",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": ""
+      },
+      "h4": {
+        "FontSize": "20px",
+        "FontWeight": "700",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": ""
+      },
+      "h5": {
+        "FontSize": "16px",
+        "FontWeight": "500",
+        "LineHeight": "20px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": ""
+      },
+      "h6": {
+        "FontSize": "18px",
+        "FontWeight": "600",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": ""
+      },
+      "regular": {
+        "FontSize": "16px",
+        "FontWeight": "400",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": ""
+      },
+      "anchor": {
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "1.24",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": ""
+      }
+    },
+    "headerThemeColor": {
+      "h4": {
+        "Color": "#202020"
+      },
+      "h5": {
+        "Color": "#202020"
+      },
+      "ButtonLogin": {
+        "Hover": {
+          "Background": "rgba(38, 51, 93, 0.8)",
+          "Color": "#FFFFFF",
+          "BorderColor": "rgba(38, 51, 93, 0.8)"
+        },
+        "Active": {
+          "Background": "rgba(38, 51, 93, 0.8)",
+          "Color": "#FFFFFF",
+          "BorderColor": "rgba(38, 51, 93, 0.8)"
+        },
+        "Background": "#FFFFFF",
+        "Color": "rgba(38, 51, 93, 0.8)",
+        "BorderColor": "rgba(38, 51, 93, 0.8)"
+      },
+      "ButtonSignup": {
+        "Hover": {
+          "Background": "rgba(38, 51, 93, 0.8)",
+          "Color": "#FFFFF",
+          "BorderColor": "rgba(38, 51, 93, 0.8)"
+        },
+        "Active": {
+          "Background": "rgba(38, 51, 93, 0.8)",
+          "Color": "#FFFFF",
+          "BorderColor": "rgba(38, 51, 93, 0.8)"
+        },
+        "Background": "rgba(38, 51, 93, 0.8)",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "Color": "#FFFFFF"
+      },
+      "NavMenu": {
+        "Hover": {
+          "Color": "#26335D"
+        },
+        "Active": {
+          "Color": "#26335D"
+        },
+        "ScrollIcon": {
+          "Hover": {
+            "Color": "#26335D"
+          },
+          "Color": "#1A090D"
+        },
+        "Background": "rgba(38, 51, 93, 0.05)",
+        "Color": "#1A090D"
+      },
+      "Background": "#FFFFFF"
+    },
+    "footerThemeColor": {
+      "Logo": {
+        "Background": "#FFFFFF"
+      },
+      "h4": {
+        "Color": "#FFFFFF"
+      },
+      "h5": {
+        "Color": "#FFFFFF"
+      },
+      "h6": {
+        "Color": "#FFFFFF"
+      },
+      "li": {
+        "Color": "#FFFFFF"
+      },
+      "a": {
+        "Hover": {
+          "Color": "#E9DB89"
+        },
+        "Color": "#FFFFFF"
+      },
+      "Copyright": {
+        "Color": "#FFFFFF"
+      },
+      "Background": "#343F64"
+    },
+    "headerThemeTypo": {
+      "h4": {
+        "FontSize": "24px",
+        "FontWeight": "600",
+        "LineHeight": "36px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      },
+      "h5": {
+        "FontSize": "16px",
+        "FontWeight": "500",
+        "LineHeight": "20px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      },
+      "Button": {
+        "FontWeight": "400",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      },
+      "NavMenu": {
+        "Active": {
+          "FontWeight": "600"
+        },
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "24px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      }
+    },
+    "footerThemeTypo": {
+      "h4": {
+        "FontSize": "20px",
+        "FontWeight": "700",
+        "LineHeight": "30px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      },
+      "h5": {
+        "FontSize": "16px",
+        "FontWeight": "500",
+        "LineHeight": "20px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      },
+      "h6": {
+        "FontSize": "16px",
+        "FontWeight": "500",
+        "LineHeight": "24px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      },
+      "li": {
+        "FontSize": "14px",
+        "FontWeight": "400",
+        "LineHeight": "21px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      },
+      "a": {
+        "FontWeight": "400",
+        "FontSize": "14px",
+        "LineHeight": "20px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      },
+      "Copyright": {
+        "FontWeight": "400",
+        "FontSize": "10px",
+        "LineHeight": "15px",
+        "LetterSpacing": "",
+        "FontFamily": "",
+        "FontStyle": ""
+      }
+    },
+    "headerThemeUtilities": {
+      "Logo": {
+        "Width": "80px",
+        "Height": "80px"
+      },
+      "h4": {
+        "TextTransform": "uppercase",
+        "TextAlignment": "left"
+      },
+      "h5": {
+        "TextTransform": "uppercase",
+        "TextAlignment": "left"
+      },
+      "li": {
+        "TextTransform": "uppercase",
+        "TextAlignment": "left"
+      },
+      "Button": {
+        "PaddingY": "8px",
+        "PaddingX": "16px",
+        "BorderRadius": "4px"
+      },
+      "NavMenu": {
+        "MenuGap": "28px"
+      }
+    },
+    "footerThemeUtilities": {
+      "Logo": {
+        "Width": "80px",
+        "Height": "80px",
+        "BorderRadius": "50%",
+        "PaddingX": "10px",
+        "PaddingY": "10px"
+      },
+      "h4": {
+        "TextTransform": "uppercase",
+        "TextAlignment": ""
+      },
+      "h5": {
+        "TextTransform": "uppercase",
+        "TextAlignment": ""
+      },
+      "h6": {
+        "TextTransform": "uppercase",
+        "TextAlignment": ""
+      },
+      "li": {
+        "TextTransform": "uppercase",
+        "TextAlignment": ""
+      },
+      "a": {
+        "TextTransform": "uppercase",
+        "TextAlignment": ""
+      },
+      "Map": {
+        "Height": "300px"
+      },
+      "SocialMediaIcon": {
+        "Width": "38px",
+        "Height": "38px"
+      }
+    },
+    "bodyThemeColor": {
+      "typography": {
+        "Hover": {
+          "LinkColor": "#4E616B"
+        },
+        "Color": "#202020",
+        "HeadingColor": "#343F64",
+        "SubHeadingColor": "#4E616B",
+        "LinkColor": "#343F64"
+      },
+      "Button": {
+        "Hover": {
+          "Background": "#4E616B",
+          "Color": "#E9DB89"
+        },
+        "Background": "#343F64",
+        "Color": "#FFFFFF"
+      },
+      "Background": "#FFFFFF"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "component": "Defaultine_Body",
+    "color": {
+      "alpha": "rgba(38, 51, 93, 0.8)",
+      "alphaLight": "#EBECF0",
+      "alphaSemiLight": "#4E616B",
+      "beta": "#E9DB89",
+      "betaLight": "",
+      "betaSemiLight": "",
+      "background": "",
+      "base": "#202020",
+      "white": "#fff"
+    },
+    "createdAt": "2022-07-17T23:04:11.917Z",
+    "updatedAt": "2022-07-17T23:04:11.917Z",
+    "__v": 0
+  },
+  "Banner": {
+    "a": {
+      "Hover": {
+        "Background": "#4E616B",
+        "BorderColor": "#343F64",
+        "Color": "#E9DB89"
+      },
+      "FontWeight": "500",
+      "FontSize": "16px",
+      "LineHeight": "1.24",
+      "FontFamily": "",
+      "FontStyle": "Normal",
+      "LetterSpacing": "",
+      "Background": "#343F64",
+      "BorderColor": "#343F64",
+      "BorderRadius": "4px",
+      "Color": "#343F64",
+      "PaddingY": "10px",
+      "PaddingX": "40px"
+    },
+    "Dots": {
+      "Active": {
+        "Color": "rgba(38, 51, 93, 0.8)"
+      },
+      "Color": "rgba(32, 32, 32, 0.5)"
+    },
+    "SlickArrowColor": {
+      "Hover": {
+        "Color": "#E9DB89"
+      },
+      "Color": "#fff"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "component": "Defaultine_Body",
+    "Background": "rgba(255, 255, 255, 0.5)",
+    "h1": {
+      "FontWeight": "700",
+      "FontSize": "56px",
+      "LineHeight": "68px",
+      "FontFamily": "",
+      "FontStyle": "Normal",
+      "LetterSpacing": "",
+      "Color": "#343F64"
+    },
+    "h3": {
+      "FontWeight": "400",
+      "FontSize": "12px",
+      "LineHeight": "18px",
+      "FontFamily": "",
+      "FontStyle": "Normal",
+      "LetterSpacing": "",
+      "Color": "#4E616B"
+    },
+    "SliderImage": {
+      "Height": "480px"
+    },
+    "BannerOverlay": {
+      "Top": "auto",
+      "Right": "139px",
+      "Left": "auto",
+      "width": "388px",
+      "Background": "rgba(255, 255, 255, 0.8)",
+      "Padding": "16px",
+      "BorderRadius": "0"
+    },
+    "createdAt": "2022-07-17T23:04:11.952Z",
+    "updatedAt": "2022-07-17T23:04:11.952Z",
+    "__v": 0
+  },
+  "AboutUs": {
+    "AboutUsHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64",
+        "Alignment": "center"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B",
+        "Alignment": "center"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#202020",
+        "Alignment": "center"
+      },
+      "SectionHead": {
+        "MarginBottom": "20px",
+        "Alignment": "center"
+      },
+      "SectionGrid": {
+        "Background": "#EBECF0"
+      },
+      "BorderBottom": {
+        "BorderWidth": "2px",
+        "Background": "#343F64",
+        "BottomSpace": "-8px"
+      },
+      "ViewMoreButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "inherit",
+        "LineHeight": "inherit",
+        "Background": "#343F64",
+        "BorderColor": "transparent",
+        "BorderRadius": "0",
+        "Color": "#FFFFFF",
+        "PaddingY": "0",
+        "PaddingX": "0",
+        "TextDecoration": "underline"
+      },
+      "ViewMoreSection": {
+        "MarginTop": "32px"
+      },
+      "component": "Defaultine_AboutUsPage"
+    },
+    "AboutUsPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(38, 51, 93, 0.8)",
+        "Alignment": "center"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B",
+        "Alignment": "center"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "",
+        "LetterSpacing": "",
+        "Color": "#343F64",
+        "Alignment": "center"
+      },
+      "h5": {
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "20px",
+        "FontFamily": "",
+        "FontStyle": "",
+        "LetterSpacing": "",
+        "Color": "#4E616B",
+        "Alignment": "center"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#202020",
+        "Alignment": "center"
+      },
+      "SectionHead": {
+        "MarginBottom": "20px",
+        "Alignment": "center"
+      },
+      "SectionGrid": {
+        "Background": "#EBECF0"
+      },
+      "BorderBottom": {
+        "BorderWidth": "2px",
+        "Background": "#343F64",
+        "BottomSpace": "-8px"
+      },
+      "MessageProfileImage": {
+        "Width": "160px",
+        "Height": "160px",
+        "BorderRadius": "50%",
+        "MarginBottom": "24px"
+      },
+      "Dots": {
+        "Active": {
+          "Color": "rgba(38, 51, 93, 0.8)"
+        },
+        "Color": "rgba(32, 32, 32, 0.5)"
+      },
+      "SlickArrowColor": {
+        "Hover": {
+          "Color": "rgba(38, 51, 93, 0.8)"
+        },
+        "Color": "rgba(38, 51, 93, 0.8)"
+      },
+      "MissionSection": {
+        "MissionHead": {
+          "MarginBottom": "40px",
+          "Alignment": "center"
+        },
+        "Background": "#EBECF0",
+        "BorderRadius": "20px"
+      },
+      "VisionSection": {
+        "VisionHead": {
+          "MarginBottom": "40px",
+          "Alignment": "center"
+        },
+        "Background": "#EBECF0",
+        "BorderRadius": "20px"
+      },
+      "component": "Defaultine_AboutUsPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.892Z",
+    "updatedAt": "2022-07-17T23:04:11.892Z",
+    "__v": 0
+  },
+  "Testimonial": {
+    "TestimonialHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "h5": {
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "20px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "TestimonialHeroHead": {
+        "Alignment": "left"
+      },
+      "TestimonialHeroGrid": {
+        "Background": "rgba(9, 51, 81, 0.1)",
+        "PaddingY": "36px",
+        "PaddingX": "102px"
+      },
+      "TestimonialItem": {
+        "Background": "#fff",
+        "Padding": "20px"
+      },
+      "ViewMoreTestimonialHeroButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px",
+        "TextDecoration": "normal"
+      },
+      "ViewMoreTestimonialHeroSection": {
+        "Alignment": "center"
+      },
+      "Dots": {
+        "Active": {
+          "Color": "rgba(38, 51, 93, 0.8)"
+        },
+        "Color": "rgba(32, 32, 32, 0.5)"
+      },
+      "SlickArrowColor": {
+        "Hover": {
+          "Color": "rgba(38, 51, 93, 0.8)"
+        },
+        "Color": "rgba(38, 51, 93, 0.8)"
+      },
+      "component": "Defaultine_TestimonialPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.902Z",
+    "updatedAt": "2022-07-17T23:04:11.902Z",
+    "__v": 0
+  },
+  "Notice": {
+    "NoticeBoardHero": {
+      "a": {
+        "Hover": {
+          "Color": "#4E616B"
+        },
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "1.24",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "ContentBox": {
+        "width": "100%"
+      },
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "MiscellaneousHeroHead": {
+        "Alignment": "left"
+      },
+      "MiscellaneousHeroGrid": {
+        "Background": "rgba(9, 51, 81, 0.1)",
+        "PaddingY": "36px",
+        "PaddingX": "102px"
+      },
+      "MiscellaneousItem": {
+        "Background": "#fff",
+        "Padding": "20px"
+      },
+      "DownloadButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "400",
+        "FontSize": "14px",
+        "LineHeight": "21px",
+        "Background": "#343F64",
+        "BorderColor": "transparent",
+        "BorderRadius": "0",
+        "Color": "#FFFFFF",
+        "PaddingY": "0",
+        "PaddingX": "0",
+        "MarginTop": "8px",
+        "TextDecoration": "underline"
+      },
+      "ViewMoreMiscellaneousHeroButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px",
+        "TextDecoration": "normal"
+      },
+      "ViewMoreMiscellaneousHeroSection": {
+        "Alignment": "center"
+      },
+      "PaddingY": "16px"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.964Z",
+    "updatedAt": "2022-07-17T23:04:11.964Z",
+    "__v": 0
+  },
+  "Principal": {
+    "PrincipalHero": {
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "h5": {
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "20px",
+        "FontFamily": "",
+        "FontStyle": "",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64",
+        "PaddingTop": "24px"
+      },
+      "PrincipalProfileImage": {
+        "Width": "160px",
+        "Height": "160px",
+        "BorderRadius": "50%",
+        "MarginBottom": "24px"
+      },
+      "ViewMoreMessageButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "inherit",
+        "LineHeight": "inherit",
+        "Background": "#343F64",
+        "BorderColor": "transparent",
+        "BorderRadius": "0",
+        "Color": "#FFFFFF",
+        "PaddingY": "0",
+        "PaddingX": "0"
+      },
+      "Dots": {
+        "Active": {
+          "Color": "rgba(38, 51, 93, 0.8)"
+        },
+        "Color": "rgba(32, 32, 32, 0.5)"
+      },
+      "SlickArrowColor": {
+        "Hover": {
+          "Color": "rgba(38, 51, 93, 0.8)"
+        },
+        "Color": "rgba(38, 51, 93, 0.8)"
+      },
+      "component": "Defaultine_Body"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.994Z",
+    "updatedAt": "2022-07-17T23:04:11.994Z",
+    "__v": 0
+  },
+  "Team": {
+    "TeamHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#4E616B"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64",
+        "MarginBottom": "10px"
+      },
+      "h5": {
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "20px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "TeamAlbumHomeCard": {
+        "TeamAlbumHomeCardOverlay": {
+          "PrimaryBorderBottom": {
+            "Height": "1px",
+            "Background": "transparent",
+            "Bottom": "-5px"
+          },
+          "PaddingY": "0",
+          "PaddingX": "0"
+        },
+        "BorderWidth": "0",
+        "BorderColor": "transparent",
+        "BorderRadius": "8px",
+        "Height": "381px",
+        "Background": "rgba(38, 51, 93, 0.05)",
+        "Padding": "54px"
+      },
+      "ViewMoreTeamButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px"
+      },
+      "component": "Defaultine_Body"
+    },
+    "TeamPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#4E616B"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64",
+        "MarginBottom": "10px"
+      },
+      "h5": {
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "20px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "TeamAlbumCard": {
+        "BorderWidth": "0",
+        "BorderColor": "transparent",
+        "BorderRadius": "8px",
+        "Height": "381px",
+        "Background": "rgba(38, 51, 93, 0.05)",
+        "Padding": "54px",
+        "TeamAlbumCardOverlay": {
+          "PaddingY": "0",
+          "PaddingX": "0",
+          "PrimaryBorderBottom": {
+            "Height": "1px",
+            "Background": "transparent",
+            "Bottom": "-5px"
+          }
+        }
+      },
+      "component": "Defaultine_TeamPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.990Z",
+    "updatedAt": "2022-07-17T23:04:11.990Z",
+    "__v": 0
+  },
+  "Facility": {
+    "FacilitiesHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#4E616B"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "ViewMoreFacilitiesButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px"
+      },
+      "FacilitiesSliderDescription": {
+        "BorderBottom": {
+          "Height": "2px",
+          "Background": "transparent",
+          "BottomSpace": "-10px"
+        },
+        "Padding": "14px",
+        "Background": "#fff"
+      },
+      "component": "Defaultine_FacilityPage"
+    },
+    "FacilityPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "FacilitiesDescription": {
+        "BorderBottom": {
+          "Height": "2px",
+          "Background": "transparent",
+          "BottomSpace": "-10px"
+        },
+        "Padding": "14px",
+        "Background": "#fff"
+      },
+      "component": "Defaultine_FacilityPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.943Z",
+    "updatedAt": "2022-07-17T23:04:11.943Z",
+    "__v": 0
+  },
+  "Gallery": {
+    "GalleryHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#4E616B"
+      },
+      "ViewMoreGalleryButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px"
+      },
+      "component": "Defaultine_GalleryPage"
+    },
+    "GalleryPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#4E616B"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#343F64"
+      },
+      "GalleryCaption": {
+        "Background": "rgba(9, 51, 81, 0.6)"
+      },
+      "component": "Defaultine_GalleryPage"
+    },
+    "GalleryListSection": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#343F64"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "GalleryListFilter": {
+        "MarginBottom": "40px"
+      },
+      "GalleryListFilterButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "#343F64",
+          "Color": "#E9DB89"
+        },
+        "Active": {
+          "Background": "#4E616B",
+          "BorderColor": "#343F64",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "18px",
+        "Background": "#343F64",
+        "BorderColor": "#343F64",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "24px"
+      }
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.985Z",
+    "updatedAt": "2022-07-17T23:04:11.985Z",
+    "__v": 0
+  },
+  "Contact": {
+    "ContactHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#202020",
+        "MarginBottom": "10px"
+      },
+      "ContactHomeHeroAddress": {
+        "AddressIcon": {
+          "Background": "rgba(38, 51, 93, 0.8)"
+        },
+        "PhoneIcon": {
+          "Background": "rgba(38, 51, 93, 0.8)"
+        },
+        "MailIcon": {
+          "Background": "rgba(38, 51, 93, 0.8)"
+        }
+      },
+      "ContactHomeHeroForm": {
+        "PlaceHolder": {
+          "FontWeight": "400",
+          "FontSize": "14px",
+          "LineHeight": "21px",
+          "TextDecoration": "underline",
+          "Color": "rgba(32, 32, 32, 0.6)"
+        },
+        "Input": {
+          "BorderColor": "rgba(55, 125, 239, 0.2)",
+          "Color": "#343F64",
+          "FontWeight": "400",
+          "FontSize": "14px",
+          "LineHeight": "21px"
+        },
+        "SubmitButton": {
+          "Hover": {
+            "Background": "#4E616B",
+            "BorderColor": "rgba(38, 51, 93, 0.8)",
+            "Color": "#E9DB89"
+          },
+          "FontWeight": "400",
+          "FontSize": "18px",
+          "LineHeight": "24px",
+          "Background": "#343F64",
+          "BorderColor": "rgba(38, 51, 93, 0.8)",
+          "BorderRadius": "4px",
+          "Color": "#FFFFFF",
+          "PaddingY": "10px",
+          "PaddingX": "40px"
+        }
+      },
+      "component": "Defaultine_ContactPage"
+    },
+    "ContactPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "BorderBottom": {
+          "BorderWidth": "2px",
+          "Background": "#4E616B",
+          "BottomSpace": "-8px"
+        },
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "a": {
+        "Hover": {
+          "Color": "#4E616B"
+        },
+        "FontWeight": "500",
+        "FontSize": "16px",
+        "LineHeight": "1.24",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "ContactHead": {
+        "MarginBottom": "40px",
+        "Alignment": "left"
+      },
+      "AddressIcon": {
+        "Background": "#343F64"
+      },
+      "PhoneIcon": {
+        "Background": "#343F64"
+      },
+      "MailIcon": {
+        "Background": "#343F64"
+      },
+      "component": "Defaultine_ContactPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.975Z",
+    "updatedAt": "2022-07-17T23:04:11.975Z",
+    "__v": 0
+  },
+  "Admission": {
+    "AdmissionHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "AdmissionHomeHeroHead": {
+        "Alignment": "left"
+      },
+      "AdmissionItem": {
+        "Background": "#FFFFFF"
+      },
+      "AdmissionItemCaption": {
+        "Padding": "14px"
+      },
+      "ViewMoreAdmissionHeroButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px"
+      },
+      "ApplyNowButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "600",
+        "FontSize": "14px",
+        "LineHeight": "20px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "24px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "16px",
+        "MarginTop": "10px"
+      },
+      "ViewMoreAdmissionHeroSection": {
+        "Alignment": "center"
+      },
+      "component": "Defaultine_AdmissionPage"
+    },
+    "AdmissionPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "AdmissionItemCaption": {
+        "Padding": "14px"
+      },
+      "AdmissionHead": {
+        "Alignment": "left"
+      },
+      "AdmissionItem": {
+        "Background": "#FFFFFF"
+      },
+      "ApplyNowButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "600",
+        "FontSize": "14px",
+        "LineHeight": "20px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "24px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "16px",
+        "MarginTop": "10px"
+      },
+      "component": "Defaultine_AdmissionPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.932Z",
+    "updatedAt": "2022-07-17T23:04:11.932Z",
+    "__v": 0
+  },
+  "FeeStructure": {
+    "FeeStructureHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "FeeStructureHeroHead": {
+        "MarginBottom": "24px",
+        "Alignment": "left"
+      },
+      "ViewFeeButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "400",
+        "FontSize": "14px",
+        "LineHeight": "21px",
+        "Background": "#343F64",
+        "BorderColor": "transparent",
+        "BorderRadius": "0",
+        "Color": "#FFFFFF",
+        "PaddingY": "0",
+        "PaddingX": "0",
+        "MarginTop": "8px",
+        "TextDecoration": "underline"
+      },
+      "ViewMoreFeeStructureHeroButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px",
+        "TextDecoration": "normal"
+      },
+      "ViewMoreFeeStructureHeroSection": {
+        "Alignment": "left"
+      },
+      "component": "Defaultine_FeeStructurePage"
+    },
+    "FeeStructurePage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "FeeStructurePageHead": {
+        "MarginBottom": "24px",
+        "Alignment": "left"
+      },
+      "ViewFeeButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "400",
+        "FontSize": "14px",
+        "LineHeight": "21px",
+        "Background": "#343F64",
+        "BorderColor": "transparent",
+        "BorderRadius": "0",
+        "Color": "#FFFFFF",
+        "PaddingY": "0",
+        "PaddingX": "0",
+        "MarginTop": "8px",
+        "TextDecoration": "underline"
+      },
+      "component": "Defaultine_FeeStructurePage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:12.002Z",
+    "updatedAt": "2022-07-17T23:04:12.002Z",
+    "__v": 0
+  },
+  "Faqs": {
+    "FaqsHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "FaqsHomeHeroHead": {
+        "MarginBottom": "40px",
+        "Alignment": "center"
+      },
+      "FaqListItem": {
+        "BorderColor": "#4E616B"
+      },
+      "ViewMoreFaqsHeroButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "#343F64",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "400",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "Background": "#343F64",
+        "BorderColor": "#343F64",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "10px",
+        "PaddingX": "40px"
+      },
+      "ViewMoreFaqsHeroSection": {
+        "Alignment": "left",
+        "MarginTop": "32px"
+      },
+      "component": "Defaultine_FaqsPage"
+    },
+    "FaqsPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B",
+        "TextDecoration": "underline"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "FaqsHead": {
+        "MarginBottom": "40px",
+        "Alignment": "center"
+      },
+      "FaqListItem": {
+        "BorderColor": "rgba(52, 63, 100, 0.1)"
+      },
+      "component": "Defaultine_FaqsPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.947Z",
+    "updatedAt": "2022-07-17T23:04:11.947Z",
+    "__v": 0
+  },
+  "Vacancy": {
+    "VacancyHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "VacancyHeroHead": {
+        "Alignment": "left"
+      },
+      "VacancyItem": {
+        "Background": "#FFFFFF"
+      },
+      "VacancyItemCaption": {
+        "PaddingY": "18px",
+        "PaddingX": "14px"
+      },
+      "ApplyNowButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "600",
+        "FontSize": "14px",
+        "LineHeight": "20px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "24px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "16px",
+        "MarginTop": "10px"
+      },
+      "ViewMoreVacancyHeroButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px"
+      },
+      "ViewMoreVacancyHeroSection": {
+        "Alignment": "center"
+      },
+      "component": "Defaultine_VacancyPage"
+    },
+    "VacancyPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#4E616B"
+      },
+      "h4": {
+        "FontWeight": "700",
+        "FontSize": "20px",
+        "LineHeight": "30px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "#343F64"
+      },
+      "p": {
+        "FontWeight": "400",
+        "FontSize": "16px",
+        "LineHeight": "28px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Color": "rgba(32, 32, 32, 0.6)"
+      },
+      "VacancyHeroHead": {
+        "Alignment": "center"
+      },
+      "VacancyItem": {
+        "Background": "#FFFFFF"
+      },
+      "VacancyItemCaption": {
+        "PaddingY": "18px",
+        "PaddingX": "14px"
+      },
+      "ApplyNowButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "600",
+        "FontSize": "14px",
+        "LineHeight": "20px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "24px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "16px",
+        "MarginTop": "10px"
+      },
+      "ViewMoreVacancyHeroButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px"
+      },
+      "ViewMoreVacancyHeroSection": {
+        "Alignment": "center"
+      },
+      "component": "Defaultine_VacancyPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:12.012Z",
+    "updatedAt": "2022-07-17T23:04:12.012Z",
+    "__v": 0
+  },
+  "Announcement": {
+    "AnnouncementHero": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#4E616B"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "ViewMoreAnnouncementButton": {
+        "Hover": {
+          "Background": "#4E616B",
+          "BorderColor": "transparent",
+          "Color": "#E9DB89"
+        },
+        "FontWeight": "500",
+        "FontSize": "15px",
+        "LineHeight": "22px",
+        "Background": "#343F64",
+        "BorderColor": "rgba(38, 51, 93, 0.8)",
+        "BorderRadius": "4px",
+        "Color": "#FFFFFF",
+        "PaddingY": "8px",
+        "PaddingX": "32px",
+        "MarginTop": "48px"
+      },
+      "AnnouncementCaption": {
+        "Background": "rgba(0, 0, 0, 0.5)"
+      },
+      "component": "Defaultine_AnnouncementsPage"
+    },
+    "AnnouncementPage": {
+      "h2": {
+        "FontWeight": "700",
+        "FontSize": "32px",
+        "LineHeight": "42px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "h3": {
+        "FontWeight": "500",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "center",
+        "Color": "#4E616B"
+      },
+      "h6": {
+        "FontWeight": "600",
+        "FontSize": "18px",
+        "LineHeight": "24px",
+        "FontFamily": "",
+        "FontStyle": "Normal",
+        "LetterSpacing": "",
+        "Alignment": "left",
+        "Color": "#343F64"
+      },
+      "AnnouncementCaption": {
+        "Background": "rgba(0, 0, 0, 0.5)"
+      },
+      "component": "Defaultine_AnnouncementsPage"
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "createdAt": "2022-07-17T23:04:11.937Z",
+    "updatedAt": "2022-07-17T23:04:11.937Z",
+    "__v": 0
+  },
+  "Global": {
+    "Modal": {
+      "ModalCloseWtc": {
+        "Hover": {
+          "Color": "#E9DB89"
+        },
+        "Color": "rgba(38, 51, 93, 0.8)"
+      },
+      "ModalHeadWtc": {
+        "h2": {
+          "FontWeight": "700",
+          "FontSize": "32px",
+          "LineHeight": "42px",
+          "FontFamily": "",
+          "FontStyle": "Normal",
+          "LetterSpacing": "",
+          "Color": "#343F64",
+          "Alignment": "left"
+        },
+        "h3": {
+          "FontWeight": "500",
+          "FontSize": "18px",
+          "LineHeight": "24px",
+          "FontFamily": "",
+          "FontStyle": "Normal",
+          "LetterSpacing": "",
+          "Color": "#4E616B",
+          "Alignment": "left"
+        }
+      },
+      "ModalBodyWTC": {
+        "h2": {
+          "FontWeight": "700",
+          "FontSize": "32px",
+          "LineHeight": "42px",
+          "FontFamily": "",
+          "FontStyle": "Normal",
+          "LetterSpacing": "",
+          "Color": "#343F64",
+          "Alignment": "left"
+        },
+        "h3": {
+          "FontWeight": "500",
+          "FontSize": "18px",
+          "LineHeight": "24px",
+          "FontFamily": "",
+          "FontStyle": "Normal",
+          "LetterSpacing": "",
+          "Color": "#4E616B",
+          "Alignment": "left"
+        },
+        "p": {
+          "FontWeight": "400",
+          "FontSize": "16px",
+          "LineHeight": "28px",
+          "FontFamily": "",
+          "FontStyle": "Normal",
+          "LetterSpacing": "",
+          "Color": "#4E616B",
+          "Alignment": "left"
+        }
+      }
+    },
+    "themeType": "Edneed",
+    "isDeleted": false,
+    "scrollbar": {
+      "scrollbarWidth": "10px",
+      "scrollbarTrackBackground": "#000",
+      "scrollbarThumbBorderRadius": "0",
+      "scrollbarThumbBackground": "rgba(38, 51, 93, 0.8)",
+      "scrollbarThumbBackgroundHover": "#E9DB89"
+    },
+    "body": {
+      "bodyBackground": "#FFFFFF",
+      "bodyFont": "'Poppins', sans - serif",
+      "bodyFontSize": "16px",
+      "bodyFontWeight": "600",
+      "bodyColor": "#8B417D",
+      "bodyLetterSpacing": "normal"
+    },
+    "container": {
+      "containerMaxWidth": "1140px"
+    },
+    "createdAt": "2022-07-17T23:04:11.956Z",
+    "updatedAt": "2022-07-17T23:04:11.956Z",
+    "__v": 0
+  }
+}

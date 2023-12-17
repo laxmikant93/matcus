@@ -1,0 +1,20 @@
+@import '../../commonCss/base.scss';
+
+.deliveryNotAvailableToast-container {
+
+  .delivery-error-wrap {
+    padding: 13px;
+    border-bottom: 5px solid #F2A544;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 8px #faf7f7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+  
+    p {
+      font-size: 12px;
+    }
+  }
+
+}

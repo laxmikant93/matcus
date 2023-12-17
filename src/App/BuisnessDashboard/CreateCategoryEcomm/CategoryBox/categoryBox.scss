@@ -1,0 +1,219 @@
+@import '../../../Dashboard//EcommerceDashboard/_commonEcommerce.scss';
+
+.categoryBox-wrapper {
+  // margin-top: 8px;
+
+  .categoryBox-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    @media(max-width:475px) {
+      grid-template-columns: 1fr;
+    }
+
+    .categoryBox-container-leftsidebar {
+      .categoryBox-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba($base, 0.1);
+        border-radius: 4px;
+        padding: 10px;
+        cursor: pointer;
+        position: relative;
+
+        .categoryBox-leftsidebar {
+          .categoryBox {
+            .box-text {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 8px;
+            }
+          }
+        }
+
+        .categoryBox-rightsidebar {
+          .box-icons {
+            display: none;
+
+            .setting-wrapper {
+              position: relative;
+            }
+          }
+
+        }
+
+        &:hover {
+          background-color: $white;
+
+          .box-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+          }
+        }
+
+
+      }
+
+      .dragErrorState {
+        border: 1px dashed #D1332E99;
+        background-color: rgba(#D1332E99, 0.07);
+        color: #D1332E99;
+      }
+
+      .dragSuccessState {
+        border: 1px dashed $secondary;
+        background-color: rgba($secondary, 0.07);
+        ;
+      }
+
+      .childCategory {
+        position: relative;
+        left: 50px;
+        width: 88%;
+      }
+
+      .subChildCategory {
+        position: relative;
+        left: 75px;
+        width: 81%;
+      }
+    }
+
+    .categoryBox-container-rightsidebar {
+      .categoryList-switchDiv {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+
+        .switchDivrightsidebar {
+          .cstm-switch {
+            position: relative;
+            display: inline-block;
+            z-index: 0;
+
+            // margin: 10px;
+            input[type="checkbox"] {
+              display: none;
+            }
+
+            label {
+              display: inline-block;
+              height: 24px;
+              position: relative;
+              cursor: pointer;
+              z-index: 0;
+
+              i {
+                height: 20px;
+                width: 20px;
+                z-index: 10;
+                top: 3px;
+                left: 24px;
+                position: absolute;
+                font-style: normal;
+
+                &:before {
+
+                  position: absolute;
+                  @extend .w-700;
+                  font-size: 12.44px;
+                  text-transform: uppercase;
+                  letter-spacing: 0;
+                }
+              }
+            }
+
+            label::before,
+            label::after {
+              content: "";
+              position: absolute;
+            }
+
+            label::before {
+              width: 50px;
+              left: 0;
+              top: -3px;
+              height: 100%;
+              border-radius: 30px;
+              transition: background-color 0.25s ease;
+              border: 1px solid #80868b;
+              background-color: #fff;
+            }
+
+            label::after {
+              top: 3px;
+              left: 8px;
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background-color: #80868b;
+              box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+              transition: left 0.25s ease;
+            }
+
+            input[type="checkbox"]:checked+label i {
+              left: 15px;
+
+              &:before {
+
+                color: $primary;
+              }
+            }
+
+            input[type="checkbox"]:checked+label::before {
+              border: 1px solid $primary;
+
+              i {
+                left: 36px;
+              }
+            }
+
+            input[type="checkbox"]:checked+label::after {
+              left: 32px;
+              background: $primary;
+            }
+          }
+
+        }
+
+
+      }
+    }
+  }
+
+  .icon-pencial {
+    -webkit-mask: url("../../../Dashboard/EcommerceDashboard/assets/icons/pencial.svg") no-repeat center;
+    mask-image: url("../../../Dashboard/EcommerceDashboard/assets/icons/pencial.svg") no-repeat center;
+  }
+
+  .icon-delete {
+    -webkit-mask: url("../../../Dashboard/EcommerceDashboard/assets/icons/delete.svg") no-repeat center;
+    mask-image: url("../../../Dashboard/EcommerceDashboard/assets/icons/delete.svg") no-repeat center;
+  }
+
+  .icon-eye {
+    -webkit-mask: url("../../../Dashboard/EcommerceDashboard/assets/icons/eye.svg") no-repeat center;
+    mask-image: url("../../../Dashboard/EcommerceDashboard/assets/icons/eye.svg") no-repeat center;
+  }
+
+  .icon-cross {
+    -webkit-mask: url("./eyeCross.svg") no-repeat center;
+    mask-image: url("./eyeCross.svg") no-repeat center;
+  }
+
+  .icon-setting {
+    -webkit-mask: url("./categorySettingIcon.svg") no-repeat center;
+    mask-image: url("./categorySettingIcon.svg") no-repeat center;
+  }
+
+  [aria-disabled="true"] {
+    background-color: red;
+  }
+}

@@ -1,0 +1,622 @@
+@import "../../../../../assets/Style/base";
+
+.courseContentWrapper {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+}
+
+/**Taxonomy**/
+// .contentTaxonomyWrap {
+//   background-color: rgba($lgray, 0.2);
+//   border: 2px solid rgba($lgray, 0.4);
+//   border-radius: 5px;
+//   height: max-content;
+//   padding: 30px 30px 30px 10px;
+// }
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+  top: 22px;
+  margin-left: -6px;
+  transform: rotate(180deg);
+}
+
+.contentTaxonomyWrap {
+  background-color: rgba($lgray, 0.2);
+  border: 2px solid rgba($lgray, 0.4);
+  border-radius: 5px;
+  height: max-content;
+  min-height: 500px;
+  padding: 20px 20px 20px 20px;
+
+  .formFieldwrap {
+    padding-bottom: 20px;
+
+    .form-control {
+      height: 35px;
+      padding: 5px 20px;
+      @extend .text-xs;
+    }
+  }
+}
+
+.TaxonomyListHead {
+  &::before {
+    border: 1px dashed $base;
+    height: 200px;
+  }
+}
+
+.tree {
+  $color: #000;
+  $border-color: #000;
+  $border-weight: 1px;
+  $margin: 12px;
+  margin: 0 $margin * 1.5;
+  padding: 0;
+
+  &:not(:empty):before,
+  &:not(:empty):after,
+  ul:not(:empty):before,
+  ul:not(:empty):after,
+  li:not(:empty):before,
+  li:not(:empty):after {
+    display: block;
+    position: absolute;
+    content: "";
+  }
+
+  ul,
+  li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li>div {
+    color: $color;
+    padding: 0 5px;
+    display: inline-block;
+  }
+
+  &.cascade {
+    li {
+      margin-left: 2 * $margin;
+
+      div {
+        margin-top: $margin + 1;
+      }
+
+      &:before {
+        border-left: $border-weight dashed $border-color;
+        height: 100%;
+        width: 0;
+        top: 0;
+        left: -$margin;
+      }
+
+      &:after {
+        border-top: $border-weight dashed $border-color;
+        width: $margin;
+        left: -$margin;
+        top: $margin * 2;
+      }
+
+      &:last-child:before {
+        height: $margin * 2;
+        top: 0;
+      }
+    }
+
+    &>li {
+      &:first-child:before {
+        top: $margin * 2;
+      }
+
+      &:only-child {
+        margin-left: 0;
+      }
+
+      &:only-child:before,
+      &:only-child:after {
+        content: none;
+      }
+    }
+  }
+}
+
+/**Close Taxonomy**/
+.ContentSection {
+  .card {
+    border: 1px solid $lgray;
+
+    .cardBody,
+    .cardAction {
+      padding: 40px 30px 30px 30px;
+      position: relative;
+    }
+  }
+}
+
+.addActionCustom {
+  display: flex;
+  gap: 10px;
+}
+
+.uploadContentSectionCst {
+  .uploadTopicContentAction {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding-top: 20px;
+
+    .formFieldwrap {
+      &.uploadFiles {
+        .form-control {
+          padding: 0;
+        }
+
+        .file-input-wrapper {
+          margin: 0;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+          .file-input-overlap {
+            padding: 0;
+            height: auto;
+            border-color: $primary;
+            border-radius: 0;
+            @extend .text-xs;
+            @extend .w-500;
+            color: $primary;
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0;
+          }
+        }
+
+        .UploadIcon {
+          background-color: $primary;
+          padding: 13px 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+      }
+    }
+
+    .addExternalFileUrlBtn {
+      border-radius: 0;
+      background-color: $white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      height: 45px;
+    }
+  }
+}
+
+.uploadTopicContentList {
+  position: relative;
+  border: 1px solid rgba($lgray, 0.5);
+  padding: 15px 10px;
+  border-radius: 5px;
+  background-color: $white;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+
+  .utc-content {
+    p {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .utc-action {
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+
+  .Popup {
+    &.RemovePopup {
+      margin-top: 30%;
+    }
+  }
+}
+
+.ContentSection {
+  .addNewChapterWrap {
+    border: 1px solid $gray;
+    border-radius: 5px;
+    padding: 40px 30px 30px 30px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .sun-editor {
+    .se-container {
+      z-index: 0;
+    }
+
+    .se-wrapper {
+      .se-wrapper-wysiwyg {
+        min-height: 200px;
+      }
+    }
+  }
+}
+
+.DelChapterBtn,
+.DelTopicBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  span {
+    background-color: $mgray;
+    padding: 5px 10px;
+  }
+}
+
+.addedChapterListWrap {
+  border: 1px solid rgba($lgray, 0.5);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: $white;
+  position: relative;
+
+  .uploadContentSectionCst {
+    margin-top: 30px;
+  }
+
+  .addedChapterListHeadWrap {
+    padding: 10px 30px 10px 30px;
+
+    &.active {
+      background-color: $silver;
+      border-radius: inherit;
+
+      &::before {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        top: 23px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      border: solid $black;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      top: 18px;
+      left: 12px;
+    }
+  }
+
+  .addedChapterListheadContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
+
+    .addedChapterListheadContentAction {
+      display: inline-flex;
+      border: 1px solid $lgray;
+      border-radius: 3px;
+
+      li {
+        display: block;
+        position: relative;
+        border-right: 1px solid $lgray;
+        width: 35px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba($lgray, 0.5);
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+.addedTopicListWrap {
+  article {
+    border: 1px solid rgba($lgray, 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: $white;
+
+    .uploadContentSectionCst {
+      margin-top: 30px;
+    }
+  }
+
+  .addedTopicListHeadWrap {
+    padding: 10px 30px 10px 30px;
+
+    &.active {
+      background-color: $silver;
+      border-radius: inherit;
+
+      &::before {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        top: 23px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      border: solid $black;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      top: 18px;
+      left: 15px;
+      transition-duration: 600ms;
+    }
+
+    .uploadTopicContentList {
+      background-color: $white;
+    }
+  }
+
+  .addedTopicListContentWrap {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .addedTopicListheadContent,
+  .addedTopicListheadEditContent {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
+
+    .addedTopicListheadContentAction {
+      display: inline-flex;
+      border: 1px solid $lgray;
+      border-radius: 3px;
+
+      li {
+        display: block;
+        position: relative;
+        border-right: 1px solid $lgray;
+        width: 35px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba($lgray, 0.5);
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    .addedTopicListheadEditContentAction {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      li {
+        width: 42px;
+        height: 42px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child {
+          background-color: $primary;
+          color: $white;
+        }
+
+        &:last-child {
+          border: 1px solid $red;
+          color: $red;
+        }
+      }
+    }
+  }
+
+  .addedTopicListheadEditContent {
+    margin-top: 10px;
+    align-items: flex-start;
+    position: relative;
+
+    .form-control {
+      // height: 32px;
+      // padding: 5px 10px;
+    }
+
+    .errorInputMsg {
+      bottom: 0;
+    }
+  }
+
+  .headSubContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.AddUrlInputWrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px;
+
+  .form-control {
+    height: 35px;
+    padding: 5px 10px;
+  }
+
+  .AddUrlInputAction {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+
+    li {
+      cursor: pointer;
+      width: 38px;
+      height: 35px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child {
+        background-color: $primary;
+        color: $white;
+      }
+
+      &:last-child {
+        border: 1px solid $red;
+        color: $red;
+      }
+    }
+  }
+}
+
+.iconAudioPlayCst {
+  width: 35px;
+  height: 35px;
+  background-color: $base;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupPreviewContent {
+  iframe {
+    width: 100%;
+    height: 80vh;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .courseContentWrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+  .courseContentWrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 480px) {
+  .uploadContentSectionCst {
+    .uploadTopicContentAction {
+      grid-template-columns: 1fr;
+
+      .addExternalFileUrlBtn {
+        grid-row: 1/2;
+      }
+    }
+  }
+
+  .ContentSection {
+    .card {
+      border: 1px solid $gray;
+      background-color: $white;
+
+      .cardBody,
+      .cardAction {
+        padding: 20px 15px 15px 15px;
+      }
+    }
+
+    .addNewChapterWrap {
+      padding: 40px 15px 30px 15px;
+    }
+  }
+
+  .uploadTopicContentList {
+    grid-template-columns: 1fr;
+
+    .utc-action {
+      justify-content: center;
+    }
+  }
+
+  .AddUrlInputWrapper {
+    grid-template-columns: 1fr;
+
+    .AddUrlInputAction {
+      justify-content: center;
+    }
+  }
+}

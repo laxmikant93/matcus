@@ -1,0 +1,184 @@
+@import "../../assets/Style/base";
+
+.category-wrapper-common {
+  position: relative;
+  .select_wrap {
+    width: 100%;
+
+    .collapase-btn {
+      font-size: 16px;
+      color: $black;
+      font-weight: 500;
+      line-height: 1.4em;
+      border: none;
+      outline: none;
+      background-color: $white;
+      padding-bottom: 7px;
+      border-bottom: 2px solid rgba($black, 0.1);
+      text-transform: capitalize;
+      position: relative;
+      width: 100%;
+      position: relative;
+      text-align: left;
+
+      &:after {
+        content: "\002B";
+        color: $black;
+        font-weight: 500;
+        position: absolute;
+        left: 90%;
+        text-align: left;
+      }
+    }
+
+    .collapseActive {
+      &::after {
+        content: "\2212" !important;
+      }
+    }
+    // .default_option {
+    //   border: none !important;
+    //   li {
+    //     padding: 5px 0 ;
+    //     .option {
+    //       p {
+    //         font-size: 16px;
+    //       }
+    //     }
+    //   }
+    //   &::after {
+    //     content: "\002B";
+    //     color: $black;
+    //     font-weight: 500;
+    //     position: absolute;
+    //     left: 90%;
+    //     top: 10%;
+    //     text-align: left;
+    //     border: none;
+    //     transform:  rotate(0deg);
+
+    //   }
+
+    // }
+    // .active {
+    //   .default_option::after {
+    //     content: "\2212";
+    //   }
+
+    // }
+
+    .select_Check_ul {
+      border: none;
+      position: relative;
+      top: 0;
+      max-height: 200px;
+      overflow-y: auto;
+      margin-top: 19px;
+      width: 100%;
+      max-width: 100%;
+      li {
+        padding: 5px 0;
+      }
+      .GroupOption {
+        &.subcategory-wrap {
+          .GroupOptLabelWrap {
+            &.unactive {
+              .GroupOptionLabel {
+                &::after {
+                  content: "";
+                }
+              }
+            }
+            &.subActive {
+              .GroupOptionLabel {
+                &::after {
+                  content: "\2212";
+                }
+              }
+            }
+          }
+        }
+        .GroupOptLabelWrap {
+          &.AllCategory {
+            .GroupOptionLabel {
+              &::after {
+                content: "";
+              }
+            }
+          }
+        }
+
+        .GroupOptLabelWrap {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          .GroupOptCaretIcon {
+            display: none;
+          }
+          .GroupOptionLabel {
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 0;
+            &::after {
+              content: "\002B";
+              color: $black;
+              font-weight: 500;
+              position: absolute;
+              left: 85%;
+              bottom: 0%;
+              text-align: left;
+              border: none;
+              transform: rotate(0deg);
+            }
+          }
+        }
+
+        .cateActive {
+          .GroupOptionLabel:after {
+            content: "\2212";
+          }
+        }
+        .categoryPadding {
+          padding-left: 6px;
+        }
+
+        .subcatePadding {
+          padding-left: 20px;
+        }
+      }
+      .category-wrapper {
+      }
+      .subcategory-wrap {
+        .small {
+          padding-right: 5px;
+        }
+        padding-left: 5px;
+        .subActive {
+          .GroupOptionLabel {
+            &::after {
+              content: "\2212";
+            }
+          }
+        }
+      }
+
+      .subsubcategory-wrapper {
+        .GroupOptLabelWrap {
+          padding-left: 10px;
+        }
+        .GroupOptLabelWrap {
+          .GroupOptionLabel {
+            &.subsubactegory-icon {
+              &::after {
+                content: "";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .checkbox-padding {
+    padding-right: 5px;
+  }
+}

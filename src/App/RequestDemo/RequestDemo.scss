@@ -1,0 +1,126 @@
+.book_demo_wrapper_custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.book_demo_wrapper {
+  display: grid;
+  grid-template-columns: 3fr 200px 2fr;
+  align-items: center;
+  padding: 150px 0 100px 0;
+  @media screen and (max-width: 992px) {
+    padding: 50px 0 50px 0;
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+}
+.vl {
+  border-left: 2px solid #d2d2d2;
+  height: 100%;
+  margin-left: 50%;
+  position: relative;
+  &::before {
+    content: "or";
+    top: 45%;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    left: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ba19d;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}
+.RequestDemoHeading {
+  p {
+    font-size: 55px;
+    line-height: 1.1;
+    @media screen and (max-width: 768px) {
+      font-size: 35px;
+    }
+  }
+  .RequestDemoSubHeading {
+    padding-top: 20px;
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #9ba19d;
+      @media screen and (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+  }
+  .RequestDemoDivider {
+    height: 4px;
+    width: 200px;
+    background-color: #146efa;
+    margin-top: 50px;
+  }
+  .RequestDemoCallhead {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .RequestDemoContactNumber {
+    a {
+      font-size: 40px;
+      font-weight: 600;
+      color: #146efa;
+    }
+  }
+}
+.RequestDemoBody,
+.SelectDemoTimeDate {
+  .RequestDemoForm,
+  .SelectDemoTimeDateInput {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    align-items: center;
+    gap: 0 30px;
+  }
+  .RequestDemoSelectInstitute {
+    .CheckboxSelectInstitute {
+      .input-custom-type {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        align-items: center;
+        gap: 10px 30px;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+.RequestDemoBody {
+  @media screen and (max-width: 992px) {
+    .button {
+      &.button-block {
+        width: 35%;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .button {
+      &.button-block {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .RequestDemoHeading {
+    margin-top: 80px;
+    .RequestDemoSubHeading {
+      width: 90%;
+    }
+  }
+}

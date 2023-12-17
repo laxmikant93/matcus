@@ -1,0 +1,38 @@
+
+@import '../../../assets/Style/base';
+
+.selectdropdownButton-container {
+  .selectDropDownButton-wrap {
+    border: 1px solid rgba($base, 0.4);
+    padding: 4px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 4px;
+
+  }
+
+  .btn-ovalShape {
+    border-radius: 30px;
+  }
+
+
+
+  .icon-down {
+    -webkit-mask: url("../../../App/BuisnessDashboard/DashboardSetting/asserts/icons/arrow-down.svg") no-repeat center;
+    mask-image: url("../../../App/BuisnessDashboard/DashboardSetting/asserts/icons/arrow-down.svg") no-repeat center;
+    width: 14px;
+    height: 14px;
+    background-color: rgba($base,1);
+    display: block;
+    transform: rotate(0deg);
+    transition: all 0.4s linear ;
+  }
+
+  .icon-rotate {
+    transform: rotate(180deg);
+  }
+
+}

@@ -1,0 +1,41 @@
+@import "../../../assets/Style/base";
+.supportRequestWrapper {
+  position: relative;
+  z-index: 1;
+}
+.supportRequestFormWrapper {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  min-width: 450px;
+  border-radius: 10px;
+  min-height: 500px;
+  padding: 20px;
+  background-color: $white;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 20px 30px;
+}
+.supportRequestForm {
+  text-align: left;
+  form {
+    margin-top: 40px;
+  }
+}
+.supportRequestFormAction {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 480px) {
+  .supportRequestFormWrapper {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    min-width: auto;
+  }
+  .supportRequestFormAction {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

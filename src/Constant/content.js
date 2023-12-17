@@ -1,0 +1,1 @@
+export const courser_id = "__wz_crs_id__";

@@ -1,0 +1,94 @@
+.serviceList-wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  @media (max-width: 600px) {
+    height: 100%;
+  }
+  .serviceListCard {
+    max-width: 392px;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: #ffffff;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+    .cardbody {
+      padding: 36px;
+      label {
+        color: #1f2b6c;
+      }
+      .formFieldwrap {
+        .form-group {
+          &::before {
+            left: auto;
+            right: 16px;
+          }
+          .select-control {
+            padding-left: 18px;
+          }
+        }
+      }
+      button {
+        background-color: #1f2b6c;
+        color: #ffffff;
+        display: block;
+        width: 100%;
+      }
+      .text_term {
+        color: #202020;
+        margin-bottom: 24px;
+        line-height: 15px;
+        a {
+          color: #1f2b6c;
+        }
+      }
+    }
+  }
+}
+
+.thankyou-wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  @media (max-width: 600px) {
+    height: 100%;
+  }
+  .thankyou_wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .gif_frame {
+      max-width: 275px;
+      height: auto;
+    }
+    h4,
+    h5 {
+      color: #093351;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 34px;
+    }
+    .view_btn {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      padding-bottom: 3.5px;
+      max-width: 100%;
+      color: #093351;
+      border-bottom: 1px solid rgba(9, 50, 81, 0.6);
+    }
+  }
+}

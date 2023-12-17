@@ -1,0 +1,10 @@
+@import "../../assets/Style/base";
+.noDataAvailableWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 35vh;
+  width: 100%;
+  grid-column: 1/3;
+}

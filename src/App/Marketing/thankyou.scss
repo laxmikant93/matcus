@@ -1,0 +1,19 @@
+@import '../../assets/Style/base';
+
+.thank-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .image-div {
+    width: 450px;
+    height: 320px;
+    margin: auto;
+  }
+
+  .content-div {
+    margin-top: 36px;
+  }
+}

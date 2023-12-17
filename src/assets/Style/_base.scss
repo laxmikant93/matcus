@@ -1,0 +1,641 @@
+// @import "theme";
+// @import "typo";
+// @import "Common";
+// @import "form";
+// @import "table";
+// @import "Icons";
+// @import "flexgrid";
+// @import "progressBar";
+// @import "Modal";
+// @import "Card";
+// @import "PageTopHead";
+@import "./theme";
+@import "./typo";
+@import "./CommonResponsive";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+// iframe {
+//   display: none;
+// }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+// iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+// embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+video {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  @extend .primary;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.img-fluid {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.imgCursor {
+  cursor: pointer;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+:before,
+:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  transition: all 0.25s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+i {
+  font-style: normal;
+}
+
+::selection {
+  background: $primary;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $primary;
+  color: $white;
+}
+
+body {
+  background: $white;
+  font-family: $font;
+  @extend .text-xs;
+  @extend .w-400;
+  color: $base;
+  overflow-x: hidden;
+  letter-spacing: 0.0125em;
+}
+
+.DefaultBodyHeight {
+  min-height: calc(100vh - 100px);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $primary $silver;
+}
+
+*::-webkit-scrollbar {
+  height: 10px;
+  /* height of horizontal scrollbar ← You're missing this */
+  width: 10px;
+  /* width of vertical scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: $silver;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 0;
+  border: 0 solid $silver;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+
+.sun-editor-editable li,
+.sun-editor-output li {
+  list-style: initial;
+}
+
+.secHeading {
+  line-height: 1.25;
+  @extend .w-800;
+  letter-spacing: 0;
+}
+
+.cursorHand {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.scrollCntWrap {
+  display: inline-block;
+  width: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+}
+
+p {
+  overflow-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  line-height: 1.25;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h1 {
+  letter-spacing: 0;
+}
+
+$width: (
+  0: "0",
+  25: "25%",
+  50: "50%",
+  75: "75%",
+  100: "100%",
+);
+
+@each $key,
+$val in $width {
+  .w-#{$key} {
+    width: #{$val};
+  }
+}
+
+$marginTop: (
+  0: "0",
+  2: "2px",
+  3: "3px",
+  5: "5px",
+  8: "8px",
+  10: "10px",
+  15: "15px",
+  20: "20px",
+  25: "25px",
+  30: "30px",
+  40: "40px",
+  50: "50px",
+  60: "60px",
+  80: "80px",
+  90: "90px",
+  100: "100px",
+);
+
+@each $key,
+$val in $marginTop {
+  .mt-#{$key} {
+    margin-top: #{$val};
+  }
+}
+
+$marginBottom: (
+  0: "0",
+  2: "2px",
+  3: "3px",
+  5: "8px",
+  10: "10px",
+  15: "15px",
+  20: "20px",
+  25: "25px",
+  30: "30px",
+  40: "40px",
+  50: "50px",
+  60: "60px",
+  80: "80px",
+  90: "90px",
+  100: "100px",
+);
+
+@each $key,
+$val in $marginBottom {
+  .mb-#{$key} {
+    margin-bottom: #{$val};
+  }
+}
+
+$marginRight: (
+  0: "0",
+  2: "2px",
+  3: "3px",
+  5: "8px",
+  10: "10px",
+  15: "15px",
+  20: "20px",
+  25: "25px",
+  30: "30px",
+  40: "40px",
+  50: "50px",
+  60: "60px",
+  80: "80px",
+  90: "90px",
+  100: "100px",
+);
+
+@each $key,
+$val in $marginRight {
+  .mr-#{$key} {
+    margin-right: #{$val};
+  }
+}
+
+$paddingBottom: (
+  0: "0",
+  2: "2px",
+  3: "3px",
+  5: "8px",
+  10: "10px",
+  15: "15px",
+  20: "20px",
+  25: "25px",
+  30: "30px",
+  40: "40px",
+  50: "50px",
+  60: "60px",
+  80: "80px",
+  90: "90px",
+  100: "100px",
+);
+
+@each $key,
+$val in $paddingBottom {
+  .pb-#{$key} {
+    padding-bottom: #{$val};
+  }
+}
+
+$paddingTop: (
+  0: "0",
+  2: "2px",
+  3: "3px",
+  5: "8px",
+  10: "10px",
+  15: "15px",
+  20: "20px",
+  25: "25px",
+  30: "30px",
+  40: "40px",
+  50: "50px",
+  60: "60px",
+  80: "80px",
+  90: "90px",
+  100: "100px",
+);
+
+@each $key,
+$val in $paddingTop {
+  .pT-#{$key} {
+    padding-top: #{$val};
+  }
+}
+
+$paddingRight: (
+  0: "0",
+  2: "2px",
+  3: "3px",
+  5: "8px",
+  10: "10px",
+  15: "15px",
+  20: "20px",
+  25: "25px",
+  30: "30px",
+  40: "40px",
+  50: "50px",
+  60: "60px",
+  80: "80px",
+  90: "90px",
+  100: "100px",
+);
+
+@each $key,
+$val in $paddingRight {
+  .pr-#{$key} {
+    padding-right: #{$val};
+  }
+}
+
+$margin_x: (
+  0: "0",
+  2: "2px",
+  3: "3px",
+  5: "8px",
+  10: "10px",
+  15: "15px",
+  20: "20px",
+  25: "25px",
+  30: "30px",
+  40: "40px",
+  50: "50px",
+  60: "60px",
+  80: "80px",
+  90: "90px",
+  100: "100px",
+);
+
+@each $key,
+$val in $margin_x {
+  .mx-#{$key} {
+    margin: #{$val} auto;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+@each $key,
+$val in $paddingRight {
+  .pr-#{$key} {
+    padding-bottom: #{$val};
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.dgray {
+  color: $dgray;
+}
+
+.gray {
+  color: $gray;
+}
+
+.base {
+  color: $base;
+}
+
+.primary {
+  color: $primary;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.silver {
+  color: $silver;
+}
+
+.white {
+  color: $white;
+}
+
+.red {
+  color: $red;
+}
+
+.purple {
+  color: $purple;
+}
+
+.bsPink {
+  color: $bsPink;
+}
+
+.mgray {
+  color: $mgray;
+}
+
+.lgray {
+  color: $lgray;
+}
+
+.bg-dgray {
+  background-color: $dgray;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+.bg-base {
+  background-color: $base;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.bg-silver {
+  background-color: $silver;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-bsPink {
+  background-color: $bsPink;
+}
+
+.bg-mgray {
+  background-color: $mgray;
+}
+
+.pageFullCenter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pageInCenter {
+  width: 100%;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: .75rem;
+  padding-left: .75rem;
+
+  @media screen and (max-width: 1440px) {
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: 992px) {
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+
+  }
+
+  @media screen and (max-width: 576px) {
+    max-width: 90%;
+
+  }
+}
+
+.border-0 {
+  border: none;
+}
+
+.Dropdown_divider {
+  border-bottom: 1px solid $lgray;
+}
+
+
+//used to remove scroll of body when popup open
+.avoidscroll {
+  overflow: hidden;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+@import "CommonResponsive";

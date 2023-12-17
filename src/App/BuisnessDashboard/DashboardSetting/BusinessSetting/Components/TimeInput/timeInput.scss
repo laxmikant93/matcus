@@ -1,0 +1,59 @@
+@import '../../../../../../assets/Style/base';
+
+.timeInput {
+  margin-top: 8px;
+  border: 1px solid rgba($base, 0.2);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 2fr auto 1fr;
+  padding: 7px;
+  gap: 4px;
+
+  @media (max-width:1258px) {
+    width: fit-content;
+  }
+
+  input {
+    color: transparent;
+    display: block;
+    position: relative;
+    border: none;
+
+
+  }
+
+  input:invalid:before {
+    color: rgba($base, 0.6);
+    font-size: 16px;
+    content: attr(placeholder);
+    padding-left: 10px;
+    pointer-events: none;
+    position: absolute;
+    left: 0px;
+  }
+
+  input:valid,
+  input:focus,
+  input:active {
+    color: $base;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  input:valid:before,
+  input:focus:before,
+  input:active:before {
+    display: none;
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  .select-div {
+    select {
+      border: none;
+      color: rgba($base, 0.9);
+    }
+  }
+}

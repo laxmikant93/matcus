@@ -1,0 +1,188 @@
+@import "../../../assets/Style/base";
+.ManageWebsiteExtLink {
+  i {
+    padding-left: 10px;
+  }
+}
+/*** website manage ***/
+.manageWebsiteHeadWrapper {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 2fr 1fr;
+  .manageWebsiteHeadWrapperItem {
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+.manageDomainCartWrapper {
+  border-top: 2px solid $silver;
+  border-bottom: 2px solid $silver;
+  background-color: $white;
+  padding: 15px 0;
+  margin: 15px 0;
+  .manageDomainCartCustom {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.Icon-Miscellaneous,
+.Icon-Contact,
+.Icon-HomeMenu,
+.Icon-BasicInfo,
+.Icon-EditOverview,
+.Icon-ColorSkin,
+.Icon-MetaData,
+.Icon-Faculty,
+.Icon-Services,
+.Icon-FeeStructure,
+.Icon-Admissions,
+.Icon-Gallery,
+.Icon-Announcements,
+.Icon-Testimonials,
+.Icon-FAQs,
+.Icon-Vacancies,
+.Icon-SocialLink,
+.Icon-Payment,
+.Icon-Support {
+  width: 62px;
+  height: 62px;
+  display: block;
+  cursor: pointer;
+  background-color: $primary;
+  -webkit-mask: url("./IconWebsiteManage/icon-miscellaneous.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-miscellaneous.svg") no-repeat center;
+}
+.Icon-Contact {
+  -webkit-mask: url("./IconWebsiteManage/icon-contactlist.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-contactlist.svg") no-repeat center;
+}
+.Icon-HomeMenu {
+  -webkit-mask: url("./IconWebsiteManage/IconNoticeboard.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/IconNoticeboard.svg") no-repeat center;
+}
+.Icon-BasicInfo {
+  -webkit-mask: url("./IconWebsiteManage/icon-basic-info.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-basic-info.svg") no-repeat center;
+}
+.Icon-EditOverview {
+  -webkit-mask: url("./IconWebsiteManage/icon-overview.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-overview.svg") no-repeat center;
+}
+.Icon-ColorSkin {
+  -webkit-mask: url("./IconWebsiteManage/icon-colorskin.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-colorskin.svg") no-repeat center;
+}
+.Icon-MetaData {
+  -webkit-mask: url("./IconWebsiteManage/icon-meta-data.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-meta-data.svg") no-repeat center;
+}
+.Icon-Faculty {
+  -webkit-mask: url("./IconWebsiteManage/icon-faculty.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-faculty.svg") no-repeat center;
+}
+.Icon-Services {
+  -webkit-mask: url("./IconWebsiteManage/icon-services.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-services.svg") no-repeat center;
+}
+.Icon-FeeStructure {
+  -webkit-mask: url("./IconWebsiteManage/icon-fee-structure.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-fee-structure.svg") no-repeat center;
+}
+.Icon-Admissions {
+  -webkit-mask: url("./IconWebsiteManage/icon-admission.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-admission.svg") no-repeat center;
+}
+.Icon-Gallery {
+  -webkit-mask: url("./IconWebsiteManage/icon-gallery.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-gallery.svg") no-repeat center;
+}
+.Icon-Announcements {
+  -webkit-mask: url("./IconWebsiteManage/icon-announcement.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-announcement.svg") no-repeat center;
+}
+.Icon-Testimonials {
+  -webkit-mask: url("./IconWebsiteManage/icon-testimonial.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-testimonial.svg") no-repeat center;
+}
+.Icon-FAQs {
+  -webkit-mask: url("./IconWebsiteManage/icon-faq.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-faq.svg") no-repeat center;
+}
+.Icon-Vacancies {
+  -webkit-mask: url("./IconWebsiteManage/icon-vacancy.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-vacancy.svg") no-repeat center;
+}
+.Icon-SocialLink {
+  -webkit-mask: url("./IconWebsiteManage/icon-social-link.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-social-link.svg") no-repeat center;
+}
+.Icon-Payment {
+  -webkit-mask: url("./IconWebsiteManage/icon-payment.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-payment.svg") no-repeat center;
+}
+.Icon-Support {
+  -webkit-mask: url("./IconWebsiteManage/icon-support.svg") no-repeat center;
+  mask-image: url("./IconWebsiteManage/icon-support.svg") no-repeat center;
+}
+.manage-web-custom {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  .web-icon {
+    height: 56px;
+    width: 56px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    color: $base;
+    @extend .w-500;
+    transition: all 0.25s ease;
+    border-radius: 4px;
+    background: $white;
+    position: relative;
+    p {
+      margin-top: 10px;
+      @extend .text-xxs;
+    }
+    &:hover {
+      color: $primary;
+      box-shadow: 0 0 20px rgba($gray, 0.25);
+    }
+  }
+}
+
+/*** close website manage ***/
+
+@media only screen and (max-width: 480px) {
+  .ManageWebsiteExtLink {
+    background: $white;
+  }
+  .manageDomainCartWrapper {
+    .manageDomainCartCustom {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+  .manageWebsiteHeadWrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    .manageWebsiteHeadWrapperItem {
+      &:last-child {
+        text-align: left;
+      }
+    }
+  }
+  .manage-web-custom {
+    grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+    gap: 10px;
+    a {
+      margin: 0;
+    }
+  }
+}

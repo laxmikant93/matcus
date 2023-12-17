@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="17" height="17" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon-dot-grid" clip-path="url(#clip-path)">
+    <g transform="translate(-1169 -326)">
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+    <g transform="translate(-1163 -326)">
+      <circle id="Ellipse_5-2" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+    <g transform="translate(-1157 -326)">
+      <circle id="Ellipse_5-3" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+    <g transform="translate(-1169 -320)">
+      <circle id="Ellipse_5-4" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+    <g transform="translate(-1163 -320)">
+      <circle id="Ellipse_5-5" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+    <g transform="translate(-1157 -320)">
+      <circle id="Ellipse_5-6" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+    <g transform="translate(-1169 -314)">
+      <circle id="Ellipse_5-7" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+    <g transform="translate(-1163 -314)">
+      <circle id="Ellipse_5-8" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+    <g transform="translate(-1157 -314)">
+      <circle id="Ellipse_5-9" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(1169 326)" fill="#999"/>
+    </g>
+  </g>
+</svg>
